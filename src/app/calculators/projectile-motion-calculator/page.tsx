@@ -150,6 +150,25 @@ export default function ProjectileMotionCalculatorPage() {
               </p>
             </section>
 
+            <section aria-labelledby="example-heading">
+              <p className="eyebrow">Worked example</p>
+              <h2 id="example-heading">
+                Projectile motion example calculation
+              </h2>
+              <p>
+                Suppose an object is launched with a speed of
+                20 m/s at an angle of 45° with gravity of
+                9.8 m/s². The horizontal and vertical velocity
+                components are calculated first, then used to find
+                range, maximum height, and flight time.
+              </p>
+              <p>
+                This example demonstrates how the calculator applies
+                projectile motion equations under ideal conditions
+                without air resistance.
+              </p>
+            </section>
+
             <section aria-labelledby="related-heading">
               <h2 id="related-heading">
                 Related motion calculators
