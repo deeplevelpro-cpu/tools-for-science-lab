@@ -1,4 +1,6 @@
 import { CalculatorCard } from "./calculator-card";
+import { getCategoryFAQ } from "@/content/calculators/category-faq";
+import { createFAQSchema } from "@/lib/seo/faq-schema";
 import { Container } from "@/components/ui/container";
 import type { CalculatorCategory } from "@/content/calculators/categories";
 import type { CalculatorDefinition } from "@/content/calculators/registry";
@@ -12,8 +14,20 @@ export function CalculatorCategoryPage({
   category,
   calculators,
 }: CalculatorCategoryPageProps) {
+  const faqItems = getCategoryFAQ(category.category);
+  const faqSchema = createFAQSchema(faqItems);
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(
+            /</g,
+            "\u003c",
+          ),
+        }}
+      />
       <section className="directory-hero">
         <Container>
           <nav className="breadcrumbs" aria-label="Breadcrumb">
@@ -78,6 +92,29 @@ export function CalculatorCategoryPage({
                 key={calculator.slug}
                 calculator={calculator}
               />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="directory-section directory-section--muted">
+        <Container>
+          <div className="section-heading">
+            <p className="eyebrow">
+              Frequently asked questions
+            </p>
+
+            <h2>
+              Questions about {category.name}
+            </h2>
+          </div>
+
+          <div className="faq-list">
+            {faqItems.map((item) => (
+              <details key={item.question}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
             ))}
           </div>
         </Container>
