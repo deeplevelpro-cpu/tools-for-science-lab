@@ -111,3 +111,37 @@ export function createCalculatorBreadcrumbSchema({
     ],
   };
 }
+
+
+export function createCalculatorCategoryBreadcrumbSchema({
+  name,
+  slug,
+}: {
+  name: string;
+  slug: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: absoluteUrl("/"),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Calculators",
+        item: absoluteUrl("/calculators"),
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name,
+        item: absoluteUrl(`/calculators/${slug}`),
+      },
+    ],
+  };
+}

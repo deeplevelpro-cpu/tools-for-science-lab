@@ -1,6 +1,7 @@
 import { CalculatorCard } from "./calculator-card";
 import { getCategoryFAQ } from "@/content/calculators/category-faq";
 import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorCategoryBreadcrumbSchema } from "@/lib/seo/calculator-schema";
 import { Container } from "@/components/ui/container";
 import type { CalculatorCategory } from "@/content/calculators/categories";
 import type { CalculatorDefinition } from "@/content/calculators/registry";
@@ -17,6 +18,12 @@ export function CalculatorCategoryPage({
   const faqItems = getCategoryFAQ(category.category);
   const faqSchema = createFAQSchema(faqItems);
 
+  const breadcrumbSchema =
+    createCalculatorCategoryBreadcrumbSchema({
+      name: category.name,
+      slug: category.slug,
+    });
+
   return (
     <main>
       <script
@@ -28,6 +35,16 @@ export function CalculatorCategoryPage({
           ),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(
+            /</g,
+            "\\u003c",
+          ),
+        }}
+      />
+
       <section className="directory-hero">
         <Container>
           <nav className="breadcrumbs" aria-label="Breadcrumb">
