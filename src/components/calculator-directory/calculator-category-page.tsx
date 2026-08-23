@@ -1,4 +1,5 @@
 import { CalculatorCard } from "./calculator-card";
+import { CategoryTopics } from "./category-topics";
 import { getCategoryFAQ } from "@/content/calculators/category-faq";
 import { createFAQSchema } from "@/lib/seo/faq-schema";
 import { createCalculatorCategoryBreadcrumbSchema } from "@/lib/seo/calculator-schema";
@@ -90,6 +91,9 @@ export function CalculatorCategoryPage({
           </div>
         </Container>
       </section>
+
+      <CategoryTopics category={category.category} />
+
 
       <section className="directory-section">
         <Container>
