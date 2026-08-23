@@ -39,6 +39,27 @@ export function CalculatorCategoryPage({
         </Container>
       </section>
 
+      <section className="directory-section directory-section--muted">
+        <Container>
+          <div className="section-heading">
+            <p className="eyebrow">
+              About this calculator category
+            </p>
+
+            <h2>
+              {category.name} tools for learning and calculation
+            </h2>
+
+            <p>
+              ScienceCalcHub provides educational calculators
+              designed to help students, teachers, and researchers
+              understand scientific concepts, apply formulas, and
+              verify calculations with clear explanations.
+            </p>
+          </div>
+        </Container>
+      </section>
+
       <section className="directory-section">
         <Container>
           <div className="section-heading">
