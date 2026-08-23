@@ -25,8 +25,8 @@ const calculatorPages = readdirSync(
 
 describe("calculator trust coverage", () => {
   it("covers all published calculator pages", () => {
-    expect(calculatorPages).toHaveLength(74);
-    expect(calculators).toHaveLength(74);
+    expect(calculatorPages).toHaveLength(77);
+    expect(calculators).toHaveLength(77);
   });
 
   it("adds the trust import to every calculator page", () => {
