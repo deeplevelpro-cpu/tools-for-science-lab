@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "ScienceCalcHub — accurate science calculators and practical learning resources";
+  "ScienceCalcHub — accurate calculators and practical science resources";
 
 export const size = {
   width: 1200,

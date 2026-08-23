@@ -11,9 +11,9 @@ describe("acceleration due to gravity page quality", () => {
   it("keeps complete metadata and structured data", () => {
     expect(source).toContain("export const metadata");
     expect(source).toContain("canonicalPath");
-    expect(source).toContain('"@type": "WebApplication"');
-    expect(source).toContain('"@type": "BreadcrumbList"');
-    expect(source).toContain('"@type": "FAQPage"');
+    expect(source).toContain("createCalculatorSchema");
+    expect(source).toContain("createCalculatorBreadcrumbSchema");
+    expect(source).toContain("createFAQSchema");
     expect(source).toContain('type="application/ld+json"');
   });
 
