@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { FreeFallCalculator } from "@/components/calculators/free-fall-calculator";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
