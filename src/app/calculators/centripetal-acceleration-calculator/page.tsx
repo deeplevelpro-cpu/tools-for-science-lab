@@ -9,6 +9,7 @@ import {
   CentripetalAccelerationCalculator,
 } from "@/components/calculators/centripetal-acceleration-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -479,6 +480,8 @@ export default function CentripetalAccelerationCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="centripetal-acceleration-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

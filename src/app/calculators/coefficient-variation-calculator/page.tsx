@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { CoefficientVariationCalculator } from "@/components/calculators/coefficient-variation-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -399,6 +400,8 @@ export default function CoefficientVariationCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="coefficient-variation-calculator" />
+
           <CalculatorTrustPanel subject="laboratory" />
         </Container>
       </section>

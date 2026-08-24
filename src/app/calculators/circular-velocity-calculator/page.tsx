@@ -9,6 +9,7 @@ import {
   CircularVelocityCalculator,
 } from "@/components/calculators/circular-velocity-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -466,6 +467,8 @@ export default function CircularVelocityCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="circular-velocity-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

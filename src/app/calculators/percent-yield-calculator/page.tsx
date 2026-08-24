@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { PercentYieldCalculator } from "@/components/calculators/percent-yield-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -476,6 +477,8 @@ export default function PercentYieldCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="percent-yield-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

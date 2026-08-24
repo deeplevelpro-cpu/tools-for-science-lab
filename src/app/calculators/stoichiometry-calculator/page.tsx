@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { StoichiometryCalculator } from "@/components/calculators/stoichiometry-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -435,6 +436,8 @@ export default function StoichiometryCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="stoichiometry-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

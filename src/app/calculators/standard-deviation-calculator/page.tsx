@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { StandardDeviationCalculator } from "@/components/calculators/standard-deviation-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -388,6 +389,8 @@ export default function StandardDeviationCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="standard-deviation-calculator" />
+
           <CalculatorTrustPanel subject="laboratory" />
         </Container>
       </section>

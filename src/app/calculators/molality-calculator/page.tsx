@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { MolalityCalculator } from "@/components/calculators/molality-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -347,6 +348,8 @@ export default function MolalityCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="molality-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

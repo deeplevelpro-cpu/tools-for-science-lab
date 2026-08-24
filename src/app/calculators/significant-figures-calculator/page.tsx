@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { SignificantFiguresCalculator } from "@/components/calculators/significant-figures-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -337,6 +338,8 @@ export default function SignificantFiguresCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="significant-figures-calculator" />
+
           <CalculatorTrustPanel subject="laboratory" />
         </Container>
       </section>

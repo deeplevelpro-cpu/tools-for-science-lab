@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { DilutionCalculator } from "@/components/calculators/dilution-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -267,6 +268,8 @@ export default function DilutionCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="dilution-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

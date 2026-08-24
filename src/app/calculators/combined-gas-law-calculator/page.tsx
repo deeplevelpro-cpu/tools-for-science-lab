@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CombinedGasLawCalculator } from "@/components/calculators/combined-gas-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -374,7 +375,9 @@ export default function CombinedGasLawCalculatorPage() {
           </article>
 
           <aside className="article-sidebar">
-            <CalculatorTrustPanel subject="chemistry" />
+            <CalculatorContentLoader slug="combined-gas-law-calculator" />
+
+          <CalculatorTrustPanel subject="chemistry" />
           </aside>
         </Container>
       </section>

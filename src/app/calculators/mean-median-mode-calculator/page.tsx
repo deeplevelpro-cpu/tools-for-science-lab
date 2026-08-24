@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { MeanMedianModeCalculator } from "@/components/calculators/mean-median-mode-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -407,6 +408,8 @@ export default function MeanMedianModeCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="mean-median-mode-calculator" />
+
           <CalculatorTrustPanel subject="laboratory" />
         </Container>
       </section>

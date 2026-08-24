@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { SpecificHeatCalculator } from "@/components/calculators/specific-heat-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -286,6 +287,8 @@ export default function SpecificHeatCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="specific-heat-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { DensityCalculator } from "@/components/calculators/density-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -304,6 +305,8 @@ export default function DensityCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="density-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

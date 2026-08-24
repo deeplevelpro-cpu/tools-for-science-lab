@@ -9,6 +9,7 @@ import {
   RevolutionsCalculator,
 } from "@/components/calculators/revolutions-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -467,6 +468,8 @@ export default function RevolutionsCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="revolutions-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

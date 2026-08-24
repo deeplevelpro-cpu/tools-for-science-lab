@@ -9,6 +9,7 @@ import {
   RotationalDynamicsCalculator,
 } from "@/components/calculators/rotational-dynamics-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -463,6 +464,8 @@ export default function RotationalDynamicsCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="rotational-dynamics-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

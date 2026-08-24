@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { NormalForceCalculator } from "@/components/calculators/normal-force-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -579,6 +580,8 @@ export default function NormalForceCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="normal-force-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

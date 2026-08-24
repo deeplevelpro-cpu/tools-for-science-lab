@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { GrahamsLawCalculator } from "@/components/calculators/grahams-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -532,6 +533,8 @@ export default function GrahamsLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="grahams-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

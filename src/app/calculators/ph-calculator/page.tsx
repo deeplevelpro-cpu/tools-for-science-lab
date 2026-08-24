@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { PhCalculator } from "@/components/calculators/ph-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -361,6 +362,8 @@ export default function PhCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="ph-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

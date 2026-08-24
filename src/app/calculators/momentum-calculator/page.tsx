@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { MomentumCalculator } from "@/components/calculators/momentum-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -449,6 +450,8 @@ export default function MomentumCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="momentum-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

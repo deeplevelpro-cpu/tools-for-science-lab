@@ -9,6 +9,7 @@ import {
   AngularVelocityCalculator,
 } from "@/components/calculators/angular-velocity-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -463,6 +464,8 @@ export default function AngularVelocityCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="angular-velocity-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

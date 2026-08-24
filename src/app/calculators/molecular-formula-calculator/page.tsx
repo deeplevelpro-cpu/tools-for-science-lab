@@ -13,6 +13,7 @@ import { createFAQSchema } from "@/lib/seo/faq-schema";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { MolecularFormulaCalculator } from "@/components/calculators/molecular-formula-calculator";
 
 const pageTitle =
@@ -371,6 +372,8 @@ export default function MolecularFormulaCalculatorPage() {
 
       <section className="page-section">
         <div className="page-shell">
+          <CalculatorContentLoader slug="molecular-formula-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </div>
       </section>

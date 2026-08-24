@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { BoylesLawCalculator } from "@/components/calculators/boyles-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -550,6 +551,8 @@ export default function BoylesLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="boyles-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

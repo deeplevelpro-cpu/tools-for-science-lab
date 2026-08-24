@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CharlesLawCalculator } from "@/components/calculators/charles-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -515,6 +516,8 @@ export default function CharlesLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="charles-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

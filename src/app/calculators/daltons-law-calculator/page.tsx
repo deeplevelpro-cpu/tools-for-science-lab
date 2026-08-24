@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { DaltonsLawCalculator } from "@/components/calculators/daltons-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -541,6 +542,8 @@ export default function DaltonsLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="daltons-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

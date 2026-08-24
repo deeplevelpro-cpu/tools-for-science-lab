@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { FrictionCalculator } from "@/components/calculators/friction-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -523,6 +524,8 @@ export default function FrictionCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="friction-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

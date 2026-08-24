@@ -9,6 +9,7 @@ import {
   AngularAccelerationCalculator,
 } from "@/components/calculators/angular-acceleration-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -466,6 +467,8 @@ export default function AngularAccelerationCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="angular-acceleration-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

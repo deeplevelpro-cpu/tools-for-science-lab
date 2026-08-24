@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { PercentErrorCalculator } from "@/components/calculators/percent-error-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -257,6 +258,8 @@ export default function PercentErrorCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="percent-error-calculator" />
+
           <CalculatorTrustPanel subject="laboratory" />
         </Container>
       </section>

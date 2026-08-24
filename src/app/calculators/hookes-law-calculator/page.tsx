@@ -9,6 +9,7 @@ import {
   HookesLawCalculator,
 } from "@/components/calculators/hookes-law-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -420,6 +421,8 @@ export default function HookesLawCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="hookes-law-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

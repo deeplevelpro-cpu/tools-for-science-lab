@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { GayLussacsLawCalculator } from "@/components/calculators/gay-lussacs-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -496,6 +497,8 @@ export default function GayLussacsLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="gay-lussacs-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

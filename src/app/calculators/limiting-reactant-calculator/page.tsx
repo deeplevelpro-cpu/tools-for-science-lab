@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { LimitingReactantCalculator } from "@/components/calculators/limiting-reactant-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -416,6 +417,8 @@ export default function LimitingReactantCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="limiting-reactant-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

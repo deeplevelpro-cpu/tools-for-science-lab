@@ -9,6 +9,7 @@ import {
   TangentialVelocityCalculator,
 } from "@/components/calculators/tangential-velocity-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -460,6 +461,8 @@ export default function TangentialVelocityCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="tangential-velocity-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

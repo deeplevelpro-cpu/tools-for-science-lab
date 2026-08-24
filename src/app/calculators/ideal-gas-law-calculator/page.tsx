@@ -9,6 +9,7 @@ import {
   IdealGasLawCalculator,
 } from "@/components/calculators/ideal-gas-law-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -569,6 +570,8 @@ export default function IdealGasLawCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="ideal-gas-law-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

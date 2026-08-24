@@ -6,6 +6,7 @@ import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { EmpiricalFormulaCalculator } from "@/components/calculators/empirical-formula-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -479,6 +480,8 @@ export default function EmpiricalFormulaCalculatorPage() {
         </Container>
 
         <Container>
+          <CalculatorContentLoader slug="empirical-formula-calculator" />
+
           <CalculatorTrustPanel subject="chemistry" />
         </Container>
       </section>

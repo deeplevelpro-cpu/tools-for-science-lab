@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { WeightCalculator } from "@/components/calculators/weight-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -589,6 +590,8 @@ export default function WeightCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="weight-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>

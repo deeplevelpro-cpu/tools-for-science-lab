@@ -9,6 +9,7 @@ import {
   RotationalPowerCalculator,
 } from "@/components/calculators/rotational-power-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
+import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -460,6 +461,8 @@ export default function RotationalPowerCalculatorPage() {
           </aside>
         </Container>
         <Container>
+          <CalculatorContentLoader slug="rotational-power-calculator" />
+
           <CalculatorTrustPanel subject="physics" />
         </Container>
       </section>
