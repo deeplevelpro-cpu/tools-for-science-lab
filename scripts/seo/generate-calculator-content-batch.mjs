@@ -1,4 +1,3 @@
-
 import fs from "fs";
 
 const registryPath =
@@ -13,53 +12,58 @@ const registry = fs.readFileSync(
   "utf8",
 );
 
-
 const existing = fs.readFileSync(
   contentPath,
   "utf8",
 );
 
 
-const slugMatches = [
+// Extract calculator definitions
+const calculators = [
   ...registry.matchAll(
-    /slug:\s*"([^"]+)"/g
+    /slug:\s*"([^"]+)"[\s\S]*?category:\s*"([^"]+)"/g,
   ),
-];
+].map((match) => ({
+  slug: match[1],
+  category: match[2],
+}));
 
 
 const existingSlugs = new Set(
   [
     ...existing.matchAll(
-      /"([^"]+-calculator)":\s*{/g
+      /"([^"]+-calculator)":\s*{/g,
     ),
-  ].map(
-    (m) => m[1],
-  ),
+  ].map((m) => m[1]),
 );
 
 
-const missing = slugMatches
-  .map((m) => m[1])
-  .filter(
-    (slug) => !existingSlugs.has(slug),
-  );
+const forceMode = process.argv.includes("--force");
+
+const targets = forceMode
+  ? calculators
+  : calculators.filter(
+      (calculator) =>
+        !existingSlugs.has(calculator.slug),
+    );
 
 
 console.log(
-  `Missing calculators: ${missing.length}`,
+  forceMode
+    ? `Force mode enabled. Regenerating: ${targets.length} calculators`
+    : `Missing calculators: ${targets.length}`,
 );
 
 
-if (!missing.length) {
+if (!targets.length) {
   console.log("No missing content.");
   process.exit(0);
 }
 
 
-const generated = missing.map(
-  (slug) => {
-
-    const readable = slug
+function createContent(calculator) {
+  const readable =
+    calculator.slug
       .replace(
         /-calculator$/,
         "",
@@ -70,26 +74,80 @@ const generated = missing.map(
       );
 
 
-    const title =
-      readable.charAt(0).toUpperCase() +
-      readable.slice(1);
+  const title =
+    readable.charAt(0).toUpperCase() +
+    readable.slice(1);
 
+
+  if (calculator.category === "Physics") {
+    return {
+      introduction:
+        `${title} helps solve physics problems involving measurable quantities, formulas, and scientific relationships.`,
+      formulaExplanation:
+        `This calculator applies physics equations using input values, correct units, and scientific assumptions.`,
+      example:
+        `Example: Students can use the ${title} to apply formulas and understand how physical quantities are calculated.`,
+      mistakes: [
+        "Using incorrect units.",
+        "Ignoring formula assumptions.",
+        "Ignoring measurement uncertainty.",
+      ],
+    };
+  }
+
+
+  if (calculator.category === "Chemistry") {
+    return {
+      introduction:
+        `${title} supports chemistry calculations involving chemical quantities, reactions, formulas, and laboratory measurements.`,
+      formulaExplanation:
+        `This calculator applies chemistry equations using accurate values and proper scientific relationships.`,
+      example:
+        `Example: Researchers can use the ${title} to verify chemical calculations before laboratory analysis.`,
+      mistakes: [
+        "Entering incorrect chemical values.",
+        "Using wrong measurement units.",
+        "Confusing theoretical and experimental results.",
+      ],
+    };
+  }
+
+
+  return {
+    introduction:
+      `${title} helps analyze laboratory measurements, scientific data, and experimental calculations.`,
+    formulaExplanation:
+      `Laboratory calculations require accurate measurements, correct units, and proper data interpretation.`,
+    example:
+      `Example: Students and researchers can use the ${title} to process experimental values.`,
+    mistakes: [
+      "Recording measurements incorrectly.",
+      "Ignoring significant figures.",
+      "Using unsuitable calculation methods.",
+    ],
+  };
+}
+
+
+const generated = targets.map(
+  (calculator) => {
+    const content = createContent(calculator);
 
     return `
-  "${slug}": {
+  "${calculator.slug}": {
     introduction:
-      "The ${title} helps users calculate ${readable} values with clear scientific explanations and reliable calculation steps.",
+      "${content.introduction}",
 
     formulaExplanation:
-      "This calculator applies the standard ${readable} equations and scientific relationships used in educational and laboratory calculations.",
+      "${content.formulaExplanation}",
 
     example:
-      "Example: Enter the required scientific values to calculate the result and understand how the formula is applied.",
+      "${content.example}",
 
     commonMistakes: [
-      "Using incorrect input values or units.",
-      "Ignoring the assumptions behind the scientific formula.",
-      "Mixing incompatible measurement systems.",
+      "${content.mistakes[0]}",
+      "${content.mistakes[1]}",
+      "${content.mistakes[2]}",
     ],
   },
 `;
@@ -97,14 +155,10 @@ const generated = missing.map(
 );
 
 
-const insert =
-  generated.join("\n");
-
-
 const updated =
   existing.replace(
     /\n};\s*$/,
-    `\n${insert}\n};`,
+    `\n${generated.join("\n")}\n};`,
   );
 
 
@@ -115,5 +169,5 @@ fs.writeFileSync(
 
 
 console.log(
-  `Added ${missing.length} calculator content entries.`,
+  `Added ${targets.length} calculator content entries.`,
 );
