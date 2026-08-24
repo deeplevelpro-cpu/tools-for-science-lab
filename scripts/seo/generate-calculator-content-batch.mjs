@@ -1,5 +1,8 @@
 import fs from "fs";
 
+import { calculators as calculatorRegistry } from "../../src/content/calculators/registry.ts";
+import { getContentTemplate } from "../../src/content/calculators/get-content-template.ts";
+
 const registryPath =
   "src/content/calculators/registry.ts";
 
@@ -19,7 +22,7 @@ const existing = fs.readFileSync(
 
 
 // Extract calculator definitions
-const calculators = [
+const legacyCalculators = [
   ...registry.matchAll(
     /slug:\s*"([^"]+)"[\s\S]*?category:\s*"([^"]+)"/g,
   ),
@@ -41,8 +44,8 @@ const existingSlugs = new Set(
 const forceMode = process.argv.includes("--force");
 
 const targets = forceMode
-  ? calculators
-  : calculators.filter(
+  ? calculatorRegistry
+  : calculatorRegistry.filter(
       (calculator) =>
         !existingSlugs.has(calculator.slug),
     );
