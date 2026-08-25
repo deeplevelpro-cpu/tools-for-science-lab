@@ -79,11 +79,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "hookes-law-calculator",
   category: "Physics",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

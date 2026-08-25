@@ -72,11 +72,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "significant-figures-calculator",
   category: "Laboratory",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

@@ -88,11 +88,6 @@ const calculatorSchema = createCalculatorSchema({
   description: description,
   slug: "limiting-reactant-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

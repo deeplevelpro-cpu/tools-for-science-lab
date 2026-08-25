@@ -76,11 +76,6 @@ const calculatorSchema = createCalculatorSchema({
   description: "Calculate initial or final gas volume and temperature with Charles's law, V₁/T₁ = V₂/T₂. Supports Kelvin, Celsius, Fahrenheit, liters, milliliters, and cubic meters.",
   slug: "charles-law-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

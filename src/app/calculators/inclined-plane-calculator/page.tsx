@@ -83,11 +83,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "inclined-plane-calculator",
   category: "Physics",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

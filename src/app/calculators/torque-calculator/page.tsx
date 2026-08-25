@@ -79,11 +79,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "torque-calculator",
   category: "Physics",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

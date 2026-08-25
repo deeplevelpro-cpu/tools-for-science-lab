@@ -89,11 +89,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "combined-gas-law-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

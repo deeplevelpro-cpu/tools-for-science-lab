@@ -72,11 +72,6 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "mean-median-mode-calculator",
   category: "Laboratory",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

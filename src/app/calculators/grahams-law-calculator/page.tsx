@@ -78,11 +78,6 @@ const calculatorSchema = createCalculatorSchema({
   description: "Use Graham's law to calculate gas effusion or diffusion rate, time, and molar mass. Solve r₁/r₂ = √(M₂/M₁) with optional time-unit conversion.",
   slug: "grahams-law-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

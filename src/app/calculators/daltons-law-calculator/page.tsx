@@ -78,11 +78,6 @@ const calculatorSchema = createCalculatorSchema({
   description: "Calculate total pressure or a missing partial pressure with Dalton's law. Add gas pressures in Pa, kPa, bar, atm, or mmHg with automatic unit conversion.",
   slug: "daltons-law-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

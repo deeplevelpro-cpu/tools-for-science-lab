@@ -86,11 +86,6 @@ const calculatorSchema = createCalculatorSchema({
   description: description,
   slug: "percent-yield-calculator",
   category: "Chemistry",
-  relatedCalculators:
-    relatedCalculators.map((calculator) => ({
-      name: calculator.name,
-      href: calculator.href,
-    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);
