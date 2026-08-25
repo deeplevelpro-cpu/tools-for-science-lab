@@ -1,9 +1,9 @@
-import type { CalculatorContent } from "@/content/calculators/calculator-content";
+import type { ExtendedCalculatorContent } from "@/content/calculators/seo-content/merge-content";
 
 import { Container } from "@/components/ui/container";
 
 type CalculatorContentSectionProps = {
-  content: CalculatorContent;
+  content: ExtendedCalculatorContent;
 };
 
 export function CalculatorContentSection({
@@ -61,6 +61,56 @@ export function CalculatorContentSection({
               ))}
             </ul>
           </section>
+
+          {content.seo && (
+            <>
+              <section>
+                <h2>
+                  Variables
+                </h2>
+
+                <ul className="article-list">
+                  {content.seo.variables.map((item) => (
+                    <li key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section>
+                <h2>
+                  Applications
+                </h2>
+
+                <ul className="article-list">
+                  {content.seo.applications.map((item) => (
+                    <li key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section>
+                <h2>
+                  Frequently asked questions
+                </h2>
+
+                {content.seo.faqs.map((faq) => (
+                  <div key={faq.question}>
+                    <h3>
+                      {faq.question}
+                    </h3>
+
+                    <p>
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
+              </section>
+            </>
+          )}
 
         </article>
       </Container>
