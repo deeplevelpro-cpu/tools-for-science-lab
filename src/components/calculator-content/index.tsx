@@ -60,6 +60,38 @@ export function CalculatorContentSection({
             </p>
           </section>
 
+          {content.seo && (
+            <>
+              <section>
+                <h2>
+                  Assumptions
+                </h2>
+
+                <ul className="article-list">
+                  {content.seo.assumptions.map((item) => (
+                    <li key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section>
+                <h2>
+                  Examples
+                </h2>
+
+                <ul className="article-list">
+                  {content.seo.examples.map((item) => (
+                    <li key={item}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </>
+          )}
+
           <section>
             <h2>
               Common mistakes
