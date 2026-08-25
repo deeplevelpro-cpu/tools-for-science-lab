@@ -11,6 +11,10 @@ export type CalculatorSEOContent = {
 
   applications: readonly string[];
 
+  assumptions: readonly string[];
+
+  examples: readonly string[];
+
   faqs: readonly {
     question: string;
     answer: string;
