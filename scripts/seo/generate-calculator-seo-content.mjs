@@ -1,0 +1,96 @@
+import fs from "fs";
+
+const registryPath =
+  "src/content/calculators/registry.ts";
+
+const outputPath =
+  "src/content/calculators/seo-content/registry.ts";
+
+
+const source = fs.readFileSync(
+  registryPath,
+  "utf8",
+);
+
+
+const matches = [
+  ...source.matchAll(
+    /slug:\s*"([^"]+)"[\s\S]*?name:\s*"([^"]+)"[\s\S]*?shortDescription:\s*([\s\S]*?),\s*category:\s*"([^"]+)"/g,
+  ),
+];
+
+
+const entries = matches.map(
+  ([, slug, name, description, category]) => {
+
+    const cleanDescription =
+      description
+        .replace(/"/g, '\\"')
+        .replace(/\s+/g, " ")
+        .trim();
+
+
+    return `
+  "${slug}": {
+    slug: "${slug}",
+
+    seoIntroduction:
+      "${name} helps users solve scientific calculations with accurate formulas and step-by-step explanations. ${cleanDescription}",
+
+    howItWorks:
+      "This ${category.toLowerCase()} calculator applies scientific equations using the provided input values. It explains the relationship between variables and helps users understand the calculation process.",
+
+    formula:
+      "The formula depends on the scientific model used by this calculator. Enter the required values to calculate the result.",
+
+    variables: [
+      "Input values required for calculation",
+      "Scientific constants and measurements",
+      "Units must remain consistent",
+    ],
+
+    applications: [
+      "${category} education",
+      "Laboratory and classroom calculations",
+      "Scientific data analysis",
+    ],
+
+    faqs: [
+      {
+        question:
+          "What is the ${name.replace(" Calculator","")} calculator used for?",
+        answer:
+          "This calculator helps students, researchers, and professionals perform accurate ${category.toLowerCase()} calculations.",
+      },
+      {
+        question:
+          "Why are correct units important?",
+        answer:
+          "Using consistent units ensures the calculation produces scientifically accurate results.",
+      },
+    ],
+  },`;
+  },
+);
+
+
+const output = `import type { CalculatorSEOContent } from "./types";
+
+export const calculatorSEOContent: Record<
+  string,
+  CalculatorSEOContent
+> = {
+${entries.join("\n")}
+};
+`;
+
+
+fs.writeFileSync(
+  outputPath,
+  output,
+);
+
+
+console.log(
+  `Generated SEO content for ${entries.length} calculators`,
+);
