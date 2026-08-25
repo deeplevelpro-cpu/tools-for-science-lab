@@ -74,6 +74,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "molecular-weight-calculator",
   category: "Chemistry",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

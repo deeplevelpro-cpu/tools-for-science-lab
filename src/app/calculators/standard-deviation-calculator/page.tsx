@@ -74,6 +74,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "standard-deviation-calculator",
   category: "Laboratory",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

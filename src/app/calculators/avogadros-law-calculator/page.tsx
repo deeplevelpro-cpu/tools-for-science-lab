@@ -78,6 +78,11 @@ const calculatorSchema = createCalculatorSchema({
   description: "Calculate gas volume or amount with Avogadro's law, V₁/n₁ = V₂/n₂. Convert liters, milliliters, cubic meters, moles, and millimoles automatically.",
   slug: "avogadros-law-calculator",
   category: "Chemistry",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

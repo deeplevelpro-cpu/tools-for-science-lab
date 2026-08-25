@@ -52,6 +52,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "projectile-motion-calculator",
   category: "Physics",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const breadcrumbSchema =

@@ -83,6 +83,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "molecular-formula-calculator",
   category: "Chemistry",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const breadcrumbSchema =

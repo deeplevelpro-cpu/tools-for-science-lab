@@ -77,6 +77,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "displacement-calculator",
   category: "Physics",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

@@ -80,6 +80,11 @@ const calculatorSchema = createCalculatorSchema({
   description: pageDescription,
   slug: "angular-momentum-calculator",
   category: "Physics",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqSchema = createFAQSchema(faqItems);

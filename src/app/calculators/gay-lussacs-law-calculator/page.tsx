@@ -76,6 +76,11 @@ const calculatorSchema = createCalculatorSchema({
   description: "Calculate initial or final gas pressure and temperature with Gay-Lussac's law, P₁/T₁ = P₂/T₂. Supports Pa, kPa, bar, atm, mmHg, Kelvin, Celsius, and Fahrenheit.",
   slug: "gay-lussacs-law-calculator",
   category: "Chemistry",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const faqJsonLd = createFAQSchema(faqItems);

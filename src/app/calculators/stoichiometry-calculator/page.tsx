@@ -92,6 +92,11 @@ const calculatorSchema = createCalculatorSchema({
   description: description,
   slug: "stoichiometry-calculator",
   category: "Chemistry",
+  relatedCalculators:
+    relatedCalculators.map((calculator) => ({
+      name: calculator.name,
+      href: calculator.href,
+    })),
 });
 
 const breadcrumbSchema =
