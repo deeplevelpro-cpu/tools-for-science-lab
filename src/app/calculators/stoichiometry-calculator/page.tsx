@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pagePath = "/calculators/stoichiometry-calculator";
 const pageUrl = absoluteUrl(pagePath);
@@ -85,7 +85,7 @@ const faqItems = [
 ];
 
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("stoichiometry-calculator");
 
 const calculatorSchema = createCalculatorSchema({
   name: title,

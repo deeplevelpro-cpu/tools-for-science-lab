@@ -14,7 +14,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle =
   "Rotational Frequency Calculator";
@@ -82,7 +82,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Physics",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("rotational-frequency-calculator");
 
 const relatedCalculators = getRelatedCalculators(
   "rotational-frequency-calculator",

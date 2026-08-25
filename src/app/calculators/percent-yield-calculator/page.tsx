@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pagePath = "/calculators/percent-yield-calculator";
 const pageUrl = absoluteUrl(pagePath);
@@ -88,7 +88,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("percent-yield-calculator");
 
 const breadcrumbSchema =
   createCalculatorBreadcrumbSchema({

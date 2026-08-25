@@ -12,7 +12,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 export const metadata: Metadata = {
   title: "Charles's Law Calculator | Volume & Temperature",
@@ -78,7 +78,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqJsonLd = createFAQSchema(faqItems);
+const faqJsonLd = createCalculatorFAQSchema("charles-law-calculator");
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",

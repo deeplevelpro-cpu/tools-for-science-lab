@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pagePath = "/calculators/boyles-law-calculator";
 const pageTitle = "Boyle's Law Calculator";
@@ -80,7 +80,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("boyles-law-calculator");
 
 const breadcrumbSchema =
   createCalculatorBreadcrumbSchema({

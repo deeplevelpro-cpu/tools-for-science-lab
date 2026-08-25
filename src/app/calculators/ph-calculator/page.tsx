@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pagePath = "/calculators/ph-calculator";
 const pageTitle = "pH Calculator | Hydrogen Ion Concentration";
@@ -75,7 +75,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("ph-calculator");
 
 const breadcrumbSchema =
   createCalculatorBreadcrumbSchema({

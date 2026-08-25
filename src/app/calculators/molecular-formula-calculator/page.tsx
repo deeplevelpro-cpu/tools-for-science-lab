@@ -9,7 +9,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 import Link from "next/link";
 
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
@@ -76,7 +76,7 @@ const faqs = [
   },
 ] as const;
 
-const faqSchema = createFAQSchema(faqs);
+const faqSchema = createCalculatorFAQSchema("molecular-formula-calculator");
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,

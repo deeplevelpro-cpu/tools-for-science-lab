@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Free Fall Calculator";
 
@@ -88,7 +88,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Physics",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("free-fall-calculator");
 
 const breadcrumbSchema =
   createCalculatorBreadcrumbSchema({

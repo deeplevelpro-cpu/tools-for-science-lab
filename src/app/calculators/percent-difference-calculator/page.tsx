@@ -12,7 +12,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Percent Difference Calculator";
 const pageDescription =
@@ -70,7 +70,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Laboratory",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("percent-difference-calculator");
 
 const relatedCalculators = getRelatedCalculators(
   "percent-difference-calculator",

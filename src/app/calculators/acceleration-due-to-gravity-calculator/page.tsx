@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle =
   "Acceleration Due to Gravity Calculator";
@@ -98,7 +98,7 @@ export default function AccelerationDueToGravityCalculatorPage() {
     category: "Physics",
   });
 
-  const faqSchema = createFAQSchema(faqItems);
+  const faqSchema = createCalculatorFAQSchema("acceleration-due-to-gravity-calculator");
 
   return (
     <main>

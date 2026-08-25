@@ -12,7 +12,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pagePath =
   "/calculators/combined-gas-law-calculator";
@@ -91,7 +91,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqJsonLd = createFAQSchema(faqItems);
+const faqJsonLd = createCalculatorFAQSchema("combined-gas-law-calculator");
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",

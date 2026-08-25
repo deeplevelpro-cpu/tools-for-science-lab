@@ -15,7 +15,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Density Calculator | Mass, Volume & Density";
 const pageDescription =
@@ -86,7 +86,7 @@ const breadcrumbSchema =
     category: "Physics",
   });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("density-calculator");
 
 const relatedCalculators = getRelatedCalculators(
   "density-calculator",

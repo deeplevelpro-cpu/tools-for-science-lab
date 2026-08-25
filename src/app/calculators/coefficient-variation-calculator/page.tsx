@@ -12,7 +12,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle =
   "Coefficient of Variation Calculator";
@@ -79,7 +79,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Laboratory",
 });
 
-const faqSchema = createFAQSchema(faqItems);
+const faqSchema = createCalculatorFAQSchema("coefficient-variation-calculator");
 
 const relatedCalculators = getRelatedCalculators(
   "coefficient-variation-calculator",

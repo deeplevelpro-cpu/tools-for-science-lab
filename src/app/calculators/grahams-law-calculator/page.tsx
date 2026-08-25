@@ -12,7 +12,7 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createFAQSchema } from "@/lib/seo/faq-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 export const metadata: Metadata = {
   title: "Graham's Law Calculator | Rate, Time & Molar Mass",
@@ -80,7 +80,7 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
-const faqJsonLd = createFAQSchema(faqItems);
+const faqJsonLd = createCalculatorFAQSchema("grahams-law-calculator");
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
