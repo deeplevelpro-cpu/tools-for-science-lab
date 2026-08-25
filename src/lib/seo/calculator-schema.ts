@@ -32,7 +32,38 @@ export function createCalculatorSchema({
     applicationCategory:
       "EducationalApplication",
     operatingSystem: "Web",
+    browserRequirements:
+      "Requires a modern web browser with JavaScript enabled.",
+    softwareVersion: "1.0",
     isAccessibleForFree: true,
+
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+
+    featureList: [
+      "Scientific calculator",
+      "Step-by-step calculation guidance",
+      "Formula explanations",
+      "Educational examples",
+      "Unit-aware scientific calculations",
+    ],
+
+    audience: {
+      "@type": "EducationalAudience",
+      educationalRole: [
+        "student",
+        "teacher",
+        "researcher",
+      ],
+    },
+
+    potentialAction: {
+      "@type": "UseAction",
+      target: url,
+    },
 
     creator: {
       "@type": "Organization",
