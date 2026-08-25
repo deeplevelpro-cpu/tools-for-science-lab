@@ -36,6 +36,18 @@ export function CalculatorContentSection({
             <p>
               {content.formulaExplanation}
             </p>
+
+            {content.seo && (
+              <>
+                <h3>
+                  Formula
+                </h3>
+
+                <p>
+                  {content.seo.formula}
+                </p>
+              </>
+            )}
           </section>
 
           <section>
