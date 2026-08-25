@@ -103,6 +103,16 @@ ${applications.map(
 ).join("\n")}
     ],
 
+    assumptions: [
+      "Input values are provided using consistent scientific units",
+      "The calculator follows the standard scientific model for this calculation",
+    ],
+
+    examples: [
+      "Enter known values and review the calculated result with the formula explanation",
+      "Use the calculator to verify classroom or laboratory calculations",
+    ],
+
     faqs: [
 ${faqTopics.map(
   (question) => `      {
