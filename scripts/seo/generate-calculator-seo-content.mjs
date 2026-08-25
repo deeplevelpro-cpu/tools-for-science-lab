@@ -1,5 +1,10 @@
 import fs from "fs";
 
+import {
+  calculatorKnowledge,
+} from "./calculator-knowledge.mjs";
+
+
 const registryPath =
   "src/content/calculators/registry.ts";
 
@@ -23,11 +28,54 @@ const matches = [
 const entries = matches.map(
   ([, slug, name, description, category]) => {
 
+    const knowledge =
+      calculatorKnowledge[slug];
+
+
     const cleanDescription =
       description
         .replace(/"/g, '\\"')
         .replace(/\s+/g, " ")
         .trim();
+
+
+    const formula =
+      knowledge?.formula ??
+      "The formula depends on the scientific model used by this calculator. Enter the required values to calculate the result.";
+
+
+    const variables =
+      knowledge?.variables ??
+      [
+        "Input values required for calculation",
+        "Scientific constants and measurements",
+        "Units must remain consistent",
+      ];
+
+
+    const applications =
+      knowledge?.applications ??
+      [
+        `${category} education`,
+        "Laboratory and classroom calculations",
+        "Scientific data analysis",
+      ];
+
+
+    const explanation =
+      knowledge?.explanation ??
+      `This ${category.toLowerCase()} calculator applies scientific equations using the provided input values. It explains the relationship between variables and helps users understand the calculation process.`;
+
+
+    const faqTopics =
+      knowledge?.faqTopics ??
+      [
+        `What is the ${name.replace(
+          " Calculator",
+          "",
+        )} calculator used for?`,
+        "Why are correct units important?",
+      ];
 
 
     return `
@@ -38,36 +86,32 @@ const entries = matches.map(
       "${name} helps users solve scientific calculations with accurate formulas and step-by-step explanations. ${cleanDescription}",
 
     howItWorks:
-      "This ${category.toLowerCase()} calculator applies scientific equations using the provided input values. It explains the relationship between variables and helps users understand the calculation process.",
+      "${explanation}",
 
     formula:
-      "The formula depends on the scientific model used by this calculator. Enter the required values to calculate the result.",
+      "${formula}",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+${variables.map(
+  (item) => `      "${item}",`,
+).join("\n")}
     ],
 
     applications: [
-      "${category} education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
+${applications.map(
+  (item) => `      "${item}",`,
+).join("\n")}
     ],
 
     faqs: [
-      {
+${faqTopics.map(
+  (question) => `      {
         question:
-          "What is the ${name.replace(" Calculator","")} calculator used for?",
+          "${question}",
         answer:
-          "This calculator helps students, researchers, and professionals perform accurate ${category.toLowerCase()} calculations.",
-      },
-      {
-        question:
-          "Why are correct units important?",
-        answer:
-          "Using consistent units ensures the calculation produces scientifically accurate results.",
-      },
+          "This calculator provides accurate scientific calculations with clear explanations and reliable results.",
+      },`,
+).join("\n")}
     ],
   },`;
   },
