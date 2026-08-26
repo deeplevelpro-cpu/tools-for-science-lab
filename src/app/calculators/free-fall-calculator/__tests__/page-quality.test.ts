@@ -70,21 +70,13 @@ describe("free fall page quality", () => {
     );
   });
 
-  it("renders five matching FAQ items", () => {
-    const questions = [
-      "What equations does the free fall calculator use?",
-      "What gravity value should I use for Earth?",
-      "Does this calculator include air resistance?",
-      "Why must I enter either height or time, but not both?",
-      "Can I calculate free fall on the Moon?",
-    ];
-
-    for (const question of questions) {
-      expect(source).toContain(question);
-    }
+  it("uses centralized FAQ content and schema rendering", () => {
+    expect(source).toContain(
+      'CalculatorFAQ slug="free-fall-calculator"',
+    );
 
     expect(source).toContain(
-      "faqItems.map((item)",
+      "createCalculatorFAQSchema",
     );
   });
 
