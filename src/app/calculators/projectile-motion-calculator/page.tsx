@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ProjectileMotionCalculator } from "@/components/calculators/projectile-motion-calculator";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
 import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -15,6 +16,7 @@ import {
   createCalculatorBreadcrumbSchema,
   createCalculatorSchema,
 } from "@/lib/seo/calculator-schema";
+import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Projectile Motion Calculator";
 
@@ -54,6 +56,9 @@ const calculatorSchema = createCalculatorSchema({
   category: "Physics",
 });
 
+const faqSchema =
+  createCalculatorFAQSchema("projectile-motion-calculator");
+
 const breadcrumbSchema =
   createCalculatorBreadcrumbSchema({
     name: pageTitle,
@@ -90,6 +95,18 @@ export default function ProjectileMotionCalculatorPage() {
           ),
         }}
       />
+
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema).replace(
+              /</g,
+              "\\u003c",
+            ),
+          }}
+        />
+      )}
 
       <section className="tool-page-hero">
         <Container>
@@ -199,6 +216,7 @@ export default function ProjectileMotionCalculatorPage() {
         </Container>
         <Container>
           <CalculatorContentLoader slug="projectile-motion-calculator" />
+          <CalculatorFAQ slug="projectile-motion-calculator" />
 
           <CalculatorTrustPanel subject="physics" />
         </Container>
