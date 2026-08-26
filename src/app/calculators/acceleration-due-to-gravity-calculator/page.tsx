@@ -50,33 +50,6 @@ export const metadata: Metadata = {
   },
 };
 
-const faqItems = [
-  {
-    question:
-      "What formula calculates acceleration due to gravity?",
-    answer:
-      "The calculator uses g = GM / r², where G is the universal gravitational constant, M is the mass of the celestial body, and r is the distance from its center.",
-  },
-  {
-    question:
-      "What is the acceleration due to gravity on Earth?",
-    answer:
-      "The standard value near Earth's surface is approximately 9.81 metres per second squared, although the exact value varies slightly with altitude and location.",
-  },
-  {
-    question:
-      "Why does gravity decrease with distance?",
-    answer:
-      "Gravitational acceleration follows an inverse-square relationship, so increasing the distance from the centre reduces gravity in proportion to the square of that distance.",
-  },
-  {
-    question:
-      "Can this calculator be used for other planets?",
-    answer:
-      "Yes. Enter the mass and radius of any planet, moon, star, or other spherical celestial body to estimate its surface gravitational acceleration.",
-  },
-];
-
 
 
 const relatedCalculators = getRelatedCalculators(

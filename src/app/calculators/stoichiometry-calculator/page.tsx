@@ -47,44 +47,6 @@ export const metadata: Metadata = {
   },
 };
 
-const faqItems = [
-  {
-    question: "What is stoichiometry?",
-    answer:
-      "Stoichiometry uses the coefficients in a balanced chemical equation to calculate quantitative relationships between reactants and products.",
-  },
-  {
-    question:
-      "Does a chemical equation need to be balanced before using this calculator?",
-    answer:
-      "Yes. The coefficients must come from a correctly balanced equation because they define the mole ratio used in the calculation.",
-  },
-  {
-    question:
-      "How do I convert grams to moles in a stoichiometry calculation?",
-    answer:
-      "Divide the substance mass in grams by its molar mass in grams per mole. The calculator performs this conversion when grams are selected.",
-  },
-  {
-    question:
-      "How do I convert the calculated moles into grams?",
-    answer:
-      "Multiply the calculated target moles by the target substance molar mass. Select grams as the target unit and enter the target molar mass.",
-  },
-  {
-    question:
-      "Where do stoichiometric coefficients come from?",
-    answer:
-      "They are the numbers placed before chemical formulas when an equation is balanced. An implied coefficient of one should be entered as 1.",
-  },
-  {
-    question:
-      "Can this calculator identify the limiting reactant?",
-    answer:
-      "This calculator converts one known substance into a target amount. A limiting-reactant calculation requires comparing the available amounts of two or more reactants.",
-  },
-];
-
 
 const faqSchema = createCalculatorFAQSchema("stoichiometry-calculator");
 
