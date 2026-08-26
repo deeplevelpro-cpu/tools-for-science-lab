@@ -13,7 +13,7 @@ describe("acceleration due to gravity page quality", () => {
     expect(source).toContain("canonicalPath");
     expect(source).toContain("createCalculatorSchema");
     expect(source).toContain("createCalculatorBreadcrumbSchema");
-    expect(source).toContain("createFAQSchema");
+    expect(source).toContain("createCalculatorFAQSchema");
     expect(source).toContain('type="application/ld+json"');
   });
 

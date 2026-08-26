@@ -13,7 +13,7 @@ describe("free fall page quality", () => {
       'const pageTitle = "Free Fall Calculator"',
     );
     expect(source).toContain("breadcrumbSchema");
-    expect(source).toContain("createFAQSchema");
+    expect(source).toContain("createCalculatorFAQSchema");
     expect(source).toContain(
       'type="application/ld+json"',
     );
