@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -46,33 +47,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the torque calculator use?",
-    answer:
-      "It uses τ = Fr for a force acting perpendicular to the lever arm, where torque equals force multiplied by perpendicular distance.",
-  },
-  {
-    question:
-      "What is the SI unit of torque?",
-    answer:
-      "The SI unit of torque is the newton-meter, written as N·m.",
-  },
-  {
-    question:
-      "What is the lever arm in a torque calculation?",
-    answer:
-      "The lever arm is the perpendicular distance from the pivot or axis of rotation to the line of action of the force.",
-  },
-  {
-    question:
-      "How do you calculate force from torque?",
-    answer:
-      "Divide torque by the lever-arm distance using F = τ ÷ r.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -392,24 +366,7 @@ export default function TorqueCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Torque calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="torque-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the rotational kinetic energy calculator use?",
-    answer:
-      "It uses KErot = ½Iω², where rotational kinetic energy depends on moment of inertia and the square of angular velocity.",
-  },
-  {
-    question:
-      "What is rotational kinetic energy?",
-    answer:
-      "Rotational kinetic energy is the energy an object has because it is rotating.",
-  },
-  {
-    question:
-      "What is moment of inertia?",
-    answer:
-      "Moment of inertia measures how strongly an object resists changes in rotational motion.",
-  },
-  {
-    question:
-      "How do you calculate angular velocity from rotational kinetic energy?",
-    answer:
-      "Use ω = √(2KErot ÷ I), where KErot is rotational kinetic energy and I is moment of inertia.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -433,24 +407,7 @@ export default function RotationalKineticEnergyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Rotational kinetic energy FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="rotational-kinetic-energy-calculator" />
           </article>
 
           <aside className="article-sidebar">

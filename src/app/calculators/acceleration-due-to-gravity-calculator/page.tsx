@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -420,24 +421,7 @@ export default function AccelerationDueToGravityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Acceleration due to gravity FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="acceleration-due-to-gravity-calculator" />
           </article>
 
           <aside className="article-sidebar">

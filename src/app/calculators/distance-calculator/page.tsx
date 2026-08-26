@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the distance calculator use?",
-    answer:
-      "The calculator uses distance equals speed multiplied by time: d = v × t.",
-  },
-  {
-    question:
-      "Can this calculator find speed?",
-    answer:
-      "Yes. Enter distance and time, then select speed as the unknown variable.",
-  },
-  {
-    question:
-      "Can this calculator find time?",
-    answer:
-      "Yes. Enter distance and speed, then select time as the unknown variable.",
-  },
-  {
-    question:
-      "What units should I use?",
-    answer:
-      "Use compatible units. For example, metres with metres per second and seconds, or kilometres with kilometres per hour and hours.",
-  },
-  {
-    question:
-      "What is the difference between distance and displacement?",
-    answer:
-      "Distance is the total path travelled, while displacement measures the change from initial position to final position and includes direction.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -367,24 +335,7 @@ export default function DistanceCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Distance calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="distance-calculator" />
           </article>
 
           <aside className="article-sidebar">

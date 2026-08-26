@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -40,24 +41,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is percent error?",
-    answer:
-      "Percent error measures how far an experimental value is from an accepted or theoretical value, expressed as a percentage of the accepted value.",
-  },
-  {
-    question: "Can percent error be negative?",
-    answer:
-      "Percent error is normally reported as a non-negative value because the difference is converted to an absolute value before division.",
-  },
-  {
-    question: "Why can the accepted value not be zero?",
-    answer:
-      "The accepted value is used as the denominator. Dividing by zero is undefined, so the standard percent-error formula cannot be used when the accepted value is zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -227,19 +210,7 @@ export default function PercentErrorCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">Percent error FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="percent-error-calculator" />
           </article>
 
           <aside className="article-sidebar">

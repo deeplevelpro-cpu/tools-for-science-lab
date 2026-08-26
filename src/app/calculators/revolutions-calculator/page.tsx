@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the revolutions calculator use?",
-    answer:
-      "It uses N = ft when rotational frequency and time are known, and N = θ / 2π when angular displacement is known.",
-  },
-  {
-    question:
-      "How do you calculate revolutions from frequency and time?",
-    answer:
-      "Multiply rotational frequency in hertz by time in seconds using N = ft.",
-  },
-  {
-    question:
-      "How do you calculate angular displacement from revolutions?",
-    answer:
-      "Multiply the number of revolutions by 2π using θ = 2πN.",
-  },
-  {
-    question:
-      "What units does the revolutions calculator use?",
-    answer:
-      "Revolutions are measured in rev, rotational frequency in hertz, time in seconds, and angular displacement in radians.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -412,24 +386,7 @@ export default function RevolutionsCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Revolutions calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="revolutions-calculator" />
           </article>
 
           <aside className="article-sidebar">

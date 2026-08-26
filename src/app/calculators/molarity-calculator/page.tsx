@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -40,24 +41,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is molarity?",
-    answer:
-      "Molarity is the number of moles of solute dissolved per liter of total solution. It is commonly written as mol/L or M.",
-  },
-  {
-    question: "Do I need to convert milliliters to liters?",
-    answer:
-      "Yes. The standard molarity formula uses solution volume in liters. This calculator converts milliliters to liters automatically.",
-  },
-  {
-    question: "Is solution volume the same as solvent volume?",
-    answer:
-      "No. Molarity uses the final total volume of the solution, not only the original volume of the solvent.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -237,19 +220,7 @@ export default function MolarityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">Molarity FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="molarity-calculator" />
           </article>
 
           <aside className="article-sidebar">

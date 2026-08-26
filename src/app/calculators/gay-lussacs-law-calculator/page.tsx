@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -37,39 +38,6 @@ export const metadata: Metadata = {
       "Science calculators and educational tools for students, teachers, and researchers.",
   },
 };
-
-const faqItems = [
-  {
-    question: "What is Gay-Lussac's law?",
-    answer:
-      "Gay-Lussac's law states that the pressure of a fixed amount of gas is directly proportional to its absolute temperature when volume remains constant.",
-  },
-  {
-    question: "What formula does the calculator use?",
-    answer:
-      "The calculator uses P₁/T₁ = P₂/T₂, where P is gas pressure and T is absolute temperature measured in Kelvin.",
-  },
-  {
-    question: "Must temperature be entered in Kelvin?",
-    answer:
-      "The equation requires absolute temperature. You may enter Kelvin, Celsius, or Fahrenheit because the calculator converts temperatures to Kelvin before solving.",
-  },
-  {
-    question: "Can Gay-Lussac's law use Celsius directly?",
-    answer:
-      "No. Celsius values must be converted to Kelvin before they are used in the pressure-temperature ratio.",
-  },
-  {
-    question: "When does Gay-Lussac's law apply?",
-    answer:
-      "It applies to a fixed amount of gas in a rigid container when volume remains constant and the gas behaves approximately as an ideal gas.",
-  },
-  {
-    question: "Why does gas pressure increase when heated?",
-    answer:
-      "Heating makes gas particles move faster and collide with the rigid container walls more frequently and forcefully, increasing pressure.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: "Gay-Lussac's Law Calculator | Pressure & Temperature",
@@ -440,24 +408,7 @@ export default function GayLussacsLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Gay-Lussac&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="gay-lussacs-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

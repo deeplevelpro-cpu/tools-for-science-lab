@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -46,33 +47,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the impulse calculator use?",
-    answer:
-      "It uses J = FΔt, where impulse equals average force multiplied by the time interval.",
-  },
-  {
-    question:
-      "What is the SI unit of impulse?",
-    answer:
-      "The SI unit of impulse is the newton-second, written as N·s. It is equivalent to kilogram-meter per second.",
-  },
-  {
-    question:
-      "How is impulse related to momentum?",
-    answer:
-      "Impulse equals the change in momentum of an object, so J = Δp.",
-  },
-  {
-    question:
-      "How do you calculate force from impulse?",
-    answer:
-      "Divide impulse by the time interval using F = J ÷ Δt.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -397,24 +371,7 @@ export default function ImpulseCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Impulse calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="impulse-calculator" />
           </article>
 
           <aside className="article-sidebar">

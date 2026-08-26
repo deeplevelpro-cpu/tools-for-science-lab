@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the angular velocity calculator use?",
-    answer:
-      "It uses ω = θ ÷ t, where angular velocity equals angular displacement divided by elapsed time.",
-  },
-  {
-    question:
-      "What is angular velocity?",
-    answer:
-      "Angular velocity measures how quickly angular position changes with time and is commonly expressed in radians per second.",
-  },
-  {
-    question:
-      "How do you calculate angular displacement?",
-    answer:
-      "Multiply angular velocity by time using θ = ωt.",
-  },
-  {
-    question:
-      "How do you calculate time from angular velocity?",
-    answer:
-      "Divide angular displacement by angular velocity using t = θ ÷ ω.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -404,24 +378,7 @@ export default function AngularVelocityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Angular velocity calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="angular-velocity-calculator" />
           </article>
 
           <aside className="article-sidebar">

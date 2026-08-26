@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,39 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What equations does the free fall calculator use?",
-    answer:
-      "For an object released from rest, the calculator uses h = ½gt² for distance, v = gt for velocity from time, t = √(2h/g) for time from height, and v = √(2gh) for velocity from height.",
-  },
-  {
-    question:
-      "What gravity value should I use for Earth?",
-    answer:
-      "The calculator defaults to standard gravity, exactly 9.80665 meters per second squared. A classroom problem may instead specify 9.81 or 9.8 meters per second squared.",
-  },
-  {
-    question:
-      "Does this calculator include air resistance?",
-    answer:
-      "No. It models ideal free fall with constant gravity and no aerodynamic drag. Real objects may fall more slowly, especially when drag is significant.",
-  },
-  {
-    question:
-      "Why must I enter either height or time, but not both?",
-    answer:
-      "Height mode calculates fall time and final velocity from the entered distance. Time mode calculates distance and final velocity from elapsed time. One starting value keeps the selected calculation unambiguous.",
-  },
-  {
-    question:
-      "Can I calculate free fall on the Moon?",
-    answer:
-      "Yes. Enter a suitable lunar gravitational acceleration, such as approximately 1.62 meters per second squared. The same ideal equations apply when gravity is treated as constant.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -496,24 +464,7 @@ export default function FreeFallCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-              <h2 id="faq-heading">
-                Free fall calculator FAQ
-              </h2>
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="free-fall-calculator" />
           </article>
 
           <aside className="article-sidebar">

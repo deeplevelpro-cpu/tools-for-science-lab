@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the elastic potential energy calculator use?",
-    answer:
-      "It uses E = ½kx², where elastic potential energy equals one-half multiplied by the spring constant and the square of the extension.",
-  },
-  {
-    question:
-      "What is the SI unit of elastic potential energy?",
-    answer:
-      "The SI unit is the joule, written as J.",
-  },
-  {
-    question:
-      "What is the unit of spring constant?",
-    answer:
-      "The SI unit of spring constant is newtons per meter, written as N/m.",
-  },
-  {
-    question:
-      "Can the extension be zero or negative?",
-    answer:
-      "This calculator requires a positive extension magnitude when performing the calculation.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -384,24 +358,7 @@ export default function ElasticPotentialEnergyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Elastic potential energy FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="elastic-potential-energy-calculator" />
           </article>
 
           <aside className="article-sidebar">

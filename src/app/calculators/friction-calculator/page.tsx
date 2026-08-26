@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the friction calculator use?",
-    answer:
-      "The calculator uses F = μN, where F is friction force, μ is the coefficient of friction, and N is normal force.",
-  },
-  {
-    question:
-      "What is the difference between static and kinetic friction?",
-    answer:
-      "Static friction resists the start of motion, while kinetic friction acts when two surfaces are already sliding.",
-  },
-  {
-    question:
-      "Does the coefficient of friction have a unit?",
-    answer:
-      "No. The coefficient of friction is a dimensionless ratio.",
-  },
-  {
-    question:
-      "Can static friction be less than μsN?",
-    answer:
-      "Yes. Static friction adjusts up to a maximum value of μsN. The calculator treats μsN as the maximum static friction.",
-  },
-  {
-    question:
-      "Why is normal force needed?",
-    answer:
-      "Friction depends on how strongly the surfaces press together, which is represented by normal force.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -465,27 +433,7 @@ export default function FrictionCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Friction calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="friction-calculator" />
           </article>
 
           <aside className="article-sidebar">

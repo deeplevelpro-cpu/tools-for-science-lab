@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -46,43 +47,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is the combined gas law?",
-    answer:
-      "The combined gas law relates the pressure, volume, and absolute temperature of a fixed amount of gas between two states using P₁V₁/T₁ = P₂V₂/T₂.",
-  },
-  {
-    question:
-      "What variables can this combined gas law calculator solve?",
-    answer:
-      "It can calculate initial or final pressure, volume, or temperature when the other five values are known.",
-  },
-  {
-    question:
-      "Must temperature be converted to Kelvin?",
-    answer:
-      "The equation requires absolute temperature. This calculator accepts Kelvin, Celsius, or Fahrenheit and converts temperature to Kelvin internally.",
-  },
-  {
-    question:
-      "Can different pressure and volume units be mixed?",
-    answer:
-      "Yes. Pressure and volume inputs may use different supported units because the calculator converts them to consistent SI units before solving.",
-  },
-  {
-    question: "When does the combined gas law apply?",
-    answer:
-      "It applies to a fixed amount of gas when pressure, volume, and temperature change and the gas behaves approximately as an ideal gas.",
-  },
-  {
-    question:
-      "Does the combined gas law include Boyle's and Charles's laws?",
-    answer:
-      "Yes. Boyle's law, Charles's law, and Gay-Lussac's law can be obtained as special cases by holding one variable constant.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -357,21 +321,7 @@ export default function CombinedGasLawCalculatorPage() {
               </ul>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions answered</p>
-              <h2 id="faq-heading">
-                Combined gas law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="combined-gas-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

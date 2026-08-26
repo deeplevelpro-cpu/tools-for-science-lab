@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,33 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the average speed calculator use?",
-    answer:
-      "It uses average speed equals total distance divided by total elapsed time: s̄ = d ÷ t.",
-  },
-  {
-    question:
-      "What is the difference between average speed and average velocity?",
-    answer:
-      "Average speed uses total distance travelled, while average velocity uses net displacement and includes direction.",
-  },
-  {
-    question:
-      "Can average speed be negative?",
-    answer:
-      "No. Average speed is a scalar quantity and cannot be negative.",
-  },
-  {
-    question:
-      "Can average speed be zero?",
-    answer:
-      "Yes. Average speed is zero when no distance is travelled during a positive time interval.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -299,24 +273,7 @@ export default function AverageSpeedCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Average speed FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="average-speed-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -45,29 +46,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "How do you calculate molecular weight?",
-    answer:
-      "Multiply the atomic mass of each element by the number of atoms shown in the chemical formula, then add all element contributions.",
-  },
-  {
-    question: "Are molecular weight and molar mass the same?",
-    answer:
-      "They use the same numerical value for a substance. Molecular weight is often treated as a relative value, while molar mass is expressed in grams per mole.",
-  },
-  {
-    question: "Does this calculator support parentheses?",
-    answer:
-      "Yes. It supports grouped formulas such as Ca(OH)2 and nested groups such as K4(ON(SO3)2)2.",
-  },
-  {
-    question: "Can this calculator handle hydrates?",
-    answer:
-      "Yes. Hydrates can be entered using a middle dot, for example CuSO4·5H2O.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -303,24 +281,7 @@ export default function MolecularWeightCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Molecular weight calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="molecular-weight-calculator" />
           </article>
 
           <aside className="article-sidebar">

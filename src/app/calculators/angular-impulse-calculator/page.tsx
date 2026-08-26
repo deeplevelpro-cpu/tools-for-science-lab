@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the angular impulse calculator use?",
-    answer:
-      "It uses J = τt = ΔL, where angular impulse equals torque multiplied by time and also equals the change in angular momentum.",
-  },
-  {
-    question:
-      "What is angular impulse?",
-    answer:
-      "Angular impulse measures the rotational effect of torque acting over a time interval.",
-  },
-  {
-    question:
-      "How do you calculate torque from angular impulse?",
-    answer:
-      "Divide angular impulse by time using τ = J ÷ t.",
-  },
-  {
-    question:
-      "What units are used for angular impulse?",
-    answer:
-      "Angular impulse is measured in newton meter seconds, written as N·m·s.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -400,24 +374,7 @@ export default function AngularImpulseCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Angular impulse calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="angular-impulse-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the centripetal force calculator use?",
-    answer:
-      "It uses Fc = mv² ÷ r, where centripetal force equals mass multiplied by velocity squared and divided by radius.",
-  },
-  {
-    question:
-      "What is centripetal force?",
-    answer:
-      "Centripetal force is the inward net force that keeps an object moving along a circular path.",
-  },
-  {
-    question:
-      "What is the SI unit of centripetal force?",
-    answer:
-      "The SI unit of centripetal force is the newton, written as N.",
-  },
-  {
-    question:
-      "How does velocity affect centripetal force?",
-    answer:
-      "Centripetal force increases with the square of velocity, so doubling velocity produces four times the force when mass and radius remain constant.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -422,24 +396,7 @@ export default function CentripetalForceCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Centripetal force calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="centripetal-force-calculator" />
           </article>
 
           <aside className="article-sidebar">

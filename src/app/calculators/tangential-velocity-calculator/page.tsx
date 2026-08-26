@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the tangential velocity calculator use?",
-    answer:
-      "It uses v = rω, where tangential velocity equals radius multiplied by angular velocity.",
-  },
-  {
-    question:
-      "What is tangential velocity?",
-    answer:
-      "Tangential velocity is the linear speed of an object moving along a circular path.",
-  },
-  {
-    question:
-      "How do you calculate radius from tangential velocity?",
-    answer:
-      "Divide tangential velocity by angular velocity using r = v ÷ ω.",
-  },
-  {
-    question:
-      "What units are used for tangential velocity?",
-    answer:
-      "Tangential velocity is measured in meters per second, radius in meters, and angular velocity in radians per second.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -397,24 +371,7 @@ export default function TangentialVelocityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Tangential velocity calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="tangential-velocity-calculator" />
           </article>
 
           <aside className="article-sidebar">

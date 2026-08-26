@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -42,29 +43,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What formula does the power calculator use?",
-    answer:
-      "It uses P = W ÷ t, where power equals work divided by time.",
-  },
-  {
-    question: "What is the SI unit of power?",
-    answer:
-      "The SI unit of power is the watt, written as W. One watt equals one joule per second.",
-  },
-  {
-    question: "Can power be negative?",
-    answer:
-      "Yes. Negative power can represent energy being removed from a system or work occurring in the opposite defined direction.",
-  },
-  {
-    question: "Can time be zero or negative?",
-    answer:
-      "No. This calculator requires time to be greater than zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -367,24 +345,7 @@ export default function PowerCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Power calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="power-calculator" />
           </article>
 
           <aside className="article-sidebar">

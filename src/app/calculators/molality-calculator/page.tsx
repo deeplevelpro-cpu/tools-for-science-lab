@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -42,29 +43,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is molality?",
-    answer:
-      "Molality is the number of moles of solute per kilogram of solvent. Its standard unit is moles per kilogram, written as mol/kg.",
-  },
-  {
-    question: "Does molality use solution mass or solvent mass?",
-    answer:
-      "Molality uses the mass of the solvent only. Do not use the total mass of the solution, which includes both the solute and solvent.",
-  },
-  {
-    question: "What is the difference between molality and molarity?",
-    answer:
-      "Molality uses moles of solute per kilogram of solvent, while molarity uses moles of solute per liter of total solution.",
-  },
-  {
-    question: "Does temperature affect molality?",
-    answer:
-      "Molality generally remains unchanged with temperature because it depends on mass rather than volume. Molarity can change when solution volume expands or contracts.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -315,19 +293,7 @@ export default function MolalityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">Molality FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="molality-calculator" />
           </article>
 
           <aside className="article-sidebar">

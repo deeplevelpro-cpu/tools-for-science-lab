@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,33 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "How do you propagate uncertainty in addition and subtraction?",
-    answer:
-      "For addition and subtraction, add the absolute uncertainties of the measured values.",
-  },
-  {
-    question:
-      "How do you propagate uncertainty in multiplication and division?",
-    answer:
-      "For multiplication and division, add the relative uncertainties, then multiply the combined relative uncertainty by the absolute result to obtain the propagated absolute uncertainty.",
-  },
-  {
-    question:
-      "Can uncertainty ever be negative?",
-    answer:
-      "No. Absolute uncertainty represents a magnitude and must be zero or positive.",
-  },
-  {
-    question:
-      "Why is relative uncertainty undefined when the result is zero?",
-    answer:
-      "Relative uncertainty requires division by the magnitude of the result, so it is undefined when the calculated result equals zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -354,24 +328,7 @@ export default function UncertaintyPropagationCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Uncertainty propagation FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="uncertainty-propagation-calculator" />
           </article>
 
           <aside className="article-sidebar">

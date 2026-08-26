@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,29 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "How do you convert grams to moles?",
-    answer:
-      "Divide the mass in grams by the molar mass in grams per mole. The formula is n = m ÷ M.",
-  },
-  {
-    question: "How do you calculate mass from moles?",
-    answer:
-      "Multiply the amount in moles by the molar mass. The formula is m = n × M.",
-  },
-  {
-    question: "What units should molar mass use?",
-    answer:
-      "Molar mass should normally be entered in grams per mole, written as g/mol.",
-  },
-  {
-    question: "Can this calculator find molar mass?",
-    answer:
-      "Yes. Divide mass in grams by the number of moles using the formula M = m ÷ n.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -283,26 +261,7 @@ export default function MassMolesCalculatorPage() {
               </ul>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Mass to moles FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="mass-moles-calculator" />
           </article>
 
           <aside className="article-sidebar">

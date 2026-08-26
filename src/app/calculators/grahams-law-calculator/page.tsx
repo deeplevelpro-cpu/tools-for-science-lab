@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -39,39 +40,6 @@ export const metadata: Metadata = {
       "Science calculators and educational tools for students, teachers, and researchers.",
   },
 };
-
-const faqItems = [
-  {
-    question: "What is Graham's law?",
-    answer:
-      "Graham's law states that the rate of diffusion or effusion of a gas is inversely proportional to the square root of its molar mass when the gases are compared under the same conditions.",
-  },
-  {
-    question: "What formula does the calculator use?",
-    answer:
-      "For rates, the calculator uses r₁/r₂ = √(M₂/M₁). For equal diffusion or effusion amounts, it uses t₁/t₂ = √(M₁/M₂), because time is inversely proportional to rate.",
-  },
-  {
-    question: "Can the calculator solve for molar mass?",
-    answer:
-      "Yes. Enter the two rates or times and one known molar mass, then select the other molar mass as the unknown.",
-  },
-  {
-    question: "Can I compare gases using time instead of rate?",
-    answer:
-      "Yes. Select time mode when the gases travel the same distance or when equal quantities effuse. The calculator supports seconds, minutes, and hours.",
-  },
-  {
-    question: "Which gas diffuses or effuses faster?",
-    answer:
-      "The gas with the lower molar mass moves faster under the same temperature and pressure conditions.",
-  },
-  {
-    question: "Does Graham's law work for real gases?",
-    answer:
-      "It gives the best approximation for gases that behave nearly ideally. Large departures can occur at high pressure, low temperature, or when molecular interactions are significant.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: "Graham's Law Calculator | Rate, Time & Molar Mass",
@@ -475,24 +443,7 @@ export default function GrahamsLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Graham&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="grahams-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

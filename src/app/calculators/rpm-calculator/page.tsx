@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the RPM calculator use?",
-    answer:
-      "It uses RPM = 60f, where revolutions per minute equals rotational frequency in hertz multiplied by 60.",
-  },
-  {
-    question:
-      "How do you convert RPM to hertz?",
-    answer:
-      "Divide RPM by 60. For example, 120 RPM equals 2 hertz.",
-  },
-  {
-    question:
-      "How do you convert RPM to angular velocity?",
-    answer:
-      "Use ω = 2π × RPM / 60 to convert revolutions per minute to radians per second.",
-  },
-  {
-    question:
-      "What units does the RPM calculator use?",
-    answer:
-      "Rotational speed is measured in RPM, rotational frequency in hertz, and angular velocity in radians per second.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -376,24 +350,7 @@ export default function RpmCalculatorPage() {
             </p>
           </section>
 
-          <section aria-labelledby="faq-heading">
-            <p className="eyebrow">
-              Questions and answers
-            </p>
-
-            <h2 id="faq-heading">
-              RPM calculator FAQ
-            </h2>
-
-            <div className="faq-list">
-              {faqItems.map((item) => (
-                <details key={item.question}>
-                  <summary>{item.question}</summary>
-                  <p>{item.answer}</p>
-                </details>
-              ))}
-            </div>
-          </section>
+          <CalculatorFAQ slug="rpm-calculator" />
         </article>
 
           <aside className="article-sidebar">

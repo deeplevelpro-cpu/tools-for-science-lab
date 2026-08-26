@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,33 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the average velocity calculator use?",
-    answer:
-      "It uses average velocity equals displacement divided by elapsed time: v̄ = Δx ÷ Δt.",
-  },
-  {
-    question:
-      "What is the difference between average velocity and average speed?",
-    answer:
-      "Average velocity uses displacement and includes direction, while average speed uses total distance travelled and has no direction.",
-  },
-  {
-    question:
-      "Can average velocity be negative?",
-    answer:
-      "Yes. A negative average velocity means the net displacement is in the selected negative direction.",
-  },
-  {
-    question:
-      "Can average velocity be zero?",
-    answer:
-      "Yes. Average velocity is zero when final position equals initial position, even if the object travelled some distance.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -321,24 +295,7 @@ export default function AverageVelocityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Average velocity FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="average-velocity-calculator" />
           </article>
 
           <aside className="article-sidebar">

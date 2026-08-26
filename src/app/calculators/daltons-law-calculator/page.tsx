@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -39,39 +40,6 @@ export const metadata: Metadata = {
       "Science calculators and educational tools for students, teachers, and researchers.",
   },
 };
-
-const faqItems = [
-  {
-    question: "What is Dalton's law of partial pressures?",
-    answer:
-      "Dalton's law states that the total pressure of a mixture of nonreacting gases equals the sum of the partial pressures contributed by the individual gases.",
-  },
-  {
-    question: "What formula does the calculator use?",
-    answer:
-      "For total pressure, the calculator uses Ptotal = P1 + P2 + ... + Pn. For a missing partial pressure, it subtracts the sum of the known partial pressures from the total pressure.",
-  },
-  {
-    question: "What is partial pressure?",
-    answer:
-      "Partial pressure is the pressure that one gas in a mixture would exert if it occupied the same container alone at the same temperature.",
-  },
-  {
-    question: "Can the partial pressures use different units?",
-    answer:
-      "Yes. Each pressure may use Pa, kPa, bar, atm, or mmHg. The calculator converts every value to pascals internally before returning the result in your selected unit.",
-  },
-  {
-    question: "How do I calculate a missing partial pressure?",
-    answer:
-      "Subtract the sum of all known partial pressures from the total pressure. The total pressure must be greater than the combined known partial pressures.",
-  },
-  {
-    question: "When does Dalton's law apply?",
-    answer:
-      "Dalton's law works best for mixtures of nonreacting gases that behave approximately as ideal gases. Real gases may deviate at high pressures or near condensation.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: "Dalton's Law Calculator | Total & Partial Pressure",
@@ -485,24 +453,7 @@ export default function DaltonsLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Dalton&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="daltons-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

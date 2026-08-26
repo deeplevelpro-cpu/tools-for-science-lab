@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,29 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What does the slope represent?",
-    answer:
-      "The slope represents the predicted change in y for each one-unit increase in x.",
-  },
-  {
-    question: "What does the intercept represent?",
-    answer:
-      "The intercept is the predicted y value when x equals zero, although it may not always have a meaningful experimental interpretation.",
-  },
-  {
-    question: "What does the correlation coefficient mean?",
-    answer:
-      "The correlation coefficient r describes the direction and strength of a linear relationship, with values closer to minus one or plus one indicating a stronger linear association.",
-  },
-  {
-    question: "What does R squared mean?",
-    answer:
-      "R squared is the proportion of variation in y explained by the fitted linear model.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -373,24 +351,7 @@ export default function LinearRegressionCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Linear regression FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="linear-regression-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -40,24 +41,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What does M₁V₁ = M₂V₂ mean?",
-    answer:
-      "M₁ and V₁ are the initial concentration and volume. M₂ and V₂ are the final concentration and volume after dilution.",
-  },
-  {
-    question: "Must the volume units be the same?",
-    answer:
-      "Yes. Initial and final volume must use the same unit, such as both milliliters or both liters.",
-  },
-  {
-    question: "Does dilution change the amount of solute?",
-    answer:
-      "No. The dilution formula assumes that the amount of dissolved solute remains constant while additional solvent changes the total volume and concentration.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -236,19 +219,7 @@ export default function DilutionCalculatorPage() {
               </ul>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">Dilution FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="dilution-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,33 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the force calculator use?",
-    answer:
-      "It uses Newton's second law: force equals mass multiplied by acceleration, F = m × a.",
-  },
-  {
-    question:
-      "What is one newton?",
-    answer:
-      "One newton is the force needed to accelerate one kilogram of mass by one meter per second squared.",
-  },
-  {
-    question:
-      "Can force and acceleration be negative?",
-    answer:
-      "Yes. A negative sign indicates direction relative to the chosen positive axis.",
-  },
-  {
-    question:
-      "What units should I use?",
-    answer:
-      "Use kilograms for mass, meters per second squared for acceleration, and newtons for force.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -391,24 +365,7 @@ export default function ForceCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Force calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="force-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,33 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the displacement calculator use?",
-    answer:
-      "It uses displacement equals final position minus initial position: Δx = x₂ − x₁.",
-  },
-  {
-    question:
-      "Can displacement be negative?",
-    answer:
-      "Yes. Negative displacement means the final position is in the negative direction relative to the initial position.",
-  },
-  {
-    question:
-      "Can displacement be zero?",
-    answer:
-      "Yes. Displacement is zero when the final position is the same as the initial position.",
-  },
-  {
-    question:
-      "What is the difference between distance and displacement?",
-    answer:
-      "Distance measures total path length, while displacement measures the straight-line change in position and includes direction.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -316,24 +290,7 @@ export default function DisplacementCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Displacement FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="displacement-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -42,29 +43,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What formula does the work calculator use?",
-    answer:
-      "It uses W = F × d for a constant force acting parallel or opposite to the displacement.",
-  },
-  {
-    question: "What is the SI unit of work?",
-    answer:
-      "The SI unit of work is the joule, written as J. One joule equals one newton-meter.",
-  },
-  {
-    question: "Can work be negative?",
-    answer:
-      "Yes. Work is negative when the force acts opposite to the displacement.",
-  },
-  {
-    question: "Can distance be negative?",
-    answer:
-      "This calculator uses positive distance magnitude. Direction is represented by the sign of the force and work.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -370,24 +348,7 @@ export default function WorkCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Work calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="work-calculator" />
           </article>
 
           <aside className="article-sidebar">

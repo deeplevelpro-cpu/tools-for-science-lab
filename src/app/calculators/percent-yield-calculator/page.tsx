@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -45,41 +46,6 @@ export const metadata: Metadata = {
     description,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is percent yield?",
-    answer:
-      "Percent yield compares the amount of product actually obtained in an experiment with the maximum theoretical amount predicted by stoichiometry.",
-  },
-  {
-    question: "What is the percent yield formula?",
-    answer:
-      "Percent yield equals actual yield divided by theoretical yield, multiplied by 100.",
-  },
-  {
-    question:
-      "What is the difference between actual and theoretical yield?",
-    answer:
-      "Actual yield is the measured amount of product obtained experimentally. Theoretical yield is the maximum amount that should form according to the balanced chemical equation.",
-  },
-  {
-    question: "Can percent yield be greater than 100%?",
-    answer:
-      "A calculated yield can exceed 100%, but this usually indicates retained moisture, impurities, incomplete drying, contamination, or a measurement error.",
-  },
-  {
-    question:
-      "Do actual and theoretical yield need the same unit?",
-    answer:
-      "Yes. Both values must use the same unit, such as grams, moles, milligrams, or kilograms, so their ratio is valid.",
-  },
-  {
-    question: "Why is percent yield usually below 100%?",
-    answer:
-      "Product loss, incomplete reactions, competing side reactions, transfer losses, purification steps, and measurement uncertainty can all reduce actual yield.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: title,
@@ -438,22 +404,7 @@ export default function PercentYieldCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-
-              <h2 id="faq-heading">
-                Percent yield calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="percent-yield-calculator" />
           </article>
 
           <aside className="article-sidebar">

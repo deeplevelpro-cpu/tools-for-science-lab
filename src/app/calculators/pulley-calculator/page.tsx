@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What does the pulley calculator calculate?",
-    answer:
-      "It calculates load force, ideal mechanical advantage, effort force, and input rope distance for an ideal pulley system.",
-  },
-  {
-    question:
-      "How do you calculate pulley mechanical advantage?",
-    answer:
-      "For an ideal pulley system, mechanical advantage equals the number of rope segments directly supporting the moving load.",
-  },
-  {
-    question:
-      "How do you calculate effort force in a pulley?",
-    answer:
-      "Divide the load force by the ideal mechanical advantage using Fe = W ÷ IMA.",
-  },
-  {
-    question:
-      "Why must more rope be pulled when mechanical advantage increases?",
-    answer:
-      "An ideal pulley reduces the required force by increasing the input distance. The rope distance equals mechanical advantage multiplied by load distance.",
-  },
-  {
-    question:
-      "Does this calculator include pulley friction?",
-    answer:
-      "No. It assumes massless rope, massless pulleys, and no friction, so real systems may require more effort force.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -439,27 +407,7 @@ export default function PulleyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Pulley calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="pulley-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,29 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "How is the mean calculated?",
-    answer:
-      "The mean is calculated by adding all values and dividing the sum by the total number of values.",
-  },
-  {
-    question: "How is the median calculated?",
-    answer:
-      "The values are sorted from smallest to largest. For an odd number of values, the median is the middle value. For an even number, it is the mean of the two middle values.",
-  },
-  {
-    question: "Can a dataset have more than one mode?",
-    answer:
-      "Yes. A dataset is multimodal when two or more values share the highest frequency.",
-  },
-  {
-    question: "What happens when every value occurs once?",
-    answer:
-      "The dataset has no mode because no value occurs more frequently than the others.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -352,24 +330,7 @@ export default function MeanMedianModeCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Mean, median, and mode FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="mean-median-mode-calculator" />
           </article>
 
           <aside className="article-sidebar">

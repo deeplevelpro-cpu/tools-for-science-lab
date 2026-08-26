@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -37,39 +38,6 @@ export const metadata: Metadata = {
       "Science calculators and educational tools for students, teachers, and researchers.",
   },
 };
-
-const faqItems = [
-  {
-    question: "What is Charles's law?",
-    answer:
-      "Charles's law states that the volume of a fixed amount of gas is directly proportional to its absolute temperature when pressure remains constant.",
-  },
-  {
-    question: "What formula does the calculator use?",
-    answer:
-      "The calculator uses V₁/T₁ = V₂/T₂, where V is gas volume and T is absolute temperature measured in Kelvin.",
-  },
-  {
-    question: "Must temperature be entered in Kelvin?",
-    answer:
-      "The equation requires absolute temperature. You may enter Kelvin, Celsius, or Fahrenheit because the calculator converts temperatures to Kelvin before solving.",
-  },
-  {
-    question: "Can Charles's law use Celsius directly?",
-    answer:
-      "No. Celsius values must first be converted to Kelvin. Using Celsius directly in the ratio produces an incorrect result.",
-  },
-  {
-    question: "When does Charles's law apply?",
-    answer:
-      "It applies when the gas pressure and amount of gas remain constant and the gas behaves approximately as an ideal gas.",
-  },
-  {
-    question: "Why does gas volume increase when heated?",
-    answer:
-      "At constant pressure, faster-moving heated gas particles require more space, so the gas expands as its absolute temperature rises.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: "Charles's Law Calculator | Volume & Temperature",
@@ -459,24 +427,7 @@ export default function CharlesLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Charles&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="charles-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

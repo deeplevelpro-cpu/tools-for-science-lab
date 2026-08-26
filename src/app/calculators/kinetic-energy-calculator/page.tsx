@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,33 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the kinetic energy calculator use?",
-    answer:
-      "It uses the classical kinetic energy formula: KE = ½mv², where m is mass and v is speed.",
-  },
-  {
-    question:
-      "What is the SI unit of kinetic energy?",
-    answer:
-      "The SI unit of kinetic energy is the joule, written as J.",
-  },
-  {
-    question:
-      "Can kinetic energy be negative?",
-    answer:
-      "No. Classical kinetic energy cannot be negative because mass is positive and speed is squared.",
-  },
-  {
-    question:
-      "Can speed be negative?",
-    answer:
-      "No. Speed is a magnitude and must be zero or greater. Direction is represented by velocity, not speed.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -397,24 +371,7 @@ export default function KineticEnergyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Kinetic energy calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="kinetic-energy-calculator" />
           </article>
 
           <aside className="article-sidebar">

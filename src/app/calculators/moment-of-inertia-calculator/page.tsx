@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is moment of inertia?",
-    answer:
-      "Moment of inertia measures how strongly an object resists changes in rotational motion about a selected axis.",
-  },
-  {
-    question:
-      "Which shapes does this calculator support?",
-    answer:
-      "It supports point masses, solid disks or cylinders, thin hoops, solid spheres, thin spherical shells, rods through the center, and rods through one end.",
-  },
-  {
-    question:
-      "What unit is used for moment of inertia?",
-    answer:
-      "The standard SI unit is kilogram square meter, written as kg·m².",
-  },
-  {
-    question:
-      "Why does the axis of rotation matter?",
-    answer:
-      "Moment of inertia changes when the axis changes because the mass distribution relative to that axis also changes.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -448,24 +422,7 @@ export default function MomentOfInertiaCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Moment of inertia calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="moment-of-inertia-calculator" />
           </article>
 
           <aside className="article-sidebar">

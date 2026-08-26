@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -49,39 +50,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the ideal gas law calculator use?",
-    answer:
-      "The calculator uses PV = nRT, where P is pressure, V is volume, n is the amount of gas in moles, R is the universal gas constant, and T is absolute temperature.",
-  },
-  {
-    question:
-      "Which gas constant does the calculator use?",
-    answer:
-      "The calculator converts inputs to SI units and uses R = 8.31446261815324 joules per mole-kelvin.",
-  },
-  {
-    question:
-      "Can I enter temperature in Celsius or Fahrenheit?",
-    answer:
-      "Yes. The calculator accepts kelvin, degrees Celsius, and degrees Fahrenheit, then converts the temperature to kelvin internally.",
-  },
-  {
-    question:
-      "Can the ideal gas law solve for pressure or volume?",
-    answer:
-      "Yes. It can calculate pressure, volume, amount in moles, or temperature when the other three values are known.",
-  },
-  {
-    question:
-      "When is the ideal gas law inaccurate?",
-    answer:
-      "The ideal gas law becomes less accurate for real gases at very high pressures, very low temperatures, or near condensation, where intermolecular forces and molecular volume matter.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -512,24 +480,7 @@ export default function IdealGasLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Ideal gas law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="ideal-gas-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

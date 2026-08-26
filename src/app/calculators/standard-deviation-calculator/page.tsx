@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,31 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is the difference between sample and population standard deviation?",
-    answer:
-      "Population standard deviation divides by n and is used when the dataset represents the entire population. Sample standard deviation divides by n minus 1 and is used when the data is a sample from a larger population.",
-  },
-  {
-    question: "What does a low standard deviation mean?",
-    answer:
-      "A low standard deviation means the values are closely grouped around the mean and show relatively little variation.",
-  },
-  {
-    question: "What does a high standard deviation mean?",
-    answer:
-      "A high standard deviation means the values are more widely spread around the mean and show greater variation.",
-  },
-  {
-    question:
-      "Can standard deviation be calculated from one value?",
-    answer:
-      "Population standard deviation for one value is zero, but sample standard deviation is not defined because n minus 1 would be zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -333,24 +309,7 @@ export default function StandardDeviationCalculatorPage() {
               </ul>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Standard deviation FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="standard-deviation-calculator" />
           </article>
 
           <aside className="article-sidebar">

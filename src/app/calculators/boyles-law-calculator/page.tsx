@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,34 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What formula does the Boyle's law calculator use?",
-    answer:
-      "The calculator uses P₁V₁ = P₂V₂, where P₁ and V₁ are the initial pressure and volume and P₂ and V₂ are the final pressure and volume.",
-  },
-  {
-    question: "What must remain constant when using Boyle's law?",
-    answer:
-      "The amount of gas and its temperature must remain constant. Boyle's law describes an isothermal change for a fixed quantity of gas.",
-  },
-  {
-    question: "Can Boyle's law calculate any of the four variables?",
-    answer:
-      "Yes. Enter three known positive values and select initial pressure, initial volume, final pressure, or final volume as the unknown.",
-  },
-  {
-    question: "Can I use different pressure and volume units?",
-    answer:
-      "Yes. The calculator converts supported pressure and volume units internally before applying Boyle's law and returns the answer in your selected output unit.",
-  },
-  {
-    question: "Why are pressure and volume inversely proportional?",
-    answer:
-      "At constant temperature, reducing a gas volume increases the frequency of particle collisions with the container walls, so its pressure rises.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -494,24 +467,7 @@ export default function BoylesLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Boyle&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="boyles-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

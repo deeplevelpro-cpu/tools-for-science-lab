@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -42,26 +43,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is the difference between percent difference and percent error?",
-    answer:
-      "Percent difference compares two measured values using their average as the denominator. Percent error compares an experimental value with an accepted or theoretical value.",
-  },
-  {
-    question: "Can percent difference be greater than 100 percent?",
-    answer:
-      "Yes. Percent difference can exceed 100 percent when two values are far apart relative to their average magnitude.",
-  },
-  {
-    question:
-      "Why is percent difference undefined when both values are zero?",
-    answer:
-      "When both values are zero, their average is also zero. The formula would require division by zero, which is undefined.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -218,21 +199,7 @@ export default function PercentDifferenceCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">
-                Percent difference FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="percent-difference-calculator" />
           </article>
 
           <aside className="article-sidebar">

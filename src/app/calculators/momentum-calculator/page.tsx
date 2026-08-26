@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,33 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the momentum calculator use?",
-    answer:
-      "It uses the linear momentum formula: momentum equals mass multiplied by velocity, p = m × v.",
-  },
-  {
-    question:
-      "What is the SI unit of momentum?",
-    answer:
-      "The SI unit of momentum is kilogram-meter per second, written as kg·m/s.",
-  },
-  {
-    question:
-      "Can momentum be negative?",
-    answer:
-      "Yes. Negative momentum means the object is moving in the direction defined as negative.",
-  },
-  {
-    question:
-      "Can mass be negative?",
-    answer:
-      "No. Mass must be greater than zero in this calculator.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -394,24 +368,7 @@ export default function MomentumCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Momentum calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="momentum-calculator" />
           </article>
 
           <aside className="article-sidebar">

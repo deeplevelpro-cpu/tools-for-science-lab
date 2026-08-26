@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,33 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is the coefficient of variation?",
-    answer:
-      "The coefficient of variation is the standard deviation divided by the absolute mean, multiplied by 100 percent. It expresses spread relative to the size of the mean.",
-  },
-  {
-    question:
-      "What does a lower coefficient of variation mean?",
-    answer:
-      "A lower coefficient of variation generally indicates that the values are more consistent relative to their mean.",
-  },
-  {
-    question:
-      "Should I use sample or population standard deviation?",
-    answer:
-      "Use sample standard deviation when the observations represent a sample from a larger population. Use population standard deviation when the dataset represents the complete population being analyzed.",
-  },
-  {
-    question:
-      "Why is coefficient of variation undefined when the mean is zero?",
-    answer:
-      "The formula divides standard deviation by the mean. Division by zero is undefined, so coefficient of variation cannot be calculated when the mean is zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -344,24 +318,7 @@ export default function CoefficientVariationCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Coefficient of variation FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="coefficient-variation-calculator" />
           </article>
 
           <aside className="article-sidebar">

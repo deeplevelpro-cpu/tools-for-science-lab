@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -39,39 +40,6 @@ export const metadata: Metadata = {
       "Science calculators and educational tools for students, teachers, and researchers.",
   },
 };
-
-const faqItems = [
-  {
-    question: "What is Avogadro's law?",
-    answer:
-      "Avogadro's law states that equal volumes of gases at the same temperature and pressure contain equal numbers of particles. For a changing gas sample at constant temperature and pressure, volume is directly proportional to the amount of gas.",
-  },
-  {
-    question: "What formula does the calculator use?",
-    answer:
-      "The calculator uses V₁/n₁ = V₂/n₂, where V represents gas volume and n represents the amount of gas in moles.",
-  },
-  {
-    question: "What conditions must remain constant?",
-    answer:
-      "Temperature and pressure must remain constant while the amount and volume of gas change.",
-  },
-  {
-    question: "Can the calculator use millimoles?",
-    answer:
-      "Yes. You can use moles or millimoles for either gas amount. The calculator converts the inputs to moles before solving.",
-  },
-  {
-    question: "Can different volume units be mixed?",
-    answer:
-      "Yes. Cubic meters, liters, and milliliters can be mixed because the calculator converts all volume values before applying the equation.",
-  },
-  {
-    question: "What happens when the amount of gas doubles?",
-    answer:
-      "At constant temperature and pressure, doubling the amount of gas doubles its volume because volume and amount are directly proportional.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: "Avogadro's Law Calculator | Volume & Moles",
@@ -472,24 +440,7 @@ export default function AvogadrosLawCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Avogadro&apos;s law calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="avogadros-law-calculator" />
           </article>
 
           <aside className="article-sidebar">

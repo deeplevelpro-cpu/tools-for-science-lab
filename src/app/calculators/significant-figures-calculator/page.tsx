@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,29 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What are significant figures?",
-    answer:
-      "Significant figures are the meaningful digits in a measured or calculated value that communicate its precision.",
-  },
-  {
-    question: "Are leading zeros significant?",
-    answer:
-      "No. Zeros before the first nonzero digit only locate the decimal point and are not significant.",
-  },
-  {
-    question: "Are trailing zeros significant?",
-    answer:
-      "Trailing zeros after a decimal point are significant. Trailing zeros in a whole number may be ambiguous unless a decimal point or scientific notation clarifies them.",
-  },
-  {
-    question: "When should a laboratory result be rounded?",
-    answer:
-      "Keep extra digits during intermediate calculations and round the final reported result according to the required precision.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -282,24 +260,7 @@ export default function SignificantFiguresCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Significant figures FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="significant-figures-calculator" />
           </article>
 
           <aside className="article-sidebar">

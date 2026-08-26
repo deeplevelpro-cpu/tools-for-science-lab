@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -45,43 +46,6 @@ export const metadata: Metadata = {
     description,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is a limiting reactant?",
-    answer:
-      "The limiting reactant is the substance consumed first in a chemical reaction. It determines the maximum amount of product that can form.",
-  },
-  {
-    question:
-      "How do you identify the limiting reactant?",
-    answer:
-      "Convert each reactant amount to moles, divide each amount by its balanced-equation coefficient, and compare the resulting reaction extents. The smallest value identifies the limiting reactant.",
-  },
-  {
-    question:
-      "Does the chemical equation need to be balanced?",
-    answer:
-      "Yes. Limiting-reactant calculations depend on the mole ratios represented by coefficients in a correctly balanced chemical equation.",
-  },
-  {
-    question:
-      "Can reactant amounts be entered in grams?",
-    answer:
-      "Yes. Enter the molar mass for every reactant supplied in grams so the calculator can convert mass to moles before comparing reactants.",
-  },
-  {
-    question: "What is an excess reactant?",
-    answer:
-      "An excess reactant is present in more than the stoichiometric amount required. Some of it remains after the limiting reactant is consumed.",
-  },
-  {
-    question:
-      "Is calculated product yield the same as actual yield?",
-    answer:
-      "No. The calculator gives theoretical yield, which assumes complete reaction. Actual laboratory yield may be lower because of incomplete reactions, side reactions, or product loss.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: title,
@@ -376,24 +340,7 @@ export default function LimitingReactantCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Limiting reactant calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="limiting-reactant-calculator" />
           </article>
 
           <aside className="article-sidebar">

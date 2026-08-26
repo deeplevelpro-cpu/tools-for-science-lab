@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,33 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is average rate of change?",
-    answer:
-      "Average rate of change is the change in the measured value divided by the change in the corresponding independent variable.",
-  },
-  {
-    question:
-      "Is average rate of change the same as slope?",
-    answer:
-      "Between two points, average rate of change is the slope of the secant line connecting those points.",
-  },
-  {
-    question:
-      "How is percentage change calculated?",
-    answer:
-      "Percentage change equals final value minus initial value, divided by the absolute initial value, multiplied by 100 percent.",
-  },
-  {
-    question:
-      "Why is percentage change undefined when the initial value is zero?",
-    answer:
-      "Percentage change requires division by the initial value, so it is undefined when the initial value equals zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -372,24 +346,7 @@ export default function RateOfChangeCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Rate of change FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="rate-of-change-calculator" />
           </article>
 
           <aside className="article-sidebar">

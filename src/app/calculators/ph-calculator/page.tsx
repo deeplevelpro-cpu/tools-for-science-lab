@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,29 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What formula is used to calculate pH?",
-    answer:
-      "pH is calculated using pH = −log₁₀[H⁺], where [H⁺] is the hydrogen-ion concentration in moles per liter.",
-  },
-  {
-    question: "How are pH and pOH related?",
-    answer:
-      "At 25 degrees Celsius, pH and pOH add to 14. Therefore, pH = 14 − pOH and pOH = 14 − pH.",
-  },
-  {
-    question: "What pH value is neutral?",
-    answer:
-      "At 25 degrees Celsius, a solution with pH 7 is neutral. Values below 7 are acidic and values above 7 are basic.",
-  },
-  {
-    question: "Can pH be below 0 or above 14?",
-    answer:
-      "Yes. Highly concentrated solutions can have pH values below 0 or above 14, although the 0 to 14 range is commonly used for typical dilute aqueous solutions.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -329,19 +307,7 @@ export default function PhCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">pH calculator FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="ph-calculator" />
           </article>
 
           <aside className="article-sidebar">

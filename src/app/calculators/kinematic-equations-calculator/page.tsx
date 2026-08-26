@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -45,45 +46,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What are the SUVAT variables?",
-    answer:
-      "SUVAT represents displacement, initial velocity, final velocity, acceleration, and time. These variables describe motion with constant acceleration.",
-  },
-  {
-    question:
-      "Which kinematic equations does this calculator use?",
-    answer:
-      "The calculator uses v = u + at, s = ut + ½at², v² = u² + 2as, and s = ½(u + v)t.",
-  },
-  {
-    question:
-      "Can the calculator solve for any SUVAT variable?",
-    answer:
-      "It can solve variables supported by the selected equation. Choose an equation that contains the unknown variable and enter the remaining known values.",
-  },
-  {
-    question:
-      "Can acceleration be negative?",
-    answer:
-      "Yes. Negative acceleration can represent deceleration or acceleration in the selected negative direction.",
-  },
-  {
-    question:
-      "Why might a velocity equation have no real solution?",
-    answer:
-      "The values may produce a negative quantity under a square root in v² = u² + 2as. In that case, no real-valued velocity satisfies the supplied data.",
-  },
-  {
-    question:
-      "When are SUVAT equations valid?",
-    answer:
-      "SUVAT equations are valid when acceleration is constant during the motion interval.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -468,24 +430,7 @@ export default function KinematicEquationsCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Kinematic equations FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="kinematic-equations-calculator" />
           </article>
 
           <aside className="article-sidebar">

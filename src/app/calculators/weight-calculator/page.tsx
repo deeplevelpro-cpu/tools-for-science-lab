@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the weight calculator use?",
-    answer:
-      "The calculator uses W = m × g, where W is weight in newtons, m is mass in kilograms, and g is gravitational acceleration in meters per second squared.",
-  },
-  {
-    question:
-      "What is the difference between mass and weight?",
-    answer:
-      "Mass measures the amount of matter in an object and remains constant, while weight is the gravitational force acting on that mass and changes when gravity changes.",
-  },
-  {
-    question:
-      "What value should I use for gravity on Earth?",
-    answer:
-      "Standard Earth gravity is 9.80665 meters per second squared. For many classroom calculations, 9.81 meters per second squared is sufficiently precise.",
-  },
-  {
-    question:
-      "Does an object's mass change on the Moon?",
-    answer:
-      "No. Mass remains the same, but weight decreases because the Moon's gravitational acceleration is much lower than Earth's.",
-  },
-  {
-    question:
-      "Is weight measured in kilograms or newtons?",
-    answer:
-      "In physics, weight is a force and is measured in newtons. Kilograms measure mass, not weight.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -531,27 +499,7 @@ export default function WeightCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Weight calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="weight-calculator" />
           </article>
 
           <aside className="article-sidebar">

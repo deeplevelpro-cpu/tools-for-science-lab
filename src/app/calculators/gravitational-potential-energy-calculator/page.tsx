@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the gravitational potential energy calculator use?",
-    answer:
-      "It uses PE = mgh, where potential energy equals mass multiplied by gravitational acceleration and height.",
-  },
-  {
-    question:
-      "What is the SI unit of gravitational potential energy?",
-    answer:
-      "The SI unit is the joule, written as J.",
-  },
-  {
-    question:
-      "What value should I use for gravitational acceleration on Earth?",
-    answer:
-      "A common approximate value is 9.8 meters per second squared.",
-  },
-  {
-    question:
-      "Can mass, gravity, or height be zero?",
-    answer:
-      "No. This calculator requires mass, gravitational acceleration, and height to be greater than zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -402,24 +376,7 @@ export default function GravitationalPotentialEnergyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Gravitational potential energy FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="gravitational-potential-energy-calculator" />
           </article>
 
           <aside className="article-sidebar">

@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the rotational work calculator use?",
-    answer:
-      "It uses W = τθ, where rotational work equals torque multiplied by angular displacement in radians.",
-  },
-  {
-    question:
-      "What is rotational work?",
-    answer:
-      "Rotational work is the energy transferred when a torque rotates an object through an angular displacement.",
-  },
-  {
-    question:
-      "How do you calculate torque from rotational work?",
-    answer:
-      "Divide rotational work by angular displacement using τ = W ÷ θ.",
-  },
-  {
-    question:
-      "What units are used for rotational work?",
-    answer:
-      "Rotational work is measured in joules, torque in newton meters, and angular displacement in radians.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -394,24 +368,7 @@ export default function RotationalWorkCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Rotational work calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="rotational-work-calculator" />
           </article>
 
           <aside className="article-sidebar">

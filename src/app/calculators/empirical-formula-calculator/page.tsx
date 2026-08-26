@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -50,44 +51,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is an empirical formula?",
-    answer:
-      "An empirical formula shows the simplest whole-number ratio of atoms of each element in a compound. It does not necessarily show the actual number of atoms in one molecule.",
-  },
-  {
-    question:
-      "How do you calculate an empirical formula from percentages?",
-    answer:
-      "Treat each percentage as grams in a 100-gram sample, divide every amount by its element atomic mass, divide all mole values by the smallest value, and convert the ratios to whole numbers.",
-  },
-  {
-    question:
-      "Can I calculate an empirical formula from masses?",
-    answer:
-      "Yes. Enter the mass of every element using the same unit. Because the calculation uses mass ratios, grams, milligrams, or another consistent mass unit can be used.",
-  },
-  {
-    question:
-      "What if an element ratio is close to 1.5 or 1.33?",
-    answer:
-      "Multiply every normalized ratio by the same small integer. A ratio near 1.5 normally requires multiplying by 2, while a ratio near 1.33 commonly requires multiplying by 3.",
-  },
-  {
-    question:
-      "What is the difference between empirical and molecular formulas?",
-    answer:
-      "The empirical formula gives the simplest atom ratio. The molecular formula gives the actual number of each type of atom and is a whole-number multiple of the empirical formula.",
-  },
-  {
-    question:
-      "Why must percentage composition total about 100 percent?",
-    answer:
-      "A complete percentage composition represents all elements in the compound. Small differences from 100 percent can occur because measured values have been rounded.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: title,
@@ -439,24 +402,7 @@ export default function EmpiricalFormulaCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Empirical formula calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="empirical-formula-calculator" />
           </article>
 
           <aside className="article-sidebar">

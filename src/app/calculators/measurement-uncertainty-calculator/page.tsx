@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,29 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is absolute uncertainty?",
-    answer:
-      "Absolute uncertainty is the plus-or-minus amount attached to a measured value and is normally written in the same unit as the measurement.",
-  },
-  {
-    question: "How is relative uncertainty calculated?",
-    answer:
-      "Relative uncertainty equals absolute uncertainty divided by the absolute measured value.",
-  },
-  {
-    question: "How is percentage uncertainty calculated?",
-    answer:
-      "Percentage uncertainty equals relative uncertainty multiplied by 100 percent.",
-  },
-  {
-    question: "Why can the measured value not be zero?",
-    answer:
-      "Relative and percentage uncertainty require division by the measured value, so they are undefined when the measured value is zero.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -365,24 +343,7 @@ export default function MeasurementUncertaintyCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Measurement uncertainty FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="measurement-uncertainty-calculator" />
           </article>
 
           <aside className="article-sidebar">

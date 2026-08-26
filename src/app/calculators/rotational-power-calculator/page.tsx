@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -47,33 +48,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What formula does the rotational power calculator use?",
-    answer:
-      "It uses P = τω, where rotational power equals torque multiplied by angular velocity.",
-  },
-  {
-    question:
-      "What is rotational power?",
-    answer:
-      "Rotational power is the rate at which rotational work is performed or rotational energy is transferred.",
-  },
-  {
-    question:
-      "How do you calculate torque from rotational power?",
-    answer:
-      "Divide rotational power by angular velocity using τ = P ÷ ω.",
-  },
-  {
-    question:
-      "What units are used for rotational power?",
-    answer:
-      "Use watts for power, newton-meters for torque, and radians per second for angular velocity.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -398,24 +372,7 @@ export default function RotationalPowerCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Rotational power calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="rotational-power-calculator" />
           </article>
 
           <aside className="article-sidebar">

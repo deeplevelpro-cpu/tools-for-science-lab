@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What is normal force?",
-    answer:
-      "Normal force is the support force exerted by a surface on an object in contact with it. It acts perpendicular to the surface.",
-  },
-  {
-    question:
-      "What formula is used on a horizontal surface?",
-    answer:
-      "For a horizontal surface, the calculator uses N = mg + Fdown − Fup, where downward forces increase normal force and upward forces reduce it.",
-  },
-  {
-    question:
-      "What formula is used on an inclined surface?",
-    answer:
-      "For an incline, the calculator uses N = mg cos(θ) + Fdown − Fup.",
-  },
-  {
-    question:
-      "Is normal force always equal to weight?",
-    answer:
-      "No. Normal force equals weight only on a horizontal surface when there are no additional vertical forces and no vertical acceleration.",
-  },
-  {
-    question:
-      "What happens if the upward force is greater than the supported weight?",
-    answer:
-      "The object loses contact with the surface, so the normal force becomes zero rather than negative.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -521,27 +489,7 @@ export default function NormalForceCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Normal force calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="normal-force-calculator" />
           </article>
 
           <aside className="article-sidebar">

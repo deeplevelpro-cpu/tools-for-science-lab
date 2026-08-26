@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -43,24 +44,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question: "What is the formula for density?",
-    answer:
-      "Density is calculated by dividing mass by volume. The formula is density equals mass divided by volume.",
-  },
-  {
-    question: "Can this calculator solve for mass or volume?",
-    answer:
-      "Yes. Select density, mass, or volume as the missing variable and enter the other two known values.",
-  },
-  {
-    question: "Can grams and milliliters be used together?",
-    answer:
-      "Yes, especially for liquids. When mass is entered in grams and volume in milliliters, density is reported in grams per milliliter.",
-  },
-] as const;
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -273,19 +256,7 @@ export default function DensityCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">Questions and answers</p>
-              <h2 id="faq-heading">Density FAQ</h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="density-calculator" />
           </article>
 
           <aside className="article-sidebar">

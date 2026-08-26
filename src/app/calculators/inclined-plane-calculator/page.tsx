@@ -1,3 +1,4 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
 import { RelatedCalculators } from "@/components/related-calculators";
@@ -44,39 +45,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
-const faqItems = [
-  {
-    question:
-      "What does the inclined plane calculator calculate?",
-    answer:
-      "It calculates the component of weight parallel to the incline, normal force, friction force, net force, and acceleration.",
-  },
-  {
-    question:
-      "What is the force parallel to an incline?",
-    answer:
-      "The component of gravitational force acting down the incline is F parallel = mg sin theta.",
-  },
-  {
-    question:
-      "What is the normal force on an incline?",
-    answer:
-      "For a simple inclined plane without additional perpendicular forces, normal force is N = mg cos theta.",
-  },
-  {
-    question:
-      "How is friction calculated on an incline?",
-    answer:
-      "Friction is calculated using Ff = μN, where μ is the coefficient of friction and N is normal force.",
-  },
-  {
-    question:
-      "What does a negative net force mean?",
-    answer:
-      "A negative result means the friction term is larger than the downslope gravitational component under the selected direction convention.",
-  },
-];
 
 const calculatorSchema = createCalculatorSchema({
   name: pageTitle,
@@ -483,27 +451,7 @@ export default function InclinedPlaneCalculatorPage() {
               </p>
             </section>
 
-            <section aria-labelledby="faq-heading">
-              <p className="eyebrow">
-                Questions and answers
-              </p>
-
-              <h2 id="faq-heading">
-                Inclined plane calculator FAQ
-              </h2>
-
-              <div className="faq-list">
-                {faqItems.map((item) => (
-                  <details key={item.question}>
-                    <summary>
-                      {item.question}
-                    </summary>
-
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            <CalculatorFAQ slug="inclined-plane-calculator" />
           </article>
 
           <aside className="article-sidebar">
