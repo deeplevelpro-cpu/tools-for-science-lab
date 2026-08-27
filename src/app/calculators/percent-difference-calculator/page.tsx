@@ -12,7 +12,10 @@ import { CalculatorContentLoader } from "@/components/calculator-content/calcula
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Percent Difference Calculator";
@@ -50,6 +53,13 @@ const calculatorSchema = createCalculatorSchema({
   slug: "percent-difference-calculator",
   category: "Laboratory",
 });
+
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "percent-difference-calculator",
+    category: "Physics",
+  });
 
 const faqSchema = createCalculatorFAQSchema("percent-difference-calculator");
 

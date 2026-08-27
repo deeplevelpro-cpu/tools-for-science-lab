@@ -12,7 +12,10 @@ import { MolalityCalculator } from "@/components/calculators/molality-calculator
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Molality Calculator | Moles & Solvent Mass";
@@ -50,6 +53,13 @@ const calculatorSchema = createCalculatorSchema({
   slug: "molality-calculator",
   category: "Chemistry",
 });
+
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "molality-calculator",
+    category: "Physics",
+  });
 
 const faqSchema = createCalculatorFAQSchema("molality-calculator");
 

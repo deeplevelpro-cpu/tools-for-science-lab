@@ -12,7 +12,10 @@ import { CalculatorContentLoader } from "@/components/calculator-content/calcula
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Mass to Moles Calculator";
@@ -52,6 +55,13 @@ const calculatorSchema = createCalculatorSchema({
   category: "Chemistry",
 });
 
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "mass-moles-calculator",
+    category: "Physics",
+  });
+
 const faqSchema = createCalculatorFAQSchema("mass-moles-calculator");
 
 const relatedCalculators = getRelatedCalculators(
@@ -67,6 +77,15 @@ export default function MassMolesCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             calculatorSchema,
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema,
           ).replace(/</g, "\\u003c"),
         }}
       />

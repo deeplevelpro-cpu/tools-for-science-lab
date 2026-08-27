@@ -12,7 +12,10 @@ import { CalculatorContentLoader } from "@/components/calculator-content/calcula
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Friction Calculator | Force & Coefficient";
@@ -53,6 +56,13 @@ const calculatorSchema = createCalculatorSchema({
   category: "Physics",
 });
 
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "friction-calculator",
+    category: "Physics",
+  });
+
 const faqSchema = createCalculatorFAQSchema("friction-calculator");
 
 const relatedCalculators = getRelatedCalculators(
@@ -68,6 +78,15 @@ export default function FrictionCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             calculatorSchema,
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema,
           ).replace(/</g, "\\u003c"),
         }}
       />

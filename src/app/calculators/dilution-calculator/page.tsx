@@ -12,7 +12,10 @@ import { CalculatorContentLoader } from "@/components/calculator-content/calcula
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Dilution Calculator | Molarity & Volume";
@@ -48,6 +51,13 @@ const calculatorSchema = createCalculatorSchema({
   slug: "dilution-calculator",
   category: "Chemistry",
 });
+
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "dilution-calculator",
+    category: "Physics",
+  });
 
 const faqSchema = createCalculatorFAQSchema("dilution-calculator");
 

@@ -12,7 +12,10 @@ import { CalculatorContentLoader } from "@/components/calculator-content/calcula
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
+import {
+  createCalculatorSchema,
+  createCalculatorBreadcrumbSchema,
+} from "@/lib/seo/calculator-schema";
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Specific Heat Calculator";
@@ -48,6 +51,13 @@ const calculatorSchema = createCalculatorSchema({
   slug: "specific-heat-calculator",
   category: "Physics",
 });
+
+const breadcrumbSchema =
+  createCalculatorBreadcrumbSchema({
+    name: pageTitle,
+    slug: "specific-heat-calculator",
+    category: "Physics",
+  });
 
 const faqSchema = createCalculatorFAQSchema("specific-heat-calculator");
 
