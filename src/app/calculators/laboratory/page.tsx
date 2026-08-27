@@ -1,3 +1,5 @@
+import { createCategoryFAQSchema } from "@/lib/seo/category-faq-schema";
+import { CategoryFAQ } from "@/components/calculator-content/category-faq";
 import type { Metadata } from "next";
 
 import { CalculatorCategoryPage } from "@/components/calculator-directory";
@@ -6,6 +8,9 @@ import { getCategoryCalculators } from "@/content/calculators/get-category-calcu
 import { calculators } from "@/content/calculators/registry";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCollectionSchema } from "@/lib/seo/collection-schema";
+
+const faqSchema =
+  createCategoryFAQSchema("laboratory");
 
 const category = calculatorCategories.find(
   (item) => item.slug === "laboratory",
