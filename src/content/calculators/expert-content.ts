@@ -817,4 +817,65 @@ export const expertCalculatorContent = {
   },
 
 
+
+  "acceleration-due-to-gravity-calculator": {
+    formulaExplanation:
+      "Acceleration due to gravity describes the constant acceleration experienced by objects falling near Earth's surface.",
+    example:
+      "Example: Objects in free fall accelerate downward because of Earth's gravitational field.",
+    commonMistakes: [
+      "Using incorrect gravity values.",
+      "Ignoring air resistance effects.",
+      "Confusing mass with acceleration."
+    ],
+  },
+
+  "average-speed-calculator": {
+    formulaExplanation:
+      "Average speed calculates total distance traveled divided by total time taken.",
+    example:
+      "Example: A vehicle traveling different speeds over a journey can have one average speed value.",
+    commonMistakes: [
+      "Averaging speeds directly.",
+      "Ignoring total distance.",
+      "Using inconsistent time units."
+    ],
+  },
+
+  "average-velocity-calculator": {
+    formulaExplanation:
+      "Average velocity calculates displacement divided by elapsed time and includes direction.",
+    example:
+      "Example: Returning to the starting point gives zero average velocity despite movement.",
+    commonMistakes: [
+      "Confusing speed with velocity.",
+      "Ignoring direction.",
+      "Using distance instead of displacement."
+    ],
+  },
+
+  "displacement-calculator": {
+    formulaExplanation:
+      "Displacement measures the change in position from an initial point to a final point.",
+    example:
+      "Example: Moving around a path and returning to the start results in zero displacement.",
+    commonMistakes: [
+      "Confusing distance with displacement.",
+      "Ignoring direction.",
+      "Using path length instead of position change."
+    ],
+  },
+
+  "distance-calculator": {
+    formulaExplanation:
+      "Distance measures the total path traveled by an object regardless of direction.",
+    example:
+      "Example: A runner completing multiple laps has distance equal to the full path length.",
+    commonMistakes: [
+      "Confusing distance with displacement.",
+      "Ignoring total path length.",
+      "Using incorrect units."
+    ],
+  },
+
 };
