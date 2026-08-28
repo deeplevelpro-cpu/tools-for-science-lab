@@ -755,4 +755,65 @@ export const expertCalculatorContent = {
     ],
   },
 
+
+  "angular-impulse-calculator": {
+    formulaExplanation:
+      "Angular impulse calculates the change in rotational momentum caused by a torque acting over a time interval.",
+    example:
+      "Example: Applying torque to a rotating object for a longer time produces greater angular impulse.",
+    commonMistakes: [
+      "Confusing angular impulse with linear impulse.",
+      "Using incorrect torque units.",
+      "Ignoring time duration."
+    ],
+  },
+
+  "tangential-velocity-calculator": {
+    formulaExplanation:
+      "Tangential velocity describes the linear speed of an object moving along a circular path.",
+    example:
+      "Example: Points farther from the center of a rotating wheel have greater tangential velocity.",
+    commonMistakes: [
+      "Confusing angular velocity with tangential velocity.",
+      "Using incorrect radius values.",
+      "Ignoring unit conversions."
+    ],
+  },
+
+  "tangential-acceleration-calculator": {
+    formulaExplanation:
+      "Tangential acceleration measures the rate of change of tangential velocity during rotational motion.",
+    example:
+      "Example: A spinning wheel accelerating experiences tangential acceleration.",
+    commonMistakes: [
+      "Confusing centripetal and tangential acceleration.",
+      "Using incorrect angular acceleration.",
+      "Ignoring radius."
+    ],
+  },
+
+  "rotational-power-calculator": {
+    formulaExplanation:
+      "Rotational power measures the rate at which work is performed during rotational motion.",
+    example:
+      "Example: A motor producing torque at high angular velocity delivers greater power.",
+    commonMistakes: [
+      "Confusing torque with power.",
+      "Using incorrect angular units.",
+      "Ignoring time factors."
+    ],
+  },
+
+  "rotational-work-calculator": {
+    formulaExplanation:
+      "Rotational work calculates energy transferred when torque causes angular displacement.",
+    example:
+      "Example: Rotating an object through an angle using constant torque performs rotational work.",
+    commonMistakes: [
+      "Ignoring angular displacement.",
+      "Using force instead of torque.",
+      "Incorrect angle conversion."
+    ],
+  },
+
 };
