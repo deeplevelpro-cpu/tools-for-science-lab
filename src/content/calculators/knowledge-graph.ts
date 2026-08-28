@@ -3,66 +3,23 @@ export const calculatorKnowledgeGraph: Record<
   readonly string[]
 > = {
 
+  // =========================
+  // MOTION PHYSICS CLUSTER
+  // =========================
+
+  "acceleration-calculator": [
+    "velocity-calculator",
+    "kinematic-equations-calculator",
+    "force-calculator",
+    "free-fall-calculator",
+  ],
+
   "free-fall-calculator": [
     "acceleration-due-to-gravity-calculator",
     "projectile-motion-calculator",
     "kinematic-equations-calculator",
     "kinetic-energy-calculator",
   ],
-
-
-  "acceleration-calculator": [
-    "force-calculator",
-    "kinematic-equations-calculator",
-    "projectile-motion-calculator",
-    "free-fall-calculator",
-  ],
-
-
-  "force-calculator": [
-    "acceleration-calculator",
-    "normal-force-calculator",
-    "friction-calculator",
-    "weight-calculator",
-  ],
-
-
-  "kinetic-energy-calculator": [
-    "momentum-calculator",
-    "work-calculator",
-    "force-calculator",
-    "power-calculator",
-  ],
-
-
-  "momentum-calculator": [
-    "kinetic-energy-calculator",
-    "impulse-calculator",
-    "force-calculator",
-  ],
-
-
-  "molarity-calculator": [
-    "molality-calculator",
-    "dilution-calculator",
-    "mass-moles-calculator",
-    "molecular-weight-calculator",
-  ],
-
-
-  "molecular-weight-calculator": [
-    "mass-moles-calculator",
-    "empirical-formula-calculator",
-    "molecular-formula-calculator",
-  ],
-
-
-  "percent-error-calculator": [
-    "percent-difference-calculator",
-    "measurement-uncertainty-calculator",
-    "uncertainty-propagation-calculator",
-  ],
-
 
   "projectile-motion-calculator": [
     "kinematic-equations-calculator",
@@ -73,24 +30,90 @@ export const calculatorKnowledgeGraph: Record<
 
   "kinematic-equations-calculator": [
     "acceleration-calculator",
-    "velocity-calculator",
     "displacement-calculator",
+    "average-velocity-calculator",
     "projectile-motion-calculator",
+  ],
+
+
+  // =========================
+  // FORCE & DYNAMICS CLUSTER
+  // =========================
+
+  "force-calculator": [
+    "acceleration-calculator",
+    "momentum-calculator",
+    "friction-calculator",
+    "normal-force-calculator",
+  ],
+
+  "friction-calculator": [
+    "force-calculator",
+    "normal-force-calculator",
+    "inclined-plane-calculator",
+  ],
+
+  "normal-force-calculator": [
+    "force-calculator",
+    "weight-calculator",
+    "friction-calculator",
+    "inclined-plane-calculator",
+  ],
+
+  "centripetal-force-calculator": [
+    "centripetal-acceleration-calculator",
+    "circular-velocity-calculator",
+    "angular-velocity-calculator",
+    "force-calculator",
+  ],
+
+  "impulse-calculator": [
+    "momentum-calculator",
+    "force-calculator",
+    "collision-related-motion-calculators",
+  ],
+
+
+  // =========================
+  // ENERGY CLUSTER
+  // =========================
+
+  "kinetic-energy-calculator": [
+    "momentum-calculator",
+    "work-calculator",
+    "power-calculator",
+    "gravitational-potential-energy-calculator",
   ],
 
   "work-calculator": [
     "force-calculator",
-    "power-calculator",
     "kinetic-energy-calculator",
+    "power-calculator",
     "elastic-potential-energy-calculator",
   ],
 
   "power-calculator": [
     "work-calculator",
-    "force-calculator",
-    "kinetic-energy-calculator",
+    "energy-calculator",
     "rotational-power-calculator",
   ],
+
+  "gravitational-potential-energy-calculator": [
+    "kinetic-energy-calculator",
+    "weight-calculator",
+    "free-fall-calculator",
+  ],
+
+  "elastic-potential-energy-calculator": [
+    "hookes-law-calculator",
+    "work-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+
+  // =========================
+  // ROTATIONAL MECHANICS
+  // =========================
 
   "torque-calculator": [
     "moment-of-inertia-calculator",
@@ -101,31 +124,65 @@ export const calculatorKnowledgeGraph: Record<
 
   "moment-of-inertia-calculator": [
     "torque-calculator",
-    "rotational-dynamics-calculator",
     "rotational-kinetic-energy-calculator",
     "angular-momentum-calculator",
   ],
 
-  "centripetal-force-calculator": [
-    "centripetal-acceleration-calculator",
-    "circular-velocity-calculator",
-    "angular-velocity-calculator",
-    "force-calculator",
+  "rotational-kinetic-energy-calculator": [
+    "moment-of-inertia-calculator",
+    "rotational-power-calculator",
+    "torque-calculator",
+  ],
+
+  "rotational-power-calculator": [
+    "torque-calculator",
+    "rotational-kinetic-energy-calculator",
+    "power-calculator",
+  ],
+
+
+  // =========================
+  // CHEMISTRY CLUSTER
+  // =========================
+
+  "molarity-calculator": [
+    "molality-calculator",
+    "dilution-calculator",
+    "mass-moles-calculator",
+    "stoichiometry-calculator",
+  ],
+
+  "molality-calculator": [
+    "molarity-calculator",
+    "solution-concentration-calculators",
+  ],
+
+  "dilution-calculator": [
+    "molarity-calculator",
+    "ph-calculator",
+    "molality-calculator",
+  ],
+
+  "ph-calculator": [
+    "molarity-calculator",
+    "dilution-calculator",
   ],
 
   "stoichiometry-calculator": [
     "mass-moles-calculator",
-    "molecular-weight-calculator",
     "limiting-reactant-calculator",
     "percent-yield-calculator",
   ],
 
-  "mass-moles-calculator": [
-    "molarity-calculator",
-    "molecular-weight-calculator",
+  "limiting-reactant-calculator": [
     "stoichiometry-calculator",
-    "molecular-formula-calculator",
+    "mass-moles-calculator",
   ],
+
+
+  // =========================
+  // GAS LAWS
+  // =========================
 
   "ideal-gas-law-calculator": [
     "boyles-law-calculator",
@@ -134,10 +191,24 @@ export const calculatorKnowledgeGraph: Record<
     "daltons-law-calculator",
   ],
 
+  "boyles-law-calculator": [
+    "ideal-gas-law-calculator",
+    "combined-gas-law-calculator",
+  ],
+
+  "charles-law-calculator": [
+    "ideal-gas-law-calculator",
+    "combined-gas-law-calculator",
+  ],
+
+
+  // =========================
+  // STATISTICS / LAB
+  // =========================
+
   "measurement-uncertainty-calculator": [
     "uncertainty-propagation-calculator",
     "percent-error-calculator",
-    "percent-difference-calculator",
     "standard-deviation-calculator",
   ],
 
@@ -145,7 +216,6 @@ export const calculatorKnowledgeGraph: Record<
     "mean-median-mode-calculator",
     "linear-regression-calculator",
     "measurement-uncertainty-calculator",
-    "coefficient-variation-calculator",
   ],
 
 };
