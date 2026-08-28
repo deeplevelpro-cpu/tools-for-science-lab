@@ -398,6 +398,18 @@ export const expertCalculatorContent = {
       "Using diameter instead of radius.",
       "Ignoring circular motion conditions."
     ],
-  }
+  },
+
+  "grahams-law-calculator": {
+    formulaExplanation:
+      "Graham's law compares gas diffusion rates based on molar masses.",
+    example:
+      "Example: Lighter gases diffuse faster than heavier gases under similar conditions.",
+    commonMistakes: [
+      "Using incorrect molar masses.",
+      "Reversing diffusion rate ratios.",
+      "Ignoring gas conditions."
+    ],
+  },
 
 };
