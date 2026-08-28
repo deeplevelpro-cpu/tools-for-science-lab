@@ -1,3 +1,4 @@
+import { CalculatorHubFAQ } from "@/components/calculator-content/calculator-hub-faq";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -8,6 +9,7 @@ import { calculators } from "@/content/calculators/registry";
 import { calculatorCategories } from "@/content/calculators/categories";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCollectionSchema } from "@/lib/seo/collection-schema";
+import { createCalculatorHubFAQSchema } from "@/lib/seo/calculator-hub-faq-schema";
 
 const pageTitle =
   "Free Science Calculators";
@@ -40,6 +42,8 @@ export const metadata: Metadata = {
   },
 };
 
+
+const faqSchema = createCalculatorHubFAQSchema();
 
 const collectionSchema = createCollectionSchema({
   name: pageTitle,
@@ -84,6 +88,17 @@ export default function CalculatorsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema).replace(
+            /</g,
+            "\\u003c",
+          ),
+        }}
+      />
+
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(
             /</g,
             "\\u003c",
           ),
@@ -152,6 +167,12 @@ export default function CalculatorsPage() {
 </div>
 
 <CalculatorDirectory calculators={calculators} />
+        </Container>
+      </section>
+
+      <section className="directory-section">
+        <Container>
+          <CalculatorHubFAQ />
         </Container>
       </section>
 
