@@ -8,6 +8,10 @@ import {
 } from "./get-seo-content";
 
 import {
+  getExpertCalculatorContent,
+} from "./get-expert-content";
+
+import {
   mergeCalculatorContent,
   type ExtendedCalculatorContent,
 } from "./seo-content/merge-content";
@@ -23,8 +27,12 @@ export function getCalculatorContent(
   const seoContent =
     getCalculatorSEOContent(slug);
 
+  const expertContent =
+    getExpertCalculatorContent(slug);
+
   return mergeCalculatorContent(
     baseContent,
     seoContent,
+    expertContent,
   );
 }
