@@ -878,4 +878,17 @@ export const expertCalculatorContent = {
     ],
   },
 
+
+  "pulley-calculator": {
+    formulaExplanation:
+      "Pulley calculations analyze mechanical advantage, force distribution, and motion in pulley systems.",
+    example:
+      "Example: Multiple pulley systems reduce the effort force needed to lift heavy loads.",
+    commonMistakes: [
+      "Ignoring pulley efficiency.",
+      "Using incorrect rope arrangement.",
+      "Confusing force and tension."
+    ],
+  },
+
 };
