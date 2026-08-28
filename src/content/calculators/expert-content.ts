@@ -606,4 +606,101 @@ export const expertCalculatorContent = {
     ],
   },
 
+
+  "mean-median-mode-calculator": {
+    formulaExplanation:
+      "Mean, median, and mode calculations describe central tendency by finding average values, middle values, and most frequent values in a dataset.",
+    example:
+      "Example: The mean provides an overall average while the median represents the middle value after sorting data.",
+    commonMistakes: [
+      "Ignoring data sorting when finding the median.",
+      "Using incorrect data values.",
+      "Confusing mean with median."
+    ],
+  },
+
+  "standard-deviation-calculator": {
+    formulaExplanation:
+      "Standard deviation measures how spread out data values are from the average and indicates data variability.",
+    example:
+      "Example: A smaller standard deviation means data points are closer to the average value.",
+    commonMistakes: [
+      "Using the wrong dataset.",
+      "Confusing variance with standard deviation.",
+      "Ignoring sample or population differences."
+    ],
+  },
+
+  "linear-regression-calculator": {
+    formulaExplanation:
+      "Linear regression analyzes relationships between variables by finding the best-fit straight line through data points.",
+    example:
+      "Example: Regression can predict future values based on trends in experimental measurements.",
+    commonMistakes: [
+      "Assuming correlation proves causation.",
+      "Using insufficient data points.",
+      "Ignoring outliers."
+    ],
+  },
+
+  "coefficient-variation-calculator": {
+    formulaExplanation:
+      "Coefficient of variation compares data variability relative to the mean and is useful for comparing datasets with different scales.",
+    example:
+      "Example: A lower coefficient of variation indicates more consistent measurements.",
+    commonMistakes: [
+      "Using datasets with zero mean.",
+      "Confusing coefficient variation with standard deviation.",
+      "Ignoring measurement units."
+    ],
+  },
+
+  "percent-error-calculator": {
+    formulaExplanation:
+      "Percent error measures the difference between an experimental value and an accepted value relative to the accepted value.",
+    example:
+      "Example: Experimental results can be evaluated by comparing them with known reference values.",
+    commonMistakes: [
+      "Using the wrong reference value.",
+      "Ignoring absolute differences.",
+      "Mixing percentage and decimal formats."
+    ],
+  },
+
+  "percent-difference-calculator": {
+    formulaExplanation:
+      "Percent difference compares two experimental or measured values when neither value is considered the accepted reference.",
+    example:
+      "Example: Two laboratory measurements can be compared to evaluate agreement between results.",
+    commonMistakes: [
+      "Using percent error instead.",
+      "Choosing an incorrect average value.",
+      "Ignoring measurement units."
+    ],
+  },
+
+  "significant-figures-calculator": {
+    formulaExplanation:
+      "Significant figures represent the precision of measured values and communicate the reliability of scientific measurements.",
+    example:
+      "Example: Measurements should be rounded according to significant figure rules after calculations.",
+    commonMistakes: [
+      "Rounding too early.",
+      "Counting placeholder zeros incorrectly.",
+      "Ignoring measurement precision."
+    ],
+  },
+
+  "uncertainty-propagation-calculator": {
+    formulaExplanation:
+      "Uncertainty propagation determines how measurement errors combine when multiple values are used in calculations.",
+    example:
+      "Example: Combining uncertain measurements requires considering the uncertainty contribution of each input.",
+    commonMistakes: [
+      "Ignoring uncertainty from variables.",
+      "Using incorrect propagation methods.",
+      "Reporting unrealistic precision."
+    ],
+  },
+
 };
