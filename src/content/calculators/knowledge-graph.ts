@@ -8,7 +8,7 @@ export const calculatorKnowledgeGraph: Record<
   // =========================
 
   "acceleration-calculator": [
-    "velocity-calculator",
+    "average-velocity-calculator",
     "kinematic-equations-calculator",
     "force-calculator",
     "free-fall-calculator",
@@ -70,7 +70,7 @@ export const calculatorKnowledgeGraph: Record<
   "impulse-calculator": [
     "momentum-calculator",
     "force-calculator",
-    "collision-related-motion-calculators",
+    "kinetic-energy-calculator",
   ],
 
 
@@ -94,7 +94,7 @@ export const calculatorKnowledgeGraph: Record<
 
   "power-calculator": [
     "work-calculator",
-    "energy-calculator",
+    "kinetic-energy-calculator",
     "rotational-power-calculator",
   ],
 
@@ -154,7 +154,7 @@ export const calculatorKnowledgeGraph: Record<
 
   "molality-calculator": [
     "molarity-calculator",
-    "solution-concentration-calculators",
+    "molarity-calculator",
   ],
 
   "dilution-calculator": [
