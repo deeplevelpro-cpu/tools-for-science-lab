@@ -60,6 +60,7 @@ export default function LaboratoryCalculatorsPage() {
 
   return (
     <>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -70,10 +71,26 @@ export default function LaboratoryCalculatorsPage() {
         }}
       />
 
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema).replace(
+              /</g,
+              "\\u003c",
+            ),
+          }}
+        />
+      )}
+
+
+
       <CalculatorCategoryPage
         category={category}
         calculators={laboratoryCalculators}
       />
+
+      <CategoryFAQ slug="laboratory" />
     </>
   );
 }
