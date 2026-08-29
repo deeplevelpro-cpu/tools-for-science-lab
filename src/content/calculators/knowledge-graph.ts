@@ -218,4 +218,242 @@ export const calculatorKnowledgeGraph: Record<
     "measurement-uncertainty-calculator",
   ],
 
+
+  // =========================
+  // ADDITIONAL CALCULATOR LINKS
+  // =========================
+
+  "percent-error-calculator": [
+    "percent-difference-calculator",
+    "measurement-uncertainty-calculator",
+    "standard-deviation-calculator",
+  ],
+
+  "percent-difference-calculator": [
+    "percent-error-calculator",
+    "measurement-uncertainty-calculator",
+  ],
+
+  "significant-figures-calculator": [
+    "measurement-uncertainty-calculator",
+    "percent-error-calculator",
+  ],
+
+  "coefficient-variation-calculator": [
+    "standard-deviation-calculator",
+    "mean-median-mode-calculator",
+  ],
+
+  "mean-median-mode-calculator": [
+    "standard-deviation-calculator",
+    "linear-regression-calculator",
+  ],
+
+  "uncertainty-propagation-calculator": [
+    "measurement-uncertainty-calculator",
+    "percent-error-calculator",
+  ],
+
+  "rate-of-change-calculator": [
+    "linear-regression-calculator",
+    "average-velocity-calculator",
+  ],
+
+  "linear-regression-calculator": [
+    "rate-of-change-calculator",
+    "standard-deviation-calculator",
+  ],
+
+  "mass-moles-calculator": [
+    "molecular-weight-calculator",
+    "stoichiometry-calculator",
+    "molarity-calculator",
+  ],
+
+  "molecular-weight-calculator": [
+    "mass-moles-calculator",
+    "molecular-formula-calculator",
+  ],
+
+  "empirical-formula-calculator": [
+    "molecular-formula-calculator",
+    "molecular-weight-calculator",
+  ],
+
+  "molecular-formula-calculator": [
+    "empirical-formula-calculator",
+    "molecular-weight-calculator",
+  ],
+
+  "percent-yield-calculator": [
+    "stoichiometry-calculator",
+    "limiting-reactant-calculator",
+  ],
+
+  "avogadros-law-calculator": [
+    "ideal-gas-law-calculator",
+    "combined-gas-law-calculator",
+  ],
+
+  "combined-gas-law-calculator": [
+    "ideal-gas-law-calculator",
+    "boyles-law-calculator",
+    "charles-law-calculator",
+  ],
+
+  "gay-lussacs-law-calculator": [
+    "ideal-gas-law-calculator",
+    "combined-gas-law-calculator",
+  ],
+
+  "daltons-law-calculator": [
+    "ideal-gas-law-calculator",
+    "combined-gas-law-calculator",
+  ],
+
+  "grahams-law-calculator": [
+    "ideal-gas-law-calculator",
+  ],
+
+  "pulley-calculator": [
+    "force-calculator",
+    "work-calculator",
+    "mechanical-advantage-calculator",
+  ],
+
+  "inclined-plane-calculator": [
+    "force-calculator",
+    "friction-calculator",
+    "normal-force-calculator",
+  ],
+
+  "weight-calculator": [
+    "force-calculator",
+    "gravitational-potential-energy-calculator",
+  ],
+
+  "tangential-acceleration-calculator": [
+    "angular-acceleration-calculator",
+    "centripetal-acceleration-calculator",
+  ],
+
+  "tangential-velocity-calculator": [
+    "circular-velocity-calculator",
+    "angular-velocity-calculator",
+  ],
+
+  "rpm-calculator": [
+    "rotational-frequency-calculator",
+    "angular-velocity-calculator",
+  ],
+
+  "revolutions-calculator": [
+    "rpm-calculator",
+    "rotational-frequency-calculator",
+  ],
+
+  "rotational-frequency-calculator": [
+    "rpm-calculator",
+    "angular-velocity-calculator",
+  ],
+
+  "rotational-work-calculator": [
+    "torque-calculator",
+    "rotational-power-calculator",
+  ],
+
+  "angular-impulse-calculator": [
+    "angular-momentum-calculator",
+    "torque-calculator",
+  ],
+
+  "angular-momentum-calculator": [
+    "torque-calculator",
+    "moment-of-inertia-calculator",
+  ],
+
+  "angular-acceleration-calculator": [
+    "torque-calculator",
+    "rotational-dynamics-calculator",
+  ],
+
+  "angular-displacement-calculator": [
+    "angular-velocity-calculator",
+    "rotational-frequency-calculator",
+  ],
+
+  "angular-velocity-calculator": [
+    "rpm-calculator",
+    "circular-velocity-calculator",
+  ],
+
+  "centripetal-acceleration-calculator": [
+    "centripetal-force-calculator",
+    "circular-velocity-calculator",
+  ],
+
+  "circular-velocity-calculator": [
+    "centripetal-acceleration-calculator",
+    "angular-velocity-calculator",
+  ],
+
+  "acceleration-due-to-gravity-calculator": [
+    "free-fall-calculator",
+    "gravitational-potential-energy-calculator",
+  ],
+
+  "pressure-calculator": [
+    "ideal-gas-law-calculator",
+    "density-calculator",
+  ],
+
+  "hookes-law-calculator": [
+    "elastic-potential-energy-calculator",
+    "force-calculator",
+  ],
+
+  "momentum-calculator": [
+    "impulse-calculator",
+    "force-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "distance-calculator": [
+    "displacement-calculator",
+    "average-speed-calculator",
+  ],
+
+  "displacement-calculator": [
+    "distance-calculator",
+    "kinematic-equations-calculator",
+  ],
+
+  "average-speed-calculator": [
+    "distance-calculator",
+    "average-velocity-calculator",
+  ],
+
+  "average-velocity-calculator": [
+    "average-speed-calculator",
+    "acceleration-calculator",
+  ],
+
+  "density-calculator": [
+    "mass-moles-calculator",
+    "pressure-calculator",
+  ],
+
+  "specific-heat-calculator": [
+    "heat-calculator",
+    "energy-calculator",
+  ],
+
+
+  "rotational-dynamics-calculator": [
+    "torque-calculator",
+    "moment-of-inertia-calculator",
+    "angular-acceleration-calculator",
+    "rotational-kinetic-energy-calculator",
+  ],
+
 };
