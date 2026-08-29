@@ -29,22 +29,28 @@ export function CalculatorPageShell({
     );
 
   return (
-    <>
-      <section>
+    <main>
+      <article>
         {children}
+      </article>
 
+      <section aria-label="Calculator guide">
         <CalculatorContentLoader
           slug={slug}
         />
+      </section>
 
+      <section aria-label="Trust information">
         <CalculatorTrustPanel
           subject={subject}
         />
       </section>
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-    </>
+      <nav aria-label="Related calculators">
+        <RelatedCalculators
+          calculators={relatedCalculators}
+        />
+      </nav>
+    </main>
   );
 }
