@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { SpecificHeatCalculator } from "@/components/calculators/specific-heat-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -61,11 +57,6 @@ const breadcrumbSchema =
 
 const faqSchema = createCalculatorFAQSchema("specific-heat-calculator");
 
-const relatedCalculators = getRelatedCalculators(
-  "specific-heat-calculator",
-  calculators,
-);
-
 export default function SpecificHeatCalculatorPage() {
   return (
     <main>
@@ -116,7 +107,12 @@ export default function SpecificHeatCalculatorPage() {
         aria-label="Specific heat calculator"
       >
         <Container>
-          <SpecificHeatCalculator />
+          <CalculatorPageShell
+            slug="specific-heat-calculator"
+            subject="physics"
+          >
+            <SpecificHeatCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -268,16 +264,10 @@ export default function SpecificHeatCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="specific-heat-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }
