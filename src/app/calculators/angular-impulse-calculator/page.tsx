@@ -2,16 +2,11 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   AngularImpulseCalculator,
 } from "@/components/calculators/angular-impulse-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -58,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("angular-impulse-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "angular-impulse-calculator",
-  calculators,
-);
 
 export default function AngularImpulseCalculatorPage() {
   return (
@@ -129,7 +119,12 @@ export default function AngularImpulseCalculatorPage() {
         aria-label="Angular impulse calculator"
       >
         <Container>
-          <AngularImpulseCalculator />
+          <CalculatorPageShell
+            slug="angular-impulse-calculator"
+            subject="physics"
+          >
+            <AngularImpulseCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -421,10 +416,7 @@ export default function AngularImpulseCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="angular-impulse-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

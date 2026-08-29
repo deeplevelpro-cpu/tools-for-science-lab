@@ -3,13 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 
 import { AccelerationDueToGravityCalculator } from "@/components/calculators/acceleration-due-to-gravity-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -52,11 +47,6 @@ export const metadata: Metadata = {
 };
 
 
-
-const relatedCalculators = getRelatedCalculators(
-  "acceleration-due-to-gravity-calculator",
-  calculators,
-);
 
 export default function AccelerationDueToGravityCalculatorPage() {
   const calculatorSchema = createCalculatorSchema({
@@ -143,7 +133,12 @@ export default function AccelerationDueToGravityCalculatorPage() {
         aria-label="Acceleration due to gravity calculator"
       >
         <Container>
-          <AccelerationDueToGravityCalculator />
+          <CalculatorPageShell
+            slug="acceleration-due-to-gravity-calculator"
+            subject="physics"
+          >
+            <AccelerationDueToGravityCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -434,10 +429,7 @@ export default function AccelerationDueToGravityCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="acceleration-due-to-gravity-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

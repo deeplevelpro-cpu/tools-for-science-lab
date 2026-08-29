@@ -2,14 +2,9 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { AccelerationCalculator } from "@/components/calculators/acceleration-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -64,11 +59,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("acceleration-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "acceleration-calculator",
-  calculators,
-);
 
 export default function AccelerationCalculatorPage() {
   return (
@@ -143,7 +133,12 @@ export default function AccelerationCalculatorPage() {
         aria-label="Acceleration calculator"
       >
         <Container>
-          <AccelerationCalculator />
+          <CalculatorPageShell
+            slug="acceleration-calculator"
+            subject="physics"
+          >
+            <AccelerationCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -411,10 +406,7 @@ export default function AccelerationCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="acceleration-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

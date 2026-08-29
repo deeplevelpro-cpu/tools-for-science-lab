@@ -1,16 +1,12 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   TorqueCalculator,
 } from "@/components/calculators/torque-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -66,11 +62,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("torque-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "torque-calculator",
-  calculators,
-);
 
 export default function TorqueCalculatorPage() {
   return (
@@ -144,7 +135,12 @@ export default function TorqueCalculatorPage() {
         aria-label="Torque calculator"
       >
         <Container>
-          <TorqueCalculator />
+          <CalculatorPageShell
+            slug="torque-calculator"
+            subject="physics"
+          >
+            <TorqueCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -424,16 +420,10 @@ export default function TorqueCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="torque-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

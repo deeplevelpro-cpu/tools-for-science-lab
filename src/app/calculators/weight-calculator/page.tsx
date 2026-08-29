@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { WeightCalculator } from "@/components/calculators/weight-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -64,11 +60,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("weight-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "weight-calculator",
-  calculators,
-);
 
 export default function WeightCalculatorPage() {
   return (
@@ -145,7 +136,12 @@ export default function WeightCalculatorPage() {
         aria-label="Weight calculator"
       >
         <Container>
-          <WeightCalculator />
+          <CalculatorPageShell
+            slug="weight-calculator"
+            subject="physics"
+          >
+            <WeightCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -557,16 +553,10 @@ export default function WeightCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="weight-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

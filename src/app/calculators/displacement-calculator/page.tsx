@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { DisplacementCalculator } from "@/components/calculators/displacement-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -64,11 +60,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("displacement-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "displacement-calculator",
-  calculators,
-);
 
 export default function DisplacementCalculatorPage() {
   return (
@@ -144,7 +135,12 @@ export default function DisplacementCalculatorPage() {
         aria-label="Displacement calculator"
       >
         <Container>
-          <DisplacementCalculator />
+          <CalculatorPageShell
+            slug="displacement-calculator"
+            subject="physics"
+          >
+            <DisplacementCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -348,16 +344,10 @@ export default function DisplacementCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="displacement-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

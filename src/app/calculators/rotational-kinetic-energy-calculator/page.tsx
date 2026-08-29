@@ -1,16 +1,12 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   RotationalKineticEnergyCalculator,
 } from "@/components/calculators/rotational-kinetic-energy-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -57,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("rotational-kinetic-energy-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "rotational-kinetic-energy-calculator",
-  calculators,
-);
 
 export default function RotationalKineticEnergyCalculatorPage() {
   return (
@@ -129,7 +120,12 @@ export default function RotationalKineticEnergyCalculatorPage() {
         aria-label="Rotational kinetic energy calculator"
       >
         <Container>
-          <RotationalKineticEnergyCalculator />
+          <CalculatorPageShell
+            slug="rotational-kinetic-energy-calculator"
+            subject="physics"
+          >
+            <RotationalKineticEnergyCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -456,16 +452,10 @@ export default function RotationalKineticEnergyCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="rotational-kinetic-energy-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

@@ -2,14 +2,9 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { AverageSpeedCalculator } from "@/components/calculators/average-speed-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -65,11 +60,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("average-speed-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "average-speed-calculator",
-  calculators,
-);
 
 export default function AverageSpeedCalculatorPage() {
   return (
@@ -146,7 +136,12 @@ export default function AverageSpeedCalculatorPage() {
         aria-label="Average speed calculator"
       >
         <Container>
-          <AverageSpeedCalculator />
+          <CalculatorPageShell
+            slug="average-speed-calculator"
+            subject="physics"
+          >
+            <AverageSpeedCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -332,10 +327,7 @@ export default function AverageSpeedCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="average-speed-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

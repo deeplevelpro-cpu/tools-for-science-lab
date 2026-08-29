@@ -2,16 +2,11 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   AngularMomentumCalculator,
 } from "@/components/calculators/angular-momentum-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -58,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("angular-momentum-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "angular-momentum-calculator",
-  calculators,
-);
 
 export default function AngularMomentumCalculatorPage() {
   return (
@@ -130,7 +120,12 @@ export default function AngularMomentumCalculatorPage() {
         aria-label="Angular momentum calculator"
       >
         <Container>
-          <AngularMomentumCalculator />
+          <CalculatorPageShell
+            slug="angular-momentum-calculator"
+            subject="physics"
+          >
+            <AngularMomentumCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -444,10 +439,7 @@ export default function AngularMomentumCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="angular-momentum-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

@@ -1,16 +1,12 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   MomentOfInertiaCalculator,
 } from "@/components/calculators/moment-of-inertia-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -57,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("moment-of-inertia-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "moment-of-inertia-calculator",
-  calculators,
-);
 
 export default function MomentOfInertiaCalculatorPage() {
   return (
@@ -128,7 +119,12 @@ export default function MomentOfInertiaCalculatorPage() {
         aria-label="Moment of inertia calculator"
       >
         <Container>
-          <MomentOfInertiaCalculator />
+          <CalculatorPageShell
+            slug="moment-of-inertia-calculator"
+            subject="physics"
+          >
+            <MomentOfInertiaCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -468,16 +464,10 @@ export default function MomentOfInertiaCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="moment-of-inertia-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

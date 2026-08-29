@@ -2,16 +2,11 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   AngularVelocityCalculator,
 } from "@/components/calculators/angular-velocity-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -58,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("angular-velocity-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "angular-velocity-calculator",
-  calculators,
-);
 
 export default function AngularVelocityCalculatorPage() {
   return (
@@ -129,7 +119,12 @@ export default function AngularVelocityCalculatorPage() {
         aria-label="Angular velocity calculator"
       >
         <Container>
-          <AngularVelocityCalculator />
+          <CalculatorPageShell
+            slug="angular-velocity-calculator"
+            subject="physics"
+          >
+            <AngularVelocityCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -422,10 +417,7 @@ export default function AngularVelocityCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="angular-velocity-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }

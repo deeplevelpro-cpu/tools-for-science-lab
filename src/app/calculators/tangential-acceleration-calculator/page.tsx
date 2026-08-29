@@ -1,16 +1,12 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   TangentialAccelerationCalculator,
 } from "@/components/calculators/tangential-acceleration-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -57,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("tangential-acceleration-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "tangential-acceleration-calculator",
-  calculators,
-);
 
 export default function TangentialAccelerationCalculatorPage() {
   return (
@@ -128,7 +119,12 @@ export default function TangentialAccelerationCalculatorPage() {
         aria-label="Tangential acceleration calculator"
       >
         <Container>
-          <TangentialAccelerationCalculator />
+          <CalculatorPageShell
+            slug="tangential-acceleration-calculator"
+            subject="physics"
+          >
+            <TangentialAccelerationCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -418,16 +414,10 @@ export default function TangentialAccelerationCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="tangential-acceleration-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

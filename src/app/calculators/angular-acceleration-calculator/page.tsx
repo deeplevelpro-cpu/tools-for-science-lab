@@ -2,16 +2,11 @@ import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   AngularAccelerationCalculator,
 } from "@/components/calculators/angular-acceleration-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -58,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("angular-acceleration-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "angular-acceleration-calculator",
-  calculators,
-);
 
 export default function AngularAccelerationCalculatorPage() {
   return (
@@ -130,7 +120,12 @@ export default function AngularAccelerationCalculatorPage() {
         aria-label="Angular acceleration calculator"
       >
         <Container>
-          <AngularAccelerationCalculator />
+          <CalculatorPageShell
+            slug="angular-acceleration-calculator"
+            subject="physics"
+          >
+            <AngularAccelerationCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -425,10 +420,7 @@ export default function AngularAccelerationCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="angular-acceleration-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section></main>
   );
 }
