@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { CoefficientVariationCalculator } from "@/components/calculators/coefficient-variation-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -54,11 +50,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("coefficient-variation-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "coefficient-variation-calculator",
-  calculators,
-);
 
 export default function CoefficientVariationCalculatorPage() {
   return (
@@ -126,7 +117,12 @@ export default function CoefficientVariationCalculatorPage() {
         aria-label="Coefficient of variation calculator"
       >
         <Container>
-          <CoefficientVariationCalculator />
+          <CalculatorPageShell
+            slug="coefficient-variation-calculator"
+            subject="laboratory"
+          >
+            <CoefficientVariationCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -357,16 +353,10 @@ export default function CoefficientVariationCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="coefficient-variation-calculator" />
-
-          <CalculatorTrustPanel subject="laboratory" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

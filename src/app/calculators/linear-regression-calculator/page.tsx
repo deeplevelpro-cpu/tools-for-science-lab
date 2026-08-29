@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { LinearRegressionCalculator } from "@/components/calculators/linear-regression-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -63,11 +59,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("linear-regression-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "linear-regression-calculator",
-  calculators,
-);
 
 export default function LinearRegressionCalculatorPage() {
   return (
@@ -142,7 +133,12 @@ export default function LinearRegressionCalculatorPage() {
         aria-label="Linear regression calculator"
       >
         <Container>
-          <LinearRegressionCalculator />
+          <CalculatorPageShell
+            slug="linear-regression-calculator"
+            subject="laboratory"
+          >
+            <LinearRegressionCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -409,16 +405,10 @@ export default function LinearRegressionCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="linear-regression-calculator" />
-
-          <CalculatorTrustPanel subject="laboratory" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

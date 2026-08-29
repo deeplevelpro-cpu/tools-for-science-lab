@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { PercentDifferenceCalculator } from "@/components/calculators/percent-difference-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -62,11 +58,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("percent-difference-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "percent-difference-calculator",
-  calculators,
-);
 
 export default function PercentDifferenceCalculatorPage() {
   return (
@@ -122,7 +113,12 @@ export default function PercentDifferenceCalculatorPage() {
         aria-label="Percent difference calculator"
       >
         <Container>
-          <PercentDifferenceCalculator />
+          <CalculatorPageShell
+            slug="percent-difference-calculator"
+            subject="laboratory"
+          >
+            <PercentDifferenceCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -229,16 +225,10 @@ export default function PercentDifferenceCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="percent-difference-calculator" />
-
-          <CalculatorTrustPanel subject="laboratory" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

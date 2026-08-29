@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { PercentErrorCalculator } from "@/components/calculators/percent-error-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -61,11 +57,6 @@ const breadcrumbSchema =
 
 const faqSchema = createCalculatorFAQSchema("percent-error-calculator");
 
-const relatedCalculators = getRelatedCalculators(
-  "percent-error-calculator",
-  calculators,
-);
-
 export default function PercentErrorCalculatorPage() {
   return (
     <main>
@@ -113,7 +104,12 @@ export default function PercentErrorCalculatorPage() {
 
       <section className="tool-section" aria-label="Percent error calculator">
         <Container>
-          <PercentErrorCalculator />
+          <CalculatorPageShell
+            slug="percent-error-calculator"
+            subject="laboratory"
+          >
+            <PercentErrorCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -239,16 +235,10 @@ export default function PercentErrorCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="percent-error-calculator" />
-
-          <CalculatorTrustPanel subject="laboratory" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }
