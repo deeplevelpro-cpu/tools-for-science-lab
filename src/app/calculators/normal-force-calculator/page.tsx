@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { NormalForceCalculator } from "@/components/calculators/normal-force-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -64,11 +60,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("normal-force-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "normal-force-calculator",
-  calculators,
-);
 
 export default function NormalForceCalculatorPage() {
   return (
@@ -146,7 +137,12 @@ export default function NormalForceCalculatorPage() {
         aria-label="Normal force calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="normal-force-calculator"
+          subject="physics"
+        >
           <NormalForceCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -547,16 +543,10 @@ export default function NormalForceCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="normal-force-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

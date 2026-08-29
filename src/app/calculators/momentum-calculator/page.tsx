@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { MomentumCalculator } from "@/components/calculators/momentum-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -63,11 +59,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("momentum-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "momentum-calculator",
-  calculators,
-);
 
 export default function MomentumCalculatorPage() {
   return (
@@ -141,7 +132,12 @@ export default function MomentumCalculatorPage() {
         aria-label="Momentum calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="momentum-calculator"
+          subject="physics"
+        >
           <MomentumCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -426,16 +422,10 @@ export default function MomentumCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="momentum-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

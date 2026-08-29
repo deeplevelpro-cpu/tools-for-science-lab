@@ -1,16 +1,12 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import {
   GravitationalPotentialEnergyCalculator,
 } from "@/components/calculators/gravitational-potential-energy-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -57,11 +53,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("gravitational-potential-energy-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "gravitational-potential-energy-calculator",
-  calculators,
-);
 
 export default function GravitationalPotentialEnergyCalculatorPage() {
   return (
@@ -129,7 +120,12 @@ export default function GravitationalPotentialEnergyCalculatorPage() {
         aria-label="Gravitational potential energy calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="gravitational-potential-energy-calculator"
+          subject="physics"
+        >
           <GravitationalPotentialEnergyCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -415,16 +411,10 @@ export default function GravitationalPotentialEnergyCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="gravitational-potential-energy-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

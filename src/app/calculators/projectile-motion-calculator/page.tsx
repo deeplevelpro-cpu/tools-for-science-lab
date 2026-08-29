@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { ProjectileMotionCalculator } from "@/components/calculators/projectile-motion-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -67,11 +63,6 @@ const breadcrumbSchema =
   });
 
 
-
-const relatedCalculators = getRelatedCalculators(
-  "projectile-motion-calculator",
-  calculators,
-);
 
 export default function ProjectileMotionCalculatorPage() {
   return (
@@ -141,7 +132,12 @@ export default function ProjectileMotionCalculatorPage() {
         aria-label="Projectile motion calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="projectile-motion-calculator"
+          subject="physics"
+        >
           <ProjectileMotionCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -215,17 +211,12 @@ export default function ProjectileMotionCalculatorPage() {
           </article>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="projectile-motion-calculator" />
           <CalculatorFAQ slug="projectile-motion-calculator" />
 
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

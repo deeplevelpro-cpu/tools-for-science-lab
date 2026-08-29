@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { InclinedPlaneCalculator } from "@/components/calculators/inclined-plane-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -64,11 +60,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("inclined-plane-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "inclined-plane-calculator",
-  calculators,
-);
 
 export default function InclinedPlaneCalculatorPage() {
   return (
@@ -145,7 +136,12 @@ export default function InclinedPlaneCalculatorPage() {
         aria-label="Inclined plane calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="inclined-plane-calculator"
+          subject="physics"
+        >
           <InclinedPlaneCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -509,16 +505,10 @@ export default function InclinedPlaneCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="inclined-plane-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

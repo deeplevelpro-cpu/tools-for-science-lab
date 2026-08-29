@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { FreeFallCalculator } from "@/components/calculators/free-fall-calculator";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -66,11 +62,6 @@ const breadcrumbSchema =
   });
 
 
-
-const relatedCalculators = getRelatedCalculators(
-  "free-fall-calculator",
-  calculators,
-);
 
 export default function FreeFallCalculatorPage() {
   return (
@@ -143,7 +134,12 @@ export default function FreeFallCalculatorPage() {
         aria-label="Free fall calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="free-fall-calculator"
+          subject="physics"
+        >
           <FreeFallCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -499,14 +495,10 @@ export default function FreeFallCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

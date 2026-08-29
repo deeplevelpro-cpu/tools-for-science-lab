@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { KinematicEquationsCalculator } from "@/components/calculators/kinematic-equations-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -55,11 +51,6 @@ const calculatorSchema = createCalculatorSchema({
 });
 
 const faqSchema = createCalculatorFAQSchema("kinematic-equations-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "kinematic-equations-calculator",
-  calculators,
-);
 
 export default function KinematicEquationsCalculatorPage() {
   return (
@@ -128,7 +119,12 @@ export default function KinematicEquationsCalculatorPage() {
         aria-label="Kinematic equations calculator"
       >
         <Container>
+          <CalculatorPageShell
+          slug="kinematic-equations-calculator"
+          subject="physics"
+        >
           <KinematicEquationsCalculator />
+        </CalculatorPageShell>
         </Container>
       </section>
 
@@ -469,16 +465,10 @@ export default function KinematicEquationsCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="kinematic-equations-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }
