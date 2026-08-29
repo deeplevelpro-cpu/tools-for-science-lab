@@ -1,15 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { GayLussacsLawCalculator } from "@/components/calculators/gay-lussacs-law-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { GayLussacsLawCalculator } from "@/components/calculators/gay-lussacs-law-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 export const metadata: Metadata = {
   title: "Gay-Lussac's Law Calculator | Pressure & Temperature",
@@ -35,63 +39,15 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: "Gay-Lussac's Law Calculator | Pressure & Temperature",
-  description: "Calculate initial or final gas pressure and temperature with Gay-Lussac's law, P₁/T₁ = P₂/T₂. Supports Pa, kPa, bar, atm, mmHg, Kelvin, Celsius, and Fahrenheit.",
-  slug: "gay-lussacs-law-calculator",
-  category: "Chemistry",
-});
-
-const faqJsonLd = createCalculatorFAQSchema("gay-lussacs-law-calculator");
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: absoluteUrl("/"),
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Calculators",
-      item: absoluteUrl("/calculators"),
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Gay-Lussac's Law Calculator",
-      item: absoluteUrl("/calculators/gay-lussacs-law-calculator"),
-    },
-  ],
-};
 
 
 
 export default function GayLussacsLawCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqJsonLd),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd),
-        }}
-      />
+      
+      
+      
 
       <section className="tool-page-hero">
         <Container>

@@ -1,17 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { RotationalDynamicsCalculator } from "@/components/calculators/rotational-dynamics-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import {
-  RotationalDynamicsCalculator,
-} from "@/components/calculators/rotational-dynamics-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle =
   "Rotational Dynamics Calculator";
@@ -45,36 +47,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "rotational-dynamics-calculator",
-  category: "Physics",
-});
-
-const faqSchema = createCalculatorFAQSchema("rotational-dynamics-calculator");
 
 export default function RotationalDynamicsCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            calculatorSchema,
-          ).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

@@ -1,15 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { UncertaintyPropagationCalculator } from "@/components/calculators/uncertainty-propagation-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { UncertaintyPropagationCalculator } from "@/components/calculators/uncertainty-propagation-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle =
   "Uncertainty Propagation Calculator";
@@ -42,36 +46,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "uncertainty-propagation-calculator",
-  category: "Laboratory",
-});
-
-const faqSchema = createCalculatorFAQSchema("uncertainty-propagation-calculator");
 
 export default function UncertaintyPropagationCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            calculatorSchema,
-          ).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

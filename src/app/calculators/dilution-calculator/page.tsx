@@ -8,11 +8,6 @@ import { DilutionCalculator } from "@/components/calculators/dilution-calculator
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorSchema,
-  createCalculatorBreadcrumbSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Dilution Calculator | Molarity & Volume";
 const pageDescription =
@@ -41,41 +36,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "dilution-calculator",
-  category: "Chemistry",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "dilution-calculator",
-    category: "Physics",
-  });
-
-const faqSchema = createCalculatorFAQSchema("dilution-calculator");
 
 export default function DilutionCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

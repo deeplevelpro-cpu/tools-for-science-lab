@@ -1,17 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { ElasticPotentialEnergyCalculator } from "@/components/calculators/elastic-potential-energy-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import {
-  ElasticPotentialEnergyCalculator,
-} from "@/components/calculators/elastic-potential-energy-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle =
   "Elastic Potential Energy Calculator";
@@ -45,36 +47,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "elastic-potential-energy-calculator",
-  category: "Physics",
-});
-
-const faqSchema = createCalculatorFAQSchema("elastic-potential-energy-calculator");
 
 export default function ElasticPotentialEnergyCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            calculatorSchema,
-          ).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

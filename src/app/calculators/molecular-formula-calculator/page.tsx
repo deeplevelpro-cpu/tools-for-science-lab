@@ -1,13 +1,8 @@
-import type { Metadata } from "next";
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
 import { absoluteUrl } from "@/lib/seo/url";
 
-
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { MolecularFormulaCalculator } from "@/components/calculators/molecular-formula-calculator";
@@ -72,47 +67,17 @@ const faqs = [
   },
 ] as const;
 
-const faqSchema = createCalculatorFAQSchema("molecular-formula-calculator");
-
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "molecular-formula-calculator",
-  category: "Chemistry",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "molecular-formula-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function MolecularFormulaCalculatorPage() {
   return (
     <main>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema),
-        }}
-        type="application/ld+json"
-      />
+      
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-        type="application/ld+json"
-      />
+      
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
-        }}
-        type="application/ld+json"
-      />
+      
 
       <section className="page-hero">
         <div className="page-shell">

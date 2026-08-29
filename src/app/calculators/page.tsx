@@ -43,7 +43,6 @@ export const metadata: Metadata = {
 };
 
 
-const faqSchema = createCalculatorHubFAQSchema();
 
 const collectionSchema = createCollectionSchema({
   name: pageTitle,
@@ -52,58 +51,16 @@ const collectionSchema = createCollectionSchema({
   calculators,
 });
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: absoluteUrl("/"),
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Science Calculators",
-      item: absoluteUrl(pagePath),
-    },
-  ],
-};
 
 export default function CalculatorsPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(collectionSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
       <section className="directory-hero">
         <Container>

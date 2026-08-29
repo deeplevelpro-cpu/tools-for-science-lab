@@ -8,11 +8,6 @@ import { PercentDifferenceCalculator } from "@/components/calculators/percent-di
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorSchema,
-  createCalculatorBreadcrumbSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Percent Difference Calculator";
 const pageDescription =
@@ -43,41 +38,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "percent-difference-calculator",
-  category: "Laboratory",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "percent-difference-calculator",
-    category: "Physics",
-  });
-
-const faqSchema = createCalculatorFAQSchema("percent-difference-calculator");
 
 export default function PercentDifferenceCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

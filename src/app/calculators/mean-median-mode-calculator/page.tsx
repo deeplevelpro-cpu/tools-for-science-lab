@@ -8,11 +8,6 @@ import { MeanMedianModeCalculator } from "@/components/calculators/mean-median-m
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorSchema,
-  createCalculatorBreadcrumbSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Mean, Median and Mode Calculator";
 const pageDescription =
@@ -44,52 +39,15 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "mean-median-mode-calculator",
-  category: "Laboratory",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "mean-median-mode-calculator",
-    category: "Physics",
-  });
-
-const faqSchema = createCalculatorFAQSchema("mean-median-mode-calculator");
 
 export default function MeanMedianModeCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            calculatorSchema,
-          ).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbSchema,
-          ).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

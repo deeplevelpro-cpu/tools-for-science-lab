@@ -1,15 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { DaltonsLawCalculator } from "@/components/calculators/daltons-law-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { DaltonsLawCalculator } from "@/components/calculators/daltons-law-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import { createCalculatorSchema } from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath = "/calculators/daltons-law-calculator";
 
@@ -37,63 +41,15 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: "Dalton's Law Calculator | Total & Partial Pressure",
-  description: "Calculate total pressure or a missing partial pressure with Dalton's law. Add gas pressures in Pa, kPa, bar, atm, or mmHg with automatic unit conversion.",
-  slug: "daltons-law-calculator",
-  category: "Chemistry",
-});
-
-const faqJsonLd = createCalculatorFAQSchema("daltons-law-calculator");
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: absoluteUrl("/"),
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Calculators",
-      item: absoluteUrl("/calculators"),
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Dalton's Law Calculator",
-      item: absoluteUrl(pagePath),
-    },
-  ],
-};
 
 
 
 export default function DaltonsLawCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqJsonLd),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd),
-        }}
-      />
+      
+      
+      
 
       <section className="tool-page-hero">
         <Container>

@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { MolecularWeightCalculator } from "@/components/calculators/molecular-weight-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { MolecularWeightCalculator } from "@/components/calculators/molecular-weight-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle = "Molecular Weight Calculator";
 const pageDescription =
@@ -43,41 +44,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "molecular-weight-calculator",
-  category: "Chemistry",
-});
-
-const faqSchema = createCalculatorFAQSchema("molecular-weight-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "molecular-weight-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function MolecularWeightCalculatorPage() {
   return (
     <main>
-      {[calculatorSchema, faqSchema, breadcrumbSchema].map(
-        (schema, index) => (
-          <script
-            key={index}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema).replace(
-                /</g,
-                "\\u003c",
-              ),
-            }}
-          />
-        ),
-      )}
+      
 
       <section className="tool-page-hero">
         <Container>

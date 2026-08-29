@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { PhCalculator } from "@/components/calculators/ph-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { PhCalculator } from "@/components/calculators/ph-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath = "/calculators/ph-calculator";
 const pageTitle = "pH Calculator | Hydrogen Ion Concentration";
@@ -42,41 +43,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "ph-calculator",
-  category: "Chemistry",
-});
-
-const faqSchema = createCalculatorFAQSchema("ph-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "ph-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function PhCalculatorPage() {
   return (
     <main>
-      {[calculatorSchema, faqSchema, breadcrumbSchema].map(
-        (schema, index) => (
-          <script
-            key={index}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema).replace(
-                /</g,
-                "\\u003c",
-              ),
-            }}
-          />
-        ),
-      )}
+      
 
       <section className="tool-page-hero">
         <Container>

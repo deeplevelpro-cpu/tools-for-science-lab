@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { LimitingReactantCalculator } from "@/components/calculators/limiting-reactant-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { LimitingReactantCalculator } from "@/components/calculators/limiting-reactant-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath = "/calculators/limiting-reactant-calculator";
 const pageUrl = absoluteUrl(pagePath);
@@ -43,41 +44,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: title,
-  description: description,
-  slug: "limiting-reactant-calculator",
-  category: "Chemistry",
-});
-
-const faqSchema = createCalculatorFAQSchema("limiting-reactant-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: "Limiting Reactant Calculator",
-    slug: "limiting-reactant-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function LimitingReactantCalculatorPage() {
   return (
     <main>
-      {[calculatorSchema, faqSchema, breadcrumbSchema].map(
-        (schema, index) => (
-          <script
-            key={index}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema).replace(
-                /</g,
-                "\\u003c",
-              ),
-            }}
-          />
-        ),
-      )}
+      
 
       <section className="calculator-page">
         <Container>

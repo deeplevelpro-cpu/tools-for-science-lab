@@ -9,9 +9,6 @@ import { calculators } from "@/content/calculators/registry";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCollectionSchema } from "@/lib/seo/collection-schema";
 
-const faqSchema =
-  createCategoryFAQSchema("laboratory");
-
 const category = calculatorCategories.find(
   (item) => item.slug === "laboratory",
 )!;
@@ -61,27 +58,9 @@ export default function LaboratoryCalculatorsPage() {
   return (
     <>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(categorySchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema).replace(
-              /</g,
-              "\\u003c",
-            ),
-          }}
-        />
-      )}
+      
 
 
 

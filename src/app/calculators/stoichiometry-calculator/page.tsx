@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { StoichiometryCalculator } from "@/components/calculators/stoichiometry-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { StoichiometryCalculator } from "@/components/calculators/stoichiometry-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath = "/calculators/stoichiometry-calculator";
 const pageUrl = absoluteUrl(pagePath);
@@ -44,41 +45,13 @@ export const metadata: Metadata = {
 };
 
 
-const faqSchema = createCalculatorFAQSchema("stoichiometry-calculator");
-
-const calculatorSchema = createCalculatorSchema({
-  name: title,
-  description: description,
-  slug: "stoichiometry-calculator",
-  category: "Chemistry",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: "Stoichiometry Calculator",
-    slug: "stoichiometry-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function StoichiometryCalculatorPage() {
   return (
     <main>
-      {[calculatorSchema, faqSchema, breadcrumbSchema].map(
-        (schema, index) => (
-          <script
-            key={index}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema).replace(
-                /</g,
-                "\\u003c",
-              ),
-            }}
-          />
-        ),
-      )}
+      
 
       <section className="calculator-page">
         <Container>

@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { PercentYieldCalculator } from "@/components/calculators/percent-yield-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { PercentYieldCalculator } from "@/components/calculators/percent-yield-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath = "/calculators/percent-yield-calculator";
 const pageUrl = absoluteUrl(pagePath);
@@ -43,41 +44,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: title,
-  description: description,
-  slug: "percent-yield-calculator",
-  category: "Chemistry",
-});
-
-const faqSchema = createCalculatorFAQSchema("percent-yield-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: "Percent Yield Calculator",
-    slug: "percent-yield-calculator",
-    category: "Chemistry",
-  });
 
 
 
 export default function PercentYieldCalculatorPage() {
   return (
     <main>
-      {[calculatorSchema, faqSchema, breadcrumbSchema].map(
-        (schema, index) => (
-          <script
-            key={index}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema).replace(
-                /</g,
-                "\\u003c",
-              ),
-            }}
-          />
-        ),
-      )}
+      
 
       <section className="calculator-page">
         <Container>

@@ -8,11 +8,6 @@ import { MolarityCalculator } from "@/components/calculators/molarity-calculator
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorSchema,
-  createCalculatorBreadcrumbSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 
 const pageTitle = "Molarity Calculator | Moles, Volume & Concentration";
 const pageDescription =
@@ -41,41 +36,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "molarity-calculator",
-  category: "Chemistry",
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "molarity-calculator",
-    category: "Physics",
-  });
-
-const faqSchema = createCalculatorFAQSchema("molarity-calculator");
 
 export default function MolarityCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

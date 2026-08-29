@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import Link from "next/link";
-import type { Metadata } from "next";
-import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
-
 
 import { AccelerationDueToGravityCalculator } from "@/components/calculators/acceleration-due-to-gravity-calculator";
+
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
+import Link from "next/link";
+
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle =
   "Acceleration Due to Gravity Calculator";
@@ -49,44 +50,14 @@ export const metadata: Metadata = {
 
 
 export default function AccelerationDueToGravityCalculatorPage() {
-  const calculatorSchema = createCalculatorSchema({
-    name: pageTitle,
-    description: pageDescription,
-    slug: "acceleration-due-to-gravity-calculator",
-    category: "Physics",
-  });
-
-  const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "acceleration-due-to-gravity-calculator",
-    category: "Physics",
-  });
-
-  const faqSchema = createCalculatorFAQSchema("acceleration-due-to-gravity-calculator");
-
+      
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

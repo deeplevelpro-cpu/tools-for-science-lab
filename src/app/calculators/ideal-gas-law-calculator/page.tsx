@@ -1,20 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { IdealGasLawCalculator } from "@/components/calculators/ideal-gas-law-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import {
-  IdealGasLawCalculator,
-} from "@/components/calculators/ideal-gas-law-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pagePath =
   "/calculators/ideal-gas-law-calculator";
@@ -47,43 +46,13 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "ideal-gas-law-calculator",
-  category: "Physics",
-});
-
-const faqSchema = createCalculatorFAQSchema("ideal-gas-law-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "ideal-gas-law-calculator",
-    category: "Physics",
-  });
 
 
 
 export default function IdealGasLawCalculatorPage() {
   return (
     <main>
-      {[
-        calculatorSchema,
-        faqSchema,
-        breadcrumbSchema,
-      ].map((schema, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(schema).replace(
-              /</g,
-              "\\u003c",
-            ),
-          }}
-        />
-      ))}
+      
 
       <section className="tool-page-hero">
         <Container>

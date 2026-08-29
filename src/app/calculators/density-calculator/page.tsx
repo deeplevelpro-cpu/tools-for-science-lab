@@ -1,18 +1,19 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
-import type { Metadata } from "next";
+
+import { DensityCalculator } from "@/components/calculators/density-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { DensityCalculator } from "@/components/calculators/density-calculator";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
 
 const pageTitle = "Density Calculator | Mass, Volume & Density";
 const pageDescription =
@@ -41,61 +42,15 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "density-calculator",
-  category: "Physics",
-  relatedCalculators: [
-    {
-      name: "Mass Calculator",
-      href: "/calculators/mass-moles-calculator",
-    },
-    {
-      name: "Specific Heat Calculator",
-      href: "/calculators/specific-heat-calculator",
-    },
-  ],
-});
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: "Density Calculator",
-    slug: "density-calculator",
-    category: "Physics",
-  });
-
-const faqSchema = createCalculatorFAQSchema("density-calculator");
 
 export default function DensityCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
-        }}
-      />
+      
 
       <section className="tool-page-hero">
         <Container>

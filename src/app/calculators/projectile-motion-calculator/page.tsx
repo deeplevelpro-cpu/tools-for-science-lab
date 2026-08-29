@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
+
+import { ProjectileMotionCalculator } from "@/components/calculators/projectile-motion-calculator";
+
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import Link from "next/link";
 
-import { ProjectileMotionCalculator } from "@/components/calculators/projectile-motion-calculator";
-import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import { Container } from "@/components/ui/container";
-import { siteConfig } from "@/config/site";
+
 import { absoluteUrl } from "@/lib/seo/url";
-import {
-  createCalculatorBreadcrumbSchema,
-  createCalculatorSchema,
-} from "@/lib/seo/calculator-schema";
-import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
 
 const pageTitle = "Projectile Motion Calculator";
 
@@ -45,59 +45,17 @@ export const metadata: Metadata = {
   },
 };
 
-const calculatorSchema = createCalculatorSchema({
-  name: pageTitle,
-  description: pageDescription,
-  slug: "projectile-motion-calculator",
-  category: "Physics",
-});
-
-const faqSchema =
-  createCalculatorFAQSchema("projectile-motion-calculator");
-
-const breadcrumbSchema =
-  createCalculatorBreadcrumbSchema({
-    name: pageTitle,
-    slug: "projectile-motion-calculator",
-    category: "Physics",
-  });
 
 
 
 export default function ProjectileMotionCalculatorPage() {
   return (
     <main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(calculatorSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema).replace(
-            /</g,
-            "\\u003c",
-          ),
-        }}
-      />
+      
 
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema).replace(
-              /</g,
-              "\\u003c",
-            ),
-          }}
-        />
-      )}
+      
 
       <section className="tool-page-hero">
         <Container>

@@ -1,4 +1,5 @@
 import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
+import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
 import { RelatedCalculators } from "@/components/related-calculators";
 
@@ -29,7 +30,10 @@ export function CalculatorPageShell({
     );
 
   return (
-    <main>
+    <>
+      <CalculatorJsonLd slug={slug} />
+
+      <main>
       <article>
         {children}
       </article>
@@ -52,5 +56,6 @@ export function CalculatorPageShell({
         />
       </nav>
     </main>
+    </>
   );
 }
