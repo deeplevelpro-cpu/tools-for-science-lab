@@ -30,8 +30,6 @@ export function CalculatorPageShell({
 
   return (
     <>
-      {children}
-
       <section>
         {children}
 
