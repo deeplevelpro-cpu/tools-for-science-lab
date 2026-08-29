@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { ForceCalculator } from "@/components/calculators/force-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -63,11 +59,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("force-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "force-calculator",
-  calculators,
-);
 
 export default function ForceCalculatorPage() {
   return (
@@ -424,16 +415,14 @@ export default function ForceCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="force-calculator" />
-
-          <CalculatorTrustPanel subject="physics" />
+          <CalculatorPageShell
+            slug="force-calculator"
+            subject="physics"
+          >
+            <ForceCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
-    
-
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+    </main>
   );
 }
