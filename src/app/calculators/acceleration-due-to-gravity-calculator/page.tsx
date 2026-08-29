@@ -1,6 +1,7 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
 import { RelatedCalculators } from "@/components/related-calculators";
 import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
@@ -437,12 +438,6 @@ export default function AccelerationDueToGravityCalculatorPage() {
 
           <CalculatorTrustPanel subject="physics" />
         </Container>
-      </section>
-    
-
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </section></main>
   );
 }
