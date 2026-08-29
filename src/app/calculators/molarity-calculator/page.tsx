@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { MolarityCalculator } from "@/components/calculators/molarity-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -61,11 +57,6 @@ const breadcrumbSchema =
 
 const faqSchema = createCalculatorFAQSchema("molarity-calculator");
 
-const relatedCalculators = getRelatedCalculators(
-  "molarity-calculator",
-  calculators,
-);
-
 export default function MolarityCalculatorPage() {
   return (
     <main>
@@ -116,7 +107,12 @@ export default function MolarityCalculatorPage() {
 
       <section className="tool-section" aria-label="Molarity calculator">
         <Container>
-          <MolarityCalculator />
+          <CalculatorPageShell
+            slug="molarity-calculator"
+            subject="chemistry"
+          >
+            <MolarityCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -251,16 +247,10 @@ export default function MolarityCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="molarity-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { AvogadrosLawCalculator } from "@/components/calculators/avogadros-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -79,11 +75,6 @@ const breadcrumbJsonLd = {
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "avogadros-law-calculator",
-  calculators,
-);
-
 export default function AvogadrosLawCalculatorPage() {
   return (
     <main>
@@ -139,7 +130,12 @@ export default function AvogadrosLawCalculatorPage() {
         aria-label="Avogadro's law calculator"
       >
         <Container>
-          <AvogadrosLawCalculator />
+          <CalculatorPageShell
+            slug="avogadros-law-calculator"
+            subject="chemistry"
+          >
+            <AvogadrosLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -481,16 +477,10 @@ export default function AvogadrosLawCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="avogadros-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

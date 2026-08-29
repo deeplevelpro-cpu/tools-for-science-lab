@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CharlesLawCalculator } from "@/components/calculators/charles-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -75,11 +71,6 @@ const breadcrumbJsonLd = {
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "charles-law-calculator",
-  calculators,
-);
-
 export default function CharlesLawCalculatorPage() {
   return (
     <main>
@@ -136,7 +127,12 @@ export default function CharlesLawCalculatorPage() {
         aria-label="Charles's law calculator"
       >
         <Container>
-          <CharlesLawCalculator />
+          <CalculatorPageShell
+            slug="charles-law-calculator"
+            subject="chemistry"
+          >
+            <CharlesLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -467,16 +463,10 @@ export default function CharlesLawCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="charles-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

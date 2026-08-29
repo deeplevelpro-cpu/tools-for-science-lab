@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { CombinedGasLawCalculator } from "@/components/calculators/combined-gas-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -84,11 +80,6 @@ const breadcrumbJsonLd = {
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "combined-gas-law-calculator",
-  calculators,
-);
-
 export default function CombinedGasLawCalculatorPage() {
   return (
     <main>
@@ -137,7 +128,12 @@ export default function CombinedGasLawCalculatorPage() {
         aria-label="Combined gas law calculator"
       >
         <Container>
-          <CombinedGasLawCalculator />
+          <CalculatorPageShell
+            slug="combined-gas-law-calculator"
+            subject="chemistry"
+          >
+            <CombinedGasLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -325,17 +321,11 @@ export default function CombinedGasLawCalculatorPage() {
           </article>
 
           <aside className="article-sidebar">
-            <CalculatorContentLoader slug="combined-gas-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-          </aside>
+            </aside>
         </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

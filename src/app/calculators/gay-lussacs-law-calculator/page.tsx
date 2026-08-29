@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { GayLussacsLawCalculator } from "@/components/calculators/gay-lussacs-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -75,11 +71,6 @@ const breadcrumbJsonLd = {
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "gay-lussacs-law-calculator",
-  calculators,
-);
-
 export default function GayLussacsLawCalculatorPage() {
   return (
     <main>
@@ -136,7 +127,12 @@ export default function GayLussacsLawCalculatorPage() {
         aria-label="Gay-Lussac's law calculator"
       >
         <Container>
-          <GayLussacsLawCalculator />
+          <CalculatorPageShell
+            slug="gay-lussacs-law-calculator"
+            subject="chemistry"
+          >
+            <GayLussacsLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -448,16 +444,10 @@ export default function GayLussacsLawCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="gay-lussacs-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

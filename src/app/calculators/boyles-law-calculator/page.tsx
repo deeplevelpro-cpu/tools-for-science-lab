@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { BoylesLawCalculator } from "@/components/calculators/boyles-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -63,11 +59,6 @@ const breadcrumbSchema =
   });
 
 
-
-const relatedCalculators = getRelatedCalculators(
-  "boyles-law-calculator",
-  calculators,
-);
 
 export default function BoylesLawCalculatorPage() {
   return (
@@ -129,7 +120,12 @@ export default function BoylesLawCalculatorPage() {
         aria-label="Boyle's law calculator"
       >
         <Container>
-          <BoylesLawCalculator />
+          <CalculatorPageShell
+            slug="boyles-law-calculator"
+            subject="chemistry"
+          >
+            <BoylesLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -507,16 +503,10 @@ export default function BoylesLawCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="boyles-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

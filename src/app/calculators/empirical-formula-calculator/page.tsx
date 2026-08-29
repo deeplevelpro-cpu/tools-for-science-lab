@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { EmpiricalFormulaCalculator } from "@/components/calculators/empirical-formula-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -70,11 +66,6 @@ const breadcrumbSchema =
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "empirical-formula-calculator",
-  calculators,
-);
-
 export default function EmpiricalFormulaCalculatorPage() {
   return (
     <main>
@@ -117,7 +108,12 @@ export default function EmpiricalFormulaCalculatorPage() {
             </p>
           </div>
 
-          <EmpiricalFormulaCalculator />
+          <CalculatorPageShell
+            slug="empirical-formula-calculator"
+            subject="chemistry"
+          >
+            <EmpiricalFormulaCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -426,16 +422,10 @@ export default function EmpiricalFormulaCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="empirical-formula-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

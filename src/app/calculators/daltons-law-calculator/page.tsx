@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { DaltonsLawCalculator } from "@/components/calculators/daltons-law-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -77,11 +73,6 @@ const breadcrumbJsonLd = {
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "daltons-law-calculator",
-  calculators,
-);
-
 export default function DaltonsLawCalculatorPage() {
   return (
     <main>
@@ -138,7 +129,12 @@ export default function DaltonsLawCalculatorPage() {
         aria-label="Dalton's law calculator"
       >
         <Container>
-          <DaltonsLawCalculator />
+          <CalculatorPageShell
+            slug="daltons-law-calculator"
+            subject="chemistry"
+          >
+            <DaltonsLawCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -493,16 +489,10 @@ export default function DaltonsLawCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="daltons-law-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

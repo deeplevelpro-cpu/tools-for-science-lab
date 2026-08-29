@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { DilutionCalculator } from "@/components/calculators/dilution-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -61,11 +57,6 @@ const breadcrumbSchema =
 
 const faqSchema = createCalculatorFAQSchema("dilution-calculator");
 
-const relatedCalculators = getRelatedCalculators(
-  "dilution-calculator",
-  calculators,
-);
-
 export default function DilutionCalculatorPage() {
   return (
     <main>
@@ -117,7 +108,12 @@ export default function DilutionCalculatorPage() {
         aria-label="Dilution calculator"
       >
         <Container>
-          <DilutionCalculator />
+          <CalculatorPageShell
+            slug="dilution-calculator"
+            subject="chemistry"
+          >
+            <DilutionCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -249,16 +245,10 @@ export default function DilutionCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="dilution-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

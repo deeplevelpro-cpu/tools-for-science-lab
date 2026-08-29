@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { LimitingReactantCalculator } from "@/components/calculators/limiting-reactant-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -65,11 +61,6 @@ const breadcrumbSchema =
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "limiting-reactant-calculator",
-  calculators,
-);
-
 export default function LimitingReactantCalculatorPage() {
   return (
     <main>
@@ -113,7 +104,12 @@ export default function LimitingReactantCalculatorPage() {
             </p>
           </div>
 
-          <LimitingReactantCalculator />
+          <CalculatorPageShell
+            slug="limiting-reactant-calculator"
+            subject="chemistry"
+          >
+            <LimitingReactantCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -364,16 +360,10 @@ export default function LimitingReactantCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="limiting-reactant-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

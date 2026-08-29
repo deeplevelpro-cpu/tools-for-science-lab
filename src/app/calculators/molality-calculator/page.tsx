@@ -1,13 +1,9 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { MolalityCalculator } from "@/components/calculators/molality-calculator";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -62,11 +58,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("molality-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "molality-calculator",
-  calculators,
-);
 
 export default function MolalityCalculatorPage() {
   return (
@@ -123,7 +114,12 @@ export default function MolalityCalculatorPage() {
         aria-label="Molality calculator"
       >
         <Container>
-          <MolalityCalculator />
+          <CalculatorPageShell
+            slug="molality-calculator"
+            subject="chemistry"
+          >
+            <MolalityCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -324,16 +320,10 @@ export default function MolalityCalculatorPage() {
         </Container>
 
         <Container>
-          <CalculatorContentLoader slug="molality-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

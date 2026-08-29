@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 import { absoluteUrl } from "@/lib/seo/url";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 
 import {
   createCalculatorBreadcrumbSchema,
@@ -12,8 +10,6 @@ import {
 import { createCalculatorFAQSchema } from "@/lib/seo/calculator-faq-schema";
 import Link from "next/link";
 
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { MolecularFormulaCalculator } from "@/components/calculators/molecular-formula-calculator";
 
 const pageTitle =
@@ -94,11 +90,6 @@ const breadcrumbSchema =
 
 
 
-const relatedCalculators = getRelatedCalculators(
-  "molecular-formula-calculator",
-  calculators,
-);
-
 export default function MolecularFormulaCalculatorPage() {
   return (
     <main>
@@ -153,7 +144,12 @@ export default function MolecularFormulaCalculatorPage() {
 
       <section className="page-section">
         <div className="page-shell">
-          <MolecularFormulaCalculator />
+          <CalculatorPageShell
+            slug="molecular-formula-calculator"
+            subject="chemistry"
+          >
+            <MolecularFormulaCalculator />
+          </CalculatorPageShell>
         </div>
       </section>
 
@@ -372,16 +368,10 @@ export default function MolecularFormulaCalculatorPage() {
 
       <section className="page-section">
         <div className="page-shell">
-          <CalculatorContentLoader slug="molecular-formula-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </div>
+          </div>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }

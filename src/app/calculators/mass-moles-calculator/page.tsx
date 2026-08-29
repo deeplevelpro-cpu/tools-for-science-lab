@@ -1,14 +1,10 @@
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
 import type { Metadata } from "next";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 
-import { RelatedCalculators } from "@/components/related-calculators";
-import { getRelatedCalculators } from "@/content/calculators/get-related-calculators";
-import { calculators } from "@/content/calculators/registry";
 import Link from "next/link";
 
 import { MassMolesCalculator } from "@/components/calculators/mass-moles-calculator";
-import { CalculatorTrustPanel } from "@/components/calculator-trust";
-import { CalculatorContentLoader } from "@/components/calculator-content/calculator-content-loader";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
@@ -63,11 +59,6 @@ const breadcrumbSchema =
   });
 
 const faqSchema = createCalculatorFAQSchema("mass-moles-calculator");
-
-const relatedCalculators = getRelatedCalculators(
-  "mass-moles-calculator",
-  calculators,
-);
 
 export default function MassMolesCalculatorPage() {
   return (
@@ -142,7 +133,12 @@ export default function MassMolesCalculatorPage() {
         aria-label="Mass to moles calculator"
       >
         <Container>
-          <MassMolesCalculator />
+          <CalculatorPageShell
+            slug="mass-moles-calculator"
+            subject="chemistry"
+          >
+            <MassMolesCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
@@ -319,16 +315,10 @@ export default function MassMolesCalculatorPage() {
           </aside>
         </Container>
         <Container>
-          <CalculatorContentLoader slug="mass-moles-calculator" />
-
-          <CalculatorTrustPanel subject="chemistry" />
-        </Container>
+          </Container>
       </section>
     
 
-      <RelatedCalculators
-        calculators={relatedCalculators}
-      />
-</main>
+      </main>
   );
 }
