@@ -3331,57 +3331,78 @@ export const calculatorSEOContent: Record<
     slug: "projectile-motion-calculator",
 
     seoIntroduction:
-      "Projectile Motion Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate projectile range, maximum height, and flight time using velocity, angle, and gravity.\"",
+      "Projectile Motion Calculator analyzes two-dimensional motion to calculate range, maximum height, and flight time using launch velocity, angle, and gravitational acceleration.",
 
     howItWorks:
-      "Projectile motion separates movement into horizontal and vertical components to calculate trajectory.",
+      "Projectile motion separates an object's movement into horizontal and vertical components. Horizontal velocity remains constant while gravity changes the vertical velocity during flight.",
 
     formula:
-      "Motion equations using horizontal and vertical velocity components",
+      "x = v₀cos(θ)t, y = v₀sin(θ)t - ½gt², R = v₀²sin(2θ) ÷ g, H = v₀²sin²(θ) ÷ 2g",
 
     variables: [
-      "Initial velocity",
-      "Launch angle",
-      "Time",
-      "Gravity",
+      "Initial velocity (v₀)",
+      "Launch angle (θ)",
+      "Time of flight (t)",
+      "Horizontal displacement (x)",
+      "Vertical displacement (y)",
+      "Gravitational acceleration (g)",
     ],
 
     applications: [
-      "Physics problems",
-      "Sports analysis",
+      "Physics laboratory experiments",
+      "Sports trajectory analysis",
       "Engineering simulations",
+      "Kinematics education",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "Air resistance is ignored in the ideal projectile model.",
+      "Gravity is treated as constant during motion.",
+      "The launch and landing points are assumed to have the required reference height relationship.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: A launched object can be analyzed to determine maximum height and horizontal range from velocity and launch angle.",
+      "Example: Physics experiments can compare measured projectile paths with theoretical motion equations.",
     ],
 
     faqs: [
       {
         question:
-          "How is projectile motion calculated?",
+          "How is projectile range calculated?",
         answer:
-          "Projectile Motion Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Projectile range can be calculated using the initial velocity, launch angle, and gravitational acceleration with the range equation.",
       },
       {
         question:
-          "What factors affect projectile range?",
+          "Why are horizontal and vertical motion separated?",
         answer:
-          "Projectile Motion Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Horizontal motion has constant velocity while vertical motion changes because of gravitational acceleration.",
       },
       {
         question:
-          "Why is launch angle important?",
+          "Does air resistance affect projectile motion?",
         answer:
-          "Projectile Motion Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Yes. Real projectiles experience air resistance, but ideal calculations usually ignore it for educational physics models.",
       },
     ],
+
+    references: [
+      "NIST Reference on physical constants and SI measurements",
+      "OpenStax University Physics: Projectile Motion",
+      "NASA educational resources on motion and trajectories",
+    ],
+
+    limitations: [
+      "Does not include aerodynamic drag or wind effects.",
+      "Results depend on accurate velocity, angle, and gravity values.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "pressure-calculator": {
