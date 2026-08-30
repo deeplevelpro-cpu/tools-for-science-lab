@@ -3638,34 +3638,37 @@ export const calculatorSEOContent: Record<
     slug: "gravitational-potential-energy-calculator",
 
     seoIntroduction:
-      "Gravitational Potential Energy Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate gravitational potential energy, mass, gravity, or height using PE = mgh.\"",
+      "Gravitational Potential Energy Calculator determines the stored energy of an object due to its position in a gravitational field. It helps students and science learners calculate energy using mass, height, and gravitational acceleration.",
 
     howItWorks:
-      "Gravitational Potential Energy Calculator applies physics principles to process measured values and calculate results using the relationship between the selected variables.",
+      "Gravitational potential energy represents the energy stored because of an object's height relative to a reference point. The calculator uses mass, gravitational acceleration, and height to determine the energy value.",
 
     formula:
-      "Gravitational Potential Energy Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "PE = mgh",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Gravitational potential energy (PE)",
+      "Mass of object (m)",
+      "Gravitational acceleration (g)",
+      "Height above reference point (h)",
     ],
 
     applications: [
       "Physics education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
+      "Mechanical energy analysis",
+      "Engineering calculations",
+      "Laboratory motion experiments",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "Gravity is treated as constant during the calculation.",
+      "The reference height point is clearly defined.",
+      "Mass and height values use compatible units.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: A 5 kg object raised 10 m above the ground stores approximately 490 J of gravitational potential energy on Earth.",
+      "Example: Physics experiments can compare measured height changes with calculated gravitational energy.",
     ],
 
     faqs: [
@@ -3673,21 +3676,38 @@ export const calculatorSEOContent: Record<
         question:
           "How is gravitational potential energy calculated?",
         answer:
-          "Gravitational Potential Energy Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Gravitational potential energy is calculated using PE = mgh, where mass, gravity, and height determine the stored energy.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "What affects gravitational potential energy?",
         answer:
-          "Gravitational Potential Energy Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Gravitational potential energy increases when an object's mass or height increases, assuming gravity remains constant.",
       },
       {
         question:
-          "What units should be used?",
+          "What is the SI unit of gravitational potential energy?",
         answer:
-          "Gravitational Potential Energy Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "The SI unit of gravitational potential energy is the joule (J), which represents energy or work.",
       },
     ],
+
+    references: [
+      "NIST Reference on SI energy measurements",
+      "OpenStax University Physics: Work and Potential Energy",
+      "NASA educational resources on gravitational energy",
+    ],
+
+    limitations: [
+      "Does not account for changing gravitational fields over large distances.",
+      "Results depend on accurate mass and height measurements.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "kinetic-energy-calculator": {
