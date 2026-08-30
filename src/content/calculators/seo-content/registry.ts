@@ -1153,56 +1153,77 @@ export const calculatorSEOContent: Record<
     slug: "empirical-formula-calculator",
 
     seoIntroduction:
-      "Empirical Formula Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate an empirical formula from element masses or percentage composition with mole conversions and simplest whole-number ratios.\"",
+      "Empirical Formula Calculator determines the simplest whole-number ratio of elements in a chemical compound. It helps chemistry students, researchers, and laboratory professionals convert element composition data into accurate empirical formulas.",
 
     howItWorks:
-      "Empirical Formula Calculator applies chemistry principles to process measured values and calculate results using the relationship between the selected variables.",
+      "The calculator converts element masses or percentages into moles, compares the mole ratios, and simplifies them to the smallest whole-number ratio. This simplified ratio represents the empirical formula of the compound.",
 
     formula:
-      "Empirical Formula Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "Empirical Formula = Simplest Whole-Number Ratio of Element Moles",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Element names or symbols",
+      "Mass or percentage composition",
+      "Moles of each element",
+      "Simplified mole ratio",
+      "Empirical formula",
     ],
 
     applications: [
+      "Chemical compound identification",
+      "Laboratory composition analysis",
       "Chemistry education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
+      "Stoichiometric calculations",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "Element composition values are measured accurately.",
+      "Atomic masses used for conversion are correct.",
+      "The resulting mole ratio can be simplified to whole numbers.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: Element percentages can be converted into moles and reduced to determine the simplest chemical ratio.",
+      "Example: Chemists use empirical formulas to describe the elemental composition of unknown compounds.",
     ],
 
     faqs: [
       {
         question:
-          "How is empirical formula calculated?",
+          "How is an empirical formula calculated?",
         answer:
-          "Empirical Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "An empirical formula is calculated by converting element amounts into moles, finding their ratio, and simplifying the ratio to the smallest whole numbers.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "What information is needed to find an empirical formula?",
         answer:
-          "Empirical Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "The calculation requires element composition data such as masses or percentages along with atomic mass values.",
       },
       {
         question:
-          "What units should be used?",
+          "Why are empirical formulas important in chemistry?",
         answer:
-          "Empirical Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Empirical formulas show the simplest elemental relationship in compounds and help scientists analyze chemical composition.",
       },
     ],
+
+    references: [
+      "OpenStax Chemistry: Chemical Composition and Formulas",
+      "NIST Chemistry Reference Data",
+      "Scientific chemical analysis guidelines",
+    ],
+
+    limitations: [
+      "Results depend on accurate composition measurements.",
+      "Empirical formulas do not show the actual number of atoms in a molecule unless molecular mass information is available.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "molecular-formula-calculator": {
