@@ -30,6 +30,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     },
     {
+      url: absoluteUrl("/methodology"),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: absoluteUrl("/references"),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: absoluteUrl("/authors"),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
       url: absoluteUrl("/disclaimer"),
       changeFrequency: "yearly",
       priority: 0.3,
@@ -63,6 +78,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: absoluteUrl("/calculators/laboratory"),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/lab-reports"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: absoluteUrl("/scientific-method"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: absoluteUrl("/templates"),
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     ...calculatorPages,
   ];
