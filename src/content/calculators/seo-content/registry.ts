@@ -466,56 +466,76 @@ export const calculatorSEOContent: Record<
     slug: "uncertainty-propagation-calculator",
 
     seoIntroduction:
-      "Uncertainty Propagation Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Propagate uncertainty through addition, subtraction, multiplication, and division.\"",
+      "Uncertainty Propagation Calculator estimates how measurement uncertainty changes when values are combined through mathematical operations. It helps scientists, students, and laboratory users evaluate reliability in calculated results.",
 
     howItWorks:
-      "Uncertainty Propagation Calculator applies laboratory principles to process measured values and calculate results using the relationship between the selected variables.",
+      "Uncertainty propagation applies mathematical rules to determine how individual measurement uncertainties contribute to the uncertainty of a final result. The calculator combines input uncertainties based on the selected calculation relationship.",
 
     formula:
-      "Uncertainty Propagation Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "For independent variables: uncertainty is calculated using propagation rules based on partial derivatives and individual measurement uncertainties.",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Measured input values",
+      "Individual measurement uncertainties",
+      "Calculated result",
+      "Combined uncertainty",
     ],
 
     applications: [
-      "Laboratory education",
-      "Laboratory and classroom calculations",
+      "Laboratory measurements",
+      "Physics and chemistry experiments",
       "Scientific data analysis",
+      "Experimental error evaluation",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "Input measurements have known uncertainties.",
+      "Variables are treated according to the selected propagation method.",
+      "Measurement errors are independent unless otherwise specified.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: Combining length and width measurements requires considering uncertainty from both measurements when calculating area.",
+      "Example: Researchers use uncertainty propagation to report calculated values with realistic confidence ranges.",
     ],
 
     faqs: [
       {
         question:
-          "How is uncertainty propagation calculated?",
+          "What is uncertainty propagation?",
         answer:
-          "Uncertainty Propagation Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Uncertainty propagation describes how measurement uncertainties transfer through calculations to affect the uncertainty of a final result.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "How is propagated uncertainty calculated?",
         answer:
-          "Uncertainty Propagation Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Propagated uncertainty is calculated using mathematical relationships between variables and their individual measurement uncertainties.",
       },
       {
         question:
-          "What units should be used?",
+          "Why is uncertainty propagation important?",
         answer:
-          "Uncertainty Propagation Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Uncertainty propagation helps scientists communicate reliable measurements and understand confidence in calculated results.",
       },
     ],
+
+    references: [
+      "NIST Guidelines for uncertainty evaluation and measurement",
+      "OpenStax University Physics: Measurement Uncertainty",
+      "Scientific laboratory measurement practices",
+    ],
+
+    limitations: [
+      "Accuracy depends on correct input uncertainties and assumptions.",
+      "Complex systems may require advanced statistical uncertainty analysis.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "measurement-uncertainty-calculator": {
