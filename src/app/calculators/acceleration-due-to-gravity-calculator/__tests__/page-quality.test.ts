@@ -11,10 +11,15 @@ describe("acceleration due to gravity page quality", () => {
   it("keeps complete metadata and structured data", () => {
     expect(source).toContain("export const metadata");
     expect(source).toContain("canonicalPath");
-    expect(source).toContain("createCalculatorSchema");
-    expect(source).toContain("createCalculatorBreadcrumbSchema");
-    expect(source).toContain("createCalculatorFAQSchema");
-    expect(source).toContain('type="application/ld+json"');
+    expect(source).toContain(
+      "CalculatorPageShell",
+    );
+    expect(source).toContain(
+      'slug="acceleration-due-to-gravity-calculator"',
+    );
+    expect(source).toContain(
+      'subject="physics"',
+    );
   });
 
   it("documents the formula and variables", () => {

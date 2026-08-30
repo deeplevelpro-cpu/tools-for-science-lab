@@ -12,10 +12,14 @@ describe("free fall page quality", () => {
     expect(source).toContain(
       'const pageTitle = "Free Fall Calculator"',
     );
-    expect(source).toContain("breadcrumbSchema");
-    expect(source).toContain("createCalculatorFAQSchema");
     expect(source).toContain(
-      'type="application/ld+json"',
+      'CalculatorPageShell',
+    );
+    expect(source).toContain(
+      'slug="free-fall-calculator"',
+    );
+    expect(source).toContain(
+      'subject="physics"',
     );
   });
 
@@ -76,7 +80,7 @@ describe("free fall page quality", () => {
     );
 
     expect(source).toContain(
-      "createCalculatorFAQSchema",
+      'CalculatorFAQ slug="free-fall-calculator"',
     );
   });
 
