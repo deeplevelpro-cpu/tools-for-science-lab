@@ -1000,34 +1000,37 @@ export const calculatorSEOContent: Record<
     slug: "dilution-calculator",
 
     seoIntroduction:
-      "Dilution Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Solve dilution problems using initial and final concentration and volume.\"",
+      "Dilution Calculator determines the concentration or volume changes that occur when a solution is diluted. It helps chemistry students, researchers, and laboratory professionals prepare solutions with accurate concentrations.",
 
     howItWorks:
-      "Dilution Calculator applies chemistry principles to process measured values and calculate results using the relationship between the selected variables.",
+      "The calculator applies the dilution relationship between initial concentration, initial volume, final concentration, and final volume. It calculates unknown values while keeping the amount of dissolved solute constant during dilution.",
 
     formula:
-      "Dilution Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "C₁V₁ = C₂V₂",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Initial concentration (C₁)",
+      "Initial volume (V₁)",
+      "Final concentration (C₂)",
+      "Final volume (V₂)",
     ],
 
     applications: [
-      "Chemistry education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
+      "Laboratory solution preparation",
+      "Chemistry experiments",
+      "Concentration adjustments",
+      "Scientific sample analysis",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "The amount of solute remains constant during dilution.",
+      "Concentration and volume units are compatible.",
+      "The solution is mixed uniformly after dilution.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: Preparing a lower concentration solution from a concentrated stock solution requires calculating the correct dilution volume.",
+      "Example: Laboratory scientists use dilution calculations to create accurate solutions for experiments and analysis.",
     ],
 
     faqs: [
@@ -1035,21 +1038,38 @@ export const calculatorSEOContent: Record<
         question:
           "How is dilution calculated?",
         answer:
-          "Dilution Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Dilution is calculated using the equation C₁V₁ = C₂V₂, which relates the initial and final concentrations and volumes.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "What is the dilution formula?",
         answer:
-          "Dilution Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "The standard dilution formula is C₁V₁ = C₂V₂, where concentration multiplied by volume remains constant.",
       },
       {
         question:
-          "What units should be used?",
+          "Why are dilution calculations important?",
         answer:
-          "Dilution Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Dilution calculations help scientists prepare accurate solution concentrations for experiments, testing, and research.",
       },
     ],
+
+    references: [
+      "OpenStax Chemistry: Solutions and Concentrations",
+      "NIST Chemical Measurement Resources",
+      "Scientific laboratory solution preparation guidelines",
+    ],
+
+    limitations: [
+      "Accuracy depends on correct concentration and volume measurements.",
+      "Incorrect unit conversion can produce inaccurate dilution results.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "molecular-weight-calculator": {
