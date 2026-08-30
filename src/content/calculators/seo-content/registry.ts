@@ -2392,56 +2392,77 @@ export const calculatorSEOContent: Record<
     slug: "friction-calculator",
 
     seoIntroduction:
-      "Friction Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate static or kinetic friction force, coefficient of friction, or normal force using F = μN.\"",
+      "Friction Calculator determines friction force between surfaces using physical properties such as normal force and coefficient of friction. It helps physics students, engineers, and laboratory users analyze static and kinetic friction in mechanical systems.",
 
     howItWorks:
-      "Friction Calculator applies physics principles to process measured values and calculate results using the relationship between the selected variables.",
+      "The calculator applies the relationship between friction force, coefficient of friction, and normal force. It calculates the resistance force that opposes motion between contacting surfaces.",
 
     formula:
-      "Friction Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "Friction Force = μ × N",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Coefficient of friction",
+      "Normal force",
+      "Friction force",
+      "Surface interaction conditions",
+      "Static or kinetic friction type",
     ],
 
     applications: [
       "Physics education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
+      "Mechanical engineering analysis",
+      "Laboratory friction experiments",
+      "Material and surface studies",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "The coefficient of friction accurately represents the interacting surfaces.",
+      "Force values use compatible units.",
+      "The contact surface conditions remain consistent.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: Calculate friction force acting on an object when normal force and coefficient of friction are known.",
+      "Example: Engineers analyze friction to improve machine performance and safety.",
     ],
 
     faqs: [
       {
         question:
-          "How is friction calculated?",
+          "How is friction force calculated?",
         answer:
-          "Friction Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Friction force is calculated by multiplying the coefficient of friction by the normal force acting between two surfaces.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "What factors affect friction?",
         answer:
-          "Friction Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Surface materials, coefficient of friction, and normal force affect the amount of friction between objects.",
       },
       {
         question:
-          "What units should be used?",
+          "What is the difference between static and kinetic friction?",
         answer:
-          "Friction Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Static friction prevents motion from starting, while kinetic friction acts when surfaces are already sliding against each other.",
       },
     ],
+
+    references: [
+      "OpenStax University Physics: Friction and Forces",
+      "Engineering mechanics principles",
+      "Classical physics force analysis references",
+    ],
+
+    limitations: [
+      "Real surfaces may produce different friction values due to wear, texture, and environmental conditions.",
+      "Results depend on accurate coefficient of friction measurements.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "normal-force-calculator": {
