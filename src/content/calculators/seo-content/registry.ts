@@ -1307,34 +1307,39 @@ export const calculatorSEOContent: Record<
     slug: "stoichiometry-calculator",
 
     seoIntroduction:
-      "Stoichiometry Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Convert reactant and product amounts using balanced-equation mole ratios, moles, grams, and molar masses.\"",
+      "Stoichiometry Calculator determines the quantitative relationships between reactants and products in chemical reactions. It helps chemistry students, researchers, and laboratory professionals calculate moles, masses, and reaction amounts using balanced chemical equations.",
 
     howItWorks:
-      "Stoichiometry Calculator applies chemistry principles to process measured values and calculate results using the relationship between the selected variables.",
+      "The calculator uses mole ratios from a balanced chemical equation to convert between reactant and product quantities. It applies molar masses and reaction relationships to determine unknown chemical amounts.",
 
     formula:
-      "Stoichiometry Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "Mole Ratio Relationship = Coefficients from Balanced Chemical Equation",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Balanced chemical equation",
+      "Reactant amount",
+      "Product amount",
+      "Moles",
+      "Molar mass",
+      "Reaction coefficients",
     ],
 
     applications: [
+      "Chemical reaction calculations",
+      "Laboratory experiment planning",
+      "Industrial chemistry processes",
       "Chemistry education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "The chemical equation is balanced correctly.",
+      "Reactants and products are identified accurately.",
+      "Molar masses and measurements use compatible units.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: A balanced reaction equation can be used to calculate how many grams of product form from a known reactant amount.",
+      "Example: Chemists use stoichiometry to predict required reactants and expected products in experiments.",
     ],
 
     faqs: [
@@ -1342,21 +1347,38 @@ export const calculatorSEOContent: Record<
         question:
           "How is stoichiometry calculated?",
         answer:
-          "Stoichiometry Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Stoichiometry is calculated using mole ratios from a balanced chemical equation to relate quantities of reactants and products.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "Why must chemical equations be balanced for stoichiometry?",
         answer:
-          "Stoichiometry Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Balanced equations provide the correct mole relationships required for accurate chemical quantity calculations.",
       },
       {
         question:
-          "What units should be used?",
+          "What information is needed for stoichiometric calculations?",
         answer:
-          "Stoichiometry Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Stoichiometry calculations require a balanced chemical equation and at least one known reactant or product quantity.",
       },
     ],
+
+    references: [
+      "OpenStax Chemistry: Stoichiometry and Chemical Reactions",
+      "NIST Chemistry Reference Data",
+      "Scientific laboratory reaction calculation guidelines",
+    ],
+
+    limitations: [
+      "Accuracy depends on correct balanced equations and input measurements.",
+      "Real reactions may produce different results due to experimental conditions and reaction efficiency.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "limiting-reactant-calculator": {
