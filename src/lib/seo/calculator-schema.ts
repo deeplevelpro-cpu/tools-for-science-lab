@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "./url";
 
 type CalculatorSchemaInput = {
@@ -67,15 +68,17 @@ export function createCalculatorSchema({
 
     creator: {
       "@type": "Organization",
-      name: "ScienceCalcHub",
+      name: siteConfig.review.publisher,
       url: absoluteUrl("/"),
     },
 
     publisher: {
       "@type": "Organization",
-      name: "ScienceCalcHub",
+      name: siteConfig.review.publisher,
       url: absoluteUrl("/"),
     },
+
+    dateModified: siteConfig.review.lastReviewed,
 
     about: {
       "@type": "Thing",

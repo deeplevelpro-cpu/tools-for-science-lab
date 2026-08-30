@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Container } from "@/components/ui/container";
+import { PageJsonLd } from "@/components/seo/page-jsonld";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
@@ -48,6 +49,12 @@ const aboutSchema = {
 export default function AboutPage() {
   return (
     <main>
+      <PageJsonLd
+        title={pageTitle}
+        description={pageDescription}
+        path="/about"
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

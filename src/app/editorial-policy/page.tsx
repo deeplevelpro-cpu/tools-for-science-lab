@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Container } from "@/components/ui/container";
+import { PageJsonLd } from "@/components/seo/page-jsonld";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
@@ -43,6 +44,12 @@ const policySchema = {
 export default function EditorialPolicyPage() {
   return (
     <main>
+      <PageJsonLd
+        title={pageTitle}
+        description={pageDescription}
+        path="/editorial-policy"
+      />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

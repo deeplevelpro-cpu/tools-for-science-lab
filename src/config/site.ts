@@ -13,6 +13,10 @@ export const siteConfig = {
   locale: "en_US",
   language: "en",
   creator: "ScienceCalcHub Editorial Team",
+  review: {
+    publisher: "ScienceCalcHub Editorial Team",
+    lastReviewed: "2026-08-29",
+  },
   categories: [
     {
       name: "Lab Calculators",
