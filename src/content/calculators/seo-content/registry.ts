@@ -3254,56 +3254,77 @@ export const calculatorSEOContent: Record<
     slug: "free-fall-calculator",
 
     seoIntroduction:
-      "Free Fall Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate free fall distance, final velocity, or fall time using gravity equations.\"",
+      "Free Fall Calculator analyzes vertical motion under gravity to calculate fall time, distance, and final velocity. It helps students understand constant acceleration motion using standard physics equations.",
 
     howItWorks:
-      "Free fall calculations analyze motion where gravity is the main acceleration acting on an object.",
+      "Free fall describes motion where gravity is the primary acceleration acting on an object. The calculator uses gravitational acceleration and motion equations to determine unknown values from known measurements.",
 
     formula:
-      "d = ½gt²",
+      "h = ½gt², v = gt, t = √(2h ÷ g), v = √(2gh)",
 
     variables: [
-      "Height",
-      "Time",
-      "Gravity",
+      "Height or displacement (h)",
+      "Time of fall (t)",
+      "Initial velocity (v₀)",
+      "Final velocity (v)",
+      "Gravitational acceleration (g)",
     ],
 
     applications: [
-      "Gravity experiments",
-      "Physics education",
-      "Motion studies",
+      "Physics laboratory experiments",
+      "Kinematics education",
+      "Motion analysis",
+      "Engineering and scientific calculations",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "The object is released from rest unless an initial velocity is provided.",
+      "Gravity is treated as constant during the calculation.",
+      "Air resistance and other forces are ignored in the ideal model.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: An object dropped from a 20 m height reaches approximately 19.8 m/s after falling under Earth's gravity.",
+      "Example: A laboratory experiment can measure fall time and use it to estimate gravitational acceleration.",
     ],
 
     faqs: [
       {
         question:
-          "How is free fall distance calculated?",
+          "How is free fall velocity calculated?",
         answer:
-          "Free Fall Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Final velocity in free fall can be calculated using gravity and time with the equation v = gt when an object starts from rest.",
       },
       {
         question:
-          "What acceleration does gravity provide?",
+          "What gravity value is used for free fall calculations?",
         answer:
-          "Free Fall Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Earth's gravitational acceleration is approximately 9.8 m/s² near the surface and is commonly used in physics calculations.",
       },
       {
         question:
           "Does air resistance affect free fall?",
         answer:
-          "Free Fall Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "Yes. Real objects experience air resistance, but ideal free fall calculations assume gravity is the only acting force.",
       },
     ],
+
+    references: [
+      "NIST Reference on standard acceleration due to gravity",
+      "OpenStax University Physics: Free Fall and Motion",
+      "NASA educational resources on gravitational motion",
+    ],
+
+    limitations: [
+      "Does not include air resistance, wind, or buoyancy effects.",
+      "Results become less accurate for very large distances or changing gravitational fields.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "projectile-motion-calculator": {
