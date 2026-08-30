@@ -122,6 +122,54 @@ export function CalculatorContentSection({
                 </ul>
               </section>
 
+              {content.seo.limitations && (
+                <section>
+                  <h2>
+                    Limitations
+                  </h2>
+
+                  <ul className="article-list">
+                    {content.seo.limitations.map((item) => (
+                      <li key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {content.seo.references && (
+                <section>
+                  <h2>
+                    Scientific references
+                  </h2>
+
+                  <ul className="article-list">
+                    {content.seo.references.map((item) => (
+                      <li key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {(content.seo.reviewedBy ||
+                content.seo.lastReviewed) && (
+                <section>
+                  <h2>
+                    Content review
+                  </h2>
+
+                  <p>
+                    {content.seo.reviewedBy &&
+                      `Reviewed by: ${content.seo.reviewedBy}`}
+                    {content.seo.lastReviewed &&
+                      ` | Last reviewed: ${content.seo.lastReviewed}`}
+                  </p>
+                </section>
+              )}
+
               <section>
                 <h2>
                   Applications

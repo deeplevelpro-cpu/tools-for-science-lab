@@ -19,4 +19,12 @@ export type CalculatorSEOContent = {
     question: string;
     answer: string;
   }[];
+
+  references?: readonly string[];
+
+  limitations?: readonly string[];
+
+  reviewedBy?: string;
+
+  lastReviewed?: string;
 };
