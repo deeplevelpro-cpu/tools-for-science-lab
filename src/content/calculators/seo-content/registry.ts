@@ -1230,56 +1230,77 @@ export const calculatorSEOContent: Record<
     slug: "molecular-formula-calculator",
 
     seoIntroduction:
-      "Molecular Formula Calculator helps users solve scientific calculations with accurate formulas and step-by-step explanations. \"Calculate a molecular formula from an empirical formula and compound molar mass with a whole-number multiplier and clear working steps.\"",
+      "Molecular Formula Calculator determines the actual number of atoms of each element in a compound using its empirical formula and molecular mass. It helps chemistry students, researchers, and laboratory professionals identify complete molecular compositions accurately.",
 
     howItWorks:
-      "Molecular Formula Calculator applies chemistry principles to process measured values and calculate results using the relationship between the selected variables.",
+      "The calculator compares the compound's molar mass with the empirical formula mass to find the whole-number multiplier. This multiplier is applied to each element ratio to determine the complete molecular formula.",
 
     formula:
-      "Molecular Formula Calculator uses a scientific relationship between its input variables to calculate the requested result.",
+      "Molecular Formula = Empirical Formula × (Molecular Mass ÷ Empirical Formula Mass)",
 
     variables: [
-      "Input values required for calculation",
-      "Scientific constants and measurements",
-      "Units must remain consistent",
+      "Empirical formula",
+      "Molecular mass",
+      "Empirical formula mass",
+      "Whole-number multiplier",
+      "Molecular formula",
     ],
 
     applications: [
+      "Chemical compound identification",
+      "Molecular structure analysis",
+      "Laboratory research",
       "Chemistry education",
-      "Laboratory and classroom calculations",
-      "Scientific data analysis",
     ],
 
     assumptions: [
-      "Input values should use compatible scientific units",
-      "Results depend on the accuracy of entered measurements and constants",
+      "The empirical formula is correctly determined.",
+      "The molecular mass value is accurate.",
+      "The multiplier produces a whole-number molecular formula.",
     ],
 
     examples: [
-      "Enter the required values and review the calculated result.",
-      "Compare the result with textbook problems, experiments, or scientific analysis.",
+      "Example: A compound with a known empirical formula and molecular mass can be converted into its complete molecular formula.",
+      "Example: Chemists use molecular formulas to represent the exact number of atoms in chemical compounds.",
     ],
 
     faqs: [
       {
         question:
-          "How is molecular formula calculated?",
+          "How is a molecular formula calculated?",
         answer:
-          "Molecular Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "A molecular formula is calculated by multiplying the empirical formula by the ratio of molecular mass to empirical formula mass.",
       },
       {
         question:
-          "What formula does this calculator use?",
+          "What information is needed to find a molecular formula?",
         answer:
-          "Molecular Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "The calculation requires an empirical formula and the compound's molecular mass.",
       },
       {
         question:
-          "What units should be used?",
+          "What is the difference between empirical and molecular formulas?",
         answer:
-          "Molecular Formula Calculator explains the calculation method, required inputs, and scientific relationship between variables used in the result.",
+          "An empirical formula shows the simplest element ratio, while a molecular formula shows the actual number of atoms in a molecule.",
       },
     ],
+
+    references: [
+      "OpenStax Chemistry: Chemical Formulas and Molecular Composition",
+      "NIST Chemistry Reference Data",
+      "Scientific chemical analysis guidelines",
+    ],
+
+    limitations: [
+      "Accuracy depends on correct empirical formulas and molecular mass measurements.",
+      "Incorrect input values can produce an incorrect molecular formula.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-08-30",
   },
 
   "stoichiometry-calculator": {
