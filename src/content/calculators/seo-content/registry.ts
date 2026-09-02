@@ -3397,16 +3397,16 @@ export const calculatorSEOContent: Record<
     slug: "angular-impulse-calculator",
 
     seoIntroduction:
-      "Angular Impulse Calculator determines the change in rotational motion caused by a torque applied over a period of time. It helps physics students, engineers, and laboratory users analyze rotational impacts using torque, time, and angular momentum relationships.",
+      "Angular Impulse Calculator determines the change in rotational motion when torque acts over a time interval. It helps physics students, engineers, and laboratory users analyze rotational impacts using torque, time, and angular momentum relationships.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to calculate angular impulse from torque and time duration. It explains how applied rotational forces change the angular momentum of a rotating object.",
+      "The calculator applies rotational mechanics principles to calculate angular impulse produced by an applied torque over a specific time period. Angular impulse describes how rotational forces change the angular momentum of a rotating object.",
 
     formula:
       "Angular Impulse = Torque × Time",
 
     variables: [
-      "Torque",
+      "Applied torque",
       "Time interval",
       "Angular impulse",
       "Change in angular momentum",
@@ -3417,6 +3417,7 @@ export const calculatorSEOContent: Record<
       "Physics education",
       "Rotational mechanics analysis",
       "Engineering impact studies",
+      "Motor and machine analysis",
       "Laboratory rotational experiments",
     ],
 
@@ -3428,7 +3429,7 @@ export const calculatorSEOContent: Record<
 
     examples: [
       "Example: Calculate angular impulse when torque and the duration of application are known.",
-      "Example: Engineers analyze rotating systems by studying how applied torque changes angular momentum.",
+      "Example: Engineers analyze rotating systems by studying how applied torque changes angular momentum during impacts.",
     ],
 
     faqs: [
@@ -3440,26 +3441,26 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What is angular impulse?",
+          "What does angular impulse represent?",
         answer:
-          "Angular impulse represents the change in angular momentum produced by a torque acting over a specific time period.",
+          "Angular impulse represents the change in angular momentum caused by a torque acting over a specific period of time.",
       },
       {
         question:
-          "What is the unit of angular impulse?",
+          "What is the SI unit of angular impulse?",
         answer:
-          "The SI unit of angular impulse is kilogram meter squared per second (kg·m²/s), equivalent to the unit of angular momentum.",
+          "Angular impulse is measured in kilogram meter squared per second (kg·m²/s), which is equivalent to the unit of angular momentum.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Rotational Motion",
+      "NIST SI Units and Measurement References",
       "Classical mechanics principles",
-      "Engineering dynamics references",
     ],
 
     limitations: [
-      "Results depend on accurate torque and time measurements.",
+      "Assumes torque remains constant during the time interval.",
       "Systems with changing torque may require integration methods for precise calculations.",
     ],
 
