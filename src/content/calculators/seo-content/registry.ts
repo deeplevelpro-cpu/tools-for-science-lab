@@ -4701,10 +4701,10 @@ export const calculatorSEOContent: Record<
     slug: "projectile-motion-calculator",
 
     seoIntroduction:
-      "Projectile Motion Calculator analyzes the two-dimensional path of an object launched into the air. It helps physics students, engineers, and laboratory users calculate range, maximum height, flight time, and trajectory using velocity, angle, and gravity.",
+      "Projectile Motion Calculator analyzes the two-dimensional movement of objects launched through the air. It helps physics students, engineers, athletes, and laboratory users calculate range, maximum height, flight time, and trajectory using velocity, angle, and gravitational acceleration.",
 
     howItWorks:
-      "The calculator separates projectile motion into horizontal and vertical components. Horizontal velocity remains constant while gravity affects vertical motion, allowing the calculation of trajectory, displacement, and flight characteristics.",
+      "The calculator applies projectile motion principles by separating horizontal and vertical components of motion. It explains how initial velocity, launch angle, and gravity determine the path and final characteristics of a projectile.",
 
     formula:
       "Range = v₀² × sin(2θ) ÷ g, Maximum Height = v₀² × sin²(θ) ÷ 2g, Flight Time = 2v₀sin(θ) ÷ g",
@@ -4715,6 +4715,7 @@ export const calculatorSEOContent: Record<
       "Flight time",
       "Horizontal displacement",
       "Vertical displacement",
+      "Maximum height",
       "Gravitational acceleration",
       "Measurement units",
     ],
@@ -4722,8 +4723,9 @@ export const calculatorSEOContent: Record<
     applications: [
       "Physics education",
       "Projectile trajectory analysis",
-      "Sports motion studies",
+      "Sports science calculations",
       "Engineering simulations",
+      "Ballistics and motion studies",
       "Laboratory experiments",
     ],
 
@@ -4731,10 +4733,11 @@ export const calculatorSEOContent: Record<
       "Air resistance is ignored in the ideal projectile model.",
       "Gravity remains constant throughout the motion.",
       "Launch and landing conditions follow standard projectile assumptions.",
+      "Input values use compatible scientific units.",
     ],
 
     examples: [
-      "Example: Calculate the range of a projectile when launch velocity and angle are known.",
+      "Example: Calculate projectile range when launch velocity and angle are known.",
       "Example: Engineers and scientists analyze trajectories of moving objects using projectile motion equations.",
     ],
 
@@ -4747,9 +4750,15 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
+          "What factors affect projectile motion?",
+        answer:
+          "Projectile motion depends on initial velocity, launch angle, gravitational acceleration, and external forces such as air resistance.",
+      },
+      {
+        question:
           "Why are horizontal and vertical motions separated?",
         answer:
-          "Projectile motion is separated because horizontal velocity remains constant while vertical velocity changes due to gravity.",
+          "Horizontal and vertical motions are analyzed separately because horizontal velocity remains constant while gravity changes vertical velocity.",
       },
       {
         question:
@@ -4761,8 +4770,8 @@ export const calculatorSEOContent: Record<
 
     references: [
       "OpenStax University Physics: Projectile Motion",
-      "Classical mechanics principles",
       "NIST physical constants and measurements",
+      "Classical mechanics principles",
     ],
 
     limitations: [
