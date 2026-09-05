@@ -4352,10 +4352,10 @@ export const calculatorSEOContent: Record<
     slug: "torque-calculator",
 
     seoIntroduction:
-      "Torque Calculator determines the rotational force produced when a force acts on an object at a distance from a pivot point. It helps physics students, engineers, and laboratory users analyze rotational motion using force, lever arm distance, and angle measurements.",
+      "Torque Calculator determines the rotational force produced when a force acts on an object around a pivot point. It helps physics students, engineers, and laboratory users analyze motors, tools, machines, robotics, and mechanical systems using force, lever arm distance, and angle relationships.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to calculate torque by analyzing the applied force, distance from the axis of rotation, and angle between the force and lever arm. It explains how these factors influence rotational effectiveness.",
+      "The calculator applies rotational mechanics principles to calculate torque by analyzing applied force, distance from the rotation axis, and the angle of force application. It explains how torque determines the ability of a force to produce rotational motion.",
 
     formula:
       "Torque = Force × Lever Arm Distance × sin(Angle)",
@@ -4365,6 +4365,7 @@ export const calculatorSEOContent: Record<
       "Lever arm distance",
       "Angle between force and lever arm",
       "Torque",
+      "Rotational conditions",
       "Measurement units",
     ],
 
@@ -4372,6 +4373,8 @@ export const calculatorSEOContent: Record<
       "Physics education",
       "Rotational mechanics analysis",
       "Engineering machine design",
+      "Motor and engine analysis",
+      "Robotics and mechanical systems",
       "Laboratory force and motion experiments",
     ],
 
@@ -4379,11 +4382,12 @@ export const calculatorSEOContent: Record<
       "Force and distance measurements are accurate.",
       "The angle between force and lever arm is correctly measured.",
       "Input values use compatible units.",
+      "The system follows ideal rotational mechanics conditions.",
     ],
 
     examples: [
       "Example: Calculate torque when force, distance, and angle are known.",
-      "Example: Engineers analyze motors, tools, and mechanical systems using torque calculations.",
+      "Example: Engineers analyze motors, tools, gears, and mechanical systems using torque calculations.",
     ],
 
     faqs: [
@@ -4395,27 +4399,33 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What factors affect torque?",
+          "What is torque?",
         answer:
-          "Torque depends on the applied force, the distance from the rotation axis, and the angle at which the force is applied.",
+          "Torque is the rotational effect of a force that causes an object to rotate around an axis or pivot point.",
       },
       {
         question:
-          "What is the unit of torque?",
+          "What factors affect torque?",
         answer:
-          "The SI unit of torque is the newton-meter (N·m), representing rotational force around an axis.",
+          "Torque depends on the applied force, distance from the rotation axis, and the angle at which the force is applied.",
+      },
+      {
+        question:
+          "What is the difference between torque and force?",
+        answer:
+          "Force causes linear acceleration, while torque describes the rotational effect of a force around an axis.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Rotational Dynamics",
-      "Classical mechanics principles",
+      "NIST SI Units and Measurement References",
       "Engineering mechanics references",
     ],
 
     limitations: [
       "Results assume ideal rotational conditions.",
-      "Complex mechanical systems may require advanced torque analysis methods.",
+      "Complex mechanical systems with multiple forces may require advanced torque analysis methods.",
     ],
 
     reviewedBy:
@@ -4429,10 +4439,10 @@ export const calculatorSEOContent: Record<
     slug: "impulse-calculator",
 
     seoIntroduction:
-      "Impulse Calculator determines the change in momentum produced by a force acting over a time interval. It helps physics students, engineers, and laboratory users analyze motion changes using force and time measurements.",
+      "Impulse Calculator determines the change in momentum when a force acts over a specific time interval. It helps physics students, engineers, sports scientists, and laboratory users analyze collisions, impacts, safety systems, and motion changes using force and time measurements.",
 
     howItWorks:
-      "The calculator applies impulse-momentum principles to calculate impulse by analyzing the applied force and the duration of its action. It explains how forces change the motion of objects through collisions and interactions.",
+      "The calculator applies the impulse-momentum principle to determine impulse by analyzing the applied force and the duration of interaction. It explains how forces transfer momentum and change the motion of objects during collisions or mechanical events.",
 
     formula:
       "Impulse = Force × Time Interval",
@@ -4442,25 +4452,29 @@ export const calculatorSEOContent: Record<
       "Time interval",
       "Impulse",
       "Change in momentum",
+      "Interaction duration",
       "Measurement units",
     ],
 
     applications: [
       "Physics education",
       "Collision and impact analysis",
+      "Vehicle safety system studies",
+      "Sports motion analysis",
       "Engineering dynamics studies",
       "Laboratory motion experiments",
     ],
 
     assumptions: [
-      "Force remains constant during the time interval.",
-      "Force and time measurements are accurate.",
+      "Force measurements are accurate.",
+      "Time interval measurements are reliable.",
       "Input values use compatible units.",
+      "The force behavior during the interaction is appropriately represented.",
     ],
 
     examples: [
       "Example: Calculate impulse when force and time interval are known.",
-      "Example: Engineers analyze impacts, safety systems, and mechanical interactions using impulse calculations.",
+      "Example: Engineers analyze airbags, helmets, and impact protection systems using impulse calculations.",
     ],
 
     faqs: [
@@ -4472,27 +4486,33 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What factors affect impulse?",
+          "What is impulse in physics?",
         answer:
-          "Impulse depends on the magnitude of the applied force and the amount of time that the force acts on an object.",
+          "Impulse is the change in momentum produced when a force acts on an object over a period of time.",
       },
       {
         question:
-          "What is the unit of impulse?",
+          "What is the SI unit of impulse?",
         answer:
-          "The SI unit of impulse is the newton-second (N·s), which is equivalent to a change in momentum.",
+          "The SI unit of impulse is the newton-second (N·s), which is equivalent to kilogram meter per second (kg·m/s).",
+      },
+      {
+        question:
+          "What is the relationship between impulse and momentum?",
+        answer:
+          "Impulse equals the change in momentum of an object, meaning a larger impulse produces a greater change in motion.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Linear Momentum and Collisions",
+      "NIST SI Units and Measurement References",
       "Classical mechanics principles",
-      "Engineering dynamics references",
     ],
 
     limitations: [
-      "Results assume constant force during the interaction period.",
-      "Variable forces require integration methods for precise impulse calculations.",
+      "Results depend on accurate force and time measurements.",
+      "Variable forces may require integration methods for precise impulse calculations.",
     ],
 
     reviewedBy:
