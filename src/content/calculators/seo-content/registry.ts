@@ -3319,10 +3319,10 @@ export const calculatorSEOContent: Record<
     slug: "rotational-dynamics-calculator",
 
     seoIntroduction:
-      "Rotational Dynamics Calculator analyzes the relationship between torque, moment of inertia, and angular acceleration in rotating systems. It helps physics students, engineers, and laboratory users understand how rotational forces produce changes in motion.",
+      "Rotational Dynamics Calculator analyzes how torque, rotational inertia, and angular acceleration interact in rotating systems. It helps physics students, engineers, and laboratory users study motors, flywheels, turbines, robotics, and mechanical rotation using Newton's second law for rotational motion.",
 
     howItWorks:
-      "The calculator applies Newton's second law for rotational motion, where torque produces angular acceleration based on an object's rotational inertia. It calculates the relationship between torque, moment of inertia, and angular acceleration for mechanical systems.",
+      "The calculator applies rotational Newton's second law, where torque produces angular acceleration based on an object's moment of inertia. It determines the relationship between rotational force, resistance to rotation, and changes in rotational speed.",
 
     formula:
       "Torque = Moment of Inertia × Angular Acceleration",
@@ -3330,6 +3330,7 @@ export const calculatorSEOContent: Record<
     variables: [
       "Torque",
       "Moment of inertia",
+      "Rotational inertia",
       "Angular acceleration",
       "Rotational motion conditions",
       "Measurement units",
@@ -3340,6 +3341,7 @@ export const calculatorSEOContent: Record<
       "Rotational mechanics analysis",
       "Engineering machinery studies",
       "Motor and turbine performance analysis",
+      "Robotics and mechanical system design",
       "Laboratory rotational motion experiments",
     ],
 
@@ -3347,11 +3349,12 @@ export const calculatorSEOContent: Record<
       "Torque, moment of inertia, and angular acceleration values are measured accurately.",
       "The rotating system follows classical rotational mechanics principles.",
       "Input values use compatible units.",
+      "External friction and energy losses are not included unless separately modeled.",
     ],
 
     examples: [
       "Example: Calculate torque when moment of inertia and angular acceleration are known.",
-      "Example: Engineers analyze motors, wheels, and rotating machinery by studying how torque affects angular acceleration.",
+      "Example: Engineers analyze motors, wheels, turbines, and flywheels by studying how torque affects rotational acceleration.",
     ],
 
     faqs: [
@@ -3363,15 +3366,15 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What factors affect rotational acceleration?",
+          "What factors affect angular acceleration?",
         answer:
-          "Torque increases angular acceleration, while greater moment of inertia reduces the rotational response of an object.",
+          "Applied torque increases angular acceleration, while greater moment of inertia reduces how quickly a rotating object changes its motion.",
       },
       {
         question:
-          "What is the difference between rotational and linear dynamics?",
+          "What is the SI unit of torque?",
         answer:
-          "Linear dynamics studies force and acceleration in straight-line motion, while rotational dynamics studies torque and angular acceleration in rotating systems.",
+          "The SI unit of torque is the newton meter (N·m), which represents rotational force applied around an axis.",
       },
     ],
 
@@ -3379,11 +3382,12 @@ export const calculatorSEOContent: Record<
       "OpenStax University Physics: Rotational Motion",
       "NIST SI Units and Measurement References",
       "Classical mechanics principles",
+      "Engineering dynamics references",
     ],
 
     limitations: [
-      "Assumes ideal rotational conditions without complex friction or energy losses.",
-      "Real mechanical systems may require additional factors such as resistance, deformation, and external forces.",
+      "Assumes ideal rotational conditions without complex friction or deformation effects.",
+      "Real mechanical systems may require additional analysis of resistance, energy losses, and external forces.",
     ],
 
     reviewedBy:
@@ -3397,10 +3401,10 @@ export const calculatorSEOContent: Record<
     slug: "angular-impulse-calculator",
 
     seoIntroduction:
-      "Angular Impulse Calculator determines the change in rotational motion when torque acts over a time interval. It helps physics students, engineers, and laboratory users analyze rotational impacts using torque, time, and angular momentum relationships.",
+      "Angular Impulse Calculator determines the change in rotational motion produced when torque acts over a time interval. It helps physics students, engineers, and laboratory users analyze rotational impacts, motors, flywheels, and mechanical systems using torque and time relationships.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to calculate angular impulse produced by an applied torque over a specific time period. Angular impulse describes how rotational forces change the angular momentum of a rotating object.",
+      "The calculator applies rotational mechanics principles to calculate angular impulse from applied torque and the duration of force application. Angular impulse describes how rotational forces change the angular momentum of a rotating object.",
 
     formula:
       "Angular Impulse = Torque × Time",
@@ -3410,6 +3414,7 @@ export const calculatorSEOContent: Record<
       "Time interval",
       "Angular impulse",
       "Change in angular momentum",
+      "Rotational system conditions",
       "Measurement units",
     ],
 
@@ -3418,12 +3423,13 @@ export const calculatorSEOContent: Record<
       "Rotational mechanics analysis",
       "Engineering impact studies",
       "Motor and machine analysis",
+      "Flywheel and rotating system analysis",
       "Laboratory rotational experiments",
     ],
 
     assumptions: [
       "Torque and time measurements are accurate.",
-      "The applied torque values use compatible units.",
+      "The applied torque remains constant during the time interval.",
       "The rotational system follows classical mechanics principles.",
     ],
 
@@ -3447,9 +3453,9 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What is the SI unit of angular impulse?",
+          "What is the difference between angular impulse and linear impulse?",
         answer:
-          "Angular impulse is measured in kilogram meter squared per second (kg·m²/s), which is equivalent to the unit of angular momentum.",
+          "Linear impulse changes linear momentum through force and time, while angular impulse changes angular momentum through torque and time.",
       },
     ],
 
@@ -3475,10 +3481,10 @@ export const calculatorSEOContent: Record<
     slug: "angular-momentum-calculator",
 
     seoIntroduction:
-      "Angular Momentum Calculator determines the rotational momentum of an object based on moment of inertia and angular velocity. It helps physics students, engineers, and laboratory users analyze rotating systems using conservation of angular momentum principles.",
+      "Angular Momentum Calculator determines the rotational quantity of motion of an object based on moment of inertia and angular velocity. It helps physics students, engineers, and laboratory users analyze rotating systems such as flywheels, turbines, and aerospace mechanisms using rotational mechanics principles.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to calculate angular momentum from moment of inertia and angular velocity. It explains how mass distribution and rotational speed influence the motion of rotating objects.",
+      "The calculator applies rotational mechanics principles to calculate angular momentum from moment of inertia and angular velocity. It explains how mass distribution, rotational axis, and angular speed influence the rotational state of an object.",
 
     formula:
       "Angular Momentum = Moment of Inertia × Angular Velocity",
@@ -3487,7 +3493,8 @@ export const calculatorSEOContent: Record<
       "Moment of inertia",
       "Angular velocity",
       "Angular momentum",
-      "Rotational motion conditions",
+      "Mass distribution",
+      "Rotational axis",
       "Measurement units",
     ],
 
@@ -3495,7 +3502,9 @@ export const calculatorSEOContent: Record<
       "Physics education",
       "Rotational mechanics analysis",
       "Engineering rotating system studies",
+      "Flywheel and turbine analysis",
       "Laboratory angular motion experiments",
+      "Aerospace rotational systems",
     ],
 
     assumptions: [
@@ -3520,25 +3529,37 @@ export const calculatorSEOContent: Record<
         question:
           "What factors affect angular momentum?",
         answer:
-          "Angular momentum depends on the distribution of mass through moment of inertia and the rotational speed represented by angular velocity.",
+          "Angular momentum depends on mass distribution, rotational axis, moment of inertia, and angular velocity.",
       },
       {
         question:
-          "What is the conservation of angular momentum?",
+          "What is the SI unit of angular momentum?",
         answer:
-          "Conservation of angular momentum states that a rotating system maintains constant angular momentum when no external torque acts on it.",
+          "The SI unit of angular momentum is kilogram meter squared per second (kg·m²/s).",
+      },
+      {
+        question:
+          "What is the difference between angular and linear momentum?",
+        answer:
+          "Linear momentum describes motion in a straight line, while angular momentum describes rotational motion around an axis.",
+      },
+      {
+        question:
+          "What is conservation of angular momentum?",
+        answer:
+          "Conservation of angular momentum states that the total angular momentum of an isolated system remains constant when no external torque acts on it.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Rotational Motion",
+      "NIST SI Units and Measurement References",
       "Classical mechanics principles",
-      "Engineering dynamics references",
     ],
 
     limitations: [
       "Results depend on accurate inertia and angular velocity measurements.",
-      "Systems with external torques may require additional rotational analysis.",
+      "Systems affected by external torque, friction, or changing mass distribution may require more advanced rotational analysis.",
     ],
 
     reviewedBy:
@@ -3552,10 +3573,10 @@ export const calculatorSEOContent: Record<
     slug: "rotational-power-calculator",
 
     seoIntroduction:
-      "Rotational Power Calculator determines the rate at which work is performed in a rotating system. It helps physics students, engineers, and laboratory users analyze rotational energy transfer using torque and angular velocity relationships.",
+      "Rotational Power Calculator determines the rate of energy transfer in rotating systems using torque and angular velocity. It helps physics students, engineers, and laboratory users analyze motors, turbines, machines, and mechanical systems through rotational power principles.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to calculate power produced by a rotating object using torque and angular velocity. It explains how rotational force and speed combine to determine energy transfer per unit time.",
+      "The calculator applies rotational mechanics principles to calculate power produced by a rotating object. It explains how torque and rotational speed combine to determine the amount of energy transferred per unit time.",
 
     formula:
       "Rotational Power = Torque × Angular Velocity",
@@ -3564,6 +3585,7 @@ export const calculatorSEOContent: Record<
       "Torque",
       "Angular velocity",
       "Rotational power",
+      "Mechanical power",
       "Rotational energy transfer",
       "Measurement units",
     ],
@@ -3572,6 +3594,8 @@ export const calculatorSEOContent: Record<
       "Physics education",
       "Rotational mechanics analysis",
       "Engineering motor studies",
+      "Industrial machinery analysis",
+      "Turbine and engine performance studies",
       "Laboratory rotating system experiments",
     ],
 
@@ -3583,7 +3607,7 @@ export const calculatorSEOContent: Record<
 
     examples: [
       "Example: Calculate rotational power when torque and angular velocity are known.",
-      "Example: Engineers evaluate motors, turbines, and rotating machinery using rotational power calculations.",
+      "Example: Engineers evaluate motors, turbines, and rotating machinery by measuring torque and rotational speed.",
     ],
 
     faqs: [
@@ -3595,22 +3619,28 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
-          "What is the unit of rotational power?",
+          "What is the SI unit of rotational power?",
         answer:
-          "The SI unit of rotational power is the watt (W), which represents the rate of energy transfer in a rotating system.",
+          "The SI unit of rotational power is the watt (W), representing the rate of energy transfer per unit time.",
       },
       {
         question:
           "What factors affect rotational power?",
         answer:
-          "Rotational power depends on the amount of torque applied and the angular velocity of the rotating object.",
+          "Rotational power depends on both the applied torque and the angular velocity of the rotating object.",
+      },
+      {
+        question:
+          "What is the difference between torque and rotational power?",
+        answer:
+          "Torque describes rotational force, while rotational power describes how quickly that rotational force transfers energy.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Rotational Motion",
+      "NIST SI Units and Measurement References",
       "Classical mechanics principles",
-      "Engineering dynamics references",
     ],
 
     limitations: [
@@ -3629,19 +3659,20 @@ export const calculatorSEOContent: Record<
     slug: "moment-of-inertia-calculator",
 
     seoIntroduction:
-      "Moment of Inertia Calculator determines the resistance of an object to rotational acceleration based on its mass distribution and rotational axis. It helps physics students, engineers, and laboratory users analyze rotational motion for different shapes and systems.",
+      "Moment of Inertia Calculator determines the resistance of an object to rotational acceleration based on mass distribution, geometry, and rotational axis. It helps physics students, engineers, and laboratory users analyze rods, disks, spheres, flywheels, and rotating mechanical systems.",
 
     howItWorks:
-      "The calculator applies rotational mechanics principles to determine moment of inertia for common objects such as rods, disks, spheres, hoops, and point masses. It explains how mass distribution affects an object's resistance to changes in rotational motion.",
+      "The calculator applies rotational mechanics principles to determine moment of inertia for different objects and shapes. It explains how the distribution of mass around a rotational axis affects an object's resistance to changes in rotational motion.",
 
     formula:
-      "Moment of Inertia = Σ(mr²) for point masses",
+      "Moment of Inertia = Σ(mr²) for point masses; specific shapes use standard rotational inertia formulas",
 
     variables: [
       "Mass of object",
       "Distance from rotational axis",
       "Shape and geometry",
       "Moment of inertia",
+      "Rotational axis",
       "Measurement units",
     ],
 
@@ -3649,6 +3680,7 @@ export const calculatorSEOContent: Record<
       "Physics education",
       "Rotational mechanics analysis",
       "Engineering design studies",
+      "Flywheel and rotating machinery design",
       "Laboratory rotational motion experiments",
     ],
 
@@ -3674,25 +3706,31 @@ export const calculatorSEOContent: Record<
         question:
           "Why is moment of inertia important?",
         answer:
-          "Moment of inertia determines how much resistance an object has against changes in its rotational motion.",
+          "Moment of inertia determines how much resistance an object has against changes in rotational motion.",
       },
       {
         question:
           "What factors affect moment of inertia?",
         answer:
-          "Moment of inertia depends on the object's mass, shape, size, and the location of the rotational axis.",
+          "Moment of inertia depends on the object's mass, shape, size, and location of the rotational axis.",
+      },
+      {
+        question:
+          "How does shape affect moment of inertia?",
+        answer:
+          "Shape affects moment of inertia because objects with the same mass can have different resistance to rotation depending on how their mass is distributed around the axis.",
       },
     ],
 
     references: [
       "OpenStax University Physics: Rotational Motion",
+      "NIST SI Units and Measurement References",
       "Classical mechanics principles",
-      "Engineering dynamics references",
     ],
 
     limitations: [
       "Results depend on accurate mass distribution and geometry assumptions.",
-      "Complex objects may require advanced integration methods or experimental measurements.",
+      "Complex objects with irregular mass distributions may require advanced integration methods, CAD analysis, or experimental measurements.",
     ],
 
     reviewedBy:
