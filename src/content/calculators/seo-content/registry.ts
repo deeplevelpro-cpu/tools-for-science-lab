@@ -1446,10 +1446,10 @@ export const calculatorSEOContent: Record<
     slug: "stoichiometry-calculator",
 
     seoIntroduction:
-      "Stoichiometry Calculator determines the quantitative relationships between reactants and products in chemical reactions. It helps chemistry students, researchers, and laboratory professionals calculate moles, masses, and reaction amounts using balanced chemical equations.",
+      "Stoichiometry Calculator determines quantitative relationships between reactants and products in chemical reactions. It helps students, researchers, scientists, and laboratory professionals calculate reaction amounts, predict product quantities, and analyze chemical processes using balanced equations.",
 
     howItWorks:
-      "The calculator uses mole ratios from a balanced chemical equation to convert between reactant and product quantities. It applies molar masses and reaction relationships to determine unknown chemical amounts.",
+      "The calculator uses mole ratios from a balanced chemical equation to convert between reactant and product quantities. It applies molar masses, reaction coefficients, and chemical relationships to determine unknown amounts in a reaction.",
 
     formula:
       "Mole Ratio Relationship = Coefficients from Balanced Chemical Equation",
@@ -1461,6 +1461,8 @@ export const calculatorSEOContent: Record<
       "Moles",
       "Molar mass",
       "Reaction coefficients",
+      "Limiting reactant",
+      "Theoretical yield",
     ],
 
     applications: [
@@ -1468,204 +1470,58 @@ export const calculatorSEOContent: Record<
       "Laboratory experiment planning",
       "Industrial chemistry processes",
       "Chemistry education",
+      "Chemical synthesis analysis",
+      "Pharmaceutical research calculations",
     ],
 
     assumptions: [
       "The chemical equation is balanced correctly.",
       "Reactants and products are identified accurately.",
       "Molar masses and measurements use compatible units.",
+      "The reaction follows the expected chemical relationship.",
     ],
 
     examples: [
       "Example: A balanced reaction equation can be used to calculate how many grams of product form from a known reactant amount.",
-      "Example: Chemists use stoichiometry to predict required reactants and expected products in experiments.",
+      "Example: Chemists use stoichiometry calculations to determine required reactant quantities during laboratory experiments.",
     ],
 
     faqs: [
       {
         question:
-          "How is stoichiometry calculated?",
+          "What is stoichiometry?",
         answer:
-          "Stoichiometry is calculated using mole ratios from a balanced chemical equation to relate quantities of reactants and products.",
+          "Stoichiometry is the calculation of quantitative relationships between reactants and products in a chemical reaction using a balanced equation.",
       },
       {
         question:
-          "Why must chemical equations be balanced for stoichiometry?",
+          "How does a balanced equation help in stoichiometry?",
         answer:
-          "Balanced equations provide the correct mole relationships required for accurate chemical quantity calculations.",
+          "A balanced chemical equation provides mole ratios that allow scientists to convert between amounts of reactants and products.",
       },
       {
         question:
-          "What information is needed for stoichiometric calculations?",
+          "Why is stoichiometry important in chemistry?",
         answer:
-          "Stoichiometry calculations require a balanced chemical equation and at least one known reactant or product quantity.",
+          "Stoichiometry helps scientists predict reaction outcomes, calculate material requirements, and analyze chemical processes.",
+      },
+      {
+        question:
+          "Where is stoichiometry used?",
+        answer:
+          "Stoichiometry is used in laboratories, industrial chemistry, pharmaceutical development, environmental analysis, and chemical manufacturing.",
       },
     ],
 
     references: [
       "OpenStax Chemistry: Stoichiometry and Chemical Reactions",
       "NIST Chemistry Reference Data",
-      "Scientific laboratory reaction calculation guidelines",
+      "Scientific chemical calculation guidelines",
     ],
 
     limitations: [
-      "Accuracy depends on correct balanced equations and input measurements.",
-      "Real reactions may produce different results due to experimental conditions and reaction efficiency.",
-    ],
-
-    reviewedBy:
-      "ScienceCalcHub Chemistry Review Team",
-
-    lastReviewed:
-      "2026-08-30",
-  },
-
-  "limiting-reactant-calculator": {
-    slug: "limiting-reactant-calculator",
-
-    seoIntroduction:
-      "Limiting Reactant Calculator identifies the reactant that is completely consumed first in a chemical reaction. It helps chemistry students, researchers, and laboratory professionals determine limiting reagents, excess reactants, and theoretical product amounts.",
-
-    howItWorks:
-      "The calculator compares reactant quantities using mole ratios from a balanced chemical equation. It determines which reactant produces the least amount of product and identifies it as the limiting reactant.",
-
-    formula:
-      "Limiting Reactant = Reactant Producing the Lowest Amount of Product",
-
-    variables: [
-      "Balanced chemical equation",
-      "Reactant quantities",
-      "Moles of reactants",
-      "Mole ratios",
-      "Theoretical product amount",
-      "Excess reactant quantity",
-    ],
-
-    applications: [
-      "Chemical reaction analysis",
-      "Laboratory experiment planning",
-      "Product yield prediction",
-      "Chemistry education",
-    ],
-
-    assumptions: [
-      "The chemical equation is balanced correctly.",
-      "Reactant measurements are accurate.",
-      "Reaction conditions allow the expected chemical relationship.",
-    ],
-
-    examples: [
-      "Example: Comparing two reactants in a chemical reaction reveals which substance limits the maximum product formation.",
-      "Example: Chemists use limiting reactant calculations to determine required reactant amounts and reduce material waste.",
-    ],
-
-    faqs: [
-      {
-        question:
-          "How is the limiting reactant calculated?",
-        answer:
-          "The limiting reactant is found by comparing reactant mole amounts with the mole ratios from a balanced chemical equation.",
-      },
-      {
-        question:
-          "Why is the limiting reactant important?",
-        answer:
-          "The limiting reactant determines the maximum amount of product that can be formed during a chemical reaction.",
-      },
-      {
-        question:
-          "What happens to the excess reactant?",
-        answer:
-          "The excess reactant remains after the limiting reactant is completely consumed.",
-      },
-    ],
-
-    references: [
-      "OpenStax Chemistry: Stoichiometry and Limiting Reactants",
-      "NIST Chemistry Reference Data",
-      "Scientific laboratory reaction calculation guidelines",
-    ],
-
-    limitations: [
-      "Accuracy depends on balanced equations and correct reactant measurements.",
-      "Real experiments may produce different results because of incomplete reactions or practical conditions.",
-    ],
-
-    reviewedBy:
-      "ScienceCalcHub Chemistry Review Team",
-
-    lastReviewed:
-      "2026-08-30",
-  },
-
-  "percent-yield-calculator": {
-    slug: "percent-yield-calculator",
-
-    seoIntroduction:
-      "Percent Yield Calculator measures the efficiency of a chemical reaction by comparing actual product obtained with the theoretical maximum product. It helps chemistry students, researchers, and laboratory professionals analyze reaction performance.",
-
-    howItWorks:
-      "The calculator compares the actual yield from an experiment with the theoretical yield predicted by stoichiometric calculations. The result shows the percentage efficiency of the reaction.",
-
-    formula:
-      "Percent Yield = (Actual Yield ÷ Theoretical Yield) × 100",
-
-    variables: [
-      "Actual yield",
-      "Theoretical yield",
-      "Reaction product amount",
-      "Percent yield",
-      "Molar quantities",
-    ],
-
-    applications: [
-      "Chemical reaction analysis",
-      "Laboratory experiment evaluation",
-      "Industrial process optimization",
-      "Chemistry education",
-    ],
-
-    assumptions: [
-      "Actual and theoretical yields use compatible units.",
-      "Theoretical yield is calculated from a correctly balanced chemical equation.",
-      "Measurements represent the chemical reaction accurately.",
-    ],
-
-    examples: [
-      "Example: Comparing the collected product from an experiment with the expected product amount determines reaction efficiency.",
-      "Example: Chemists use percent yield calculations to evaluate experimental accuracy and improve procedures.",
-    ],
-
-    faqs: [
-      {
-        question:
-          "How is percent yield calculated?",
-        answer:
-          "Percent yield is calculated by dividing the actual yield by the theoretical yield and multiplying the result by 100.",
-      },
-      {
-        question:
-          "Why can percent yield be less than 100%?",
-        answer:
-          "Percent yield can be below 100% because of incomplete reactions, product loss during handling, or measurement limitations.",
-      },
-      {
-        question:
-          "What is the difference between actual and theoretical yield?",
-        answer:
-          "Actual yield is the amount of product obtained experimentally, while theoretical yield is the maximum amount predicted by calculations.",
-      },
-    ],
-
-    references: [
-      "OpenStax Chemistry: Chemical Reactions and Reaction Yield",
-      "NIST Chemistry Reference Data",
-      "Scientific laboratory analysis guidelines",
-    ],
-
-    limitations: [
-      "Accuracy depends on reliable yield measurements and theoretical calculations.",
-      "Experimental conditions may affect the final reaction yield.",
+      "Assumes the chemical equation and reaction conditions are accurately represented.",
+      "Does not account for experimental losses unless reaction yield is included.",
     ],
 
     reviewedBy:
