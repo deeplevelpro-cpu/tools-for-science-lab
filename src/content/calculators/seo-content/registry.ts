@@ -1642,6 +1642,7 @@ export const calculatorSEOContent: Record<
       "Molar volume",
       "Gas density",
       "Gas molar mass",
+      "Gas compressibility factor",
       "Calculated gas property",
     ],
 
@@ -1718,6 +1719,12 @@ export const calculatorSEOContent: Record<
           "How is gas density related to the ideal gas law?",
         answer:
           "Gas density can be calculated using the ideal gas relationship by connecting pressure, temperature, molar mass, and gas constant values.",
+      },
+      {
+        question:
+          "What is the difference between an ideal gas and a real gas?",
+        answer:
+          "An ideal gas follows the PV = nRT relationship exactly, while real gases may deviate because of molecular interactions and require correction models under certain conditions.",
       },
     ],
 
