@@ -1638,6 +1638,7 @@ export const calculatorSEOContent: Record<
       "Temperature",
       "Number of moles",
       "Ideal gas constant",
+      "Universal gas constant (R)",
       "Molar volume",
       "Gas density",
       "Calculated gas property",
@@ -1651,12 +1652,14 @@ export const calculatorSEOContent: Record<
       "Thermodynamics studies",
       "Engineering calculations",
       "Chemical process analysis",
+      "Industrial gas systems",
     ],
 
     assumptions: [
       "The gas behaves approximately as an ideal gas.",
       "Temperature values are converted to compatible units.",
       "Pressure, volume, and mole measurements are accurate.",
+      "Pressure and temperature conditions allow reasonable ideal gas approximation.",
       "Real gas effects may require advanced correction models under extreme conditions.",
     ],
 
@@ -1686,9 +1689,21 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
+          "How is an unknown value calculated using PV = nRT?",
+        answer:
+          "An unknown gas property is calculated by rearranging the ideal gas equation while keeping the other known variables constant.",
+      },
+      {
+        question:
           "Where is the ideal gas law used?",
         answer:
-          "The ideal gas law is used in chemistry laboratories, engineering calculations, thermodynamics studies, and scientific research.",
+          "The ideal gas law is used in chemistry laboratories, engineering calculations, thermodynamics studies, industrial gas systems, and scientific research.",
+      },
+      {
+        question:
+          "What is the ideal gas constant?",
+        answer:
+          "The ideal gas constant R is a proportionality constant used in the ideal gas equation to relate pressure, volume, temperature, and amount of gas.",
       },
     ],
 
