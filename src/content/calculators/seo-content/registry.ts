@@ -1630,20 +1630,25 @@ export const calculatorSEOContent: Record<
       "The calculator applies the ideal gas law equation PV = nRT to calculate an unknown gas property when other variables are provided. It uses pressure, volume, temperature, and mole relationships to determine gas properties and understand how changing conditions affect gas behavior.",
 
     formula:
-      "Ideal Gas Law: PV = nRT, where P is pressure, V is volume, n is amount of gas, R is the gas constant, and T is absolute temperature.",
+      "PV = nRT, where P represents pressure, V represents volume, n represents amount of gas, R represents the gas constant, and T represents absolute temperature.",
 
     variables: [
       "Pressure",
       "Volume",
       "Temperature",
       "Number of moles",
-      "Ideal gas constant",
       "Universal gas constant (R)",
       "Calculated gas property",
       "Gas law equation relationship",
       "Absolute temperature",
       "Pressure units",
       "Volume units",
+      "Molar mass",
+      "Gas density",
+      "Specific gas constant",
+      "Gas molecular weight",
+      "Compressibility factor",
+      "Gas constant units",
     ],
 
     applications: [
@@ -1657,6 +1662,8 @@ export const calculatorSEOContent: Record<
       "Industrial gas systems",
       "Gas storage and transportation",
       "Gas mixture analysis",
+      "Atmospheric science",
+      "Environmental gas analysis",
     ],
 
     assumptions: [
@@ -1665,7 +1672,7 @@ export const calculatorSEOContent: Record<
       "Pressure, volume, and mole measurements are accurate.",
       "Pressure and temperature conditions allow reasonable ideal gas approximation.",
       "Temperature must be expressed on an absolute scale such as Kelvin for accurate calculations.",
-      "Real gas effects may require advanced correction models under extreme conditions.",
+      "The ideal gas approximation becomes less accurate near condensation points and high-pressure conditions."
     ],
 
     examples: [
@@ -1715,6 +1722,12 @@ export const calculatorSEOContent: Record<
           "What is the ideal gas constant?",
         answer:
           "The ideal gas constant R is a proportionality constant used in the ideal gas equation to relate pressure, volume, temperature, and amount of gas.",
+      },
+      {
+        question:
+          "What is the difference between the ideal gas law and combined gas law?",
+        answer:
+          "The combined gas law relates pressure, volume, and temperature for a fixed amount of gas, while the ideal gas law also includes the amount of gas using moles.",
       },
       {
         question:
@@ -1784,10 +1797,10 @@ export const calculatorSEOContent: Record<
     slug: "boyles-law-calculator",
 
     seoIntroduction:
-      "Boyle's Law Calculator determines the relationship between pressure and volume of a gas when temperature remains constant. It helps chemistry students, researchers, and laboratory professionals calculate unknown pressure or volume values using Boyle's Law.",
+      "Boyle's Law Calculator determines the relationship between pressure and volume of a gas when temperature remains constant. It helps students, researchers, scientists, and laboratory professionals analyze gas behavior, calculate unknown values, and understand pressure-volume relationships.",
 
     howItWorks:
-      "The calculator applies the inverse relationship between gas pressure and volume. When one value changes, the calculator uses the Boyle's Law relationship to determine the corresponding pressure or volume while temperature remains constant.",
+      "The calculator applies the inverse relationship between gas pressure and volume. When one value changes, it uses Boyle's Law to determine the corresponding pressure or volume while temperature remains constant.",
 
     formula:
       "Boyle's Law: P₁V₁ = P₂V₂",
@@ -1798,6 +1811,9 @@ export const calculatorSEOContent: Record<
       "Final pressure",
       "Final volume",
       "Gas temperature assumption",
+      "Pressure units",
+      "Volume units",
+      "Gas behavior conditions",
     ],
 
     applications: [
@@ -1805,12 +1821,16 @@ export const calculatorSEOContent: Record<
       "Chemistry education",
       "Laboratory gas calculations",
       "Scientific experiments",
+      "Physics experiments",
+      "Industrial gas systems",
+      "Engineering calculations",
     ],
 
     assumptions: [
       "Temperature remains constant during the calculation.",
       "The gas behaves approximately as an ideal gas.",
       "Pressure and volume units are compatible.",
+      "Measurements are collected under controlled experimental conditions.",
     ],
 
     examples: [
@@ -1836,6 +1856,12 @@ export const calculatorSEOContent: Record<
           "What units can be used in Boyle's Law?",
         answer:
           "Any compatible pressure and volume units can be used as long as the same units are maintained on both sides of the equation.",
+      },
+      {
+        question:
+          "When is Boyle's Law used?",
+        answer:
+          "Boyle's Law is used in chemistry, physics, laboratory experiments, engineering systems, and scientific gas analysis.",
       },
     ],
 
