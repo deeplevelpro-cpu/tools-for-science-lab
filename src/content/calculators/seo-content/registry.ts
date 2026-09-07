@@ -955,7 +955,7 @@ export const calculatorSEOContent: Record<
     ],
 
     reviewedBy:
-      "ScienceCalcHub Chemistry Review Team",
+      "ScienceCalcHub Physics and Chemistry Review Team",
 
     lastReviewed:
       "2026-08-30",
@@ -1649,6 +1649,8 @@ export const calculatorSEOContent: Record<
       "Gas molecular weight",
       "Compressibility factor",
       "Gas constant units",
+      "Gas pressure conditions",
+      "Temperature scale",
     ],
 
     applications: [
@@ -1664,6 +1666,9 @@ export const calculatorSEOContent: Record<
       "Gas mixture analysis",
       "Atmospheric science",
       "Environmental gas analysis",
+      "Medical and biological gas systems",
+      "Gas law problem solving",
+      "Chemical engineering calculations",
     ],
 
     assumptions: [
