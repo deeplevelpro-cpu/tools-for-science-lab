@@ -1641,6 +1641,7 @@ export const calculatorSEOContent: Record<
       "Universal gas constant (R)",
       "Molar volume",
       "Gas density",
+      "Gas molar mass",
       "Calculated gas property",
     ],
 
@@ -1653,6 +1654,7 @@ export const calculatorSEOContent: Record<
       "Engineering calculations",
       "Chemical process analysis",
       "Industrial gas systems",
+      "Gas storage and transportation",
     ],
 
     assumptions: [
@@ -1683,6 +1685,12 @@ export const calculatorSEOContent: Record<
       },
       {
         question:
+          "What is the formula for the ideal gas law?",
+        answer:
+          "The ideal gas law formula is PV = nRT, where pressure, volume, temperature, and amount of gas are related through the ideal gas constant.",
+      },
+      {
+        question:
           "When does the ideal gas law work best?",
         answer:
           "The ideal gas law works best when gas particles have minimal interactions and the gas behaves close to an ideal model.",
@@ -1704,6 +1712,12 @@ export const calculatorSEOContent: Record<
           "What is the ideal gas constant?",
         answer:
           "The ideal gas constant R is a proportionality constant used in the ideal gas equation to relate pressure, volume, temperature, and amount of gas.",
+      },
+      {
+        question:
+          "How is gas density related to the ideal gas law?",
+        answer:
+          "Gas density can be calculated using the ideal gas relationship by connecting pressure, temperature, molar mass, and gas constant values.",
       },
     ],
 
