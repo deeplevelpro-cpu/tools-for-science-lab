@@ -11,7 +11,7 @@ const pageTitle =
   "Volcano Eruption Energy Calculator | Volcanic Science Tool";
 
 const pageDescription =
-  "Calculate volcanic eruption energy using ejected material mass and velocity. Learn how kinetic energy principles apply to volcano science.";
+  "Calculate volcanic eruption energy using ejected material mass and velocity with a kinetic energy formula. Learn the physics behind volcanic motion.";
 
 const pagePath =
   "/calculators/volcano-eruption-energy-calculator";
@@ -77,9 +77,9 @@ export default function VolcanoEruptionEnergyCalculatorPage() {
             </h1>
 
             <p>
-              Estimate eruption energy using mass and
-              velocity values based on kinetic energy
-              principles.
+              Estimate volcanic eruption energy using
+              mass and velocity values based on kinetic
+              energy principles.
             </p>
           </div>
         </Container>
@@ -108,11 +108,11 @@ export default function VolcanoEruptionEnergyCalculatorPage() {
               </h2>
 
               <p>
-                Volcanic eruptions release energy through
-                moving lava, ash, gases, and rock
-                fragments. Physics calculations help
-                explain how mass and velocity affect the
-                energy of moving material.
+                Volcanic eruptions release energy
+                through moving lava, ash, gases, and
+                rock fragments. Physics calculations
+                help explain how mass and velocity
+                affect the energy of moving material.
               </p>
             </section>
 
@@ -135,9 +135,9 @@ export default function VolcanoEruptionEnergyCalculatorPage() {
               </div>
 
               <p>
-                This simplified model uses kinetic energy
-                to represent the energy of moving volcanic
-                material.
+                This simplified model applies kinetic
+                energy principles to understand the
+                movement of volcanic materials.
               </p>
             </section>
 
@@ -151,9 +151,10 @@ export default function VolcanoEruptionEnergyCalculatorPage() {
               </h2>
 
               <p>
-                Energy calculations help students connect
-                physics concepts with geology, volcano
-                activity, and natural hazard studies.
+                Energy calculations help students
+                connect physics concepts with geology,
+                volcano activity, and natural hazard
+                studies.
               </p>
             </section>
 

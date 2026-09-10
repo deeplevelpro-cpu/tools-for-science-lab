@@ -53,6 +53,7 @@ export function calculateVolcanoEruptionEnergy(
 
   return {
     value: energy,
+
     formattedValue:
       formatCalculatedNumber(
         energy,
