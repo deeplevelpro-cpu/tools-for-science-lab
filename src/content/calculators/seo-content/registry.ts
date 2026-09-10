@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "volcano-eruption-energy-estimate-calculator": {
+    slug: "volcano-eruption-energy-estimate-calculator",
+
+    seoIntroduction:
+      "Volcano Eruption Energy Estimate Calculator estimates the kinetic energy of volcanic material using mass and velocity values. It helps students, educators, and earth science learners understand the physics behind volcanic eruptions.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of ejected material mass by the square of eruption velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Ejected material mass",
+      "Eruption velocity",
+      "Kinetic energy",
+      "Volcanic energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Volcanology learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Geology concepts",
+    ],
+
+    assumptions: [
+      "Volcanic material is represented as a simplified moving object.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate complete volcanic eruptions.",
+    ],
+
+    examples: [
+      "Example: Increasing eruption velocity greatly increases energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand volcanic events.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is volcano eruption energy calculated?",
+        answer:
+          "A simplified estimate uses kinetic energy principles based on material mass and eruption velocity.",
+      },
+      {
+        question:
+          "Why does eruption velocity affect energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster moving material carries much more energy.",
+      },
+      {
+        question:
+          "Can this predict volcanic eruptions?",
+        answer:
+          "No. This calculator explains physics concepts and does not forecast volcanic activity.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, geology, and earth science concepts.",
+      },
+    ],
+
+    references: [
+      "USGS volcano science resources",
+      "Kinetic energy physics principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not model magma pressure.",
+      "Does not calculate eruption damage.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "tsunami-wave-energy-estimate-calculator": {
     slug: "tsunami-wave-energy-estimate-calculator",
 

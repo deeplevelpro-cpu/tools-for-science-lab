@@ -1282,4 +1282,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "ocean physics calculator",
     ],
   },
+
+  {
+    slug: "volcano-eruption-energy-estimate-calculator",
+    name: "Volcano Eruption Energy Estimate Calculator",
+    shortDescription:
+      "Estimate volcano eruption energy using material mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/volcano-eruption-energy-estimate-calculator",
+    keywords: [
+      "volcano eruption energy calculator",
+      "volcano energy calculator",
+      "eruption energy estimate calculator",
+      "earth science calculator",
+    ],
+  },
 ];
