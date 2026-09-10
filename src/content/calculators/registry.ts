@@ -1057,4 +1057,19 @@ export const calculators: readonly CalculatorDefinition[] = [
     href: "/calculators/specific-heat-calculator",
     keywords: ["specific heat calculator"],
   },
+
+  {
+    slug: "snow-calculator",
+    name: "Snow Calculator",
+    shortDescription:
+      "Estimate snowfall depth from liquid precipitation and snow ratio using a weather science calculation.",
+    category: "Laboratory",
+    href: "/calculators/snow-calculator",
+    keywords: [
+      "snow calculator",
+      "snowfall calculator",
+      "snow depth calculator",
+      "snow ratio calculator",
+    ],
+  },
 ];

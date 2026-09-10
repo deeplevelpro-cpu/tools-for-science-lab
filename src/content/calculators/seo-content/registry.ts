@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "snow-calculator": {
+    slug: "snow-calculator",
+
+    seoIntroduction:
+      "Snow Calculator estimates snowfall depth by converting liquid precipitation into expected snow accumulation using a snow ratio. It helps students, weather enthusiasts, and science learners understand precipitation conversion and snow measurement principles.",
+
+    howItWorks:
+      "The calculator multiplies liquid precipitation by a snow ratio to estimate total snow depth. Snow ratios represent how much snow forms from a given amount of liquid water.",
+
+    formula:
+      "Snow Depth = Liquid Precipitation × Snow Ratio",
+
+    variables: [
+      "Liquid precipitation",
+      "Snow ratio",
+      "Snow depth",
+      "Water equivalent",
+      "Snow accumulation",
+    ],
+
+    applications: [
+      "Weather science education",
+      "Snowfall estimation",
+      "Meteorology learning",
+      "Climate science studies",
+      "Winter weather analysis",
+    ],
+
+    assumptions: [
+      "The snow ratio represents an average snow density relationship.",
+      "Actual snowfall can vary based on temperature and atmospheric conditions.",
+      "Input measurements use compatible units.",
+    ],
+
+    examples: [
+      "Example: 1 inch of liquid precipitation with a 10:1 ratio produces approximately 10 inches of snow.",
+      "Example: Cold dry snow can produce higher snow ratios than wet snow.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How do you calculate snowfall from precipitation?",
+        answer:
+          "Snowfall is estimated by multiplying liquid precipitation by a snow ratio that represents the expected conversion from water to snow.",
+      },
+      {
+        question:
+          "What is a common snow ratio?",
+        answer:
+          "A common estimate is 10:1, meaning one inch of liquid precipitation may produce around ten inches of snow.",
+      },
+      {
+        question:
+          "Why do snow ratios change?",
+        answer:
+          "Snow ratios change because temperature, humidity, and snow crystal structure affect snow density.",
+      },
+      {
+        question:
+          "Is snow calculator output exact?",
+        answer:
+          "No. Snowfall estimates depend on weather conditions and are best used as educational or planning estimates.",
+      },
+    ],
+
+    references: [
+      "National Weather Service snowfall measurement guidance",
+      "Meteorological precipitation conversion principles",
+      "Weather science education resources",
+    ],
+
+    limitations: [
+      "Does not predict future snowfall events.",
+      "Actual accumulation may differ due to local weather conditions.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "solar-eclipse-calculator": {
     slug: "solar-eclipse-calculator",
 
