@@ -1192,4 +1192,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "magnitude energy comparison calculator",
     ],
   },
+
+  {
+    slug: "tornado-wind-speed-calculator",
+    name: "Tornado Wind Speed Calculator",
+    shortDescription:
+      "Calculate wind speed using distance and time values with a simple motion formula.",
+    category: "Laboratory",
+    href: "/calculators/tornado-wind-speed-calculator",
+    keywords: [
+      "tornado wind speed calculator",
+      "wind speed calculator",
+      "tornado velocity calculator",
+      "weather speed calculator",
+    ],
+  },
 ];
