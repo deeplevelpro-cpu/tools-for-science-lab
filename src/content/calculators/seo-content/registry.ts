@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "meteor-impact-energy-calculator": {
+    slug: "meteor-impact-energy-calculator",
+
+    seoIntroduction:
+      "Meteor Impact Energy Calculator estimates the energy released when a meteor or asteroid collides with a surface. It uses kinetic energy principles based on object mass and velocity to help students, educators, and space science learners understand impact physics.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy equation by multiplying one-half of the meteor mass by the square of its impact velocity to estimate impact energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Meteor mass",
+      "Impact velocity",
+      "Kinetic energy",
+      "Impact energy in joules",
+      "Planetary collision physics",
+    ],
+
+    applications: [
+      "Space science education",
+      "Planetary geology studies",
+      "Asteroid impact learning",
+      "Physics education",
+      "Impact event analysis",
+    ],
+
+    assumptions: [
+      "The meteor is modeled as a moving object with kinetic energy.",
+      "Mass and velocity values use compatible units.",
+      "The calculation does not simulate atmospheric effects or crater formation.",
+    ],
+
+    examples: [
+      "Example: Increasing impact velocity significantly increases energy because velocity is squared in the formula.",
+      "Example: Students use impact energy calculations to compare different asteroid collision scenarios.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is meteor impact energy calculated?",
+        answer:
+          "Meteor impact energy is estimated using the kinetic energy formula based on mass and velocity.",
+      },
+      {
+        question:
+          "Why does velocity have a large effect on impact energy?",
+        answer:
+          "Velocity is squared in the kinetic energy equation, so faster objects carry much more energy.",
+      },
+      {
+        question:
+          "Can this predict asteroid impacts?",
+        answer:
+          "No. This calculator explains impact physics and does not predict future asteroid collisions.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses mechanics, kinetic energy, and planetary science concepts.",
+      },
+    ],
+
+    references: [
+      "NASA planetary science education resources",
+      "Kinetic energy physics principles",
+      "Planetary impact science references",
+    ],
+
+    limitations: [
+      "Does not model atmosphere resistance.",
+      "Does not calculate crater size or geological damage.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Space Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "earthquake-energy-calculator": {
     slug: "earthquake-energy-calculator",
 

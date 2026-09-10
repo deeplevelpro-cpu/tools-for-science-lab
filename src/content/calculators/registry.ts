@@ -1147,4 +1147,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "magnitude energy calculator",
     ],
   },
+
+  {
+    slug: "meteor-impact-energy-calculator",
+    name: "Meteor Impact Energy Calculator",
+    shortDescription:
+      "Calculate meteor impact energy using mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/meteor-impact-energy-calculator",
+    keywords: [
+      "meteor impact energy calculator",
+      "asteroid impact calculator",
+      "meteor energy calculator",
+      "impact energy calculator",
+    ],
+  },
 ];
