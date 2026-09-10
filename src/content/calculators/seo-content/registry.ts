@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-wave-energy-calculator": {
+    slug: "tsunami-wave-energy-calculator",
+
+    seoIntroduction:
+      "Tsunami Wave Energy Calculator estimates the energy carried by moving ocean water using mass and velocity values. It applies kinetic energy principles to help students, educators, and ocean science learners understand wave energy.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy equation by multiplying one-half of the moving water mass by the square of wave velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Water mass",
+      "Wave velocity",
+      "Kinetic energy",
+      "Wave energy in joules",
+      "Ocean physics relationship",
+    ],
+
+    applications: [
+      "Ocean physics education",
+      "Tsunami science learning",
+      "Coastal science studies",
+      "Physics education",
+      "Wave mechanics understanding",
+    ],
+
+    assumptions: [
+      "Moving water is represented as a simplified kinetic energy system.",
+      "Mass and velocity values use compatible units.",
+      "The calculation does not represent complete tsunami modeling.",
+    ],
+
+    examples: [
+      "Example: Increasing wave velocity causes a large increase in energy because velocity is squared in the formula.",
+      "Example: Students use wave energy calculations to understand how moving water carries energy.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tsunami wave energy calculated?",
+        answer:
+          "Tsunami wave energy can be estimated using kinetic energy principles based on moving water mass and velocity.",
+      },
+      {
+        question:
+          "Why does wave velocity affect energy so much?",
+        answer:
+          "Velocity has a squared effect in the kinetic energy equation, so faster waves carry much more energy.",
+      },
+      {
+        question:
+          "Does this predict tsunami damage?",
+        answer:
+          "No. This calculator explains wave energy concepts and does not predict real tsunami impacts.",
+      },
+      {
+        question:
+          "What science is used in tsunami energy calculations?",
+        answer:
+          "The calculation uses physics, kinetic energy, and ocean science concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science resources",
+      "Kinetic energy physics principles",
+      "Ocean wave mechanics references",
+    ],
+
+    limitations: [
+      "Does not simulate coastline effects.",
+      "Does not calculate flooding or tsunami height.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "meteor-impact-energy-calculator": {
     slug: "meteor-impact-energy-calculator",
 
