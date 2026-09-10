@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "solar-eclipse-calculator": {
+    slug: "solar-eclipse-calculator",
+
+    seoIntroduction:
+      "Solar Eclipse Calculator helps users understand eclipse geometry by comparing the apparent angular sizes of the Sun and Moon. It is designed for astronomy students, science learners, educators, and anyone exploring solar eclipse principles.",
+
+    howItWorks:
+      "The calculator uses angular diameter calculations to compare the visible size of the Sun and Moon from Earth. When their apparent sizes are similar, eclipse conditions can occur.",
+
+    formula:
+      "Angular Diameter = 2 × arctan(radius ÷ distance)",
+
+    variables: [
+      "Earth-Sun distance",
+      "Earth-Moon distance",
+      "Sun radius",
+      "Moon radius",
+      "Angular diameter",
+      "Eclipse geometry",
+    ],
+
+    applications: [
+      "Astronomy education",
+      "Solar eclipse learning",
+      "Physics and space science studies",
+      "Scientific visualization",
+      "Classroom demonstrations",
+    ],
+
+    assumptions: [
+      "Inputs represent average astronomical measurements.",
+      "The calculator explains eclipse geometry rather than predicting exact eclipse paths.",
+      "Angular size comparison is used as the primary model.",
+    ],
+
+    examples: [
+      "Example: Comparing Sun and Moon angular diameters explains why total and annular eclipses occur.",
+      "Example: Students can explore how changing distance affects apparent size in astronomy.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How does a solar eclipse happen?",
+        answer:
+          "A solar eclipse occurs when the Moon passes between Earth and the Sun and blocks some or all sunlight from reaching Earth.",
+      },
+      {
+        question:
+          "What does a solar eclipse calculator measure?",
+        answer:
+          "It compares the apparent angular sizes of the Sun and Moon to explain eclipse geometry.",
+      },
+      {
+        question:
+          "Why can the Moon cover the Sun during an eclipse?",
+        answer:
+          "The Sun is much larger than the Moon, but the Moon is much closer to Earth, making their apparent sizes similar in the sky.",
+      },
+      {
+        question:
+          "Does this calculator predict eclipse dates?",
+        answer:
+          "No. This calculator explains eclipse geometry using astronomical measurements rather than predicting future eclipse events.",
+      },
+    ],
+
+    references: [
+      "NASA Solar Eclipse scientific resources",
+      "Astronomical angular diameter calculations",
+      "Basic astronomy and physics references",
+    ],
+
+    limitations: [
+      "Does not calculate exact eclipse paths or visibility locations.",
+      "Uses simplified astronomical geometry.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Astronomy Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "percent-error-calculator": {
     slug: "percent-error-calculator",
 
