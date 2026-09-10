@@ -1267,4 +1267,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "space physics calculator",
     ],
   },
+
+  {
+    slug: "tsunami-wave-energy-estimate-calculator",
+    name: "Tsunami Wave Energy Estimate Calculator",
+    shortDescription:
+      "Estimate tsunami wave energy using water mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-wave-energy-estimate-calculator",
+    keywords: [
+      "tsunami wave energy calculator",
+      "tsunami energy calculator",
+      "wave energy estimate calculator",
+      "ocean physics calculator",
+    ],
+  },
 ];

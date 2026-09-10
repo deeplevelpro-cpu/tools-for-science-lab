@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-wave-energy-estimate-calculator": {
+    slug: "tsunami-wave-energy-estimate-calculator",
+
+    seoIntroduction:
+      "Tsunami Wave Energy Estimate Calculator estimates the kinetic energy of moving water using mass and velocity values. It helps students, educators, and ocean science learners understand wave energy physics.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of water mass by the square of wave velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Water mass",
+      "Wave velocity",
+      "Kinetic energy",
+      "Wave energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Ocean science education",
+      "Wave physics learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Marine science concepts",
+    ],
+
+    assumptions: [
+      "The moving water is represented as a simplified kinetic energy system.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate real tsunami behavior.",
+    ],
+
+    examples: [
+      "Example: Increasing wave velocity greatly increases energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand tsunami motion.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tsunami wave energy calculated?",
+        answer:
+          "A simplified estimate uses kinetic energy principles based on water mass and wave velocity.",
+      },
+      {
+        question:
+          "Why does wave velocity affect energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster waves contain much more energy.",
+      },
+      {
+        question:
+          "Can this predict tsunami damage?",
+        answer:
+          "No. This calculator explains physics concepts and does not predict real tsunami impacts.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, ocean science, and wave motion concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science resources",
+      "Kinetic energy physics principles",
+      "Ocean science educational references",
+    ],
+
+    limitations: [
+      "Does not model tsunami generation.",
+      "Does not calculate coastal damage.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "meteorite-impact-energy-calculator": {
     slug: "meteorite-impact-energy-calculator",
 
