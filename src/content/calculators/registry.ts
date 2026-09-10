@@ -1252,4 +1252,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "plasma energy calculator",
     ],
   },
+
+  {
+    slug: "meteorite-impact-energy-calculator",
+    name: "Meteorite Impact Energy Calculator",
+    shortDescription:
+      "Calculate meteorite impact energy using mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/meteorite-impact-energy-calculator",
+    keywords: [
+      "meteorite impact energy calculator",
+      "meteor impact calculator",
+      "asteroid impact energy calculator",
+      "space physics calculator",
+    ],
+  },
 ];

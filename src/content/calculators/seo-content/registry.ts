@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "meteorite-impact-energy-calculator": {
+    slug: "meteorite-impact-energy-calculator",
+
+    seoIntroduction:
+      "Meteorite Impact Energy Calculator estimates the kinetic energy released by a meteorite collision using mass and velocity values. It helps students, educators, and astronomy learners understand the physics behind impact events.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of meteorite mass by the square of impact velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Meteorite mass",
+      "Impact velocity",
+      "Kinetic energy",
+      "Impact energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Astronomy education",
+      "Planetary science learning",
+      "Space physics studies",
+      "Physics education",
+      "Impact event analysis",
+    ],
+
+    assumptions: [
+      "The meteorite is represented as a simplified moving object.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate complete impact effects.",
+    ],
+
+    examples: [
+      "Example: Increasing meteorite velocity greatly increases impact energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand asteroid and meteor impacts.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is meteorite impact energy calculated?",
+        answer:
+          "Impact energy is estimated using kinetic energy principles based on mass and velocity.",
+      },
+      {
+        question:
+          "Why does velocity have a large effect on impact energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster objects carry much more energy.",
+      },
+      {
+        question:
+          "Can this predict meteorite damage?",
+        answer:
+          "No. This calculator explains physics concepts and does not predict real impact outcomes.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, astronomy, and planetary science concepts.",
+      },
+    ],
+
+    references: [
+      "NASA asteroid and meteor science resources",
+      "Kinetic energy physics principles",
+      "Planetary science educational references",
+    ],
+
+    limitations: [
+      "Does not model atmospheric effects.",
+      "Does not calculate real crater formation.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Space Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "solar-flare-energy-calculator": {
     slug: "solar-flare-energy-calculator",
 
