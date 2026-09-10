@@ -1117,4 +1117,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "water wave velocity calculator",
     ],
   },
+
+  {
+    slug: "volcano-eruption-energy-calculator",
+    name: "Volcano Eruption Energy Calculator",
+    shortDescription:
+      "Calculate volcanic eruption energy using mass and velocity with a kinetic energy model.",
+    category: "Laboratory",
+    href: "/calculators/volcano-eruption-energy-calculator",
+    keywords: [
+      "volcano eruption energy calculator",
+      "volcanic energy calculator",
+      "eruption energy calculator",
+      "volcano physics calculator",
+    ],
+  },
 ];
