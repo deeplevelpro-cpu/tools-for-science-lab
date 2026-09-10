@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "earthquake-energy-comparison-calculator": {
+    slug: "earthquake-energy-comparison-calculator",
+
+    seoIntroduction:
+      "Earthquake Energy Comparison Calculator compares the energy released by earthquakes with different magnitudes. It uses the logarithmic relationship between magnitude and seismic energy to help students, educators, and geology learners understand earthquake scale differences.",
+
+    howItWorks:
+      "The calculator calculates the energy ratio between two earthquakes by applying the magnitude difference formula. Because earthquake magnitude is logarithmic, small magnitude changes can represent large energy differences.",
+
+    formula:
+      "Energy Ratio = 10^(1.5 × Magnitude Difference)",
+
+    variables: [
+      "First earthquake magnitude",
+      "Second earthquake magnitude",
+      "Magnitude difference",
+      "Energy ratio",
+      "Seismic energy comparison",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Seismology learning",
+      "Earthquake awareness",
+      "Geology studies",
+      "Physics education",
+    ],
+
+    assumptions: [
+      "Magnitude values use the standard logarithmic energy relationship.",
+      "The result represents relative energy comparison.",
+      "The calculation does not predict earthquake events.",
+    ],
+
+    examples: [
+      "Example: A magnitude 6 earthquake releases much more energy than a magnitude 5 earthquake.",
+      "Example: Students use energy ratios to understand why earthquake magnitude differences matter.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How do you compare earthquake energy?",
+        answer:
+          "Earthquake energy comparison uses the magnitude difference and a logarithmic energy relationship.",
+      },
+      {
+        question:
+          "Why are earthquake magnitudes difficult to compare?",
+        answer:
+          "Magnitude scales are logarithmic, so each increase represents a large change in released energy.",
+      },
+      {
+        question:
+          "Does this predict earthquake strength?",
+        answer:
+          "No. It only compares theoretical energy differences between earthquake magnitudes.",
+      },
+      {
+        question:
+          "What science is used in this calculator?",
+        answer:
+          "The calculator uses seismology, logarithmic scales, and physics-based energy relationships.",
+      },
+    ],
+
+    references: [
+      "USGS earthquake magnitude resources",
+      "Seismology energy calculation principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not predict earthquakes.",
+      "Only compares relative energy release.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "tsunami-wave-energy-calculator": {
     slug: "tsunami-wave-energy-calculator",
 

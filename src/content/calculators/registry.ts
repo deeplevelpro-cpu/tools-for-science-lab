@@ -1177,4 +1177,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "water wave energy calculator",
     ],
   },
+
+  {
+    slug: "earthquake-energy-comparison-calculator",
+    name: "Earthquake Energy Comparison Calculator",
+    shortDescription:
+      "Compare energy released by earthquakes using magnitude differences and logarithmic energy scaling.",
+    category: "Laboratory",
+    href: "/calculators/earthquake-energy-comparison-calculator",
+    keywords: [
+      "earthquake energy comparison calculator",
+      "earthquake energy difference calculator",
+      "seismic energy comparison",
+      "magnitude energy comparison calculator",
+    ],
+  },
 ];
