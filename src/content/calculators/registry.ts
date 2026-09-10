@@ -1072,4 +1072,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "snow ratio calculator",
     ],
   },
+
+  {
+    slug: "water-level-calculator",
+    name: "Water Level Calculator",
+    shortDescription:
+      "Calculate water volume from length, width, and depth with cubic meter and liter conversions.",
+    category: "Laboratory",
+    href: "/calculators/water-level-calculator",
+    keywords: [
+      "water level calculator",
+      "water volume calculator",
+      "tank volume calculator",
+      "water depth calculator",
+    ],
+  },
 ];
