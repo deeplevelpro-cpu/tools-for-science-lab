@@ -1087,4 +1087,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "water depth calculator",
     ],
   },
+
+  {
+    slug: "earthquake-magnitude-calculator",
+    name: "Earthquake Magnitude Calculator",
+    shortDescription:
+      "Calculate earthquake magnitude from seismic amplitude and reference amplitude using a logarithmic scale formula.",
+    category: "Laboratory",
+    href: "/calculators/earthquake-magnitude-calculator",
+    keywords: [
+      "earthquake magnitude calculator",
+      "seismic magnitude calculator",
+      "richter scale calculator",
+      "earthquake scale calculator",
+    ],
+  },
 ];

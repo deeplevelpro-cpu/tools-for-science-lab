@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "earthquake-magnitude-calculator": {
+    slug: "earthquake-magnitude-calculator",
+
+    seoIntroduction:
+      "Earthquake Magnitude Calculator helps users understand seismic magnitude calculations by comparing earthquake wave amplitude with a reference amplitude. It is useful for geology students, earth science learners, educators, and anyone studying earthquake measurement principles.",
+
+    howItWorks:
+      "The calculator applies a logarithmic magnitude relationship by dividing measured seismic amplitude by a reference amplitude and calculating the base-10 logarithm of the ratio.",
+
+    formula:
+      "Magnitude = log10(Amplitude ÷ Reference Amplitude)",
+
+    variables: [
+      "Seismic amplitude",
+      "Reference amplitude",
+      "Magnitude value",
+      "Logarithmic scale relationship",
+      "Earthquake measurement",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Geology studies",
+      "Seismology learning",
+      "Earthquake measurement concepts",
+      "Engineering earthquake awareness",
+    ],
+
+    assumptions: [
+      "Amplitude measurements use compatible units.",
+      "The formula represents a simplified logarithmic magnitude relationship.",
+      "Real earthquake analysis uses standardized seismic measurement systems.",
+    ],
+
+    examples: [
+      "Example: If seismic amplitude is 1000 times the reference amplitude, the calculated magnitude difference is 3.",
+      "Example: Students use logarithmic earthquake calculations to understand why small magnitude changes represent large energy differences.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is earthquake magnitude calculated?",
+        answer:
+          "Earthquake magnitude can be calculated using a logarithmic relationship between seismic amplitude and a reference amplitude.",
+      },
+      {
+        question:
+          "Why is earthquake magnitude logarithmic?",
+        answer:
+          "A logarithmic scale allows scientists to represent earthquakes with extremely different seismic amplitudes using manageable numbers.",
+      },
+      {
+        question:
+          "Is earthquake magnitude the same as earthquake intensity?",
+        answer:
+          "No. Magnitude measures energy released by an earthquake, while intensity describes observed effects at specific locations.",
+      },
+      {
+        question:
+          "Does this calculator predict earthquakes?",
+        answer:
+          "No. This calculator explains magnitude calculations and does not predict earthquake occurrence.",
+      },
+    ],
+
+    references: [
+      "USGS earthquake magnitude and seismic measurement resources",
+      "Seismology calculation principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not calculate earthquake location or depth.",
+      "Uses a simplified magnitude relationship for educational purposes.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "water-level-calculator": {
     slug: "water-level-calculator",
 
