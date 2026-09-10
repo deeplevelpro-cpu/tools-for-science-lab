@@ -1207,4 +1207,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather speed calculator",
     ],
   },
+
+  {
+    slug: "hurricane-wind-energy-calculator",
+    name: "Hurricane Wind Energy Calculator",
+    shortDescription:
+      "Calculate hurricane wind energy using air mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-wind-energy-calculator",
+    keywords: [
+      "hurricane wind energy calculator",
+      "storm energy calculator",
+      "wind energy calculator",
+      "hurricane physics calculator",
+    ],
+  },
 ];
