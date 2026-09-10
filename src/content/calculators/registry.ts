@@ -1237,4 +1237,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "lightning power calculator",
     ],
   },
+
+  {
+    slug: "solar-flare-energy-calculator",
+    name: "Solar Flare Energy Calculator",
+    shortDescription:
+      "Calculate solar flare energy using plasma mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/solar-flare-energy-calculator",
+    keywords: [
+      "solar flare energy calculator",
+      "solar energy calculator",
+      "space physics calculator",
+      "plasma energy calculator",
+    ],
+  },
 ];
