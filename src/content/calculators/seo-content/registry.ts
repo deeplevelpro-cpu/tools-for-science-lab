@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "earthquake-energy-calculator": {
+    slug: "earthquake-energy-calculator",
+
+    seoIntroduction:
+      "Earthquake Energy Calculator estimates the energy released by an earthquake using magnitude values and a logarithmic seismic energy relationship. It helps students, geology learners, and educators understand how earthquake magnitude connects to energy release.",
+
+    howItWorks:
+      "The calculator applies a logarithmic earthquake energy equation. It raises 10 to the power of 1.5 times the earthquake magnitude plus a constant to estimate released energy in joules.",
+
+    formula:
+      "Energy = 10^(1.5 × Magnitude + 4.8)",
+
+    variables: [
+      "Earthquake magnitude",
+      "Energy released",
+      "Seismic scale relationship",
+      "Joules",
+      "Earthquake measurement",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Seismology learning",
+      "Geology studies",
+      "Earthquake scale comparison",
+      "Physics education",
+    ],
+
+    assumptions: [
+      "Magnitude values follow a logarithmic earthquake energy relationship.",
+      "The result is an educational estimate of released energy.",
+      "Energy is expressed in joules.",
+    ],
+
+    examples: [
+      "Example: A magnitude increase of one unit represents a large increase in released seismic energy.",
+      "Example: Students use energy calculations to compare earthquakes of different magnitudes.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How do you calculate earthquake energy?",
+        answer:
+          "Earthquake energy is estimated using a logarithmic formula based on earthquake magnitude.",
+      },
+      {
+        question:
+          "Why does earthquake energy increase so quickly?",
+        answer:
+          "Earthquake energy increases rapidly because magnitude scales are logarithmic.",
+      },
+      {
+        question:
+          "Is earthquake magnitude the same as energy?",
+        answer:
+          "No. Magnitude is a measurement scale, while energy represents the physical energy released.",
+      },
+      {
+        question:
+          "Can this predict earthquakes?",
+        answer:
+          "No. This calculator only explains the relationship between magnitude and energy.",
+      },
+    ],
+
+    references: [
+      "USGS earthquake magnitude and energy resources",
+      "Seismology calculation principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not predict earthquake occurrence.",
+      "Uses a simplified magnitude-energy relationship.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "volcano-eruption-energy-calculator": {
     slug: "volcano-eruption-energy-calculator",
 

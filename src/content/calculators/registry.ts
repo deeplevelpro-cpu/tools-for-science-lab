@@ -1132,4 +1132,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "volcano physics calculator",
     ],
   },
+
+  {
+    slug: "earthquake-energy-calculator",
+    name: "Earthquake Energy Calculator",
+    shortDescription:
+      "Calculate earthquake energy released from magnitude using a logarithmic seismic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/earthquake-energy-calculator",
+    keywords: [
+      "earthquake energy calculator",
+      "seismic energy calculator",
+      "earthquake power calculator",
+      "magnitude energy calculator",
+    ],
+  },
 ];
