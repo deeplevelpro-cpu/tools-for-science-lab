@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-wave-speed-calculator": {
+    slug: "tsunami-wave-speed-calculator",
+
+    seoIntroduction:
+      "Tsunami Wave Speed Calculator helps users understand how ocean depth affects tsunami movement. It calculates wave speed using shallow-water wave principles and is useful for ocean science students, educators, and earth science learners.",
+
+    howItWorks:
+      "The calculator uses the shallow-water wave speed relationship by multiplying gravitational acceleration by water depth and calculating the square root of the result.",
+
+    formula:
+      "Wave Speed = √(Gravity × Water Depth)",
+
+    variables: [
+      "Ocean depth",
+      "Gravitational acceleration",
+      "Wave speed",
+      "Water depth relationship",
+      "Ocean wave movement",
+    ],
+
+    applications: [
+      "Oceanography education",
+      "Earth science studies",
+      "Tsunami science learning",
+      "Coastal hazard awareness",
+      "Physics of water waves",
+    ],
+
+    assumptions: [
+      "The shallow-water wave approximation is used.",
+      "Water depth is measured consistently.",
+      "The calculation represents theoretical wave speed and not exact coastal conditions.",
+    ],
+
+    examples: [
+      "Example: Deeper ocean water allows tsunami waves to travel much faster than shallow coastal water.",
+      "Example: Students use wave speed calculations to understand tsunami propagation across oceans.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How do you calculate tsunami wave speed?",
+        answer:
+          "Tsunami wave speed is estimated using the square root of gravitational acceleration multiplied by water depth.",
+      },
+      {
+        question:
+          "Why do tsunamis move faster in deep water?",
+        answer:
+          "Deep water allows tsunami waves to travel faster because wave speed depends strongly on ocean depth.",
+      },
+      {
+        question:
+          "Does this calculate tsunami height?",
+        answer:
+          "No. This calculator estimates wave speed only and does not calculate wave height or coastal flooding.",
+      },
+      {
+        question:
+          "What science is used in tsunami calculations?",
+        answer:
+          "Tsunami calculations use principles from physics, oceanography, and fluid wave mechanics.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science and ocean wave resources",
+      "Shallow-water wave physics principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not predict tsunami events.",
+      "Does not model coastline shape or real-world wave behavior.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "earthquake-magnitude-calculator": {
     slug: "earthquake-magnitude-calculator",
 

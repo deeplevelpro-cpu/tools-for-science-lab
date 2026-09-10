@@ -1102,4 +1102,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "earthquake scale calculator",
     ],
   },
+
+  {
+    slug: "tsunami-wave-speed-calculator",
+    name: "Tsunami Wave Speed Calculator",
+    shortDescription:
+      "Calculate tsunami wave speed from ocean depth using shallow water wave calculations.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-wave-speed-calculator",
+    keywords: [
+      "tsunami wave speed calculator",
+      "tsunami speed calculator",
+      "ocean wave speed calculator",
+      "water wave velocity calculator",
+    ],
+  },
 ];
