@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "lightning-strike-energy-calculator": {
+    slug: "lightning-strike-energy-calculator",
+
+    seoIntroduction:
+      "Lightning Strike Energy Calculator estimates electrical energy released during a lightning discharge using charge and voltage values. It helps students, educators, and physics learners understand electrical energy relationships.",
+
+    howItWorks:
+      "The calculator applies the electrical energy relationship by multiplying electrical charge by voltage to estimate energy in joules.",
+
+    formula:
+      "Energy = Charge × Voltage",
+
+    variables: [
+      "Electrical charge",
+      "Voltage",
+      "Electrical energy",
+      "Lightning discharge energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Physics education",
+      "Electricity learning",
+      "Atmospheric science",
+      "Lightning science studies",
+      "Electrical energy concepts",
+    ],
+
+    assumptions: [
+      "The lightning discharge is represented using a simplified electrical energy model.",
+      "Charge and voltage values use compatible units.",
+      "The calculation is educational and does not simulate real lightning behavior.",
+    ],
+
+    examples: [
+      "Example: Increasing voltage increases the calculated electrical energy when charge remains constant.",
+      "Example: Students use the formula to connect electricity concepts with lightning events.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is lightning energy calculated?",
+        answer:
+          "Lightning energy can be estimated by multiplying electrical charge by voltage.",
+      },
+      {
+        question:
+          "Can this calculate real lightning damage?",
+        answer:
+          "No. This calculator explains electrical energy concepts and does not predict lightning effects.",
+      },
+      {
+        question:
+          "Why does voltage affect lightning energy?",
+        answer:
+          "Voltage represents electrical potential, and higher voltage can produce greater energy transfer.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses electricity, energy, and atmospheric science concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA lightning science resources",
+      "Electrical energy physics principles",
+      "Atmospheric electricity references",
+    ],
+
+    limitations: [
+      "Does not model lightning formation.",
+      "Does not estimate electrical damage.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "hurricane-wind-energy-calculator": {
     slug: "hurricane-wind-energy-calculator",
 

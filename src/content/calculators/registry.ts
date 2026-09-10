@@ -1222,4 +1222,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "hurricane physics calculator",
     ],
   },
+
+  {
+    slug: "lightning-strike-energy-calculator",
+    name: "Lightning Strike Energy Calculator",
+    shortDescription:
+      "Calculate lightning strike energy using charge and voltage with an electrical energy formula.",
+    category: "Laboratory",
+    href: "/calculators/lightning-strike-energy-calculator",
+    keywords: [
+      "lightning strike energy calculator",
+      "lightning energy calculator",
+      "electrical energy calculator",
+      "lightning power calculator",
+    ],
+  },
 ];
