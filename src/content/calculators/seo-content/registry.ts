@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "avalanche-energy-calculator": {
+    slug: "avalanche-energy-calculator",
+
+    seoIntroduction:
+      "Avalanche Energy Calculator estimates the kinetic energy of moving snow using mass and velocity values. It helps students, educators, and snow science learners understand the physics behind avalanche motion.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of snow mass by the square of avalanche velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Snow mass",
+      "Avalanche velocity",
+      "Kinetic energy",
+      "Snow energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Snow science education",
+      "Mountain hazard studies",
+      "Physics education",
+      "Avalanche research concepts",
+      "Natural hazard learning",
+    ],
+
+    assumptions: [
+      "Moving snow is represented as a simplified kinetic energy system.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate real avalanche behavior.",
+    ],
+
+    examples: [
+      "Example: Increasing avalanche velocity greatly increases energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand snow movement.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is avalanche energy calculated?",
+        answer:
+          "A simplified estimate uses kinetic energy principles based on snow mass and avalanche velocity.",
+      },
+      {
+        question:
+          "Why does velocity affect avalanche energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster avalanches contain much more energy.",
+      },
+      {
+        question:
+          "Can this predict avalanche danger?",
+        answer:
+          "No. This calculator explains physics concepts and does not forecast avalanche events.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, snow science, and natural hazard concepts.",
+      },
+    ],
+
+    references: [
+      "Avalanche science educational resources",
+      "Kinetic energy physics principles",
+      "Snow science references",
+    ],
+
+    limitations: [
+      "Does not model terrain effects.",
+      "Does not calculate avalanche risk levels.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Snow Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "volcano-eruption-energy-estimate-calculator": {
     slug: "volcano-eruption-energy-estimate-calculator",
 

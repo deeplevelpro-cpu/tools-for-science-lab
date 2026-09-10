@@ -1297,4 +1297,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "earth science calculator",
     ],
   },
+
+  {
+    slug: "avalanche-energy-calculator",
+    name: "Avalanche Energy Calculator",
+    shortDescription:
+      "Calculate avalanche energy using snow mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/avalanche-energy-calculator",
+    keywords: [
+      "avalanche energy calculator",
+      "snow energy calculator",
+      "avalanche physics calculator",
+      "mountain hazard calculator",
+    ],
+  },
 ];
