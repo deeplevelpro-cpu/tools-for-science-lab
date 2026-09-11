@@ -1312,4 +1312,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "mountain hazard calculator",
     ],
   },
+
+  {
+    slug: "landslide-energy-calculator",
+    name: "Landslide Energy Calculator",
+    shortDescription:
+      "Calculate landslide energy using moving earth mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/landslide-energy-calculator",
+    keywords: [
+      "landslide energy calculator",
+      "landslide physics calculator",
+      "earth movement energy calculator",
+      "natural hazard calculator",
+    ],
+  },
 ];

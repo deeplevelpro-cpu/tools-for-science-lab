@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "landslide-energy-calculator": {
+    slug: "landslide-energy-calculator",
+
+    seoIntroduction:
+      "Landslide Energy Calculator estimates the kinetic energy of moving soil, rocks, and debris using mass and velocity values. It helps students, educators, and earth science learners understand the physics behind landslide motion.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of moving earth mass by the square of velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Moving earth mass",
+      "Landslide velocity",
+      "Kinetic energy",
+      "Landslide energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Geology learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Slope movement concepts",
+    ],
+
+    assumptions: [
+      "Moving soil and rock are represented as a simplified kinetic energy system.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate real landslide events.",
+    ],
+
+    examples: [
+      "Example: Increasing landslide velocity greatly increases energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand slope movement.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is landslide energy calculated?",
+        answer:
+          "A simplified estimate uses kinetic energy principles based on moving mass and velocity.",
+      },
+      {
+        question:
+          "Why does velocity affect landslide energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster movement produces much more energy.",
+      },
+      {
+        question:
+          "Can this predict landslide danger?",
+        answer:
+          "No. This calculator explains physics concepts and does not forecast landslide events.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, geology, and natural hazard concepts.",
+      },
+    ],
+
+    references: [
+      "Geological hazard science resources",
+      "Kinetic energy physics principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not model slope conditions.",
+      "Does not calculate landslide risk probability.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "avalanche-energy-calculator": {
     slug: "avalanche-energy-calculator",
 
