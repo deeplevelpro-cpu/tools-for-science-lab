@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "earthquake-energy-estimate-calculator": {
+    slug: "earthquake-energy-estimate-calculator",
+
+    seoIntroduction:
+      "Earthquake Energy Estimate Calculator estimates the kinetic energy of moving Earth materials using mass and velocity values. It helps students, educators, and earth science learners understand the physics behind seismic motion.",
+
+    howItWorks:
+      "The calculator applies the kinetic energy formula by multiplying one-half of moving Earth mass by the square of velocity to estimate energy in joules.",
+
+    formula:
+      "Energy = 1/2 × Mass × Velocity²",
+
+    variables: [
+      "Moving Earth mass",
+      "Ground movement velocity",
+      "Kinetic energy",
+      "Earthquake energy",
+      "Energy measurement",
+    ],
+
+    applications: [
+      "Earth science education",
+      "Seismology learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Geology concepts",
+    ],
+
+    assumptions: [
+      "Earth movement is represented as a simplified kinetic energy system.",
+      "Mass and velocity values use compatible units.",
+      "The calculation is educational and does not simulate real earthquakes.",
+    ],
+
+    examples: [
+      "Example: Increasing ground movement velocity greatly increases energy because velocity is squared.",
+      "Example: Students use kinetic energy concepts to understand seismic events.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is earthquake energy calculated?",
+        answer:
+          "A simplified estimate uses kinetic energy principles based on moving mass and velocity.",
+      },
+      {
+        question:
+          "Why does velocity affect earthquake energy?",
+        answer:
+          "Velocity is squared in the kinetic energy formula, so faster movement produces much more energy.",
+      },
+      {
+        question:
+          "Can this predict earthquake strength?",
+        answer:
+          "No. This calculator explains physics concepts and does not predict earthquakes.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, geology, and seismology concepts.",
+      },
+    ],
+
+    references: [
+      "USGS earthquake science resources",
+      "Kinetic energy physics principles",
+      "Earth science educational references",
+    ],
+
+    limitations: [
+      "Does not calculate earthquake magnitude.",
+      "Does not model fault mechanics.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Earth Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "landslide-energy-calculator": {
     slug: "landslide-energy-calculator",
 

@@ -1327,4 +1327,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "natural hazard calculator",
     ],
   },
+
+  {
+    slug: "earthquake-energy-estimate-calculator",
+    name: "Earthquake Energy Estimate Calculator",
+    shortDescription:
+      "Estimate earthquake energy using moving earth mass and velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/earthquake-energy-estimate-calculator",
+    keywords: [
+      "earthquake energy calculator",
+      "earthquake physics calculator",
+      "seismic energy calculator",
+      "natural hazard calculator",
+    ],
+  },
 ];
