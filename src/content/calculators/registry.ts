@@ -1372,4 +1372,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather physics calculator",
     ],
   },
+
+  {
+    slug: "tsunami-impact-energy-estimate-calculator",
+    name: "Tsunami Impact Energy Estimate Calculator",
+    shortDescription:
+      "Estimate tsunami impact energy using moving water mass and flow velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-impact-energy-estimate-calculator",
+    keywords: [
+      "tsunami impact energy calculator",
+      "tsunami energy calculator",
+      "wave impact energy calculator",
+      "ocean physics calculator",
+    ],
+  },
 ];
