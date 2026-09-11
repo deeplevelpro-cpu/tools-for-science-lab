@@ -4,16 +4,15 @@ import { formatCalculatedNumber } from "./number-format";
 
 export type TsunamiWaveSpeedInput = {
   depth: number;
-  gravity?: number;
 };
 
 export type TsunamiWaveSpeedDetails = {
   depth: number;
-  gravity: number;
   speedMetersPerSecond: number;
-  speedKilometersPerHour: number;
   formula: string;
 };
+
+const GRAVITY = 9.81;
 
 function requirePositive(
   value: number,
@@ -37,32 +36,25 @@ export function calculateTsunamiWaveSpeed(
   const depth =
     requirePositive(
       input.depth,
-      "Ocean depth",
+      "Water depth",
     );
-
-  const gravity =
-    input.gravity ?? 9.81;
 
   const speedMetersPerSecond =
     Math.sqrt(
-      gravity * depth,
+      GRAVITY * depth,
     );
 
-  const speedKilometersPerHour =
-    speedMetersPerSecond * 3.6;
-
   return {
-    value: speedKilometersPerHour,
+    value: speedMetersPerSecond,
+
     formattedValue:
       formatCalculatedNumber(
-        speedKilometersPerHour,
+        speedMetersPerSecond,
       ),
 
     details: {
       depth,
-      gravity,
       speedMetersPerSecond,
-      speedKilometersPerHour,
       formula:
         "Wave Speed = √(Gravity × Water Depth)",
     },
