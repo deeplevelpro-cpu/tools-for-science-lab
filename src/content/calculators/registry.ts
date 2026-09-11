@@ -1342,4 +1342,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "natural hazard calculator",
     ],
   },
+
+  {
+    slug: "tornado-impact-energy-calculator",
+    name: "Tornado Impact Energy Calculator",
+    shortDescription:
+      "Calculate tornado impact energy using object mass and wind velocity with a kinetic energy formula.",
+    category: "Laboratory",
+    href: "/calculators/tornado-impact-energy-calculator",
+    keywords: [
+      "tornado impact energy calculator",
+      "tornado energy calculator",
+      "wind impact calculator",
+      "weather physics calculator",
+    ],
+  },
 ];
