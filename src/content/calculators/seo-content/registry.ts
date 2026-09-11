@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-wave-force-calculator": {
+    slug: "tsunami-wave-force-calculator",
+
+    seoIntroduction:
+      "Tsunami Wave Force Calculator estimates the force created by moving water using mass and acceleration values. It helps students, educators, and ocean science learners understand tsunami mechanics and force physics.",
+
+    howItWorks:
+      "The calculator applies Newton's second law by multiplying moving water mass by acceleration to estimate force in newtons.",
+
+    formula:
+      "Force = Mass × Acceleration",
+
+    variables: [
+      "Moving water mass",
+      "Water acceleration",
+      "Tsunami wave force",
+      "Force measurement",
+      "Impact force",
+    ],
+
+    applications: [
+      "Ocean science education",
+      "Wave mechanics learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Coastal engineering concepts",
+    ],
+
+    assumptions: [
+      "Moving water is represented as a simplified force system.",
+      "Mass and acceleration values use compatible units.",
+      "The calculation is educational and does not simulate real tsunami damage.",
+    ],
+
+    examples: [
+      "Example: Increasing moving water mass increases the calculated force.",
+      "Example: Higher acceleration produces greater tsunami wave force.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tsunami wave force calculated?",
+        answer:
+          "A simplified estimate uses Newton's second law: force equals mass multiplied by acceleration.",
+      },
+      {
+        question:
+          "Why does water mass affect tsunami force?",
+        answer:
+          "A larger moving water mass creates a larger force when acceleration remains constant.",
+      },
+      {
+        question:
+          "Can this predict tsunami damage?",
+        answer:
+          "No. This calculator explains physics concepts and does not predict real tsunami impacts.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, mechanics, ocean science, and natural hazard concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science resources",
+      "Newton's laws of motion",
+      "Ocean science educational references",
+    ],
+
+    limitations: [
+      "Does not model wave height or coastal geometry.",
+      "Does not calculate real-world damage.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "tsunami-impact-energy-estimate-calculator": {
     slug: "tsunami-impact-energy-estimate-calculator",
 

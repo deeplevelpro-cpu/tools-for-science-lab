@@ -1387,4 +1387,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "ocean physics calculator",
     ],
   },
+
+  {
+    slug: "tsunami-wave-force-calculator",
+    name: "Tsunami Wave Force Calculator",
+    shortDescription:
+      "Calculate tsunami wave force using moving water mass and acceleration with a force formula.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-wave-force-calculator",
+    keywords: [
+      "tsunami wave force calculator",
+      "water impact force calculator",
+      "tsunami force formula",
+      "ocean physics calculator",
+    ],
+  },
 ];
