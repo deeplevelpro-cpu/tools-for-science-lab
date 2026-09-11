@@ -1417,4 +1417,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "ocean physics calculator",
     ],
   },
+
+  {
+    slug: "tsunami-travel-time-calculator",
+    name: "Tsunami Travel Time Calculator",
+    shortDescription:
+      "Calculate tsunami travel time using distance and wave speed with a motion physics formula.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-travel-time-calculator",
+    keywords: [
+      "tsunami travel time calculator",
+      "tsunami arrival time calculator",
+      "wave travel calculator",
+      "ocean physics calculator",
+    ],
+  },
 ];

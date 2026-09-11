@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-travel-time-calculator": {
+    slug: "tsunami-travel-time-calculator",
+
+    seoIntroduction:
+      "Tsunami Travel Time Calculator estimates how long tsunami waves take to travel between locations using distance and wave speed values. It helps students, educators, and ocean science learners understand wave movement physics.",
+
+    howItWorks:
+      "The calculator divides travel distance by tsunami wave speed to estimate the time required for a wave to reach a destination.",
+
+    formula:
+      "Travel Time = Distance ÷ Speed",
+
+    variables: [
+      "Travel distance",
+      "Tsunami wave speed",
+      "Travel time",
+      "Wave movement",
+      "Ocean physics",
+    ],
+
+    applications: [
+      "Ocean science education",
+      "Wave motion learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Tsunami awareness concepts",
+    ],
+
+    assumptions: [
+      "Wave speed remains constant during travel.",
+      "Distance and speed values use compatible units.",
+      "The calculation is educational and does not replace official tsunami warnings.",
+    ],
+
+    examples: [
+      "Example: Greater distances require more travel time at the same wave speed.",
+      "Example: Faster tsunami speeds reduce estimated arrival time.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tsunami travel time calculated?",
+        answer:
+          "Travel time is calculated by dividing the distance traveled by tsunami wave speed.",
+      },
+      {
+        question:
+          "What factors affect tsunami travel time?",
+        answer:
+          "Distance and wave speed are the main factors affecting estimated travel time.",
+      },
+      {
+        question:
+          "Can this predict real tsunami warnings?",
+        answer:
+          "No. Official tsunami warning systems use advanced scientific monitoring data.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses motion physics, wave science, and ocean concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science resources",
+      "Wave motion physics principles",
+      "Ocean science educational references",
+    ],
+
+    limitations: [
+      "Does not model changing ocean conditions.",
+      "Does not provide emergency warning predictions.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "tsunami-wave-height-calculator": {
     slug: "tsunami-wave-height-calculator",
 
