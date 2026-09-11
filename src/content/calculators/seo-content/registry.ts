@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "volcano-lava-flow-speed-calculator": {
+    slug: "volcano-lava-flow-speed-calculator",
+
+    seoIntroduction:
+      "Volcano Lava Flow Speed Calculator estimates how quickly lava moves using travel distance and time values. It helps students, educators, and geology learners understand volcanic flow motion and physics.",
+
+    howItWorks:
+      "The calculator divides the distance traveled by lava by the time required to estimate average lava flow speed.",
+
+    formula:
+      "Speed = Distance ÷ Time",
+
+    variables: [
+      "Lava travel distance",
+      "Flow time",
+      "Lava speed",
+      "Volcanic movement",
+      "Geology physics",
+    ],
+
+    applications: [
+      "Volcanology education",
+      "Geology learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Volcanic flow concepts",
+    ],
+
+    assumptions: [
+      "Lava movement is represented as a simplified constant-speed system.",
+      "Distance and time values use compatible units.",
+      "The calculation is educational and does not predict actual volcanic eruptions.",
+    ],
+
+    examples: [
+      "Example: Lava traveling farther in the same time has a higher average speed.",
+      "Example: Students use motion equations to study volcanic flows.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is lava flow speed calculated?",
+        answer:
+          "Lava flow speed is calculated by dividing the distance traveled by the time taken.",
+      },
+      {
+        question:
+          "What factors affect lava flow speed?",
+        answer:
+          "Slope, temperature, viscosity, and eruption conditions affect real lava speed, while this calculator uses distance and time.",
+      },
+      {
+        question:
+          "Can this predict volcanic hazards?",
+        answer:
+          "No. This calculator explains physics concepts and does not replace volcanic monitoring systems.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses motion physics, geology, and volcanic science concepts.",
+      },
+    ],
+
+    references: [
+      "USGS volcano science resources",
+      "Motion physics principles",
+      "Volcanology educational references",
+    ],
+
+    limitations: [
+      "Does not model lava temperature or viscosity.",
+      "Does not predict real eruption behavior.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Geology Review Team",
+
+    lastReviewed:
+      "2026-09-11",
+  },
+
+
+
   "tsunami-travel-time-calculator": {
     slug: "tsunami-travel-time-calculator",
 

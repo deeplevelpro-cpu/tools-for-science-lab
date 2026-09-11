@@ -1432,4 +1432,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "ocean physics calculator",
     ],
   },
+
+  {
+    slug: "volcano-lava-flow-speed-calculator",
+    name: "Volcano Lava Flow Speed Calculator",
+    shortDescription:
+      "Calculate lava flow speed using distance and travel time with a motion physics formula.",
+    category: "Laboratory",
+    href: "/calculators/volcano-lava-flow-speed-calculator",
+    keywords: [
+      "lava flow speed calculator",
+      "volcano lava calculator",
+      "volcanic flow velocity calculator",
+      "geology physics calculator",
+    ],
+  },
 ];
