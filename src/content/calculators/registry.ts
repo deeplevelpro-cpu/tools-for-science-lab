@@ -1402,4 +1402,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "ocean physics calculator",
     ],
   },
+
+  {
+    slug: "tsunami-wave-height-calculator",
+    name: "Tsunami Wave Height Calculator",
+    shortDescription:
+      "Calculate tsunami wave height using wave amplitude with a simple wave physics formula.",
+    category: "Laboratory",
+    href: "/calculators/tsunami-wave-height-calculator",
+    keywords: [
+      "tsunami wave height calculator",
+      "wave amplitude calculator",
+      "ocean wave height calculator",
+      "ocean physics calculator",
+    ],
+  },
 ];

@@ -5,6 +5,92 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tsunami-wave-height-calculator": {
+    slug: "tsunami-wave-height-calculator",
+
+    seoIntroduction:
+      "Tsunami Wave Height Calculator estimates total wave height using wave amplitude values. It helps students, educators, and ocean science learners understand the relationship between amplitude and wave height.",
+
+    howItWorks:
+      "The calculator doubles the wave amplitude value because amplitude represents half of the total wave height from equilibrium position to crest.",
+
+    formula:
+      "Wave Height = 2 × Amplitude",
+
+    variables: [
+      "Wave amplitude",
+      "Tsunami wave height",
+      "Ocean wave measurement",
+      "Vertical wave distance",
+      "Wave physics",
+    ],
+
+    applications: [
+      "Ocean science education",
+      "Wave physics learning",
+      "Natural hazard studies",
+      "Physics education",
+      "Coastal science concepts",
+    ],
+
+    assumptions: [
+      "Wave amplitude represents half of the complete wave height.",
+      "Values are entered using compatible units.",
+      "The calculation is educational and does not predict real tsunami events.",
+    ],
+
+    examples: [
+      "Example: A 10 meter amplitude produces a 20 meter total wave height.",
+      "Example: Students use amplitude concepts to understand ocean waves.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tsunami wave height calculated?",
+        answer:
+          "Wave height is calculated by multiplying wave amplitude by two.",
+      },
+      {
+        question:
+          "What is the relationship between amplitude and wave height?",
+        answer:
+          "Amplitude is half of the total wave height, so the full height equals twice the amplitude.",
+      },
+      {
+        question:
+          "Can this predict actual tsunami heights?",
+        answer:
+          "No. This calculator explains wave physics concepts and does not forecast real tsunami events.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses wave mechanics, ocean science, and physics concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA tsunami science resources",
+      "Wave mechanics physics principles",
+      "Ocean science educational references",
+    ],
+
+    limitations: [
+      "Does not model coastal amplification.",
+      "Does not predict tsunami arrival or risk.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Ocean Science Review Team",
+
+    lastReviewed:
+      "2026-09-10",
+  },
+
+
+
   "tsunami-wave-force-calculator": {
     slug: "tsunami-wave-force-calculator",
 
