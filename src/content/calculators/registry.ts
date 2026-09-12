@@ -1567,4 +1567,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather science calculator",
     ],
   },
+
+  {
+    slug: "hurricane-wind-speed-category-calculator",
+    name: "Hurricane Wind Speed Category Calculator",
+    shortDescription:
+      "Determine hurricane category from sustained wind speed using hurricane classification ranges.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-wind-speed-category-calculator",
+    keywords: [
+      "hurricane wind speed category calculator",
+      "hurricane category calculator",
+      "storm classification calculator",
+      "weather science calculator",
+    ],
+  },
 ];

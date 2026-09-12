@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "hurricane-wind-speed-category-calculator": {
+    slug: "hurricane-wind-speed-category-calculator",
+
+    seoIntroduction:
+      "Hurricane Wind Speed Category Calculator determines hurricane category using sustained wind speed values. It helps students, educators, and weather science learners understand hurricane classification systems.",
+
+    howItWorks:
+      "The calculator compares sustained wind speed against hurricane category thresholds to identify the corresponding hurricane category.",
+
+    formula:
+      "Category = Sustained Wind Speed Classification",
+
+    variables: [
+      "Wind speed",
+      "Hurricane category",
+      "Category name",
+      "Storm classification",
+      "Weather science",
+    ],
+
+    applications: [
+      "Meteorology education",
+      "Hurricane science learning",
+      "Weather classification studies",
+      "Climate science education",
+      "Storm analysis concepts",
+    ],
+
+    assumptions: [
+      "Wind speed values represent sustained wind measurements.",
+      "The calculator follows simplified hurricane category thresholds.",
+      "The tool is educational and does not forecast hurricanes.",
+    ],
+
+    examples: [
+      "Example: Wind speeds from 74 to 95 mph correspond to Category 1 hurricanes.",
+      "Example: Higher sustained wind speeds produce stronger hurricane categories.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is hurricane category determined?",
+        answer:
+          "Hurricane category is determined by comparing sustained wind speed with official classification ranges.",
+      },
+      {
+        question:
+          "What scale is used for hurricane categories?",
+        answer:
+          "The Saffir-Simpson Hurricane Wind Scale is commonly used for hurricane wind speed classification.",
+      },
+      {
+        question:
+          "Does this predict hurricane damage?",
+        answer:
+          "No. Damage depends on many factors including storm surge, rainfall, location, and infrastructure.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses meteorology, wind measurement, and storm classification concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA hurricane science resources",
+      "Saffir-Simpson Hurricane Wind Scale",
+      "Meteorology educational references",
+    ],
+
+    limitations: [
+      "Does not predict storm impacts.",
+      "Does not replace official weather forecasts.",
+      "Does not provide emergency guidance.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
   "hurricane-storm-surge-calculator": {
     slug: "hurricane-storm-surge-calculator",
 
