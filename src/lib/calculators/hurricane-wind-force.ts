@@ -3,14 +3,15 @@ import type { CalculationResult } from "@/types/calculator";
 import { formatCalculatedNumber } from "./number-format";
 
 export type HurricaneWindForceInput = {
-  mass: number;
-  acceleration: number;
+  windSpeed: number;
+  area: number;
 };
 
 export type HurricaneWindForceDetails = {
-  mass: number;
-  acceleration: number;
+  windSpeed: number;
+  area: number;
   force: number;
+  riskLevel: string;
   formula: string;
 };
 
@@ -33,21 +34,33 @@ function requirePositive(
 export function calculateHurricaneWindForce(
   input: HurricaneWindForceInput,
 ): CalculationResult<HurricaneWindForceDetails> {
-  const mass =
+  const windSpeed =
     requirePositive(
-      input.mass,
-      "Mass",
+      input.windSpeed,
+      "Wind speed",
     );
 
-  const acceleration =
+  const area =
     requirePositive(
-      input.acceleration,
-      "Acceleration",
+      input.area,
+      "Area",
     );
 
   const force =
-    mass *
-    acceleration;
+    0.5 *
+    1.225 *
+    (windSpeed * 0.44704) ** 2 *
+    area;
+
+  let riskLevel = "Low";
+
+  if (force >= 100000) {
+    riskLevel = "Extreme";
+  } else if (force >= 50000) {
+    riskLevel = "High";
+  } else if (force >= 10000) {
+    riskLevel = "Moderate";
+  }
 
   return {
     value: force,
@@ -58,11 +71,12 @@ export function calculateHurricaneWindForce(
       ),
 
     details: {
-      mass,
-      acceleration,
+      windSpeed,
+      area,
       force,
+      riskLevel,
       formula:
-        "Force = Mass × Acceleration",
+        "Wind Force = 0.5 × Air Density × Wind Velocity² × Area",
     },
   };
 }

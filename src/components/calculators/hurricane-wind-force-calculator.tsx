@@ -13,8 +13,8 @@ type HurricaneWindForceResult =
   CalculationResult<HurricaneWindForceDetails>;
 
 const defaultValues = {
-  mass: "1000",
-  acceleration: "50",
+  windSpeed: "120",
+  area: "100",
 };
 
 export function HurricaneWindForceCalculator() {
@@ -51,11 +51,11 @@ export function HurricaneWindForceCalculator() {
     try {
       const calculation =
         calculateHurricaneWindForce({
-          mass:
-            Number(values.mass),
+          windSpeed:
+            Number(values.windSpeed),
 
-          acceleration:
-            Number(values.acceleration),
+          area:
+            Number(values.area),
         });
 
       setResult(calculation);
@@ -73,15 +73,15 @@ export function HurricaneWindForceCalculator() {
       <form onSubmit={calculate}>
         <label>
           <span>
-            Moving air mass (kg)
+            Wind speed (mph)
           </span>
 
           <input
             type="number"
-            value={values.mass}
+            value={values.windSpeed}
             onChange={(event) =>
               updateValue(
-                "mass",
+                "windSpeed",
                 event.target.value,
               )
             }
@@ -90,15 +90,15 @@ export function HurricaneWindForceCalculator() {
 
         <label>
           <span>
-            Wind acceleration (m/s²)
+            Surface area (m²)
           </span>
 
           <input
             type="number"
-            value={values.acceleration}
+            value={values.area}
             onChange={(event) =>
               updateValue(
-                "acceleration",
+                "area",
                 event.target.value,
               )
             }

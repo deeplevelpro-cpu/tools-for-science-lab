@@ -8,10 +8,10 @@ import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle =
-  "Hurricane Wind Force Calculator | Weather Physics Tool";
+  "Hurricane Wind Force Calculator | Storm Physics Tool";
 
 const pageDescription =
-  "Calculate hurricane wind force using moving air mass and acceleration values. Learn the physics relationship between wind motion and force.";
+  "Calculate simplified hurricane wind force using wind speed and affected surface area. Learn the physics relationship between wind and force.";
 
 const pagePath =
   "/calculators/hurricane-wind-force-calculator";
@@ -69,7 +69,7 @@ export default function HurricaneWindForceCalculatorPage() {
 
           <div className="tool-page-hero__content">
             <p className="eyebrow">
-              Weather physics tool
+              Storm physics tool
             </p>
 
             <h1>
@@ -77,8 +77,8 @@ export default function HurricaneWindForceCalculatorPage() {
             </h1>
 
             <p>
-              Calculate wind force using mass and
-              acceleration based on Newton's second law.
+              Estimate simplified wind force produced
+              by hurricane-level winds over an area.
             </p>
           </div>
         </Container>
@@ -99,7 +99,7 @@ export default function HurricaneWindForceCalculatorPage() {
 
             <section>
               <p className="eyebrow">
-                Weather physics
+                Wind physics
               </p>
 
               <h2>
@@ -108,8 +108,9 @@ export default function HurricaneWindForceCalculatorPage() {
 
               <p>
                 Wind force describes the push created
-                by moving air. A simplified physics model
-                uses mass and acceleration.
+                by moving air against a surface. It
+                depends on air density, velocity, and
+                exposed area.
               </p>
             </section>
 
@@ -124,16 +125,16 @@ export default function HurricaneWindForceCalculatorPage() {
 
               <div className="formula-card">
                 <p>
-                  Force
+                  Wind Force
                   <span>
-                    = Mass × Acceleration
+                    = 0.5 × Air Density × Wind Velocity² × Area
                   </span>
                 </p>
               </div>
 
               <p>
-                Greater moving air mass or acceleration
-                produces greater calculated force.
+                Wind velocity has a large effect because
+                it is squared in the physics equation.
               </p>
             </section>
 
@@ -147,9 +148,9 @@ export default function HurricaneWindForceCalculatorPage() {
               </h2>
 
               <p>
-                These calculations help students learn
-                mechanics, atmospheric physics, and
-                storm science concepts.
+                Students can explore fluid mechanics,
+                weather science, engineering concepts,
+                and hurricane physics.
               </p>
             </section>
 
