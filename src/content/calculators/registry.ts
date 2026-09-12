@@ -1552,4 +1552,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather science calculator",
     ],
   },
+
+  {
+    slug: "hurricane-storm-surge-calculator",
+    name: "Hurricane Storm Surge Calculator",
+    shortDescription:
+      "Estimate simplified hurricane storm surge using wind speed, pressure drop, and coastal factors.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-storm-surge-calculator",
+    keywords: [
+      "hurricane storm surge calculator",
+      "storm surge height calculator",
+      "coastal risk calculator",
+      "weather science calculator",
+    ],
+  },
 ];

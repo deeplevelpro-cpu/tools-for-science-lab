@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "hurricane-storm-surge-calculator": {
+    slug: "hurricane-storm-surge-calculator",
+
+    seoIntroduction:
+      "Hurricane Storm Surge Calculator estimates a simplified storm surge height using wind speed, pressure drop, and coastal slope values. It helps students, educators, and weather science learners understand coastal hurricane hazards.",
+
+    howItWorks:
+      "The calculator combines wind intensity, atmospheric pressure change, and coastal conditions into an educational storm surge estimate.",
+
+    formula:
+      "Storm Surge Height = (Wind Speed × 0.02) + (Pressure Drop × 0.01) / Coastal Slope",
+
+    variables: [
+      "Wind speed",
+      "Pressure drop",
+      "Coastal slope",
+      "Storm surge height",
+      "Risk level",
+    ],
+
+    applications: [
+      "Meteorology education",
+      "Ocean science learning",
+      "Coastal hazard studies",
+      "Hurricane science",
+      "Weather risk concepts",
+    ],
+
+    assumptions: [
+      "The calculation uses a simplified educational storm surge model.",
+      "Coastal slope represents a simplified geographic factor.",
+      "The calculator does not forecast real storm surge events.",
+    ],
+
+    examples: [
+      "Example: Higher wind speeds increase the estimated storm surge value.",
+      "Example: Coastal conditions can influence storm surge exposure.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is hurricane storm surge calculated?",
+        answer:
+          "The calculator uses simplified relationships between wind speed, pressure change, and coastal factors.",
+      },
+      {
+        question:
+          "Does this predict real storm surge?",
+        answer:
+          "No. Official storm surge predictions require advanced ocean, weather, and coastal models.",
+      },
+      {
+        question:
+          "Why does pressure drop affect storm surge?",
+        answer:
+          "Lower atmospheric pressure can contribute to rising sea levels during intense storms.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses meteorology, ocean science, atmospheric pressure, and coastal risk concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA hurricane science resources",
+      "Storm surge science principles",
+      "Coastal meteorology references",
+    ],
+
+    limitations: [
+      "Does not predict flooding.",
+      "Does not replace official hurricane warnings.",
+      "Does not model real ocean dynamics.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
   "hurricane-evacuation-zone-calculator": {
     slug: "hurricane-evacuation-zone-calculator",
 
