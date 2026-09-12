@@ -1477,4 +1477,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "atmospheric physics calculator",
     ],
   },
+
+  {
+    slug: "hurricane-wind-force-calculator",
+    name: "Hurricane Wind Force Calculator",
+    shortDescription:
+      "Calculate hurricane wind force using moving air mass and acceleration with Newton's second law.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-wind-force-calculator",
+    keywords: [
+      "hurricane wind force calculator",
+      "wind force calculator",
+      "storm force calculator",
+      "weather physics calculator",
+    ],
+  },
 ];
