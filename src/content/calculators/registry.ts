@@ -1612,4 +1612,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather risk calculator",
     ],
   },
+
+  {
+    slug: "tornado-wind-speed-estimator-calculator",
+    name: "Tornado Wind Speed Calculator",
+    shortDescription:
+      "Estimate tornado wind speed using pressure difference and air density values.",
+    category: "Laboratory",
+    href: "/calculators/tornado-wind-speed-estimator-calculator",
+    keywords: [
+      "tornado wind speed calculator",
+      "tornado velocity calculator",
+      "storm wind calculator",
+      "weather physics calculator",
+    ],
+  },
 ];
