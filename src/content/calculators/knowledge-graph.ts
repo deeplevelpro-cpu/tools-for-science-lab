@@ -571,4 +571,103 @@ export const calculatorKnowledgeGraph: Record<
   ],
 
 
+
+  // =========================
+  // EARTHQUAKE / SEISMIC SCIENCE CLUSTER
+  // =========================
+
+  "earthquake-energy-calculator": [
+    "earthquake-energy-estimate-calculator",
+    "earthquake-magnitude-calculator",
+    "earthquake-energy-comparison-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "earthquake-energy-estimate-calculator": [
+    "earthquake-energy-calculator",
+    "earthquake-magnitude-calculator",
+    "earthquake-energy-comparison-calculator",
+  ],
+
+  "earthquake-magnitude-calculator": [
+    "earthquake-energy-calculator",
+    "earthquake-energy-estimate-calculator",
+    "earthquake-energy-comparison-calculator",
+  ],
+
+  "earthquake-energy-comparison-calculator": [
+    "earthquake-energy-calculator",
+    "earthquake-magnitude-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+
+
+  // =========================
+  // TSUNAMI / OCEAN SCIENCE CLUSTER
+  // =========================
+
+  "tsunami-wave-speed-calculator": [
+    "tsunami-wave-height-calculator",
+    "tsunami-travel-time-calculator",
+    "tsunami-wave-energy-calculator",
+    "tsunami-wave-force-calculator",
+  ],
+
+  "tsunami-wave-height-calculator": [
+    "tsunami-wave-speed-calculator",
+    "tsunami-wave-energy-calculator",
+    "tsunami-wave-force-calculator",
+  ],
+
+  "tsunami-travel-time-calculator": [
+    "tsunami-wave-speed-calculator",
+    "tsunami-wave-height-calculator",
+    "tsunami-wave-energy-calculator",
+  ],
+
+  "tsunami-wave-energy-calculator": [
+    "tsunami-wave-energy-estimate-calculator",
+    "tsunami-wave-force-calculator",
+    "tsunami-wave-speed-calculator",
+  ],
+
+  "tsunami-wave-energy-estimate-calculator": [
+    "tsunami-wave-energy-calculator",
+    "tsunami-wave-force-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "tsunami-wave-force-calculator": [
+    "tsunami-wave-energy-calculator",
+    "tsunami-wave-height-calculator",
+    "tsunami-wave-speed-calculator",
+  ],
+
+
+
+  // =========================
+  // VOLCANO / GEOLOGY SCIENCE CLUSTER
+  // =========================
+
+  "volcano-eruption-energy-calculator": [
+    "volcano-eruption-energy-estimate-calculator",
+    "volcano-lava-flow-speed-calculator",
+    "earthquake-energy-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "volcano-eruption-energy-estimate-calculator": [
+    "volcano-eruption-energy-calculator",
+    "volcano-lava-flow-speed-calculator",
+    "earthquake-energy-calculator",
+  ],
+
+  "volcano-lava-flow-speed-calculator": [
+    "volcano-eruption-energy-calculator",
+    "volcano-eruption-energy-estimate-calculator",
+    "fluid-dynamics-calculator",
+  ],
+
+
 };
