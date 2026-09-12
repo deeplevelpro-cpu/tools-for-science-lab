@@ -1522,4 +1522,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather science calculator",
     ],
   },
+
+  {
+    slug: "hurricane-damage-potential-calculator",
+    name: "Hurricane Damage Potential Calculator",
+    shortDescription:
+      "Estimate simplified hurricane damage potential using wind speed, category, and population density factors.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-damage-potential-calculator",
+    keywords: [
+      "hurricane damage potential calculator",
+      "storm risk calculator",
+      "hurricane impact calculator",
+      "weather science calculator",
+    ],
+  },
 ];

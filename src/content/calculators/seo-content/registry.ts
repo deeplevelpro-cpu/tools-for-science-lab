@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "hurricane-damage-potential-calculator": {
+    slug: "hurricane-damage-potential-calculator",
+
+    seoIntroduction:
+      "Hurricane Damage Potential Calculator estimates a simplified storm risk score using wind speed, hurricane category, and population density values. It helps students, educators, and weather science learners explore disaster science concepts.",
+
+    howItWorks:
+      "The calculator combines wind speed, hurricane category, and population density factors into an educational damage potential score.",
+
+    formula:
+      "Damage Score = Wind Speed × Category × Population Density / 100",
+
+    variables: [
+      "Wind speed",
+      "Hurricane category",
+      "Population density",
+      "Damage score",
+      "Storm risk level",
+    ],
+
+    applications: [
+      "Meteorology education",
+      "Disaster science learning",
+      "Weather risk concepts",
+      "Storm impact studies",
+      "Educational modeling",
+    ],
+
+    assumptions: [
+      "The model uses simplified risk factors.",
+      "Population density represents exposure only.",
+      "The calculator does not predict actual hurricane damage.",
+    ],
+
+    examples: [
+      "Example: Higher wind speed increases the calculated damage score.",
+      "Example: Greater population density increases exposure risk.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is hurricane damage potential calculated?",
+        answer:
+          "The calculator combines wind speed, hurricane category, and population density into a simplified score.",
+      },
+      {
+        question:
+          "Does this predict real hurricane damage?",
+        answer:
+          "No. Real damage depends on many factors including storm surge, rainfall, buildings, geography, and emergency response.",
+      },
+      {
+        question:
+          "Why does population density matter?",
+        answer:
+          "Higher population density can mean more people and infrastructure exposed to storm hazards.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses meteorology, risk modeling, and environmental science concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA hurricane science resources",
+      "Disaster risk assessment principles",
+      "Meteorology educational references",
+    ],
+
+    limitations: [
+      "Does not forecast hurricanes.",
+      "Does not estimate financial losses.",
+      "Does not replace official emergency assessments.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
   "hurricane-category-calculator": {
     slug: "hurricane-category-calculator",
 
