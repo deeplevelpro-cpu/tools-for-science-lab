@@ -138,6 +138,20 @@ export function TornadoWindSpeedCalculator() {
           </p>
 
           <p>
+            Wind speed:
+            {" "}
+            {result.details.speedMilesPerHour.toFixed(2)}
+            {" "}
+            mph
+          </p>
+
+          <p>
+            Intensity:
+            {" "}
+            {result.details.intensityLevel}
+          </p>
+
+          <p>
             Formula:
             {" "}
             {result.details.formula}

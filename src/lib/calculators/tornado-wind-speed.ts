@@ -12,6 +12,8 @@ export type TornadoWindSpeedDetails = {
   time: number;
   speedMetersPerSecond: number;
   speedKilometersPerHour: number;
+  speedMilesPerHour: number;
+  intensityLevel: string;
   formula: string;
 };
 
@@ -52,6 +54,21 @@ export function calculateTornadoWindSpeed(
   const speedKilometersPerHour =
     speedMetersPerSecond * 3.6;
 
+  const speedMilesPerHour =
+    speedKilometersPerHour * 0.621371;
+
+  let intensityLevel = "Low wind";
+
+  if (speedMilesPerHour >= 200) {
+    intensityLevel = "Extreme tornado wind";
+  } else if (speedMilesPerHour >= 136) {
+    intensityLevel = "Violent tornado wind";
+  } else if (speedMilesPerHour >= 111) {
+    intensityLevel = "Strong tornado wind";
+  } else if (speedMilesPerHour >= 65) {
+    intensityLevel = "Tornado-level wind";
+  }
+
   return {
     value: speedKilometersPerHour,
 
@@ -65,6 +82,8 @@ export function calculateTornadoWindSpeed(
       time,
       speedMetersPerSecond,
       speedKilometersPerHour,
+      speedMilesPerHour,
+      intensityLevel,
       formula:
         "Wind Speed = Distance ÷ Time",
     },
