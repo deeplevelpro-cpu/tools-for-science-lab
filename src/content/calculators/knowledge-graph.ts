@@ -456,4 +456,38 @@ export const calculatorKnowledgeGraph: Record<
     "rotational-kinetic-energy-calculator",
   ],
 
+
+  // =========================
+  // TORNADO / WEATHER SCIENCE CLUSTER
+  // =========================
+
+  "tornado-wind-speed-calculator": [
+    "tornado-wind-speed-estimator-calculator",
+    "tornado-damage-estimator-calculator",
+    "tornado-impact-energy-calculator",
+    "hurricane-wind-speed-calculator",
+  ],
+
+  "tornado-wind-speed-estimator-calculator": [
+    "tornado-wind-speed-calculator",
+    "tornado-damage-estimator-calculator",
+    "pressure-calculator",
+    "hurricane-pressure-difference-calculator",
+  ],
+
+  "tornado-damage-estimator-calculator": [
+    "tornado-impact-energy-calculator",
+    "tornado-wind-speed-calculator",
+    "hurricane-damage-potential-calculator",
+    "tornado-wind-speed-estimator-calculator",
+  ],
+
+  "tornado-impact-energy-calculator": [
+    "tornado-damage-estimator-calculator",
+    "tornado-wind-speed-calculator",
+    "kinetic-energy-calculator",
+    "work-calculator",
+  ],
+
+
 };
