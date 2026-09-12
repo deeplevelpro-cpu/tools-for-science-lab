@@ -130,6 +130,12 @@ export function TornadoImpactEnergyCalculator() {
           </p>
 
           <p>
+            Impact level:
+            {" "}
+            {result.details.impactLevel}
+          </p>
+
+          <p>
             Formula:
             {" "}
             {result.details.formula}

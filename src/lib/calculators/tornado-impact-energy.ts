@@ -11,6 +11,7 @@ export type TornadoImpactEnergyDetails = {
   mass: number;
   velocity: number;
   energy: number;
+  impactLevel: string;
   formula: string;
 };
 
@@ -51,6 +52,16 @@ export function calculateTornadoImpactEnergy(
     velocity *
     velocity;
 
+  let impactLevel = "Low";
+
+  if (energy >= 1000000) {
+    impactLevel = "Extreme";
+  } else if (energy >= 500000) {
+    impactLevel = "High";
+  } else if (energy >= 100000) {
+    impactLevel = "Moderate";
+  }
+
   return {
     value: energy,
 
@@ -63,8 +74,9 @@ export function calculateTornadoImpactEnergy(
       mass,
       velocity,
       energy,
+      impactLevel,
       formula:
-        "Energy = 1/2 × Mass × Velocity²",
+        "Impact Energy = 1/2 × Mass × Velocity²",
     },
   };
 }
