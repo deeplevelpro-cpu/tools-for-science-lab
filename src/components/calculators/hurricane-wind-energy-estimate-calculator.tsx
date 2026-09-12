@@ -13,8 +13,9 @@ type HurricaneResult =
   CalculationResult<HurricaneWindEnergyEstimateDetails>;
 
 const defaultValues = {
-  mass: "1000000",
-  velocity: "70",
+  airMass: "1000000",
+  windSpeed: "70",
+  duration: "60",
 };
 
 export function HurricaneWindEnergyEstimateCalculator() {
@@ -51,11 +52,14 @@ export function HurricaneWindEnergyEstimateCalculator() {
     try {
       const calculation =
         calculateHurricaneWindEnergyEstimate({
-          mass:
-            Number(values.mass),
+          airMass:
+            Number(values.airMass),
 
-          velocity:
-            Number(values.velocity),
+          windSpeed:
+            Number(values.windSpeed),
+
+          duration:
+            Number(values.duration),
         });
 
       setResult(calculation);
@@ -73,15 +77,15 @@ export function HurricaneWindEnergyEstimateCalculator() {
       <form onSubmit={calculate}>
         <label>
           <span>
-            Airborne object mass (kg)
+            Air mass (kg)
           </span>
 
           <input
             type="number"
-            value={values.mass}
+            value={values.airMass}
             onChange={(event) =>
               updateValue(
-                "mass",
+                "airMass",
                 event.target.value,
               )
             }
@@ -90,15 +94,32 @@ export function HurricaneWindEnergyEstimateCalculator() {
 
         <label>
           <span>
-            Wind velocity (m/s)
+            Wind speed (m/s)
           </span>
 
           <input
             type="number"
-            value={values.velocity}
+            value={values.windSpeed}
             onChange={(event) =>
               updateValue(
-                "velocity",
+                "windSpeed",
+                event.target.value,
+              )
+            }
+          />
+        </label>
+
+        <label>
+          <span>
+            Duration (seconds)
+          </span>
+
+          <input
+            type="number"
+            value={values.duration}
+            onChange={(event) =>
+              updateValue(
+                "duration",
                 event.target.value,
               )
             }

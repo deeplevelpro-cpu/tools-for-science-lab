@@ -3,14 +3,16 @@ import type { CalculationResult } from "@/types/calculator";
 import { formatCalculatedNumber } from "./number-format";
 
 export type HurricaneWindEnergyEstimateInput = {
-  mass: number;
-  velocity: number;
+  airMass: number;
+  windSpeed: number;
+  duration: number;
 };
 
 export type HurricaneWindEnergyEstimateDetails = {
-  mass: number;
-  velocity: number;
-  energy: number;
+  airMass: number;
+  windSpeed: number;
+  duration: number;
+  energyEstimate: number;
   formula: string;
 };
 
@@ -33,38 +35,46 @@ function requirePositive(
 export function calculateHurricaneWindEnergyEstimate(
   input: HurricaneWindEnergyEstimateInput,
 ): CalculationResult<HurricaneWindEnergyEstimateDetails> {
-  const mass =
+  const airMass =
     requirePositive(
-      input.mass,
-      "Mass",
+      input.airMass,
+      "Air mass",
     );
 
-  const velocity =
+  const windSpeed =
     requirePositive(
-      input.velocity,
-      "Velocity",
+      input.windSpeed,
+      "Wind speed",
     );
 
-  const energy =
+  const duration =
+    requirePositive(
+      input.duration,
+      "Duration",
+    );
+
+  const energyEstimate =
     0.5 *
-    mass *
-    velocity *
-    velocity;
+    airMass *
+    windSpeed *
+    windSpeed *
+    duration;
 
   return {
-    value: energy,
+    value: energyEstimate,
 
     formattedValue:
       formatCalculatedNumber(
-        energy,
+        energyEstimate,
       ),
 
     details: {
-      mass,
-      velocity,
-      energy,
+      airMass,
+      windSpeed,
+      duration,
+      energyEstimate,
       formula:
-        "Energy = 1/2 × Mass × Velocity²",
+        "Energy Estimate = 1/2 × Mass × Velocity² × Time",
     },
   };
 }
