@@ -1492,4 +1492,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather physics calculator",
     ],
   },
+
+  {
+    slug: "hurricane-wind-speed-calculator",
+    name: "Hurricane Wind Speed Calculator",
+    shortDescription:
+      "Calculate hurricane wind speed using distance and time with a motion physics formula.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-wind-speed-calculator",
+    keywords: [
+      "hurricane wind speed calculator",
+      "storm wind speed calculator",
+      "wind velocity calculator",
+      "weather physics calculator",
+    ],
+  },
 ];
