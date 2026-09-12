@@ -8,10 +8,10 @@ import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle =
-  "Hurricane Wind Energy Calculator | Weather Science Tool";
+  "Hurricane Wind Energy Calculator | Weather Physics Tool";
 
 const pageDescription =
-  "Calculate hurricane wind energy using air mass and wind velocity values with a kinetic energy formula. Learn the physics behind powerful storms.";
+  "Calculate hurricane wind energy using air mass and velocity values. Learn the physics relationship between moving air and kinetic energy.";
 
 const pagePath =
   "/calculators/hurricane-wind-energy-calculator";
@@ -69,7 +69,7 @@ export default function HurricaneWindEnergyCalculatorPage() {
 
           <div className="tool-page-hero__content">
             <p className="eyebrow">
-              Weather science tool
+              Weather physics tool
             </p>
 
             <h1>
@@ -77,9 +77,8 @@ export default function HurricaneWindEnergyCalculatorPage() {
             </h1>
 
             <p>
-              Estimate the energy carried by hurricane
-              winds using air mass and velocity based
-              on kinetic energy principles.
+              Calculate the kinetic energy of moving air
+              using mass and velocity values.
             </p>
           </div>
         </Container>
@@ -108,10 +107,9 @@ export default function HurricaneWindEnergyCalculatorPage() {
               </h2>
 
               <p>
-                Hurricane wind energy represents the
-                kinetic energy contained in moving air.
-                The amount of energy depends on the
-                moving air mass and wind velocity.
+                Wind energy represents the kinetic energy
+                contained in moving air. A simplified
+                physics model uses mass and velocity.
               </p>
             </section>
 
@@ -134,9 +132,8 @@ export default function HurricaneWindEnergyCalculatorPage() {
               </div>
 
               <p>
-                Because velocity is squared, stronger
-                winds contain significantly more kinetic
-                energy.
+                Higher velocity increases energy because
+                velocity is squared in the equation.
               </p>
             </section>
 
@@ -151,8 +148,8 @@ export default function HurricaneWindEnergyCalculatorPage() {
 
               <p>
                 These calculations help students learn
-                about meteorology, atmospheric motion,
-                storm physics, and energy concepts.
+                kinetic energy, mechanics, and severe
+                weather physics concepts.
               </p>
             </section>
 

@@ -9,12 +9,12 @@ import {
 
 import type { CalculationResult } from "@/types/calculator";
 
-type HurricaneResult =
+type HurricaneWindEnergyResult =
   CalculationResult<HurricaneWindEnergyDetails>;
 
 const defaultValues = {
-  mass: "1000000",
-  velocity: "70",
+  mass: "1000",
+  velocity: "50",
 };
 
 export function HurricaneWindEnergyCalculator() {
@@ -22,7 +22,7 @@ export function HurricaneWindEnergyCalculator() {
     useState(defaultValues);
 
   const [result, setResult] =
-    useState<HurricaneResult | null>(null);
+    useState<HurricaneWindEnergyResult | null>(null);
 
   const [error, setError] =
     useState("");
@@ -73,7 +73,7 @@ export function HurricaneWindEnergyCalculator() {
       <form onSubmit={calculate}>
         <label>
           <span>
-            Air mass (kg)
+            Moving air mass (kg)
           </span>
 
           <input
@@ -106,7 +106,7 @@ export function HurricaneWindEnergyCalculator() {
         </label>
 
         <button type="submit">
-          Calculate Wind Energy
+          Calculate Hurricane Wind Energy
         </button>
       </form>
 
