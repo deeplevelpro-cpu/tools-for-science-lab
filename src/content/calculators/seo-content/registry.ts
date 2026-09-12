@@ -9489,4 +9489,314 @@ export const calculatorSEOContent: Record<
     lastReviewed:
       "2026-08-30",
   },
+
+  "limiting-reactant-calculator": {
+    slug: "limiting-reactant-calculator",
+
+    seoIntroduction:
+      "Limiting Reactant Calculator helps students determine the limiting reagent and maximum product amount in chemical reactions.",
+
+    howItWorks:
+      "The calculator compares reactant quantities using stoichiometric relationships to identify which reactant limits the reaction.",
+
+    formula:
+      "Limiting Reactant = Reactant producing the least amount of product",
+
+    variables: [
+      "Reactant amounts",
+      "Molar ratios",
+      "Stoichiometry",
+      "Product yield",
+    ],
+
+    applications: [
+      "Chemistry education",
+      "Reaction calculations",
+      "Laboratory chemistry",
+      "Stoichiometry practice",
+    ],
+
+    assumptions: [
+      "Chemical equations are balanced.",
+      "Input values represent accurate measurements.",
+    ],
+
+    examples: [
+      "Example: Compare reactant moles to find the limiting reagent.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "What is a limiting reactant?",
+        answer:
+          "The limiting reactant is the substance that runs out first and determines the maximum product formed.",
+      },
+      {
+        question:
+          "Why is limiting reactant important?",
+        answer:
+          "It helps predict reaction output and theoretical yield in chemistry experiments.",
+      },
+    ],
+
+    references: [
+      "Stoichiometry principles",
+      "Chemical reaction calculations",
+    ],
+
+    limitations: [
+      "Requires balanced chemical equations.",
+      "Does not replace laboratory measurements.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+  "percent-yield-calculator": {
+    slug: "percent-yield-calculator",
+
+    seoIntroduction:
+      "Percent Yield Calculator determines reaction efficiency by comparing actual product yield with theoretical yield.",
+
+    howItWorks:
+      "The calculator divides actual yield by theoretical yield and converts the result into a percentage.",
+
+    formula:
+      "Percent Yield = (Actual Yield ÷ Theoretical Yield) × 100",
+
+    variables: [
+      "Actual yield",
+      "Theoretical yield",
+      "Reaction efficiency",
+    ],
+
+    applications: [
+      "Chemistry experiments",
+      "Laboratory analysis",
+      "Reaction efficiency studies",
+    ],
+
+    assumptions: [
+      "Actual and theoretical yields use compatible units.",
+    ],
+
+    examples: [
+      "Example: A reaction producing less product than expected has a lower percent yield.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is percent yield calculated?",
+        answer:
+          "Percent yield is calculated by dividing actual yield by theoretical yield and multiplying by 100.",
+      },
+      {
+        question:
+          "What does percent yield show?",
+        answer:
+          "It shows how efficiently a chemical reaction produces the expected product.",
+      },
+    ],
+
+    references: [
+      "Chemical yield calculations",
+      "Stoichiometry concepts",
+    ],
+
+    limitations: [
+      "Does not explain causes of product loss.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
+  "physics": {
+    slug: "physics",
+
+    seoIntroduction:
+      "Physics calculators help students and researchers solve problems related to motion, forces, energy, mechanics, and scientific measurements.",
+
+    howItWorks:
+      "These physics tools use established scientific formulas to calculate values used in mechanics and physical science.",
+
+    formula:
+      "Physics formulas depend on the selected scientific concept.",
+
+    variables: [
+      "Force",
+      "Motion",
+      "Energy",
+      "Velocity",
+      "Acceleration",
+    ],
+
+    applications: [
+      "Physics education",
+      "Engineering studies",
+      "Scientific calculations",
+      "Laboratory learning",
+    ],
+
+    assumptions: [
+      "Inputs are based on standard scientific units.",
+    ],
+
+    examples: [
+      "Example: Calculate force, energy, velocity, and acceleration using physics equations.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "What are physics calculators used for?",
+        answer:
+          "They help solve common physics problems using scientific formulas.",
+      },
+    ],
+
+    references: [
+      "Physics principles",
+      "Mechanics concepts",
+    ],
+
+    limitations: [
+      "Results depend on accurate input values.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+  "chemistry": {
+    slug: "chemistry",
+
+    seoIntroduction:
+      "Chemistry calculators help solve chemical calculations involving reactions, solutions, molecules, and laboratory measurements.",
+
+    howItWorks:
+      "These tools apply chemistry formulas and relationships to calculate important scientific values.",
+
+    formula:
+      "Chemistry calculations use equations based on chemical principles.",
+
+    variables: [
+      "Moles",
+      "Mass",
+      "Concentration",
+      "Molecular properties",
+    ],
+
+    applications: [
+      "Chemistry education",
+      "Laboratory calculations",
+      "Chemical analysis",
+    ],
+
+    assumptions: [
+      "Chemical values use compatible scientific units.",
+    ],
+
+    examples: [
+      "Example: Calculate molarity, molecular weight, and reaction values.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "Who can use chemistry calculators?",
+        answer:
+          "Students, educators, and science learners can use them for chemistry practice.",
+      },
+    ],
+
+    references: [
+      "Chemistry principles",
+      "Stoichiometry concepts",
+    ],
+
+    limitations: [
+      "Educational calculations only.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Chemistry Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+  "laboratory": {
+    slug: "laboratory",
+
+    seoIntroduction:
+      "Laboratory calculators support scientific experiments with measurement, uncertainty, statistics, and data analysis tools.",
+
+    howItWorks:
+      "These tools apply mathematical and scientific formulas used during laboratory work.",
+
+    formula:
+      "Laboratory calculations depend on the selected experiment method.",
+
+    variables: [
+      "Measurements",
+      "Experimental data",
+      "Uncertainty",
+      "Statistics",
+    ],
+
+    applications: [
+      "Scientific experiments",
+      "Lab reports",
+      "Research learning",
+    ],
+
+    assumptions: [
+      "Measurements are recorded accurately.",
+    ],
+
+    examples: [
+      "Example: Analyze uncertainty and experimental results.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "Why are laboratory calculators useful?",
+        answer:
+          "They simplify common calculations required in scientific experiments.",
+      },
+    ],
+
+    references: [
+      "Laboratory science methods",
+      "Experimental analysis principles",
+    ],
+
+    limitations: [
+      "Cannot replace real laboratory procedures.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Laboratory Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
 };
