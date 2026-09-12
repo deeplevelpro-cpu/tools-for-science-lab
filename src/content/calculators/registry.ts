@@ -1582,4 +1582,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather science calculator",
     ],
   },
+
+  {
+    slug: "hurricane-wind-damage-estimator-calculator",
+    name: "Hurricane Wind Damage Estimator Calculator",
+    shortDescription:
+      "Estimate simplified hurricane wind damage risk using wind speed, exposure area, and building vulnerability factors.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-wind-damage-estimator-calculator",
+    keywords: [
+      "hurricane wind damage estimator calculator",
+      "hurricane damage calculator",
+      "storm damage calculator",
+      "weather risk calculator",
+    ],
+  },
 ];
