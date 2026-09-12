@@ -1597,4 +1597,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather risk calculator",
     ],
   },
+
+  {
+    slug: "tornado-damage-estimator-calculator",
+    name: "Tornado Damage Estimator Calculator",
+    shortDescription:
+      "Estimate simplified tornado damage risk using wind speed, affected area, and building vulnerability factors.",
+    category: "Laboratory",
+    href: "/calculators/tornado-damage-estimator-calculator",
+    keywords: [
+      "tornado damage estimator calculator",
+      "tornado damage calculator",
+      "storm damage calculator",
+      "weather risk calculator",
+    ],
+  },
 ];

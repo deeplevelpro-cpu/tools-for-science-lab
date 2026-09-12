@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "tornado-damage-estimator-calculator": {
+    slug: "tornado-damage-estimator-calculator",
+
+    seoIntroduction:
+      "Tornado Damage Estimator Calculator estimates simplified tornado damage risk using wind speed, affected area, and building vulnerability factors. It helps students, educators, and weather science learners understand tornado impact concepts.",
+
+    howItWorks:
+      "The calculator combines tornado wind speed, affected area, and building vulnerability into an educational damage risk score.",
+
+    formula:
+      "Damage Score = Wind Speed² × Affected Area × Building Factor / 1000",
+
+    variables: [
+      "Wind speed",
+      "Affected area",
+      "Building vulnerability factor",
+      "Damage score",
+      "Risk level",
+    ],
+
+    applications: [
+      "Meteorology education",
+      "Disaster science learning",
+      "Physics education",
+      "Engineering concepts",
+      "Risk modeling studies",
+    ],
+
+    assumptions: [
+      "The model uses simplified tornado damage factors.",
+      "Building factor represents vulnerability only.",
+      "The calculator does not predict real damage costs.",
+    ],
+
+    examples: [
+      "Example: Higher wind speeds create significantly higher damage scores.",
+      "Example: Larger affected areas increase potential storm impact.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is tornado damage estimated?",
+        answer:
+          "The calculator combines wind speed, affected area, and building vulnerability into a simplified score.",
+      },
+      {
+        question:
+          "Why does wind speed have a strong effect?",
+        answer:
+          "Wind speed is squared in the formula, so increases in velocity create much larger changes in impact.",
+      },
+      {
+        question:
+          "Does this calculate real tornado damage?",
+        answer:
+          "No. Real tornado damage depends on structures, materials, location, debris, and many other factors.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses physics, meteorology, engineering, and simplified disaster risk concepts.",
+      },
+    ],
+
+    references: [
+      "Tornado science resources",
+      "Wind force physics principles",
+      "Disaster risk assessment concepts",
+    ],
+
+    limitations: [
+      "Does not estimate repair costs.",
+      "Does not replace engineering analysis.",
+      "Does not predict actual tornado events.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
   "hurricane-wind-damage-estimator-calculator": {
     slug: "hurricane-wind-damage-estimator-calculator",
 
