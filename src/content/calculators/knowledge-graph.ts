@@ -490,4 +490,85 @@ export const calculatorKnowledgeGraph: Record<
   ],
 
 
+
+  // =========================
+  // HURRICANE / STORM SCIENCE CLUSTER
+  // =========================
+
+  "hurricane-wind-speed-calculator": [
+    "hurricane-wind-speed-category-calculator",
+    "hurricane-wind-force-calculator",
+    "hurricane-wind-energy-calculator",
+    "tornado-wind-speed-calculator",
+  ],
+
+  "hurricane-wind-speed-category-calculator": [
+    "hurricane-category-calculator",
+    "hurricane-wind-speed-calculator",
+    "hurricane-wind-force-calculator",
+    "hurricane-damage-potential-calculator",
+  ],
+
+  "hurricane-category-calculator": [
+    "hurricane-wind-speed-category-calculator",
+    "hurricane-wind-speed-calculator",
+    "hurricane-damage-potential-calculator",
+    "hurricane-evacuation-zone-calculator",
+  ],
+
+  "hurricane-wind-force-calculator": [
+    "hurricane-wind-speed-calculator",
+    "hurricane-wind-energy-calculator",
+    "hurricane-wind-damage-estimator-calculator",
+    "tornado-impact-energy-calculator",
+  ],
+
+  "hurricane-wind-energy-calculator": [
+    "hurricane-wind-energy-estimate-calculator",
+    "hurricane-wind-force-calculator",
+    "kinetic-energy-calculator",
+    "hurricane-wind-speed-calculator",
+  ],
+
+  "hurricane-wind-energy-estimate-calculator": [
+    "hurricane-wind-energy-calculator",
+    "hurricane-wind-force-calculator",
+    "hurricane-damage-potential-calculator",
+  ],
+
+  "hurricane-pressure-calculator": [
+    "hurricane-pressure-difference-calculator",
+    "pressure-calculator",
+    "hurricane-wind-speed-calculator",
+  ],
+
+  "hurricane-pressure-difference-calculator": [
+    "hurricane-pressure-calculator",
+    "hurricane-wind-speed-calculator",
+    "tornado-wind-speed-estimator-calculator",
+  ],
+
+  "hurricane-storm-surge-calculator": [
+    "hurricane-evacuation-zone-calculator",
+    "hurricane-damage-potential-calculator",
+  ],
+
+  "hurricane-evacuation-zone-calculator": [
+    "hurricane-storm-surge-calculator",
+    "hurricane-damage-potential-calculator",
+  ],
+
+  "hurricane-damage-potential-calculator": [
+    "hurricane-wind-damage-estimator-calculator",
+    "hurricane-wind-speed-calculator",
+    "hurricane-category-calculator",
+  ],
+
+  "hurricane-wind-damage-estimator-calculator": [
+    "hurricane-damage-potential-calculator",
+    "hurricane-wind-force-calculator",
+    "tornado-damage-estimator-calculator",
+  ],
+
+
 };
