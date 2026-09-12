@@ -1537,4 +1537,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "weather science calculator",
     ],
   },
+
+  {
+    slug: "hurricane-evacuation-zone-calculator",
+    name: "Hurricane Evacuation Zone Calculator",
+    shortDescription:
+      "Estimate simplified hurricane evacuation risk using category, wind speed, and coastal distance factors.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-evacuation-zone-calculator",
+    keywords: [
+      "hurricane evacuation zone calculator",
+      "storm evacuation calculator",
+      "hurricane risk calculator",
+      "weather science calculator",
+    ],
+  },
 ];

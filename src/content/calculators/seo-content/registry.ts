@@ -5,6 +5,93 @@ export const calculatorSEOContent: Record<
   CalculatorSEOContent
 > = {
 
+  "hurricane-evacuation-zone-calculator": {
+    slug: "hurricane-evacuation-zone-calculator",
+
+    seoIntroduction:
+      "Hurricane Evacuation Zone Calculator estimates a simplified evacuation risk score using hurricane category, wind speed, and distance from the coast. It helps students, educators, and weather science learners understand storm risk factors.",
+
+    howItWorks:
+      "The calculator combines hurricane category, wind speed, and coastal distance into an educational evacuation risk score. Higher storm intensity and closer coastal distance increase the score.",
+
+    formula:
+      "Evacuation Score = Category × Wind Speed / Distance From Coast",
+
+    variables: [
+      "Hurricane category",
+      "Wind speed",
+      "Distance from coast",
+      "Evacuation score",
+      "Risk zone",
+    ],
+
+    applications: [
+      "Meteorology education",
+      "Disaster science learning",
+      "Coastal risk concepts",
+      "Weather education",
+      "Risk modeling studies",
+    ],
+
+    assumptions: [
+      "The calculation uses a simplified educational risk model.",
+      "Distance values represent coastal exposure only.",
+      "The calculator does not provide official evacuation guidance.",
+    ],
+
+    examples: [
+      "Example: Higher hurricane categories increase the evacuation score.",
+      "Example: Areas closer to the coast receive higher risk values.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "How is hurricane evacuation risk calculated?",
+        answer:
+          "The calculator combines hurricane category, wind speed, and coastal distance into a simplified score.",
+      },
+      {
+        question:
+          "Does this provide official evacuation advice?",
+        answer:
+          "No. Real evacuation decisions should follow official emergency management guidance and local authorities.",
+      },
+      {
+        question:
+          "Why does distance from coast affect risk?",
+        answer:
+          "Coastal locations may experience greater exposure to hurricane hazards such as storm surge and strong winds.",
+      },
+      {
+        question:
+          "What science concepts are used?",
+        answer:
+          "The calculator uses meteorology, geography, and simplified risk assessment concepts.",
+      },
+    ],
+
+    references: [
+      "NOAA hurricane science resources",
+      "Emergency management risk principles",
+      "Meteorology educational references",
+    ],
+
+    limitations: [
+      "Does not predict evacuation orders.",
+      "Does not replace official weather warnings.",
+      "Does not model storm surge or flooding.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Weather Science Review Team",
+
+    lastReviewed:
+      "2026-09-12",
+  },
+
+
+
   "hurricane-damage-potential-calculator": {
     slug: "hurricane-damage-potential-calculator",
 
