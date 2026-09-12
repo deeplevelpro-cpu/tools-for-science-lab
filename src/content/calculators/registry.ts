@@ -1462,4 +1462,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "atmospheric physics calculator",
     ],
   },
+
+  {
+    slug: "hurricane-pressure-difference-calculator",
+    name: "Hurricane Pressure Difference Calculator",
+    shortDescription:
+      "Calculate hurricane pressure difference using high and low pressure values with a weather physics formula.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-pressure-difference-calculator",
+    keywords: [
+      "hurricane pressure difference calculator",
+      "pressure gradient calculator",
+      "weather pressure calculator",
+      "atmospheric physics calculator",
+    ],
+  },
 ];
