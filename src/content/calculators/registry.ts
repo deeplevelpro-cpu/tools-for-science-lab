@@ -1447,4 +1447,19 @@ export const calculators: readonly CalculatorDefinition[] = [
       "geology physics calculator",
     ],
   },
+
+  {
+    slug: "hurricane-pressure-calculator",
+    name: "Hurricane Pressure Calculator",
+    shortDescription:
+      "Calculate hurricane pressure using force and area with a pressure physics formula.",
+    category: "Laboratory",
+    href: "/calculators/hurricane-pressure-calculator",
+    keywords: [
+      "hurricane pressure calculator",
+      "weather pressure calculator",
+      "force pressure calculator",
+      "atmospheric physics calculator",
+    ],
+  },
 ];
