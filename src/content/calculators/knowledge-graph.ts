@@ -318,7 +318,7 @@ export const calculatorKnowledgeGraph: Record<
   "pulley-calculator": [
     "force-calculator",
     "work-calculator",
-    "mechanical-advantage-calculator",
+    "force-calculator",
   ],
 
   "inclined-plane-calculator": [
@@ -444,8 +444,8 @@ export const calculatorKnowledgeGraph: Record<
   ],
 
   "specific-heat-calculator": [
-    "heat-calculator",
-    "energy-calculator",
+    "specific-heat-calculator",
+    "kinetic-energy-calculator",
   ],
 
 
@@ -666,7 +666,73 @@ export const calculatorKnowledgeGraph: Record<
   "volcano-lava-flow-speed-calculator": [
     "volcano-eruption-energy-calculator",
     "volcano-eruption-energy-estimate-calculator",
-    "fluid-dynamics-calculator",
+    "water-level-calculator",
+  ],
+
+
+
+  // =========================
+  // EARTH SCIENCE & NATURAL PHENOMENA CLUSTER
+  // =========================
+
+  "avalanche-energy-calculator": [
+    "landslide-energy-calculator",
+    "kinetic-energy-calculator",
+    "gravitational-potential-energy-calculator",
+    "snow-calculator",
+  ],
+
+  "landslide-energy-calculator": [
+    "avalanche-energy-calculator",
+    "gravitational-potential-energy-calculator",
+    "kinetic-energy-calculator",
+    "earthquake-energy-calculator",
+  ],
+
+  "lightning-strike-energy-calculator": [
+    "solar-flare-energy-calculator",
+    "kinetic-energy-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "meteor-impact-energy-calculator": [
+    "meteorite-impact-energy-calculator",
+    "kinetic-energy-calculator",
+    "earthquake-energy-calculator",
+  ],
+
+  "meteorite-impact-energy-calculator": [
+    "meteor-impact-energy-calculator",
+    "kinetic-energy-calculator",
+    "earthquake-energy-calculator",
+  ],
+
+  "solar-flare-energy-calculator": [
+    "lightning-strike-energy-calculator",
+    "solar-eclipse-calculator",
+    "kinetic-energy-calculator",
+  ],
+
+  "solar-eclipse-calculator": [
+    "solar-flare-energy-calculator",
+    "earthquake-energy-calculator",
+  ],
+
+  "snow-calculator": [
+    "water-level-calculator",
+    "avalanche-energy-calculator",
+  ],
+
+  "water-level-calculator": [
+    "snow-calculator",
+    "tsunami-wave-height-calculator",
+    "hurricane-storm-surge-calculator",
+  ],
+
+  "tsunami-impact-energy-estimate-calculator": [
+    "tsunami-wave-energy-calculator",
+    "tsunami-wave-force-calculator",
+    "earthquake-energy-calculator",
   ],
 
 

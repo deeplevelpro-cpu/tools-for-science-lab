@@ -1238,6 +1238,22 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
 
+
+  {
+    slug: "solar-eclipse-calculator",
+    name: "Solar Eclipse Calculator",
+    shortDescription:
+      "Calculate solar eclipse timing and understand eclipse geometry using astronomical measurements.",
+    category: "Physics",
+    href: "/calculators/solar-eclipse-calculator",
+    keywords: [
+      "solar eclipse calculator",
+      "eclipse calculator",
+      "astronomy calculator",
+      "solar science calculator",
+    ],
+  },
+
   {
     slug: "solar-flare-energy-calculator",
     name: "Solar Flare Energy Calculator",
