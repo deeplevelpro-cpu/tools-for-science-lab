@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 
 import { calculators } from "@/content/calculators/registry";
+import { labReportResources } from "@/content/lab-reports/registry";
+import { scientificMethodResources } from "@/content/scientific-method/registry";
+import { templateResources } from "@/content/templates/registry";
 import { absoluteUrl } from "@/lib/seo/url";
 
 
@@ -12,6 +15,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     }),
   );
+
+  const educationalPages = [
+    ...labReportResources,
+    ...scientificMethodResources,
+    ...templateResources,
+  ].map((resource) => ({
+    url: absoluteUrl(resource.href),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [
     {
@@ -95,5 +108,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     ...calculatorPages,
+    ...educationalPages,
   ];
 }
