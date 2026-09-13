@@ -92,6 +92,50 @@ export function CalculatorCategoryPage({
         </Container>
       </section>
 
+      <section className="directory-section directory-section--muted">
+        <Container>
+          <div className="section-heading">
+            <p className="eyebrow">
+              Category guide
+            </p>
+
+            <h2>
+              About {category.name}
+            </h2>
+
+            <p>
+              {category.introduction}
+            </p>
+          </div>
+
+          <div className="calculator-directory-grid">
+            <article className="calculator-directory-card">
+              <h3>
+                Formula areas
+              </h3>
+
+              <ul className="article-list">
+                {category.formulaAreas.map((item) => (
+                  <li key={item}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article className="calculator-directory-card">
+              <h3>
+                How to use these calculators
+              </h3>
+
+              <p>
+                {category.learningGuidance}
+              </p>
+            </article>
+          </div>
+        </Container>
+      </section>
+
       <CategoryTopics category={category.category} />
 
 
