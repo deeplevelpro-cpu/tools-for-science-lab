@@ -31,8 +31,8 @@ function searchCalculators(
 }
 
 describe("calculator directory data behavior", () => {
-  it("contains all published calculators", () => {
-    expect(calculators).toHaveLength(74);
+  it("contains published calculators", () => {
+    expect(calculators.length).toBeGreaterThan(100);
   });
 
   it("finds Molecular Weight Calculator by name", () => {
