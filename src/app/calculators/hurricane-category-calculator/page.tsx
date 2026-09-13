@@ -13,7 +13,7 @@ const pageTitle =
   "Hurricane Category Calculator | Storm Classification Tool";
 
 const pageDescription =
-  "Calculate hurricane category using sustained wind speed. Learn how Category 1 to Category 5 hurricanes are classified.";
+  "Calculate hurricane category from wind speed values using the Saffir-Simpson hurricane wind scale classification system.";
 
 const pagePath =
   "/calculators/hurricane-category-calculator";

@@ -13,7 +13,7 @@ const pageTitle =
   "Tornado Wind Speed Calculator | Tornado Physics Tool";
 
 const pageDescription =
-  "Estimate tornado wind speed using pressure difference and air density values with a simplified physics calculator.";
+  "Estimate tornado wind speed from available measurements and understand the physics behind extreme wind movement and storm analysis calculations.";
 
 const pagePath =
   "/calculators/tornado-wind-speed-estimator-calculator";

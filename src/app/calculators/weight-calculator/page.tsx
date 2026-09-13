@@ -12,7 +12,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 const pageTitle = "Weight Calculator | Mass & Gravity";
 
 const pageDescription =
-  "Calculate weight, mass, or gravitational acceleration using W = m × g, with examples for Earth and the Moon.";
+  "Calculate weight from mass and gravitational acceleration using the fundamental physics relationship between force and gravity.";
 
 const pagePath =
   "/calculators/weight-calculator";

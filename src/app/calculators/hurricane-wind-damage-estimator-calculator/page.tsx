@@ -13,7 +13,7 @@ const pageTitle =
   "Hurricane Wind Damage Estimator Calculator | Storm Risk Tool";
 
 const pageDescription =
-  "Estimate simplified hurricane wind damage potential using wind speed, exposed area, and building vulnerability factors.";
+  "Estimate hurricane wind damage potential using storm intensity values and understand how hurricane winds influence structures, safety planning, and environmental impact.";
 
 const pagePath =
   "/calculators/hurricane-wind-damage-estimator-calculator";

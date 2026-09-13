@@ -19,7 +19,7 @@ const pageTitle =
   "Acceleration Due to Gravity Calculator";
 
 const pageDescription =
-  "Calculate gravitational acceleration from the mass and radius of a planet or celestial body using g = GM / r².";
+  "Calculate acceleration due to gravity using physics formulas and explore how gravitational acceleration affects falling objects.";
 
 const canonicalPath =
   "/calculators/acceleration-due-to-gravity-calculator";

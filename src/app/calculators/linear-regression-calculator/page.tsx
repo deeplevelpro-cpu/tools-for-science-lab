@@ -11,7 +11,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle = "Linear Regression Calculator";
 const pageDescription =
-  "Calculate slope, intercept, best-fit line equation, correlation coefficient, and R squared from paired x and y data.";
+  "Calculate linear regression values including slope, intercept, predictions, and statistical relationships between datasets.";
 
 const pagePath =
   "/calculators/linear-regression-calculator";

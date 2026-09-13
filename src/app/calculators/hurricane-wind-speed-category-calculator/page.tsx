@@ -13,7 +13,7 @@ const pageTitle =
   "Hurricane Wind Speed Category Calculator | Storm Classification Tool";
 
 const pageDescription =
-  "Determine hurricane category from sustained wind speed using a simple hurricane classification calculator.";
+  "Calculate hurricane wind speed category using storm wind measurements and learn how meteorologists classify tropical cyclone intensity.";
 
 const pagePath =
   "/calculators/hurricane-wind-speed-category-calculator";

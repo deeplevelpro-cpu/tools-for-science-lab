@@ -12,7 +12,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 const pageTitle = "Inclined Plane Calculator";
 
 const pageDescription =
-  "Calculate parallel force, normal force, friction force, net force, and acceleration on an inclined plane.";
+  "Calculate forces on an inclined plane including gravity components, normal force, and friction for physics problem solving.";
 
 const pagePath =
   "/calculators/inclined-plane-calculator";

@@ -11,7 +11,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle = "Mean, Median and Mode Calculator";
 const pageDescription =
-  "Calculate the mean, median, mode, sum, range, minimum, maximum, and sorted values for a numerical dataset.";
+  "Calculate mean, median, and mode from a dataset with statistical summaries including average, range, and distribution analysis.";
 
 const pagePath =
   "/calculators/mean-median-mode-calculator";

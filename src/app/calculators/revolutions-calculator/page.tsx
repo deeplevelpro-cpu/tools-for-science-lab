@@ -19,7 +19,7 @@ const pageTitle =
   "Revolutions Calculator";
 
 const pageDescription =
-  "Calculate revolutions, rotational frequency, time, or angular displacement using N = ft and N = θ / 2π.";
+  "Calculate revolutions, rotation frequency, angular motion, and rotational values for physics, engineering, and mechanical science applications.";
 
 const pagePath =
   "/calculators/revolutions-calculator";

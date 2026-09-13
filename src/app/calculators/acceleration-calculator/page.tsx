@@ -11,7 +11,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle = "Acceleration Calculator";
 const pageDescription =
-  "Calculate acceleration, initial velocity, final velocity, or time using the constant-acceleration formula.";
+  "Calculate acceleration from velocity change and time values using the standard physics relationship between motion variables.";
 
 const pagePath =
   "/calculators/acceleration-calculator";

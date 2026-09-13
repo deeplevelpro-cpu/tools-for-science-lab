@@ -13,7 +13,7 @@ const pageTitle =
   "Solar Eclipse Calculator | Eclipse Geometry Tool";
 
 const pageDescription =
-  "Calculate solar eclipse geometry by comparing the apparent sizes of the Sun and Moon using astronomical measurements.";
+  "Calculate solar eclipse timing and explore astronomical relationships between the Sun, Moon, Earth, and different eclipse event conditions.";
 
 const pagePath =
   "/calculators/solar-eclipse-calculator";

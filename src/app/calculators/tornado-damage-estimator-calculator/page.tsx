@@ -13,7 +13,7 @@ const pageTitle =
   "Tornado Damage Estimator Calculator | Storm Risk Tool";
 
 const pageDescription =
-  "Estimate simplified tornado damage risk using wind speed, affected area, and building vulnerability factors.";
+  "Estimate tornado damage potential using wind speed information and understand the relationship between extreme winds and structural impact.";
 
 const pagePath =
   "/calculators/tornado-damage-estimator-calculator";
