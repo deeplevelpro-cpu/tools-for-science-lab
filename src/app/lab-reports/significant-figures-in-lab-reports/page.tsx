@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedScientificResources } from "@/components/related-scientific-resources";
 
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -484,6 +485,8 @@ export default function SignificantFiguresPage() {
                 .
               </p>
             </section>
+
+            <RelatedScientificResources />
 
             <section aria-labelledby="faq-heading">
               <p className="eyebrow">Questions and answers</p>

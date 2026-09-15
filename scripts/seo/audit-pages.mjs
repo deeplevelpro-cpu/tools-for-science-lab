@@ -427,7 +427,7 @@ const pages = walk(appDirectory)
 
     const dynamicInternalLinks = countMatches(
       linkedSourceText,
-      /href=\{(?:calculator|resource|category)\.href\}/g,
+      /href=\{[A-Za-z_$][\w$]*\.href\}/g,
     );
 
     const internalLinks =

@@ -371,6 +371,42 @@ export default function HowToWriteALabReportPage() {
               </ul>
             </section>
 
+            <section aria-labelledby="related-resources-heading">
+              <p className="eyebrow">
+                Continue learning
+              </p>
+
+              <h2 id="related-resources-heading">
+                Related scientific resources
+              </h2>
+
+              <ul className="article-list">
+                <li>
+                  <Link href="/scientific-method/steps-of-the-scientific-method">
+                    Steps of the Scientific Method
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/scientific-method/experimental-design">
+                    How to Design a Scientific Experiment
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/templates/printable-lab-report-template">
+                    Printable Lab Report Template
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/templates/experiment-planning-template">
+                    Experiment Planning Template
+                  </Link>
+                </li>
+              </ul>
+            </section>
+
             <section aria-labelledby="faq-heading">
               <p className="eyebrow">Questions and answers</p>
               <h2 id="faq-heading">Lab report FAQ</h2>
