@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 import Link from "next/link";
 
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
@@ -44,9 +44,7 @@ export const metadata: Metadata = {
 export default function VolcanoLavaFlowSpeedCalculatorPage() {
   return (
     <>
-      <CalculatorJsonLd slug="volcano-lava-flow-speed-calculator" />
-
-      <main>
+<main>
       <section className="tool-page-hero">
         <Container>
           <nav
@@ -94,7 +92,12 @@ export default function VolcanoLavaFlowSpeedCalculatorPage() {
         aria-label="Volcano lava flow speed calculator"
       >
         <Container>
-          <VolcanoLavaFlowSpeedCalculator />
+          <CalculatorPageShell
+            slug="volcano-lava-flow-speed-calculator"
+            subject="physics"
+          >
+            <VolcanoLavaFlowSpeedCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 

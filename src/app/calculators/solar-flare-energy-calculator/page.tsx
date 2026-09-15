@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 import Link from "next/link";
 
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
@@ -44,9 +44,7 @@ export const metadata: Metadata = {
 export default function SolarFlareEnergyCalculatorPage() {
   return (
     <>
-      <CalculatorJsonLd slug="solar-flare-energy-calculator" />
-
-      <main>
+<main>
       <section className="tool-page-hero">
         <Container>
           <nav
@@ -95,7 +93,12 @@ export default function SolarFlareEnergyCalculatorPage() {
         aria-label="Solar flare energy calculator"
       >
         <Container>
-          <SolarFlareEnergyCalculator />
+          <CalculatorPageShell
+            slug="solar-flare-energy-calculator"
+            subject="physics"
+          >
+            <SolarFlareEnergyCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 

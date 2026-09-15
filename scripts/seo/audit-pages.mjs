@@ -420,6 +420,11 @@ const pages = walk(appDirectory)
     const linkedSourceText =
       collectLocalSource(filePath);
 
+    const resolvedPageHasJsonLd =
+      hasJsonLd(linkedSourceText) ||
+      (isHomepage &&
+        inherited.hasJsonLd);
+
     const staticInternalLinks = countMatches(
       linkedSourceText,
       /href=["'`]\/(?!\/|#)[^"'`]+["'`]/g,
@@ -507,7 +512,7 @@ const pages = walk(appDirectory)
       );
     }
 
-    if (!pageHasJsonLd) {
+    if (!resolvedPageHasJsonLd) {
       issues.push("missing-jsonld");
     }
 
@@ -528,7 +533,7 @@ const pages = walk(appDirectory)
       sourceWords,
       hasMetadata,
       hasRobots,
-      hasJsonLd: pageHasJsonLd,
+      hasJsonLd: resolvedPageHasJsonLd,
       hasFaqSchema,
       hasWebApplication,
       hasBreadcrumbSchema,

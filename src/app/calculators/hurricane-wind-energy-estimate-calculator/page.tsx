@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
 import Link from "next/link";
 
 import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
@@ -44,9 +44,7 @@ export const metadata: Metadata = {
 export default function HurricaneWindEnergyEstimateCalculatorPage() {
   return (
     <>
-      <CalculatorJsonLd slug="hurricane-wind-energy-estimate-calculator" />
-
-      <main>
+<main>
       <section className="tool-page-hero">
         <Container>
           <nav
@@ -95,7 +93,12 @@ export default function HurricaneWindEnergyEstimateCalculatorPage() {
         aria-label="Hurricane wind energy calculator"
       >
         <Container>
-          <HurricaneWindEnergyEstimateCalculator />
+          <CalculatorPageShell
+            slug="hurricane-wind-energy-estimate-calculator"
+            subject="physics"
+          >
+            <HurricaneWindEnergyEstimateCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
