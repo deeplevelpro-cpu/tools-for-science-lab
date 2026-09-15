@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle =
-  "Earthquake Energy Estimate Calculator | Earth Science Physics Tool";
+  "Earthquake Energy Estimate Calculator | Seismic Tool";
 
 const pageDescription =
   "Estimate earthquake energy using moving earth mass and velocity values with a kinetic energy formula. Learn the physics behind earthquake motion.";

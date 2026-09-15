@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle =
-  "Hurricane Wind Speed Category Calculator | Storm Classification Tool";
+  "Hurricane Wind Speed Category Calculator | Wind Tool";
 
 const pageDescription =
   "Calculate hurricane wind speed category using storm wind measurements and learn how meteorologists classify tropical cyclone intensity.";
