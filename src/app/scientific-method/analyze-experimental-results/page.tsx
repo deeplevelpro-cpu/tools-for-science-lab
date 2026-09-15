@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedScientificMethodResources } from "@/components/related-scientific-method-resources";
 
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -492,6 +493,8 @@ export default function AnalyzeExperimentalResultsPage() {
                 .
               </p>
             </section>
+
+            <RelatedScientificMethodResources />
 
             <section aria-labelledby="faq-heading">
               <p className="eyebrow">Questions and answers</p>

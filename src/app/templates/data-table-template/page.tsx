@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedTemplateResources } from "@/components/related-template-resources";
 
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
@@ -374,6 +375,8 @@ export default function ScientificDataTableTemplatePage() {
                 .
               </p>
             </section>
+
+            <RelatedTemplateResources />
 
             <section aria-labelledby="faq-heading">
               <p className="eyebrow">
