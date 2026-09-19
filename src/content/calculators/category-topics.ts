@@ -11,7 +11,7 @@ export const calculatorTopics = {
     {
       title: "Motion and Kinematics",
       description:
-        "Calculators for velocity, acceleration, displacement, free fall, and projectile motion.",
+        "Calculators for velocity, acceleration, displacement, free fall, projectile motion, and kinematic equations.",
       keywords: [
         "motion",
         "velocity",
@@ -19,35 +19,63 @@ export const calculatorTopics = {
         "kinematic",
         "projectile",
         "free fall",
+        "displacement",
+        "speed",
       ],
     },
     {
-      title: "Forces and Energy",
+      title: "Forces and Newton's Laws",
       description:
-        "Tools for force, work, power, energy, momentum, and related physics calculations.",
+        "Tools for force, friction, normal force, weight, inclined planes, elasticity, and Newtonian mechanics.",
       keywords: [
         "force",
+        "friction",
+        "normal force",
+        "weight",
+        "inclined",
+        "hooke",
+        "newton",
+      ],
+    },
+    {
+      title: "Energy, Work and Power",
+      description:
+        "Calculate kinetic energy, potential energy, work, power, and energy transformations.",
+      keywords: [
         "energy",
+        "kinetic",
+        "potential",
         "work",
         "power",
+        "joule",
+      ],
+    },
+    {
+      title: "Momentum and Impulse",
+      description:
+        "Physics calculators for momentum, impulse, and conservation of motion concepts.",
+      keywords: [
         "momentum",
+        "impulse",
       ],
     },
     {
       title: "Rotational Physics",
       description:
-        "Calculate angular motion, torque, rotation, and rotational energy.",
+        "Calculate torque, angular motion, rotational energy, RPM, and rotational dynamics.",
       keywords: [
         "rotation",
         "angular",
         "torque",
         "rotational",
+        "rpm",
+        "moment of inertia",
       ],
     },
     {
-      title: "Gravity and Circular Motion",
+      title: "Circular Motion and Gravity",
       description:
-        "Physics tools for gravity, orbital motion, and circular movement.",
+        "Physics tools for centripetal force, circular velocity, gravity, and orbital motion.",
       keywords: [
         "gravity",
         "centripetal",
