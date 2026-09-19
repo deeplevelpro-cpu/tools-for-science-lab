@@ -57,12 +57,15 @@ export default function LaboratoryCalculatorsPage() {
 
   return (
     <>
-
-      
-
-      
-
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(categorySchema).replace(
+            /</g,
+            "\u003c",
+          ),
+        }}
+      />
 
       <CalculatorCategoryPage
         category={category}
