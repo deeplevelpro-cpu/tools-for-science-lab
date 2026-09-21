@@ -1,0 +1,281 @@
+import { CalculatorFAQ } from "@/components/calculator-content/calculator-faq";
+
+import { MolecularWeightCalculator } from "@/components/calculators/molecular-weight-calculator";
+
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
+import Link from "next/link";
+
+import { Container } from "@/components/ui/container";
+
+import { absoluteUrl } from "@/lib/seo/url";
+
+import { siteConfig } from "@/config/site";
+
+import type { Metadata } from "next";
+
+
+const pageTitle = "Molecular Weight Calculator";
+const pageDescription =
+  "Calculate molecular weight and molar mass from a chemical formula. Supports subscripts, parentheses, nested groups, hydrates, and element-by-element mass breakdowns.";
+const pagePath =
+  "/calculators/molecular-weight-calculator";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: pageDescription,
+  alternates: {
+    canonical: pagePath,
+  },
+  openGraph: {
+    title: `${pageTitle} | ${siteConfig.name}`,
+    description: pageDescription,
+    type: "website",
+    url: absoluteUrl(pagePath),
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${pageTitle} | ${siteConfig.name}`,
+    description: pageDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
+
+
+export default function MolecularWeightCalculatorPage() {
+  return (
+    <main>
+      
+
+      <section className="tool-page-hero">
+        <Container>
+          <nav
+            className="breadcrumbs"
+            aria-label="Breadcrumb"
+          >
+            <ol>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/calculators">
+                  Calculators
+                </Link>
+              </li>
+              <li aria-current="page">
+                Molecular Weight Calculator
+              </li>
+            </ol>
+          </nav>
+
+          <div className="tool-page-hero__content">
+            <p className="eyebrow">
+              Chemical formula calculator
+            </p>
+
+            <h1>Molecular Weight Calculator</h1>
+
+            <p>
+              Calculate molecular weight and molar mass
+              from chemical formulas, grouped compounds,
+              and hydrate notation.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section
+        className="tool-section"
+        aria-label="Molecular weight calculator"
+      >
+        <Container>
+          <CalculatorPageShell
+            slug="molecular-weight-calculator"
+            subject="chemistry"
+          >
+            <MolecularWeightCalculator />
+          </CalculatorPageShell>
+        </Container>
+      </section>
+
+      <section className="article-section">
+        <Container className="article-layout">
+          <article className="article-content">
+            <section aria-labelledby="formula-heading">
+              <p className="eyebrow">Formula</p>
+
+              <h2 id="formula-heading">
+                How molecular weight is calculated
+              </h2>
+
+              <div className="formula-card">
+                <p>
+                  Molar mass =
+                  <span>
+                    Σ(number of atoms × atomic mass)
+                  </span>
+                </p>
+              </div>
+
+              <p>
+                Each element symbol is identified from
+                the formula. Its atomic mass is multiplied
+                by its atom count, and all contributions
+                are added together.
+              </p>
+            </section>
+
+            <section aria-labelledby="example-heading">
+              <p className="eyebrow">
+                Worked example
+              </p>
+
+              <h2 id="example-heading">
+                Molecular weight of water
+              </h2>
+
+              <p>
+                Water has the formula{" "}
+                <strong>H2O</strong>. It contains two
+                hydrogen atoms and one oxygen atom.
+              </p>
+
+              <ol className="calculation-steps">
+                <li>
+                  Hydrogen: 2 × 1.008 = 2.016
+                </li>
+                <li>
+                  Oxygen: 1 × 15.999 = 15.999
+                </li>
+                <li>
+                  Total: 2.016 + 15.999 ={" "}
+                  <strong>18.015 g/mol</strong>
+                </li>
+              </ol>
+            </section>
+
+            <section aria-labelledby="supported-heading">
+              <p className="eyebrow">
+                Supported notation
+              </p>
+
+              <h2 id="supported-heading">
+                Chemical formulas this calculator supports
+              </h2>
+
+              <ul className="article-list">
+                <li>
+                  Standard formulas such as H2O and NaCl
+                </li>
+                <li>
+                  Multi-digit subscripts such as C12H22O11
+                </li>
+                <li>
+                  Parentheses such as Ca(OH)2
+                </li>
+                <li>
+                  Nested groups such as K4(ON(SO3)2)2
+                </li>
+                <li>
+                  Hydrates such as CuSO4·5H2O
+                </li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="mistakes-heading">
+              <p className="eyebrow">
+                Common mistakes
+              </p>
+
+              <h2 id="mistakes-heading">
+                Molecular-weight calculation mistakes
+              </h2>
+
+              <ul className="article-list">
+                <li>
+                  Using incorrect capitalization for
+                  element symbols.
+                </li>
+                <li>
+                  Forgetting to multiply grouped atoms by
+                  a parenthesis subscript.
+                </li>
+                <li>
+                  Ignoring hydrate water molecules.
+                </li>
+                <li>
+                  Using atomic number instead of atomic mass.
+                </li>
+                <li>
+                  Rounding individual element masses too early.
+                </li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="related-heading">
+              <p className="eyebrow">
+                Related chemistry tools
+              </p>
+
+              <h2 id="related-heading">
+                Continue with mole calculations
+              </h2>
+
+              <p>
+                Use the{" "}
+                <Link
+                  className="article-inline-link"
+                  href="/calculators/mass-moles-calculator"
+                >
+                  Mass to Moles Calculator
+                </Link>{" "}
+                to convert between grams and moles using
+                the calculated molar mass.
+              </p>
+
+              <p>
+                Use the{" "}
+                <Link
+                  className="article-inline-link"
+                  href="/calculators/molarity-calculator"
+                >
+                  Molarity Calculator
+                </Link>{" "}
+                to calculate solution concentration.
+              </p>
+            </section>
+
+            <CalculatorFAQ slug="molecular-weight-calculator" />
+          </article>
+
+          <aside className="article-sidebar">
+            <div className="sidebar-card">
+              <p className="sidebar-card__label">
+                Quick reference
+              </p>
+
+              <h2>Chemical formula checklist</h2>
+
+              <ul>
+                <li>Use correct element capitalization</li>
+                <li>Check every subscript</li>
+                <li>Apply group multipliers</li>
+                <li>Include hydrate molecules</li>
+                <li>Round only the final result</li>
+              </ul>
+            </div>
+          </aside>
+        </Container>
+        <Container>
+          </Container>
+      </section>
+    
+
+      </main>
+  );
+}
