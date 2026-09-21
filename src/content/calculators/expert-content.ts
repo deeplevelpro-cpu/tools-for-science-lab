@@ -891,4 +891,466 @@ export const expertCalculatorContent = {
     ],
   },
 
+
+  "rate-of-change-calculator": {
+    formulaExplanation:
+      "Rate of change measures how one quantity changes compared with another quantity over an interval.",
+    example:
+      "Example: If distance changes by 100 meters over 20 seconds, the average rate of change is calculated from the change divided by the interval.",
+    commonMistakes: [
+      "Using incorrect units.",
+      "Confusing rate of change with total change.",
+      "Ignoring the time interval.",
+    ],
+  },
+
+  "water-level-calculator": {
+    formulaExplanation:
+      "Water level calculations estimate changes in water height using measurements such as volume, area, or level differences.",
+    example:
+      "Example: A known volume added to a container with a fixed surface area can be used to estimate water level increase.",
+    commonMistakes: [
+      "Using incorrect area measurements.",
+      "Ignoring container shape.",
+      "Mixing volume and height units.",
+    ],
+  },
+
+  "earthquake-magnitude-calculator": {
+    formulaExplanation:
+      "Earthquake magnitude calculations estimate seismic energy release using measured wave characteristics and scientific magnitude relationships.",
+    example:
+      "Example: Seismic measurements can be converted into a magnitude estimate representing earthquake strength.",
+    commonMistakes: [
+      "Confusing magnitude with intensity.",
+      "Using incorrect seismic values.",
+      "Ignoring measurement scale differences.",
+    ],
+  },
+
+  "tsunami-travel-time-calculator": {
+    formulaExplanation:
+      "Tsunami travel time is estimated using wave speed and the distance between the earthquake source and coastline.",
+    example:
+      "Example: A tsunami traveling at a known speed over a measured ocean distance can be estimated for arrival time.",
+    commonMistakes: [
+      "Ignoring changing water depth.",
+      "Using incorrect distance units.",
+      "Assuming constant wave speed everywhere.",
+    ],
+  },
+
+  "hurricane-wind-speed-calculator": {
+    formulaExplanation:
+      "Hurricane wind speed calculations estimate storm wind characteristics using atmospheric and wind measurements.",
+    example:
+      "Example: Recorded wind measurements can be analyzed to estimate storm intensity.",
+    commonMistakes: [
+      "Confusing wind speed with storm category.",
+      "Using inconsistent wind units.",
+      "Ignoring measurement conditions.",
+    ],
+  },
+
+  "tornado-wind-speed-calculator": {
+    formulaExplanation:
+      "Tornado wind speed calculations estimate wind velocity using physical relationships involving pressure and air movement.",
+    example:
+      "Example: Pressure differences can be used with air density assumptions to estimate wind speed.",
+    commonMistakes: [
+      "Ignoring air density assumptions.",
+      "Using incorrect pressure units.",
+      "Treating estimates as direct measurements.",
+    ],
+  },
+
+  "volcano-eruption-energy-calculator": {
+    formulaExplanation:
+      "Volcanic eruption energy calculations estimate released energy using physical properties such as mass, velocity, and eruption conditions.",
+    example:
+      "Example: Estimated erupted material and movement values can be used to approximate eruption energy.",
+    commonMistakes: [
+      "Using incorrect mass units.",
+      "Ignoring eruption assumptions.",
+      "Confusing energy with eruption size.",
+    ],
+  },
+
+
+
+  "tsunami-wave-speed-calculator": {
+    formulaExplanation:
+      "Tsunami wave speed depends mainly on ocean depth and gravity, with shallow water waves traveling differently from deep ocean waves.",
+    example:
+      "Example: Ocean depth measurements can be used to estimate tsunami propagation speed.",
+    commonMistakes: [
+      "Ignoring water depth changes.",
+      "Using incorrect distance units.",
+      "Assuming constant speed everywhere.",
+    ],
+  },
+
+  "earthquake-energy-calculator": {
+    formulaExplanation:
+      "Earthquake energy calculations estimate released seismic energy using magnitude-based scientific relationships.",
+    example:
+      "Example: A magnitude value can be converted into an approximate energy release estimate.",
+    commonMistakes: [
+      "Confusing magnitude with intensity.",
+      "Using incorrect magnitude scales.",
+      "Ignoring approximation limits.",
+    ],
+  },
+
+  "meteor-impact-energy-calculator": {
+    formulaExplanation:
+      "Meteor impact energy calculations estimate kinetic energy using mass and impact velocity.",
+    example:
+      "Example: A meteor's mass and velocity can be used to estimate impact energy.",
+    commonMistakes: [
+      "Using incorrect velocity units.",
+      "Ignoring impact assumptions.",
+      "Confusing mass with size.",
+    ],
+  },
+
+  "tsunami-wave-energy-calculator": {
+    formulaExplanation:
+      "Tsunami wave energy calculations estimate energy carried by moving water using wave properties.",
+    example:
+      "Example: Wave height, speed, and water characteristics can be used to estimate energy.",
+    commonMistakes: [
+      "Ignoring wave height changes.",
+      "Using incorrect water properties.",
+      "Mixing energy and force calculations.",
+    ],
+  },
+
+  "earthquake-energy-comparison-calculator": {
+    formulaExplanation:
+      "Earthquake energy comparison calculations show differences in energy release between seismic events.",
+    example:
+      "Example: Two earthquake magnitudes can be compared by their estimated energy release.",
+    commonMistakes: [
+      "Comparing magnitudes directly as energy.",
+      "Ignoring logarithmic scales.",
+      "Using incorrect values.",
+    ],
+  },
+
+  "hurricane-wind-energy-calculator": {
+    formulaExplanation:
+      "Hurricane wind energy calculations estimate kinetic energy associated with moving air.",
+    example:
+      "Example: Wind speed and air properties can be used to estimate wind energy.",
+    commonMistakes: [
+      "Ignoring air density.",
+      "Using inconsistent wind units.",
+      "Confusing wind speed and energy.",
+    ],
+  },
+
+  "lightning-strike-energy-calculator": {
+    formulaExplanation:
+      "Lightning energy calculations estimate electrical energy released during a lightning discharge.",
+    example:
+      "Example: Electrical measurements can be used to approximate lightning energy.",
+    commonMistakes: [
+      "Ignoring electrical assumptions.",
+      "Using incorrect units.",
+      "Treating estimates as exact values.",
+    ],
+  },
+
+  "solar-eclipse-calculator": {
+    formulaExplanation:
+      "Solar eclipse calculations determine eclipse timing and geometry using astronomical positions.",
+    example:
+      "Example: Celestial positions can be used to estimate eclipse visibility conditions.",
+    commonMistakes: [
+      "Ignoring location effects.",
+      "Using incorrect time zones.",
+      "Confusing eclipse types.",
+    ],
+  },
+
+  "meteorite-impact-energy-calculator": {
+    formulaExplanation:
+      "Meteorite impact energy calculations estimate energy transfer using object mass and velocity.",
+    example:
+      "Example: Larger masses and higher velocities produce greater impact energy.",
+    commonMistakes: [
+      "Using incorrect object properties.",
+      "Ignoring atmospheric effects.",
+      "Confusing meteor and meteorite terms.",
+    ],
+  },
+
+  "tsunami-wave-energy-estimate-calculator": {
+    formulaExplanation:
+      "Tsunami wave energy estimates approximate energy based on wave height, speed, and water characteristics.",
+    example:
+      "Example: Measured wave properties can provide an estimated energy value.",
+    commonMistakes: [
+      "Ignoring changing ocean conditions.",
+      "Using simplified assumptions incorrectly.",
+      "Mixing energy and power concepts.",
+    ],
+  },
+
+  "volcano-eruption-energy-estimate-calculator": {
+    formulaExplanation:
+      "Volcanic eruption energy estimates approximate released energy using eruption material and physical conditions.",
+    example:
+      "Example: Erupted mass and velocity can help estimate eruption energy.",
+    commonMistakes: [
+      "Ignoring eruption assumptions.",
+      "Using incorrect mass values.",
+      "Confusing energy with magnitude.",
+    ],
+  },
+
+  "avalanche-energy-calculator": {
+    formulaExplanation:
+      "Avalanche energy calculations estimate gravitational energy released by moving snow mass.",
+    example:
+      "Example: Avalanche mass and elevation change determine potential energy release.",
+    commonMistakes: [
+      "Ignoring slope effects.",
+      "Using incorrect mass units.",
+      "Confusing speed and energy.",
+    ],
+  },
+
+  "landslide-energy-calculator": {
+    formulaExplanation:
+      "Landslide energy calculations estimate energy released by moving earth material due to gravity.",
+    example:
+      "Example: Mass and vertical movement can be used to estimate gravitational energy.",
+    commonMistakes: [
+      "Ignoring terrain effects.",
+      "Using incorrect measurements.",
+      "Assuming all energy converts to motion.",
+    ],
+  },
+
+  "earthquake-energy-estimate-calculator": {
+    formulaExplanation:
+      "Earthquake energy estimates calculate approximate seismic energy release from earthquake measurements.",
+    example:
+      "Example: Magnitude data can be converted into an estimated energy value.",
+    commonMistakes: [
+      "Ignoring logarithmic relationships.",
+      "Confusing magnitude and energy.",
+      "Using incorrect scales.",
+    ],
+  },
+
+
+
+  "tornado-impact-energy-calculator": {
+    formulaExplanation:
+      "Tornado impact energy calculations estimate energy transfer from extreme wind movement and affected objects.",
+    example:
+      "Example: Wind characteristics and object properties can be used to estimate possible impact energy.",
+    commonMistakes: [
+      "Ignoring environmental assumptions.",
+      "Using incorrect wind values.",
+      "Treating estimates as exact measurements.",
+    ],
+  },
+
+  "hurricane-wind-energy-estimate-calculator": {
+    formulaExplanation:
+      "Hurricane wind energy estimates calculate approximate kinetic energy contained in moving air during storms.",
+    example:
+      "Example: Wind speed and air density values can be used to estimate storm wind energy.",
+    commonMistakes: [
+      "Ignoring air density.",
+      "Mixing energy and force concepts.",
+      "Using inconsistent units.",
+    ],
+  },
+
+  "tsunami-impact-energy-estimate-calculator": {
+    formulaExplanation:
+      "Tsunami impact energy estimates evaluate energy delivered when moving water reaches coastal areas.",
+    example:
+      "Example: Wave height, speed, and water mass can help estimate impact energy.",
+    commonMistakes: [
+      "Ignoring coastal conditions.",
+      "Using incorrect wave measurements.",
+      "Confusing force and energy.",
+    ],
+  },
+
+  "tsunami-wave-force-calculator": {
+    formulaExplanation:
+      "Tsunami wave force calculations estimate the force produced by moving water against structures.",
+    example:
+      "Example: Water velocity and mass can be used to estimate wave force.",
+    commonMistakes: [
+      "Ignoring water density.",
+      "Using incorrect velocity values.",
+      "Confusing force with pressure.",
+    ],
+  },
+
+  "tsunami-wave-height-calculator": {
+    formulaExplanation:
+      "Tsunami wave height calculations estimate wave elevation changes using ocean and wave parameters.",
+    example:
+      "Example: Ocean conditions can be used to estimate expected wave height.",
+    commonMistakes: [
+      "Ignoring depth changes.",
+      "Using incorrect measurements.",
+      "Assuming constant wave height.",
+    ],
+  },
+
+  "volcano-lava-flow-speed-calculator": {
+    formulaExplanation:
+      "Lava flow speed calculations estimate movement speed based on volcanic flow conditions and physical properties.",
+    example:
+      "Example: Slope, temperature, and material properties influence lava movement speed.",
+    commonMistakes: [
+      "Ignoring temperature effects.",
+      "Using incorrect slope values.",
+      "Assuming all lava behaves identically.",
+    ],
+  },
+
+  "hurricane-pressure-calculator": {
+    formulaExplanation:
+      "Hurricane pressure calculations analyze atmospheric pressure values associated with storm systems.",
+    example:
+      "Example: Pressure measurements can be used to compare storm intensity.",
+    commonMistakes: [
+      "Confusing pressure with wind speed.",
+      "Using incorrect pressure units.",
+      "Ignoring measurement location.",
+    ],
+  },
+
+  "hurricane-pressure-difference-calculator": {
+    formulaExplanation:
+      "Pressure difference calculations estimate atmospheric pressure gradients that influence wind movement.",
+    example:
+      "Example: Larger pressure differences can produce stronger wind conditions.",
+    commonMistakes: [
+      "Using inconsistent pressure units.",
+      "Ignoring atmospheric conditions.",
+      "Confusing pressure and force.",
+    ],
+  },
+
+  "hurricane-wind-force-calculator": {
+    formulaExplanation:
+      "Hurricane wind force calculations estimate force produced by moving air against surfaces.",
+    example:
+      "Example: Wind speed and surface area can be used to estimate wind force.",
+    commonMistakes: [
+      "Ignoring surface area.",
+      "Using incorrect wind speed units.",
+      "Confusing force and energy.",
+    ],
+  },
+
+  "hurricane-category-calculator": {
+    formulaExplanation:
+      "Hurricane category calculations classify storms using wind speed ranges and scientific scales.",
+    example:
+      "Example: Measured wind speed can determine the corresponding storm category.",
+    commonMistakes: [
+      "Using outdated category thresholds.",
+      "Confusing category with damage.",
+      "Ignoring regional effects.",
+    ],
+  },
+
+  "hurricane-damage-potential-calculator": {
+    formulaExplanation:
+      "Hurricane damage potential estimates analyze wind, pressure, and environmental factors affecting impact.",
+    example:
+      "Example: Storm characteristics can be combined to estimate potential effects.",
+    commonMistakes: [
+      "Assuming exact damage prediction.",
+      "Ignoring local conditions.",
+      "Using incomplete data.",
+    ],
+  },
+
+  "hurricane-evacuation-zone-calculator": {
+    formulaExplanation:
+      "Evacuation zone calculations help estimate risk areas using storm and geographic information.",
+    example:
+      "Example: Flood risk information can support evacuation planning decisions.",
+    commonMistakes: [
+      "Ignoring official warnings.",
+      "Using outdated maps.",
+      "Treating estimates as guarantees.",
+    ],
+  },
+
+  "hurricane-storm-surge-calculator": {
+    formulaExplanation:
+      "Storm surge calculations estimate coastal water rise caused by wind and atmospheric pressure effects.",
+    example:
+      "Example: Storm conditions and coastal characteristics influence surge height.",
+    commonMistakes: [
+      "Ignoring coastal geography.",
+      "Using incorrect tide information.",
+      "Confusing surge with normal waves.",
+    ],
+  },
+
+  "hurricane-wind-speed-category-calculator": {
+    formulaExplanation:
+      "Wind speed category calculations convert measured hurricane winds into classification categories.",
+    example:
+      "Example: Wind speed input determines the related hurricane category.",
+    commonMistakes: [
+      "Using incorrect wind averaging periods.",
+      "Mixing different classification systems.",
+      "Ignoring units.",
+    ],
+  },
+
+  "hurricane-wind-damage-estimator-calculator": {
+    formulaExplanation:
+      "Wind damage estimates analyze how storm wind conditions may affect structures and environments.",
+    example:
+      "Example: Wind speed and exposure factors can estimate possible damage levels.",
+    commonMistakes: [
+      "Ignoring building differences.",
+      "Treating estimates as predictions.",
+      "Using incomplete information.",
+    ],
+  },
+
+  "tornado-damage-estimator-calculator": {
+    formulaExplanation:
+      "Tornado damage estimates evaluate possible effects using wind intensity and environmental factors.",
+    example:
+      "Example: Estimated wind speed can be related to possible structural impacts.",
+    commonMistakes: [
+      "Assuming identical damage everywhere.",
+      "Ignoring construction quality.",
+      "Using uncertain inputs.",
+    ],
+  },
+
+  "tornado-wind-speed-estimator-calculator": {
+    formulaExplanation:
+      "Tornado wind speed estimates calculate approximate wind velocity using available storm measurements.",
+    example:
+      "Example: Pressure differences and observations can provide wind speed estimates.",
+    commonMistakes: [
+      "Treating estimates as direct measurements.",
+      "Ignoring assumptions.",
+      "Using incorrect pressure values.",
+    ],
+  },
+
+
 };
