@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
 import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
 import Link from "next/link";
 
@@ -95,7 +97,12 @@ export default function LightningStrikeEnergyCalculatorPage() {
         aria-label="Lightning strike energy calculator"
       >
         <Container>
-          <LightningStrikeEnergyCalculator />
+          <CalculatorPageShell
+            slug="lightning-strike-energy-calculator"
+            subject="physics"
+          >
+            <LightningStrikeEnergyCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 

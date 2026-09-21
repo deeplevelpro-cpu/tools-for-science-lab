@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
 import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
 import Link from "next/link";
 
@@ -95,7 +97,12 @@ export default function SnowCalculatorPage() {
         aria-label="Snow calculator"
       >
         <Container>
-          <SnowCalculator />
+          <CalculatorPageShell
+            slug="snow-calculator"
+            subject="physics"
+          >
+            <SnowCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 

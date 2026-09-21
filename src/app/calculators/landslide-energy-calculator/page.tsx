@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+
 import { CalculatorJsonLd } from "@/components/seo/calculator-jsonld";
 import Link from "next/link";
 
@@ -95,7 +97,12 @@ export default function LandslideEnergyCalculatorPage() {
         aria-label="Landslide energy calculator"
       >
         <Container>
-          <LandslideEnergyCalculator />
+          <CalculatorPageShell
+            slug="landslide-energy-calculator"
+            subject="laboratory"
+          >
+            <LandslideEnergyCalculator />
+          </CalculatorPageShell>
         </Container>
       </section>
 
