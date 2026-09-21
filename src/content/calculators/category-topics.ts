@@ -155,6 +155,18 @@ export const calculatorTopics = {
         "regression",
       ],
     },
+    {
+      title: "Experimental Data Processing",
+      description:
+        "Process laboratory data using regression, variation, uncertainty propagation, and scientific analysis methods.",
+      keywords: [
+        "regression",
+        "variation",
+        "uncertainty propagation",
+        "data processing",
+        "analysis",
+      ],
+    },
   ],
 } satisfies Record<string, readonly CalculatorTopic[]>;
 
