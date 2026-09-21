@@ -33,6 +33,7 @@ export const calculatorKnowledgeGraph: Record<
     "displacement-calculator",
     "average-velocity-calculator",
     "projectile-motion-calculator",
+    "free-fall-calculator",
   ],
 
 
@@ -444,8 +445,9 @@ export const calculatorKnowledgeGraph: Record<
   ],
 
   "specific-heat-calculator": [
-    "specific-heat-calculator",
     "kinetic-energy-calculator",
+    "work-calculator",
+    "density-calculator",
   ],
 
 
