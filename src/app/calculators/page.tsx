@@ -84,6 +84,55 @@ export default function CalculatorsPage() {
         </Container>
       </section>
 
+      <section className="directory-section">
+        <Container>
+          <article className="article-content">
+            <p className="eyebrow">
+              Science calculator guide
+            </p>
+
+            <h2>
+              What are science calculators?
+            </h2>
+
+            <p>
+              Science calculators are interactive tools that help students,
+              researchers, and professionals solve scientific problems using
+              established equations, formulas, and measurement methods.
+              They provide clear calculations with variables, units, and
+              explanations to support learning and accurate results.
+            </p>
+
+            <p>
+              Our calculator collection covers major scientific fields,
+              including physics calculators for motion, force, energy, and
+              mechanics; chemistry calculators for solutions, reactions, and
+              gas laws; and laboratory calculators for measurements, errors,
+              statistics, and experimental analysis.
+            </p>
+
+            <h3>
+              Explore calculators by science subject
+            </h3>
+
+            <ul className="article-list">
+              <li>
+                <strong>Physics calculators:</strong> motion, energy, forces,
+                rotation, and mechanics equations.
+              </li>
+              <li>
+                <strong>Chemistry calculators:</strong> molarity, stoichiometry,
+                molecular calculations, and gas laws.
+              </li>
+              <li>
+                <strong>Laboratory calculators:</strong> uncertainty,
+                statistics, measurements, and scientific data analysis.
+              </li>
+            </ul>
+          </article>
+        </Container>
+      </section>
+
       <section className="directory-section" aria-labelledby="available-heading">
         <Container>
           <div className="section-heading section-heading--split">
