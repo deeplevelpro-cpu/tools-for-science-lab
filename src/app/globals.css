@@ -2186,3 +2186,78 @@ summary {
     grid-template-columns: 1fr;
   }
 }
+
+/* Calculator visual learning component */
+.calculator-visual {
+  margin: 2rem 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  background: var(--surface-color);
+}
+
+.calculator-visual__content {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.calculator-visual__content h2,
+.calculator-visual__content p {
+  margin: 0;
+}
+
+/* Force calculator visual */
+.force-visual {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.force-visual__box {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  font-size: 1.2rem;
+}
+
+.force-visual__box strong {
+  font-size: 1.8rem;
+}
+
+.force-visual__flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.force-visual__flow div {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+  padding: 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.force-visual__flow strong {
+  font-size: 1.5rem;
+}
+
+.force-visual p {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .force-visual__flow {
+    grid-template-columns: 1fr;
+  }
+
+  .force-visual__flow > span {
+    text-align: center;
+  }
+}

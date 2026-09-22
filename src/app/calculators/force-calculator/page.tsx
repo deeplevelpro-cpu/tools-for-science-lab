@@ -4,14 +4,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ForceCalculator } from "@/components/calculators/force-calculator";
+<<<<<<< HEAD
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
+=======
+import { CalculatorVisual } from "@/components/calculator-visuals/calculator-visual";
+import { ForceVisual } from "@/components/calculator-visuals/force-visual";
+import { CalculatorTrustPanel } from "@/components/calculator-trust";
+>>>>>>> aab2dc8 (SEO: add calculator visual learning system and trust improvements)
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Force Calculator | Mass & Acceleration";
+const pageTitle =
+  "Force Calculator | Calculate Force Using F = ma (Newton's Law)";
 const pageDescription =
-  "Calculate force, mass, or acceleration using Newton’s second law F = ma, with supported SI units, input validation, and clear step-by-step results.";
+  "Calculate force, mass, or acceleration using Newton's Second Law (F = ma). Solve physics problems with SI units, step-by-step calculations, formulas, and examples.";
 
 const pagePath =
   "/calculators/force-calculator";
@@ -93,6 +100,13 @@ export default function ForceCalculatorPage() {
           <ForceCalculator />
         </Container>
       </section>
+
+      <CalculatorVisual
+        title="Understanding force with F = ma"
+        description="Force depends on the relationship between mass and acceleration according to Newton's Second Law."
+      >
+        <ForceVisual />
+      </CalculatorVisual>
 
       <section className="article-section">
         <Container className="article-layout">

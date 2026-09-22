@@ -44,6 +44,11 @@ export function CalculatorTrustPanel({
             <dt>Review standard</dt>
             <dd>Formula accuracy, units, examples, and educational clarity</dd>
           </div>
+
+          <div>
+            <dt>Last reviewed</dt>
+            <dd>September 2026</dd>
+          </div>
         </dl>
 
         <p>
@@ -79,6 +84,7 @@ export function CalculatorTrustPanel({
         <li>Calculation logic tested</li>
         <li>Variables and units explained</li>
         <li>Assumptions stated clearly</li>
+        <li>Scientific formulas verified</li>
         <li>Corrections handled transparently</li>
       </ul>
     </section>
