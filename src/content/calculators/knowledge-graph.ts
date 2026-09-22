@@ -46,6 +46,7 @@ export const calculatorKnowledgeGraph: Record<
     "momentum-calculator",
     "friction-calculator",
     "normal-force-calculator",
+    "pulley-calculator",
   ],
 
   "friction-calculator": [
@@ -190,6 +191,9 @@ export const calculatorKnowledgeGraph: Record<
     "charles-law-calculator",
     "combined-gas-law-calculator",
     "daltons-law-calculator",
+    "avogadros-law-calculator",
+    "gay-lussacs-law-calculator",
+    "grahams-law-calculator",
   ],
 
   "boyles-law-calculator": [
@@ -211,12 +215,14 @@ export const calculatorKnowledgeGraph: Record<
     "uncertainty-propagation-calculator",
     "percent-error-calculator",
     "standard-deviation-calculator",
+    "significant-figures-calculator",
   ],
 
   "standard-deviation-calculator": [
     "mean-median-mode-calculator",
     "linear-regression-calculator",
     "measurement-uncertainty-calculator",
+    "coefficient-variation-calculator",
   ],
 
 
@@ -356,6 +362,8 @@ export const calculatorKnowledgeGraph: Record<
   "rotational-frequency-calculator": [
     "rpm-calculator",
     "angular-velocity-calculator",
+    "revolutions-calculator",
+    "tangential-velocity-calculator",
   ],
 
   "rotational-work-calculator": [
@@ -376,6 +384,7 @@ export const calculatorKnowledgeGraph: Record<
   "angular-acceleration-calculator": [
     "torque-calculator",
     "rotational-dynamics-calculator",
+    "tangential-acceleration-calculator",
   ],
 
   "angular-displacement-calculator": [
@@ -386,6 +395,9 @@ export const calculatorKnowledgeGraph: Record<
   "angular-velocity-calculator": [
     "rpm-calculator",
     "circular-velocity-calculator",
+    "angular-displacement-calculator",
+    "tangential-velocity-calculator",
+    "revolutions-calculator",
   ],
 
   "centripetal-acceleration-calculator": [
@@ -442,6 +454,7 @@ export const calculatorKnowledgeGraph: Record<
   "density-calculator": [
     "mass-moles-calculator",
     "pressure-calculator",
+    "specific-heat-calculator",
   ],
 
   "specific-heat-calculator": [
@@ -456,6 +469,8 @@ export const calculatorKnowledgeGraph: Record<
     "moment-of-inertia-calculator",
     "angular-acceleration-calculator",
     "rotational-kinetic-energy-calculator",
+    "rotational-work-calculator",
+    "angular-impulse-calculator",
   ],
 
 
@@ -632,6 +647,7 @@ export const calculatorKnowledgeGraph: Record<
     "tsunami-wave-energy-estimate-calculator",
     "tsunami-wave-force-calculator",
     "tsunami-wave-speed-calculator",
+    "tsunami-impact-energy-estimate-calculator",
   ],
 
   "tsunami-wave-energy-estimate-calculator": [
