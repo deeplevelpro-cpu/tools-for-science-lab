@@ -116,10 +116,26 @@ export default function ReferencesPage() {
               <h2>How references are used</h2>
               <p>
                 References guide formula selection, explanations,
-                assumptions, and educational examples. For more details,
-                review our{" "}
+                assumptions, and educational examples. For more details, review our{" "}
                 <Link href="/methodology">
                   calculation methodology
+                </Link>
+                {" "}
+                and explore our{" "}
+                <Link href="/calculators">
+                  science calculators
+                </Link>
+                ,{" "}
+                <Link href="/formulas">
+                  scientific formulas
+                </Link>
+                ,{" "}
+                <Link href="/lab-reports">
+                  lab report guides
+                </Link>
+                , and{" "}
+                <Link href="/scientific-method">
+                  scientific method resources
                 </Link>
                 .
               </p>

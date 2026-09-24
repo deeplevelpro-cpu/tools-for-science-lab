@@ -412,13 +412,21 @@ const pages = walk(appDirectory)
       (isHomepage &&
         inherited.hasJsonLd);
 
-    const h1Count = countMatches(
+    const linkedSourceText =
+      collectLocalSource(filePath);
+
+    const ownH1Count = countMatches(
       text,
       /<h1(?:\s[^>]*)?>/g,
     );
 
-    const linkedSourceText =
-      collectLocalSource(filePath);
+    const h1Count =
+      ownH1Count > 0
+        ? ownH1Count
+        : countMatches(
+            linkedSourceText,
+            /<h1(?:\s[^>]*)?>/g,
+          );
 
     const resolvedPageHasJsonLd =
       hasJsonLd(linkedSourceText) ||

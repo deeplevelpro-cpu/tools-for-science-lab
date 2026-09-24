@@ -8,7 +8,7 @@ export const siteConfig = {
   name: "ScienceCalcHub",
   shortName: "ScienceCalcHub",
   description:
-    "ScienceCalcHub provides accurate physics, chemistry, and laboratory calculators with step-by-step explanations, formulas, examples, worksheets, and educational resources for students and teachers.",
+    "ScienceCalcHub offers physics, chemistry, and laboratory calculators with formulas, examples, step-by-step solutions, and learning resources for students and teachers.",
   url: normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? fallbackUrl),
   locale: "en_US",
   language: "en",

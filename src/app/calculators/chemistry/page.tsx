@@ -16,14 +16,14 @@ const category = calculatorCategories.find(
 const pagePath = "/calculators/chemistry";
 
 export const metadata: Metadata = {
-  title: `${category.name} | ScienceCalcHub`,
-  description: category.description,
+  title: "Chemistry Calculators | Molarity, Stoichiometry & Formula Tools",
+  description: "Chemistry calculators for molarity, solutions, reactions, stoichiometry, and chemical formulas with examples, units, and step-by-step explanations.",
   alternates: {
     canonical: pagePath,
   },
   openGraph: {
     title: category.name,
-    description: category.description,
+    description: "Chemistry calculators for molarity, solutions, reactions, stoichiometry, and chemical formulas with examples, units, and step-by-step explanations.",
     type: "website",
     url: absoluteUrl(pagePath),
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ScienceCalcHub",
     description:
-      "Science calculators and educational tools for students, teachers, and researchers.",
+      "Chemistry calculators for chemical equations, solutions, reactions, molarity, and formulas with educational explanations and examples.",
   },
 };
 

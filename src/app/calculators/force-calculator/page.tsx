@@ -4,13 +4,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ForceCalculator } from "@/components/calculators/force-calculator";
-<<<<<<< HEAD
 import { CalculatorPageShell } from "@/components/calculators/calculator-page-shell";
-=======
 import { CalculatorVisual } from "@/components/calculator-visuals/calculator-visual";
 import { ForceVisual } from "@/components/calculator-visuals/force-visual";
 import { CalculatorTrustPanel } from "@/components/calculator-trust";
->>>>>>> aab2dc8 (SEO: add calculator visual learning system and trust improvements)
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";

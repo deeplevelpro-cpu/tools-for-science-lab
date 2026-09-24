@@ -61,7 +61,7 @@ export const calculatorCategories: readonly CalculatorCategory[] = [
     name: "Laboratory Calculators",
     category: "Laboratory",
     description:
-      "Use laboratory calculators for measurements, uncertainty, statistics, error analysis, and scientific data processing.",
+      "Use laboratory calculators for measurements, uncertainty, statistics, error analysis, and scientific data processing with formulas and tools for students, researchers, and science professionals.",
     introduction:
       "Laboratory calculators help students, researchers, and scientists analyze experimental measurements, evaluate uncertainty, process scientific data, and improve laboratory reporting workflows. These tools support accurate interpretation of experimental results using established statistical and measurement methods.",
     formulaAreas: [

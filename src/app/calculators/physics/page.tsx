@@ -16,14 +16,14 @@ const category = calculatorCategories.find(
 const pagePath = "/calculators/physics";
 
 export const metadata: Metadata = {
-  title: `${category.name} | ScienceCalcHub`,
-  description: category.description,
+  title: "Physics Calculators | Motion, Force, Energy & Formula Tools",
+  description: "Physics calculators for motion, force, energy, and mechanics with formulas, equations, examples, units, and step-by-step solutions for students and teachers.",
   alternates: {
     canonical: pagePath,
   },
   openGraph: {
     title: category.name,
-    description: category.description,
+    description: "Physics calculators for motion, force, energy, and mechanics with formulas, equations, examples, units, and step-by-step solutions for students and teachers.",
     type: "website",
     url: absoluteUrl(pagePath),
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ScienceCalcHub",
     description:
-      "Science calculators and educational tools for students, teachers, and researchers.",
+      "Physics calculators for equations, motion, force, energy, mechanics, and scientific problem solving with formulas and explanations.",
   },
 };
 

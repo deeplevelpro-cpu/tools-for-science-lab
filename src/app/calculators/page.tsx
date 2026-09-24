@@ -12,10 +12,10 @@ import { createCollectionSchema } from "@/lib/seo/collection-schema";
 import { createCalculatorHubFAQSchema } from "@/lib/seo/calculator-hub-faq-schema";
 
 const pageTitle =
-  "Free Science Calculators";
+  "Free Science Calculators | Physics, Chemistry & Lab Tools";
 
 const pageDescription =
-  "Use free physics, chemistry, statistics, and laboratory calculators with tested formulas, unit guidance, worked examples, and step-by-step solutions.";
+  "Free science calculators for physics, chemistry, and laboratory work. Solve equations with formulas, examples, units, and step-by-step explanations.";
 
 const pagePath = "/calculators";
 

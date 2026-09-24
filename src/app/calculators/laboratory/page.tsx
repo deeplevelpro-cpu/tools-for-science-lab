@@ -16,14 +16,14 @@ const category = calculatorCategories.find(
 const pagePath = "/calculators/laboratory";
 
 export const metadata: Metadata = {
-  title: `${category.name} | ScienceCalcHub`,
-  description: category.description,
+  title: "Laboratory Calculators | Measurement, Error & Statistics Tools",
+  description: "Laboratory calculators for measurements, uncertainty, statistics, and error analysis with formulas, examples, and scientific data tools for students and researchers.",
   alternates: {
     canonical: pagePath,
   },
   openGraph: {
     title: category.name,
-    description: category.description,
+    description: "Laboratory calculators for measurements, uncertainty, statistics, and error analysis with formulas, examples, and scientific data tools for students and researchers.",
     type: "website",
     url: absoluteUrl(pagePath),
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ScienceCalcHub",
     description:
-      "Science calculators and educational tools for students, teachers, and researchers.",
+      "Laboratory calculators for measurements, uncertainty, statistics, error analysis, and scientific data processing for students, researchers, and science professionals.",
   },
 };
 
