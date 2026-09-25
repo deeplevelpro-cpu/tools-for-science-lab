@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Average Speed Calculator";
+const pageTitle = "Average Speed Calculator | Distance, Time & Speed Formula";
 
 const pageDescription =
-  "Calculate average speed, total distance, or elapsed time using average speed = distance ÷ time, with unit conversions and step-by-step results.";
+  "Calculate average speed, distance, or travel time using the speed formula. Get unit conversions, examples, and step-by-step calculation results.";
 
 const pagePath =
   "/calculators/average-speed-calculator";

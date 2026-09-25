@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Weight Calculator | Mass & Gravity";
+const pageTitle = "Weight Calculator | F = mg Formula, Mass & Gravity";
 
 const pageDescription =
-  "Calculate weight from mass and gravitational acceleration using the fundamental physics relationship between force and gravity.";
+  "Calculate weight using the F = mg physics formula. Convert mass and gravitational acceleration into force with examples, units, and step-by-step calculations.";
 
 const pagePath =
   "/calculators/weight-calculator";

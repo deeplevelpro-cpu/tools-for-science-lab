@@ -156,7 +156,8 @@ export const calculatorKnowledgeGraph: Record<
 
   "molality-calculator": [
     "molarity-calculator",
-    "molarity-calculator",
+    "mass-moles-calculator",
+    "dilution-calculator",
   ],
 
   "dilution-calculator": [

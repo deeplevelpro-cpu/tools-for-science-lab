@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Percent Difference Calculator";
+const pageTitle = "Percent Difference Calculator | Measurement Comparison Formula Tool";
 const pageDescription =
-  "Calculate percent difference between two measurements with the formula, worked example, calculation steps, and a clear comparison with percent error.";
+  "Calculate percent difference between two measurements using the comparison formula. Learn the steps with examples, calculations, and laboratory measurement guidance.";
 
 export const metadata: Metadata = {
   title: pageTitle,

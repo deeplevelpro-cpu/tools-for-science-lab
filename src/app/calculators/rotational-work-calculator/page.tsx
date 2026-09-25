@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Rotational Work Calculator";
+  "Rotational Work Calculator | W = τθ Formula Tool";
 
 const pageDescription =
-  "Calculate rotational work, torque, or angular displacement using W = τθ, with SI units, formula explanations, and clear step-by-step results.";
+  "Calculate rotational work using the W = τθ rotational mechanics formula. Solve torque and angular displacement problems with SI units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/rotational-work-calculator";

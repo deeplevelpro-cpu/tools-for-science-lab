@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Inclined Plane Calculator";
+const pageTitle = "Inclined Plane Calculator | Force Components & Incline Formula Tool";
 
 const pageDescription =
-  "Calculate forces on an inclined plane including gravity components, normal force, and friction for physics problem solving.";
+  "Calculate inclined plane forces using gravity components, normal force, and friction formulas. Solve physics problems with angles, force analysis, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/inclined-plane-calculator";

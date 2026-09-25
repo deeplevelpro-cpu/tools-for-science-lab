@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 const pagePath = "/calculators/ph-calculator";
 const pageTitle = "pH Calculator | Hydrogen Ion Concentration";
 const pageDescription =
-  "Calculate pH, pOH, hydrogen-ion concentration, and hydroxide-ion concentration. Includes formulas, worked examples, classifications, and acid-base guidance.";
+  "Calculate pH, pOH, and ion concentration using acid-base formulas. Explore pH calculations with examples, classifications, and step-by-step chemistry explanations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

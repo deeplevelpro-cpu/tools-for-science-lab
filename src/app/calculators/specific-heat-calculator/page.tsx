@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Specific Heat Calculator";
+const pageTitle = "Specific Heat Calculator | Heat Energy Formula q = mcΔT";
 const pageDescription =
-  "Calculate heat energy, mass, specific heat capacity, or temperature change using q = mcΔT. Includes worked examples, unit guidance, and heating and cooling cases.";
+  "Calculate heat energy, mass, specific heat capacity, or temperature change using the q = mcΔT formula. Solve heating and cooling problems with units, examples, and step-by-step results.";
 
 export const metadata: Metadata = {
   title: pageTitle,

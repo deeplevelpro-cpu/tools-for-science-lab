@@ -19,10 +19,10 @@ const pagePath = "/calculators/stoichiometry-calculator";
 const pageUrl = absoluteUrl(pagePath);
 
 const title =
-  "Stoichiometry Calculator: Convert Moles and Grams";
+  "Stoichiometry Calculator | Mole Ratio, Grams & Reaction Formula";
 
 const description =
-  "Use this free stoichiometry calculator to convert between reactants and products using balanced-equation coefficients, moles, grams, and molar mass.";
+  "Calculate stoichiometry problems using balanced equations, mole ratios, grams, and molar mass. Solve reactant and product conversions with chemistry formulas and examples.";
 
 export const metadata: Metadata = {
   title,

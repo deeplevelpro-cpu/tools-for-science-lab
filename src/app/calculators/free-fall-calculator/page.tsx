@@ -15,10 +15,10 @@ import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 
 
-const pageTitle = "Free Fall Calculator";
+const pageTitle = "Free Fall Calculator | Time, Distance & Velocity Formula";
 
 const pageDescription =
-  "Calculate free-fall time, distance, and final velocity from height or time using tested equations, SI units, worked examples, and clear assumptions.";
+  "Calculate free-fall time, distance, and final velocity using gravity equations. Solve motion problems with SI units, examples, formulas, and step-by-step results.";
 
 const pagePath =
   "/calculators/free-fall-calculator";

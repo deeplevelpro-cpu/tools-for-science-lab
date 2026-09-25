@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Moment of Inertia Calculator";
+  "Moment of Inertia Calculator | Rotational Inertia Formula Tool";
 
 const pageDescription =
-  "Calculate moment of inertia for point masses, disks, hoops, spheres, shells, and rods using standard rotational formulas.";
+  "Calculate moment of inertia for point masses, disks, hoops, spheres, shells, and rods using rotational physics formulas. Solve inertia problems with examples, units, and step-by-step results.";
 
 const pagePath =
   "/calculators/moment-of-inertia-calculator";

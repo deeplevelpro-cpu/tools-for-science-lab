@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Acceleration Calculator";
+const pageTitle = "Acceleration Calculator | Formula, Velocity & Time Tool";
 const pageDescription =
-  "Calculate acceleration from velocity change and time values using the standard physics relationship between motion variables.";
+  "Calculate acceleration using velocity change and time with the physics formula. Solve motion problems with units, examples, and step-by-step explanations.";
 
 const pagePath =
   "/calculators/acceleration-calculator";

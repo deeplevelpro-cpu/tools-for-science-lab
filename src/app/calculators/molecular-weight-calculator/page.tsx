@@ -15,9 +15,9 @@ import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 
 
-const pageTitle = "Molecular Weight Calculator";
+const pageTitle = "Molecular Weight Calculator | Molar Mass Formula Tool";
 const pageDescription =
-  "Calculate molecular weight and molar mass from a chemical formula. Supports subscripts, parentheses, nested groups, hydrates, and element-by-element mass breakdowns.";
+  "Calculate molecular weight and molar mass from chemical formulas. Analyze elements, subscripts, parentheses, hydrates, and atomic mass breakdowns with examples.";
 const pagePath =
   "/calculators/molecular-weight-calculator";
 

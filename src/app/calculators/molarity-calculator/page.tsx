@@ -11,7 +11,7 @@ import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle = "Molarity Calculator | Moles, Volume & Concentration";
 const pageDescription =
-  "Calculate solution molarity from moles of solute and volume in liters or milliliters. Includes formula, unit conversion, worked example, and common mistakes.";
+  "Calculate molarity using moles of solute and solution volume. Learn the concentration formula with unit conversions, examples, and step-by-step chemistry calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

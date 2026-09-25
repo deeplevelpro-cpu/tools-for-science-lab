@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Average Velocity Calculator";
+const pageTitle = "Average Velocity Calculator | Displacement & Time Formula";
 
 const pageDescription =
-  "Calculate average velocity, displacement, or elapsed time using v̄ = Δx ÷ Δt, with signed motion values, unit guidance, and clear working steps.";
+  "Calculate average velocity using displacement and time with the physics formula. Solve motion problems with signed values, units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/average-velocity-calculator";

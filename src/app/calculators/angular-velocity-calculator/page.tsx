@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Angular Velocity Calculator";
+  "Angular Velocity Calculator | ω = θ ÷ t Formula Tool";
 
 const pageDescription =
-  "Calculate angular velocity, angular displacement, or elapsed time using ω = θ ÷ t, with common rotational units and clear calculation steps.";
+  "Calculate angular velocity using the ω = θ ÷ t rotational motion formula. Solve angular displacement and time problems with units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/angular-velocity-calculator";

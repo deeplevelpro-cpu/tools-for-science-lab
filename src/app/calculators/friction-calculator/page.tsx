@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Friction Calculator | Force & Coefficient";
+const pageTitle = "Friction Calculator | F = μN Formula, Force & Coefficient";
 
 const pageDescription =
-  "Calculate static or kinetic friction force, coefficient of friction, or normal force using F = μN, with clear assumptions and worked calculation steps.";
+  "Calculate static or kinetic friction force using the F = μN physics formula. Solve coefficient of friction and normal force problems with examples, assumptions, and step-by-step results.";
 
 const pagePath =
   "/calculators/friction-calculator";

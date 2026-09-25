@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Significant Figures Calculator";
+const pageTitle = "Significant Figures Calculator | Sig Figs Rounding Tool";
 const pageDescription =
-  "Count significant figures and round decimal or scientific-notation values to a selected precision. Learn the rules for leading, captive, and trailing zeros.";
+  "Count significant figures and round numbers with a sig figs calculator. Apply precision rules for decimals, scientific notation, and measurement values.";
 
 const pagePath =
   "/calculators/significant-figures-calculator";

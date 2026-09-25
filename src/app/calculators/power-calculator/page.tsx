@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Power Calculator | Work, Energy & Time";
+const pageTitle = "Power Calculator | P = W ÷ t Formula, Work & Time";
 const pageDescription =
-  "Calculate power, work, or elapsed time using P = W ÷ t, with watt, joule, and time-unit guidance plus clear step-by-step calculation results.";
+  "Calculate power, work, or time using the P = W ÷ t physics formula. Solve energy problems with watts, joules, time units, examples, and step-by-step results.";
 
 const pagePath = "/calculators/power-calculator";
 

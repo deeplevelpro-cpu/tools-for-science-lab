@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Normal Force Calculator";
+const pageTitle = "Normal Force Calculator | Normal Force Formula & Inclined Plane Tool";
 
 const pageDescription =
-  "Calculate normal force, mass, or gravitational acceleration on horizontal and inclined surfaces with optional upward or downward forces.";
+  "Calculate normal force using physics formulas for horizontal and inclined surfaces. Solve force problems with mass, gravity, angles, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/normal-force-calculator";

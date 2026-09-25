@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 
 const pageTitle = "Density Calculator | Mass, Volume & Density";
 const pageDescription =
-  "Calculate density, mass, or volume using ρ = m ÷ V. Supports common laboratory units with worked examples, formula guidance, and common mistakes.";
+  "Calculate density, mass, or volume using the density formula. Convert laboratory units and solve science problems with examples, formulas, and step-by-step results.";
 
 export const metadata: Metadata = {
   title: pageTitle,

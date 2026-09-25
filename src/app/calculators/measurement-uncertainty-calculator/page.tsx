@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Measurement Uncertainty Calculator";
+  "Measurement Uncertainty Calculator | Error, Precision & Formula Tool";
 const pageDescription =
-  "Calculate relative uncertainty, percentage uncertainty, measurement range, and plus-or-minus notation from a measured value and absolute uncertainty.";
+  "Calculate measurement uncertainty, percentage error, and precision limits using scientific formulas. Analyze experimental values with examples and step-by-step results.";
 
 const pagePath =
   "/calculators/measurement-uncertainty-calculator";

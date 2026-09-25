@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Rotational Kinetic Energy Calculator";
+  "Rotational Kinetic Energy Calculator | KE = ½Iω² Formula Tool";
 
 const pageDescription =
-  "Calculate rotational kinetic energy, moment of inertia, or angular velocity using KE = ½Iω², with SI units and step-by-step results.";
+  "Calculate rotational kinetic energy using the KE = ½Iω² physics formula. Solve moment of inertia and angular velocity problems with SI units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/rotational-kinetic-energy-calculator";

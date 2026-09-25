@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Kinematic Equations Calculator";
+  "Kinematic Equations Calculator | SUVAT Motion Formula Tool";
 
 const pageDescription =
-  "Solve SUVAT motion problems for initial velocity, final velocity, acceleration, time, or displacement using four kinematic equations.";
+  "Solve SUVAT motion problems using kinematic equations for velocity, acceleration, time, and displacement. Calculate motion variables with formulas, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/kinematic-equations-calculator";

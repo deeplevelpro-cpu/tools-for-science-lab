@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Percent Error Calculator";
+const pageTitle = "Percent Error Calculator | Experimental Error Formula Tool";
 const pageDescription =
-  "Calculate percent error from experimental and accepted values. See the formula, calculation steps, worked examples, and common laboratory mistakes.";
+  "Calculate percent error using experimental and accepted values. Learn the error formula with laboratory examples, calculation steps, and measurement guidance.";
 
 export const metadata: Metadata = {
   title: pageTitle,

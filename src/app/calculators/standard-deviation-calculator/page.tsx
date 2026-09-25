@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Standard Deviation Calculator";
+const pageTitle = "Standard Deviation Calculator | Sample & Population Formula";
 const pageDescription =
-  "Calculate sample and population standard deviation, mean, range, minimum, maximum, and dataset size from laboratory measurements or repeated trials.";
+  "Calculate sample and population standard deviation with mean, range, and dataset analysis. Get statistics formulas, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/standard-deviation-calculator";

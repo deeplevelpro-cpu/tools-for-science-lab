@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Centripetal Acceleration Calculator";
+  "Centripetal Acceleration Calculator | ac = v² ÷ r Formula Tool";
 
 const pageDescription =
-  "Calculate centripetal acceleration, tangential velocity, or radius using ac = v² ÷ r, with physics explanations, units, and step-by-step results.";
+  "Calculate centripetal acceleration using the ac = v² ÷ r circular motion formula. Solve velocity and radius problems with units, examples, physics explanations, and step-by-step results.";
 
 const pagePath =
   "/calculators/centripetal-acceleration-calculator";

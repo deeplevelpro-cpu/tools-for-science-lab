@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Angular Momentum Calculator";
+  "Angular Momentum Calculator | L = Iω Formula Tool";
 
 const pageDescription =
-  "Calculate angular momentum, moment of inertia, or angular velocity using L = Iω, with unit guidance, formula explanations, and worked results.";
+  "Calculate angular momentum using the L = Iω rotational motion formula. Solve moment of inertia and angular velocity problems with units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/angular-momentum-calculator";

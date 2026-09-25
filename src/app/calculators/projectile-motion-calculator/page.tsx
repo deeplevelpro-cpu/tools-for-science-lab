@@ -14,10 +14,10 @@ import { siteConfig } from "@/config/site";
 
 import type { Metadata } from "next";
 
-const pageTitle = "Projectile Motion Calculator";
+const pageTitle = "Projectile Motion Calculator | Range, Height & Flight Time Formula";
 
 const pageDescription =
-  "Calculate projectile range, maximum height, flight time, and motion components from launch speed, angle, and gravity with step-by-step results.";
+  "Calculate projectile range, maximum height, and flight time using launch speed, angle, and gravity formulas. Solve motion problems with examples, units, and step-by-step results.";
 
 const pagePath =
   "/calculators/projectile-motion-calculator";

@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Circular Velocity Calculator";
+  "Circular Velocity Calculator | v = 2πr ÷ T Formula Tool";
 
 const pageDescription =
-  "Calculate circular velocity, orbit radius, or rotational period using v = 2πr ÷ T, with supported units, formula guidance, and worked results.";
+  "Calculate circular velocity using the v = 2πr ÷ T circular motion formula. Solve radius and rotational period problems with units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/circular-velocity-calculator";

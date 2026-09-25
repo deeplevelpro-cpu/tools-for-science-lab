@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Angular Impulse Calculator";
+  "Angular Impulse Calculator | J = τt = ΔL Formula Tool";
 
 const pageDescription =
-  "Calculate angular impulse, torque, time, or change in angular momentum using J = τt = ΔL, with validated inputs and step-by-step results.";
+  "Calculate angular impulse using the J = τt = ΔL rotational mechanics formula. Solve torque, time, and angular momentum change problems with units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/angular-impulse-calculator";

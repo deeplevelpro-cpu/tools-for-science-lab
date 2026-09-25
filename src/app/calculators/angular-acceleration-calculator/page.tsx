@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Angular Acceleration Calculator";
+  "Angular Acceleration Calculator | α = Δω ÷ t Formula Tool";
 
 const pageDescription =
-  "Calculate angular acceleration, change in angular velocity, or elapsed time using α = Δω ÷ t, with supported units and clear step-by-step results.";
+  "Calculate angular acceleration using the α = Δω ÷ t rotational motion formula. Solve angular velocity change and time problems with units, examples, and step-by-step results.";
 
 const pagePath =
   "/calculators/angular-acceleration-calculator";
