@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Mean, Median and Mode Calculator";
+const pageTitle = "Mean Median Mode Calculator | Average & Statistics Tool";
 const pageDescription =
-  "Calculate mean, median, and mode from a dataset with statistical summaries including average, range, and distribution analysis.";
+  "Calculate mean, median, mode, average, and range from a dataset. Analyze statistical values with step-by-step calculations and clear data summaries.";
 
 const pagePath =
   "/calculators/mean-median-mode-calculator";

@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Dilution Calculator | Molarity & Volume";
+const pageTitle = "Dilution Calculator | M₁V₁ = M₂V₂ Formula Tool";
 const pageDescription =
-  "Solve chemistry dilution problems using M₁V₁ = M₂V₂. Calculate initial or final concentration and volume with worked examples and clear guidance.";
+  "Calculate solution dilution using the M₁V₁ = M₂V₂ chemistry formula. Solve molarity and volume problems with unit conversions, examples, and step-by-step concentration calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

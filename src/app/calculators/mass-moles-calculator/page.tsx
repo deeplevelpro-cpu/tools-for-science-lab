@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Mass to Moles Calculator | Molar Mass Formula Tool";
+const pageTitle = "Mass to Moles Calculator | Grams, Moles & Molar Mass Tool";
 const pageDescription =
-  "Convert mass to moles and calculate molar mass using chemistry formulas. Solve grams, moles, and amount of substance problems with examples and step-by-step results.";
+  "Convert grams to moles and moles to grams using molar mass formulas. Solve amount of substance problems with chemistry examples, unit conversions, and step-by-step calculations.";
 
 const pagePath =
   "/calculators/mass-moles-calculator";

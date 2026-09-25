@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Molarity Calculator | Moles, Volume & Concentration";
+const pageTitle = "Molarity Calculator | M = n/V Concentration Formula Tool";
 const pageDescription =
-  "Calculate molarity using moles of solute and solution volume. Learn the concentration formula with unit conversions, examples, and step-by-step chemistry calculations.";
+  "Calculate molarity using the M = n/V concentration formula. Solve moles, volume, and solution concentration problems with unit conversions, chemistry examples, and step-by-step calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

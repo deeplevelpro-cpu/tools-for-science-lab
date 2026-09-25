@@ -19,10 +19,10 @@ const pagePath = "/calculators/percent-yield-calculator";
 const pageUrl = absoluteUrl(pagePath);
 
 const title =
-  "Percent Yield Calculator: Calculate Reaction Yield";
+  "Percent Yield Calculator | Actual & Theoretical Yield Tool";
 
 const description =
-  "Calculate percent yield from actual and theoretical yield. Use the free chemistry calculator with formulas, worked examples, and clear guidance.";
+  "Calculate percent yield using actual and theoretical yield values. Solve reaction yield problems with chemistry formulas, examples, and step-by-step calculations.";
 
 export const metadata: Metadata = {
   title,

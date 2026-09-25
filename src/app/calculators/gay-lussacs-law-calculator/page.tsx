@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Gay-Lussac's Law Calculator | Pressure & Temperature",
+  title: "Gay-Lussac's Law Calculator | P₁/T₁ = P₂/T₂ Gas Formula Tool",
   description:
-    "Calculate initial or final gas pressure and temperature with Gay-Lussac's law, P₁/T₁ = P₂/T₂. Supports Pa, kPa, bar, atm, mmHg, Kelvin, Celsius, and Fahrenheit.",
+    "Calculate gas pressure and temperature using Gay-Lussac's law P₁/T₁ = P₂/T₂ formula. Solve pressure-temperature problems with unit conversions, examples, and step-by-step chemistry calculations.",
   alternates: {
     canonical: "/calculators/gay-lussacs-law-calculator",
   },

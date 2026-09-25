@@ -20,10 +20,10 @@ const pagePath =
 const pageUrl = absoluteUrl(pagePath);
 
 const title =
-  "Empirical Formula Calculator from Mass or Percent";
+  "Empirical Formula Calculator | Mass Percent & Mole Ratio Tool";
 
 const description =
-  "Calculate an empirical formula from element masses or percentage composition. See mole conversions, simplest whole-number ratios, subscripts, and formula mass.";
+  "Calculate empirical formulas from element masses or percent composition. Convert grams to moles, find simplest mole ratios, and solve chemistry formulas with step-by-step calculations.";
 
 export const metadata: Metadata = {
   title,

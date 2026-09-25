@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Rate of Change Calculator";
+const pageTitle = "Rate of Change Calculator | Δy/Δx Slope Formula Tool";
 const pageDescription =
-  "Calculate absolute change, percentage change, independent-variable interval, and average rate of change from two observations.";
+  "Calculate rate of change using the Δy/Δx slope formula. Solve average rate, absolute change, and percentage change problems with examples and step-by-step calculations.";
 
 const pagePath =
   "/calculators/rate-of-change-calculator";

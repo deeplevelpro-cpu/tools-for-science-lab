@@ -18,9 +18,9 @@ import type { Metadata } from "next";
 const pagePath = "/calculators/daltons-law-calculator";
 
 export const metadata: Metadata = {
-  title: "Dalton's Law Calculator | Total & Partial Pressure",
+  title: "Dalton's Law Calculator | Partial & Total Pressure Formula Tool",
   description:
-    "Calculate total pressure or a missing partial pressure with Dalton's law. Add gas pressures in Pa, kPa, bar, atm, or mmHg with automatic unit conversion.",
+    "Calculate total and partial gas pressure using Dalton's law formula. Solve gas mixture problems with pressure conversions, examples, and step-by-step chemistry calculations.",
   alternates: {
     canonical: pagePath,
   },

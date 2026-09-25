@@ -8,25 +8,25 @@ import Link from "next/link";
 import { MolecularFormulaCalculator } from "@/components/calculators/molecular-formula-calculator";
 
 const pageTitle =
-  "Molecular Formula Calculator | Empirical to Molecular";
+  "Molecular Formula Calculator | Empirical Formula to Molecular Formula Tool";
 
 const pageDescription =
-  "Calculate a molecular formula from an empirical formula and molar mass. See the whole-number multiplier, formula mass, calculation steps, and examples.";
+  "Calculate molecular formulas from empirical formulas and molar mass. Find the whole-number multiplier, molecular mass, and chemical formula using step-by-step calculations and examples.";
 
 const pageUrl =
   absoluteUrl("/calculators/molecular-formula-calculator");
 
 export const metadata: Metadata = {
-  title: "Molecular Formula Calculator | Empirical to Molecular",
+  title: "Molecular Formula Calculator | Empirical Formula to Molecular Formula Tool",
   description:
-    "Calculate a molecular formula from an empirical formula and molar mass. See the whole-number multiplier, formula mass, calculation steps, and examples.",
+    "Calculate molecular formulas from empirical formulas and molar mass. Find the whole-number multiplier, molecular mass, and chemical formula using step-by-step calculations and examples.",
   alternates: {
     canonical: "/calculators/molecular-formula-calculator",
   },
   openGraph: {
     title: "Molecular Formula Calculator",
     description:
-      "Convert an empirical formula and compound molar mass into a molecular formula with clear calculation steps.",
+      "Convert empirical formulas into molecular formulas using molar mass and multiplier calculations with clear chemistry steps.",
     url: pageUrl,
     type: "website",
   },

@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Charles's Law Calculator | Volume & Temperature",
+  title: "Charles's Law Calculator | V₁/T₁ = V₂/T₂ Gas Formula Tool",
   description:
-    "Calculate initial or final gas volume and temperature with Charles's law, V₁/T₁ = V₂/T₂. Supports Kelvin, Celsius, Fahrenheit, liters, milliliters, and cubic meters.",
+    "Calculate gas volume and temperature using Charles's law V₁/T₁ = V₂/T₂ formula. Solve temperature-volume problems with Kelvin conversions, examples, and step-by-step chemistry calculations.",
   alternates: {
     canonical: "/calculators/charles-law-calculator",
   },

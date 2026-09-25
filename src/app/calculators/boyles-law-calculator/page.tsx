@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 const pagePath = "/calculators/boyles-law-calculator";
-const pageTitle = "Boyle's Law Calculator";
+const pageTitle = "Boyle's Law Calculator | P₁V₁ = P₂V₂ Gas Formula Tool";
 const pageDescription =
-  "Calculate initial or final pressure and volume using Boyle's law, P₁V₁ = P₂V₂. Supports atm, kPa, Pa, bar, mmHg, liters, and milliliters.";
+  "Calculate gas pressure and volume using Boyle's law P₁V₁ = P₂V₂ formula. Solve pressure-volume problems with unit conversions, examples, and step-by-step chemistry calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

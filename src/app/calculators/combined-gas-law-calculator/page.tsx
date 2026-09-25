@@ -19,10 +19,10 @@ const pagePath =
   "/calculators/combined-gas-law-calculator";
 
 const pageTitle =
-  "Combined Gas Law Calculator | P₁V₁/T₁ = P₂V₂/T₂";
+  "Combined Gas Law Calculator | P₁V₁/T₁ = P₂V₂/T₂ Formula Tool";
 
 const pageDescription =
-  "Calculate pressure, volume, or temperature using the combined gas law. Solve P₁V₁/T₁ = P₂V₂/T₂ with automatic unit conversion and worked examples.";
+  "Calculate gas pressure, volume, and temperature using the combined gas law P₁V₁/T₁ = P₂V₂/T₂ formula. Solve gas problems with unit conversions, examples, and step-by-step chemistry calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

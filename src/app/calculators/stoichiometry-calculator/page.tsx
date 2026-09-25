@@ -19,10 +19,10 @@ const pagePath = "/calculators/stoichiometry-calculator";
 const pageUrl = absoluteUrl(pagePath);
 
 const title =
-  "Stoichiometry Calculator | Mole Ratio, Grams & Reaction Formula";
+  "Stoichiometry Calculator | Mole Ratio & Chemical Reaction Tool";
 
 const description =
-  "Calculate stoichiometry problems using balanced equations, mole ratios, grams, and molar mass. Solve reactant and product conversions with chemistry formulas and examples.";
+  "Calculate stoichiometry problems using balanced chemical equations, mole ratios, grams, and molar mass. Solve reactant and product conversions with step-by-step chemistry calculations and examples.";
 
 export const metadata: Metadata = {
   title,

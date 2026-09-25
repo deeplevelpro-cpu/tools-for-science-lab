@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Gravitational Potential Energy Calculator";
+  "Gravitational Potential Energy Calculator | PE = mgh Formula Tool";
 
 const pageDescription =
-  "Calculate gravitational potential energy, mass, gravitational acceleration, or height using PE = mgh, with units and step-by-step results.";
+  "Calculate gravitational potential energy using the PE = mgh formula. Solve mass, height, and gravity problems with units, examples, and step-by-step physics calculations.";
 
 const pagePath =
   "/calculators/gravitational-potential-energy-calculator";

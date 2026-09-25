@@ -13,9 +13,9 @@ import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
 const pageTitle =
-  "Force Calculator | Calculate Force Using F = ma (Newton's Law)";
+  "Force Calculator | F = ma Newton's Second Law Tool";
 const pageDescription =
-  "Calculate force, mass, or acceleration using Newton's Second Law (F = ma). Solve physics problems with SI units, step-by-step calculations, formulas, and examples.";
+  "Calculate force, mass, and acceleration using Newton's Second Law F = ma formula. Solve physics problems with SI units, examples, and step-by-step calculations.";
 
 const pagePath =
   "/calculators/force-calculator";

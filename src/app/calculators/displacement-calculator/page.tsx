@@ -9,10 +9,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Displacement Calculator";
+const pageTitle = "Displacement Calculator | Δx = x₂ − x₁ Position Formula Tool";
 
 const pageDescription =
-  "Calculate displacement, initial position, or final position using Δx = x₂ − x₁, with signed direction, unit guidance, and step-by-step results.";
+  "Calculate displacement using the Δx = x₂ − x₁ position change formula. Solve initial position, final position, and motion problems with units, examples, and step-by-step physics calculations.";
 
 const pagePath =
   "/calculators/displacement-calculator";

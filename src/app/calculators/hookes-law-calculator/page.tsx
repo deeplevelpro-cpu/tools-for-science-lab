@@ -10,10 +10,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Hooke’s Law Calculator";
+const pageTitle = "Hooke’s Law Calculator | F = kx Spring Force Formula Tool";
 
 const pageDescription =
-  "Calculate spring force, spring constant, or extension using Hooke’s law F = kx, with SI units, formula guidance, and clear step-by-step results.";
+  "Calculate spring force, spring constant, and extension using Hooke’s law F = kx formula. Solve spring problems with SI units, examples, and step-by-step physics calculations.";
 
 const pagePath =
   "/calculators/hookes-law-calculator";

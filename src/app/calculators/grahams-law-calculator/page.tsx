@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Graham's Law Calculator | Rate, Time & Molar Mass",
+  title: "Graham's Law Calculator | Gas Effusion Rate & Molar Mass Formula Tool",
   description:
-    "Use Graham's law to calculate gas effusion or diffusion rate, time, and molar mass. Solve r₁/r₂ = √(M₂/M₁) with optional time-unit conversion.",
+    "Calculate gas effusion and diffusion rates using Graham's law formula. Solve rate, time, and molar mass problems with unit conversions, examples, and step-by-step chemistry calculations.",
   alternates: {
     canonical: "/calculators/grahams-law-calculator",
   },

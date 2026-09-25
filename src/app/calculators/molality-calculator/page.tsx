@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Molality Calculator | Moles & Solvent Mass";
+const pageTitle = "Molality Calculator | Molality Formula & Concentration Tool";
 const pageDescription =
-  "Calculate molality from moles of solute and solvent mass. Solve for any variable with automatic mol, mmol, kilogram, gram, and milligram conversion.";
+  "Calculate molality using moles of solute and mass of solvent. Learn the molality formula with unit conversions, chemistry examples, and step-by-step concentration calculations.";
 
 const canonicalPath = "/calculators/molality-calculator";
 

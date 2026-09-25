@@ -16,10 +16,10 @@ import type { Metadata } from "next";
 
 
 const pageTitle =
-  "Acceleration Due to Gravity Calculator";
+  "Acceleration Due to Gravity Calculator | Gravity Formula Tool";
 
 const pageDescription =
-  "Calculate acceleration due to gravity using physics formulas and explore how gravitational acceleration affects falling objects.";
+  "Calculate acceleration due to gravity using gravity formulas. Solve free-fall and gravitational acceleration problems with examples, units, and step-by-step physics calculations.";
 
 const canonicalPath =
   "/calculators/acceleration-due-to-gravity-calculator";

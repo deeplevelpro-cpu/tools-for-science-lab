@@ -9,9 +9,9 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Linear Regression Calculator";
+const pageTitle = "Linear Regression Calculator | Slope, Intercept & Prediction Tool";
 const pageDescription =
-  "Calculate linear regression values including slope, intercept, predictions, and statistical relationships between datasets.";
+  "Calculate linear regression using slope, intercept, and least squares formulas. Analyze datasets, predict values, and solve statistical relationships with step-by-step calculations.";
 
 const pagePath =
   "/calculators/linear-regression-calculator";

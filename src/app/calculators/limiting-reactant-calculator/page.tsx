@@ -19,10 +19,10 @@ const pagePath = "/calculators/limiting-reactant-calculator";
 const pageUrl = absoluteUrl(pagePath);
 
 const title =
-  "Limiting Reactant Calculator: Find Excess and Yield";
+  "Limiting Reactant Calculator | Limiting Reagent & Yield Tool";
 
 const description =
-  "Use this free limiting reactant calculator to identify the limiting reagent, find excess reactant remaining, and calculate theoretical product yield.";
+  "Calculate the limiting reactant and excess reagent using balanced chemical equations. Find theoretical yield, mole ratios, and reaction results with step-by-step chemistry calculations.";
 
 export const metadata: Metadata = {
   title,

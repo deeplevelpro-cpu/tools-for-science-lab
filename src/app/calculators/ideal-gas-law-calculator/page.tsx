@@ -18,10 +18,10 @@ import type { Metadata } from "next";
 const pagePath =
   "/calculators/ideal-gas-law-calculator";
 
-const pageTitle = "Ideal Gas Law Calculator | PV = nRT Formula Tool";
+const pageTitle = "Ideal Gas Law Calculator | PV = nRT Gas Formula Tool";
 
 const pageDescription =
-  "Calculate pressure, volume, moles, or temperature using the PV = nRT ideal gas law formula. Solve gas problems with unit conversions, examples, and step-by-step calculations.";
+  "Calculate gas pressure, volume, moles, and temperature using the PV = nRT ideal gas law formula. Solve ideal gas problems with unit conversions, examples, constants, and step-by-step chemistry calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

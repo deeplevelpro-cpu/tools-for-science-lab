@@ -15,9 +15,9 @@ import { siteConfig } from "@/config/site";
 import type { Metadata } from "next";
 
 
-const pageTitle = "Density Calculator | Mass, Volume & Density";
+const pageTitle = "Density Calculator | ρ = m/V Mass & Volume Formula Tool";
 const pageDescription =
-  "Calculate density, mass, or volume using the density formula. Convert laboratory units and solve science problems with examples, formulas, and step-by-step results.";
+  "Calculate density using the ρ = m/V formula. Solve mass, volume, and density problems with unit conversions, laboratory examples, and step-by-step physics calculations.";
 
 export const metadata: Metadata = {
   title: pageTitle,

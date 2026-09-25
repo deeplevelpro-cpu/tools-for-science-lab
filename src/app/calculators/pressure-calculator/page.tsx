@@ -10,10 +10,10 @@ import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { absoluteUrl } from "@/lib/seo/url";
 
-const pageTitle = "Pressure Calculator | P = F ÷ A Formula, Force & Area";
+const pageTitle = "Pressure Calculator | P = F/A Force & Area Formula Tool";
 
 const pageDescription =
-  "Calculate pressure, force, or area using the P = F ÷ A physics formula. Solve pressure problems with pascal units, examples, conversions, and step-by-step results.";
+  "Calculate pressure using the P = F/A physics formula. Solve force, area, and pressure problems with pascal units, conversions, examples, and step-by-step calculations.";
 
 const pagePath =
   "/calculators/pressure-calculator";

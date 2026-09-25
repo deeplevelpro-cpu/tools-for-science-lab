@@ -16,9 +16,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Avogadro's Law Calculator | Volume & Moles",
+  title: "Avogadro's Law Calculator | V₁/n₁ = V₂/n₂ Gas Formula Tool",
   description:
-    "Calculate gas volume or amount with Avogadro's law, V₁/n₁ = V₂/n₂. Convert liters, milliliters, cubic meters, moles, and millimoles automatically.",
+    "Calculate gas volume and moles using Avogadro's law V₁/n₁ = V₂/n₂ formula. Solve gas problems with unit conversions, examples, and step-by-step chemistry calculations.",
   alternates: {
     canonical: "/calculators/avogadros-law-calculator",
   },
