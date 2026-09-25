@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CalculatorDirectory } from "@/components/calculator-directory";
+import { CalculatorCard } from "@/components/calculator-directory/calculator-card";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/config/site";
 import { calculators } from "@/content/calculators/registry";
+import { featuredCalculators } from "@/content/calculators/featured";
 import { calculatorCategories } from "@/content/calculators/categories";
 import { absoluteUrl } from "@/lib/seo/url";
 import { createCollectionSchema } from "@/lib/seo/collection-schema";
@@ -130,6 +132,36 @@ export default function CalculatorsPage() {
               </li>
             </ul>
           </article>
+        </Container>
+      </section>
+
+
+      <section className="directory-section">
+        <Container>
+          <div className="section-heading">
+            <p className="eyebrow">
+              Popular tools
+            </p>
+
+            <h2>
+              Popular Science Calculators
+            </h2>
+
+            <p>
+              Explore frequently used calculators for physics,
+              chemistry, and laboratory science with formulas,
+              examples, and step-by-step solutions.
+            </p>
+          </div>
+
+          <div className="calculator-directory-grid">
+            {featuredCalculators.map((calculator) => (
+              <CalculatorCard
+                key={calculator.slug}
+                calculator={calculator}
+              />
+            ))}
+          </div>
         </Container>
       </section>
 
