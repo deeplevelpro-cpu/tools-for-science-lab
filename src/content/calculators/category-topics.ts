@@ -82,6 +82,20 @@ export const calculatorTopics = {
         "circular",
       ],
     },
+    {
+      title: "Electricity and Circuit Calculations",
+      description:
+        "Calculate voltage, current, resistance, electrical power, and circuit relationships using electricity formulas.",
+      keywords: [
+        "electricity",
+        "voltage",
+        "current",
+        "resistance",
+        "ohm",
+        "circuit",
+        "electrical",
+      ],
+    },
   ],
 
   Chemistry: [
