@@ -103,6 +103,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/calculators/electricity"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl("/lab-reports"),
       changeFrequency: "monthly",
       priority: 0.7,

@@ -562,6 +562,21 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
   {
+    slug: "ohms-law-calculator",
+    name: "Ohm's Law Calculator",
+    shortDescription:
+      "Calculate voltage, current, or resistance using Ohm's Law V = IR for electrical circuits.",
+    category: "Physics",
+    href: "/calculators/ohms-law-calculator",
+    keywords: [
+      "ohms law calculator",
+      "voltage current resistance calculator",
+      "v ir calculator",
+      "electrical circuit calculator",
+      "resistance calculator",
+    ],
+  },
+  {
     slug: "work-calculator",
     name: "Work Calculator",
     shortDescription:
