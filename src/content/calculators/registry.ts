@@ -444,6 +444,21 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
   {
+    slug: "spin-calculator",
+    name: "Spin Calculator",
+    shortDescription:
+      "Calculate spin angular momentum using mass, radius, and angular velocity with rotational physics formulas.",
+    category: "Physics",
+    href: "/calculators/spin-calculator",
+    keywords: [
+      "spin calculator",
+      "spin angular momentum calculator",
+      "rotational momentum calculator",
+      "angular momentum from spin",
+      "physics spin calculator",
+    ],
+  },
+  {
     slug: "pulley-calculator",
     name: "Pulley Calculator",
     shortDescription:
