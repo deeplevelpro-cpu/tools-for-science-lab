@@ -11,6 +11,15 @@ const dynamicsSlugs = [
   "projectile-motion-calculator",
   "work-calculator",
   "power-calculator",
+  "kinetic-energy-calculator",
+  "elastic-potential-energy-calculator",
+  "gravitational-potential-energy-calculator",
+  "rotational-kinetic-energy-calculator",
+  "free-fall-calculator",
+  "friction-calculator",
+  "impulse-calculator",
+  "average-speed-calculator",
+  "average-velocity-calculator",
 ] as const;
 
 export function getDynamicsCalculators(
