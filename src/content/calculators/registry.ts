@@ -562,6 +562,21 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
   {
+    slug: "voltage-calculator",
+    name: "Voltage Calculator",
+    shortDescription:
+      "Calculate voltage using Ohm's Law V = I × R with current and resistance values.",
+    category: "Physics",
+    href: "/calculators/voltage-calculator",
+    keywords: [
+      "voltage calculator",
+      "calculate voltage",
+      "ohms law voltage calculator",
+      "V IR calculator",
+      "voltage formula calculator",
+    ],
+  },
+  {
     slug: "ohms-law-calculator",
     name: "Ohm's Law Calculator",
     shortDescription:

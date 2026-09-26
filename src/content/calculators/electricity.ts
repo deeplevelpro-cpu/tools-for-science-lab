@@ -2,6 +2,7 @@ import type { CalculatorDefinition } from "./registry";
 
 const electricitySlugs = [
   "ohms-law-calculator",
+  "voltage-calculator",
   "power-calculator",
 ] as const;
 
