@@ -5,6 +5,7 @@ const featuredSlugs = [
   "force-calculator",
   "acceleration-calculator",
   "momentum-calculator",
+  "ohms-law-calculator",
   "molarity-calculator",
   "molecular-weight-calculator",
   "ph-calculator",
