@@ -93,6 +93,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/calculators/dynamics"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/calculators/thermodynamics"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl("/lab-reports"),
       changeFrequency: "monthly",
       priority: 0.7,
