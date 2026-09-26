@@ -16,14 +16,14 @@ const category = calculatorCategories.find(
 const pagePath = "/calculators/physics";
 
 export const metadata: Metadata = {
-  title: "Physics Calculators | Motion, Force, Energy & Formula Tools",
-  description: "Physics calculators for motion, force, energy, and mechanics with formulas, equations, examples, units, and step-by-step solutions for students and teachers.",
+  title: "Physics Calculator | Motion, Force, Energy & Formula Solvers",
+  description: "Physics calculator collection for mechanics, motion, force, energy, waves, and scientific formulas. Solve physics problems with equations, units, examples, and step-by-step calculations.",
   alternates: {
     canonical: pagePath,
   },
   openGraph: {
     title: category.name,
-    description: "Physics calculators for motion, force, energy, and mechanics with formulas, equations, examples, units, and step-by-step solutions for students and teachers.",
+    description: "Physics calculator collection for mechanics, motion, force, energy, waves, and scientific formulas. Solve physics problems with equations, units, examples, and step-by-step calculations.",
     type: "website",
     url: absoluteUrl(pagePath),
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ScienceCalcHub",
     description:
-      "Physics calculators for equations, motion, force, energy, mechanics, and scientific problem solving with formulas and explanations.",
+      "Free physics calculators for motion, mechanics, force, energy, and scientific equations with formulas and step-by-step solutions.",
   },
 };
 

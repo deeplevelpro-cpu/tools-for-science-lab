@@ -15,22 +15,25 @@ export const calculatorCategories: readonly CalculatorCategory[] = [
     name: "Physics Calculators",
     category: "Physics",
     description:
-      "Solve physics problems involving motion, forces, energy, momentum, rotation, and measurement using accurate educational calculators.",
+      "Use physics calculators for motion, mechanics, force, energy, momentum, waves, gravity, and scientific formulas with step-by-step calculations, equations, and SI unit conversions.",
     introduction:
-      "Physics calculators help students, teachers, and researchers solve problems involving classical mechanics, motion, forces, energy, momentum, gravity, and rotational systems. These tools apply scientific equations with measurable variables, SI units, and guided explanations to make physics calculations easier to understand.",
+      "Physics calculators help students, teachers, and researchers solve quantitative problems in mechanics, motion, forces, energy, momentum, gravity, waves, and rotational systems. These tools use physics equations, measurable variables, SI units, and guided explanations to solve scientific problems with clear calculation steps.",
     formulaAreas: [
-      "Kinematic equations and motion calculations",
-      "Newton's laws, forces, and dynamics",
-      "Work, energy, power, and momentum relationships",
-      "Gravity and rotational motion formulas",
+      "Kinematic equations, velocity, acceleration, and motion calculations",
+      "Newton's laws, force, dynamics, and equilibrium formulas",
+      "Work, energy, power, and momentum calculations",
+      "Gravity, waves, oscillations, and rotational motion formulas",
     ],
     learningGuidance:
-      "Identify the physical quantities provided, select the appropriate physics equation, convert values into consistent SI units, calculate the result, and interpret what the answer means in the real physical system.",
+      "Identify the known physics variables, choose the correct formula, convert measurements into consistent SI units, calculate the result, and understand how the answer applies to the physical system. Each calculator provides a structured approach for solving physics problems step by step.",
     keywords: [
+      "physics calculator",
       "physics calculators",
       "physics formulas",
-      "mechanics calculators",
-      "energy calculators",
+      "mechanics calculator",
+      "motion calculator",
+      "energy calculator",
+      "physics formula calculator",
     ],
   },
   {
