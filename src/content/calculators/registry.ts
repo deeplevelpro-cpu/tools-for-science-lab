@@ -428,6 +428,22 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
   {
+    slug: "van-der-waals-equation-calculator",
+    name: "Van der Waals Equation Calculator",
+    shortDescription:
+      "Calculate real gas pressure and temperature using the Van der Waals equation with molecular constants.",
+    category: "Physics",
+    href: "/calculators/van-der-waals-equation-calculator",
+    keywords: [
+      "van der waals equation calculator",
+      "van der waals calculator",
+      "real gas law calculator",
+      "real gas equation calculator",
+      "van der waals constants calculator",
+      "non ideal gas calculator",
+    ],
+  },
+  {
     slug: "pulley-calculator",
     name: "Pulley Calculator",
     shortDescription:
