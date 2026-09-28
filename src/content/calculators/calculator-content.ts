@@ -135,6 +135,24 @@ export const calculatorContent: Record<string, CalculatorContent> = {
     ],
   },
 
+
+  "ohms-law-calculator": {
+    introduction:
+      "The Ohm's Law calculator helps calculate voltage, current, or resistance in electrical circuits using the relationship between these three electrical quantities.",
+
+    formulaExplanation:
+      "Ohm's Law states that voltage is equal to current multiplied by resistance: V = I × R. The formula can be rearranged to calculate current using I = V/R or resistance using R = V/I.",
+
+    example:
+      "Example: If a circuit has 12 volts and 4 ohms of resistance, the current is calculated as I = 12/4 = 3 amperes.",
+
+    commonMistakes: [
+      "Using incorrect units for voltage, current, or resistance.",
+      "Dividing by zero resistance when calculating current.",
+      "Confusing electrical power with electrical current.",
+    ],
+  },
+
   "torque-calculator": {
     introduction:
       "The torque calculator determines rotational force produced by a force applied at a distance.",

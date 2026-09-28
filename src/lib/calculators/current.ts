@@ -2,38 +2,38 @@ import type { CalculationResult } from "@/types/calculator";
 
 import { formatCalculatedNumber } from "./number-format";
 
-export type OhmsLawVariable =
-  | "voltage"
+export type CurrentVariable =
   | "current"
+  | "voltage"
   | "resistance";
 
-export type OhmsLawInput = {
-  voltage?: number;
+export type CurrentInput = {
   current?: number;
+  voltage?: number;
   resistance?: number;
-  solveFor: OhmsLawVariable;
+  solveFor: CurrentVariable;
 };
 
-export type OhmsLawDetails = {
-  voltage: number;
+export type CurrentDetails = {
   current: number;
+  voltage: number;
   resistance: number;
-  solvedVariable: OhmsLawVariable;
+  solvedVariable: CurrentVariable;
   formula: string;
 };
 
 const variableLabels: Record<
-  OhmsLawVariable,
+  CurrentVariable,
   string
 > = {
-  voltage: "Voltage",
   current: "Current",
+  voltage: "Voltage",
   resistance: "Resistance",
 };
 
 function requireFiniteValue(
   value: number | undefined,
-  variable: OhmsLawVariable,
+  variable: CurrentVariable,
 ): number {
   if (
     value === undefined ||
@@ -47,35 +47,53 @@ function requireFiniteValue(
   return value;
 }
 
-function requireNonZeroValue(
+function requireNonZeroResistance(
   value: number | undefined,
-  variable: OhmsLawVariable,
 ): number {
   const finiteValue = requireFiniteValue(
     value,
-    variable,
+    "resistance",
   );
 
   if (finiteValue === 0) {
     throw new Error(
-      `${variableLabels[variable]} cannot be zero.`,
+      "Resistance cannot be zero when calculating current.",
     );
   }
 
   return finiteValue;
 }
 
-export function calculateOhmsLaw({
-  voltage,
+export function calculateCurrent({
   current,
+  voltage,
   resistance,
   solveFor,
-}: OhmsLawInput): CalculationResult<OhmsLawDetails> {
-  let calculatedVoltage = voltage;
+}: CurrentInput): CalculationResult<CurrentDetails> {
   let calculatedCurrent = current;
+  let calculatedVoltage = voltage;
   let calculatedResistance = resistance;
 
   switch (solveFor) {
+    case "current": {
+      calculatedVoltage =
+        requireFiniteValue(
+          voltage,
+          "voltage",
+        );
+
+      calculatedResistance =
+        requireNonZeroResistance(
+          resistance,
+        );
+
+      calculatedCurrent =
+        calculatedVoltage /
+        calculatedResistance;
+
+      break;
+    }
+
     case "voltage": {
       calculatedCurrent =
         requireFiniteValue(
@@ -96,26 +114,6 @@ export function calculateOhmsLaw({
       break;
     }
 
-    case "current": {
-      calculatedVoltage =
-        requireFiniteValue(
-          voltage,
-          "voltage",
-        );
-
-      calculatedResistance =
-        requireNonZeroValue(
-          resistance,
-          "resistance",
-        );
-
-      calculatedCurrent =
-        calculatedVoltage /
-        calculatedResistance;
-
-      break;
-    }
-
     case "resistance": {
       calculatedVoltage =
         requireFiniteValue(
@@ -124,9 +122,8 @@ export function calculateOhmsLaw({
         );
 
       calculatedCurrent =
-        requireNonZeroValue(
+        requireNonZeroResistance(
           current,
-          "current",
         );
 
       calculatedResistance =
@@ -140,26 +137,26 @@ export function calculateOhmsLaw({
       const exhaustiveCheck: never = solveFor;
 
       throw new Error(
-        `Unsupported Ohm's law variable: ${exhaustiveCheck}`,
+        `Unsupported current variable: ${exhaustiveCheck}`,
       );
     }
   }
 
   const solvedValue = {
-    voltage: calculatedVoltage,
     current: calculatedCurrent,
+    voltage: calculatedVoltage,
     resistance: calculatedResistance,
   }[solveFor];
 
   if (
-    calculatedVoltage === undefined ||
     calculatedCurrent === undefined ||
+    calculatedVoltage === undefined ||
     calculatedResistance === undefined ||
     solvedValue === undefined ||
     !Number.isFinite(solvedValue)
   ) {
     throw new Error(
-      "The Ohm's law calculation could not be completed.",
+      "The current calculation could not be completed.",
     );
   }
 
@@ -168,44 +165,22 @@ export function calculateOhmsLaw({
     formattedValue:
       formatCalculatedNumber(solvedValue),
     details: {
-      voltage: calculatedVoltage,
       current: calculatedCurrent,
+      voltage: calculatedVoltage,
       resistance: calculatedResistance,
       solvedVariable: solveFor,
-      formula: "V = IR",
+      formula: "I = V / R",
     },
   };
 }
 
-export function calculateVoltage(
-  current: number,
-  resistance: number,
-) {
-  return calculateOhmsLaw({
-    current,
-    resistance,
-    solveFor: "voltage",
-  });
-}
-
-export function calculateCurrent(
+export function calculateCurrentFromVoltage(
   voltage: number,
   resistance: number,
 ) {
-  return calculateOhmsLaw({
+  return calculateCurrent({
     voltage,
     resistance,
     solveFor: "current",
-  });
-}
-
-export function calculateResistance(
-  voltage: number,
-  current: number,
-) {
-  return calculateOhmsLaw({
-    voltage,
-    current,
-    solveFor: "resistance",
   });
 }

@@ -10301,4 +10301,99 @@ export const calculatorSEOContent: Record<
   },
 
 
+  "ohms-law-calculator": {
+    slug: "ohms-law-calculator",
+
+    seoIntroduction:
+      "The Ohm's Law Calculator helps calculate voltage, current, and resistance in electrical circuits using the relationship between electrical potential difference, current flow, and resistance.",
+
+    howItWorks:
+      "The calculator applies Ohm's Law to solve electrical circuit values. Users can enter two known electrical quantities and calculate the missing value using the appropriate rearranged formula.",
+
+    formula:
+      "Ohm's Law: V = I × R. Current is calculated using I = V ÷ R, voltage using V = I × R, and resistance using R = V ÷ I.",
+
+    variables: [
+      "Voltage (V)",
+      "Current (I)",
+      "Resistance (R)",
+      "Electrical circuit values",
+      "Ohm's Law relationship",
+      "SI electrical units",
+    ],
+
+    applications: [
+      "Electrical circuit calculations",
+      "Physics education",
+      "Electronics learning",
+      "STEM classroom activities",
+      "Basic electrical engineering concepts",
+    ],
+
+    assumptions: [
+      "The circuit follows Ohm's Law behavior.",
+      "Resistance remains constant during calculation.",
+      "Values are entered using compatible electrical units.",
+      "The calculator provides theoretical circuit calculations.",
+    ],
+
+    examples: [
+      "Example: A circuit with 12 volts and 4 ohms resistance has a current of 3 amperes.",
+      "Example: Calculate voltage when current and resistance values are known.",
+      "Example: Determine resistance from voltage and current measurements.",
+    ],
+
+    faqs: [
+      {
+        question:
+          "What is Ohm's Law?",
+        answer:
+          "Ohm's Law describes the relationship between voltage, current, and resistance in an electrical circuit using the formula V = I × R.",
+      },
+      {
+        question:
+          "How do you calculate current using Ohm's Law?",
+        answer:
+          "Current is calculated by dividing voltage by resistance using the formula I = V ÷ R.",
+      },
+      {
+        question:
+          "How do voltage and resistance affect current?",
+        answer:
+          "Higher voltage generally increases current, while higher resistance decreases current when other factors remain constant.",
+      },
+      {
+        question:
+          "What units are used in Ohm's Law calculations?",
+        answer:
+          "Voltage is measured in volts, current in amperes, and resistance in ohms.",
+      },
+      {
+        question:
+          "Who can use this calculator?",
+        answer:
+          "Students, teachers, electronics learners, and anyone studying basic electrical circuits can use this calculator.",
+      },
+    ],
+
+    references: [
+      "Ohm's Law electrical principles",
+      "Basic circuit analysis concepts",
+      "Physics electricity fundamentals",
+    ],
+
+    limitations: [
+      "Does not simulate complex electrical circuits.",
+      "Assumes ideal Ohm's Law behavior.",
+      "Does not replace professional electrical analysis.",
+    ],
+
+    reviewedBy:
+      "ScienceCalcHub Physics Review Team",
+
+    lastReviewed:
+      "2026-09-27",
+  },
+
+
 };
