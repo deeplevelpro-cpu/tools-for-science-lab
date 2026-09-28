@@ -592,6 +592,21 @@ export const calculators: readonly CalculatorDefinition[] = [
     ],
   },
   {
+    slug: "current-calculator",
+    name: "Current Calculator",
+    shortDescription:
+      "Calculate electrical current using Ohm's Law I = V ÷ R with voltage and resistance values.",
+    category: "Physics",
+    href: "/calculators/current-calculator",
+    keywords: [
+      "current calculator",
+      "calculate current",
+      "ohms law current calculator",
+      "electric current calculator",
+      "ampere calculator",
+    ],
+  },
+  {
     slug: "work-calculator",
     name: "Work Calculator",
     shortDescription:
