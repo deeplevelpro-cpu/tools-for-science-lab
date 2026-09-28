@@ -100,6 +100,29 @@ export const calculatorKnowledgeGraph: Record<
     "rotational-power-calculator",
   ],
 
+
+  // =========================
+  // ELECTRICITY CLUSTER
+  // =========================
+
+  "ohms-law-calculator": [
+    "voltage-calculator",
+    "current-calculator",
+    "power-calculator",
+  ],
+
+  "voltage-calculator": [
+    "ohms-law-calculator",
+    "current-calculator",
+    "power-calculator",
+  ],
+
+  "current-calculator": [
+    "ohms-law-calculator",
+    "voltage-calculator",
+    "power-calculator",
+  ],
+
   "gravitational-potential-energy-calculator": [
     "kinetic-energy-calculator",
     "weight-calculator",
