@@ -94,6 +94,7 @@ export default function ElectricityCalculatorsPage() {
       <CalculatorCategoryPage
         category={electricityCategory}
         calculators={electricityCalculators}
+        faqCategory="Electricity"
       />
     </>
   );

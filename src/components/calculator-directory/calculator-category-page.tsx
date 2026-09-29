@@ -10,13 +10,19 @@ import type { CalculatorDefinition } from "@/content/calculators/registry";
 type CalculatorCategoryPageProps = {
   category: CalculatorCategory;
   calculators: readonly CalculatorDefinition[];
+  faqCategory?:
+    | CalculatorCategory["category"]
+    | "Electricity";
 };
 
 export function CalculatorCategoryPage({
   category,
   calculators,
+  faqCategory,
 }: CalculatorCategoryPageProps) {
-  const faqItems = getCategoryFAQ(category.category);
+  const faqItems = getCategoryFAQ(
+    faqCategory ?? category.category,
+  );
   const faqSchema = createFAQSchema(faqItems);
 
   const breadcrumbSchema =

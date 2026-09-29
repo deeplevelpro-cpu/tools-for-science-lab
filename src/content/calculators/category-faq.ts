@@ -1,4 +1,5 @@
 import type { CalculatorCategory } from "./categories";
+import { electricityFAQ } from "./electricity-faq";
 
 type FAQItem = {
   question: string;
@@ -6,8 +7,13 @@ type FAQItem = {
 };
 
 export function getCategoryFAQ(
-  category: CalculatorCategory["category"],
+  category: CalculatorCategory["category"] | "Electricity",
 ): readonly FAQItem[] {
+
+  if (category === "Electricity") {
+    return electricityFAQ;
+  }
+
   if (category === "Physics") {
     return [
       {
